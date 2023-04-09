@@ -71,7 +71,7 @@ nav ul li a.active{color:#1853fe; font-family:Pretendard-Bold; opacity:1;}
     #Home .home_typo{left: 20px; margin-top:  -180px;}
     #Home .home_typo .typo_bar {width: 30px; height: 6px; margin-bottom: 15px;}
     #Home .home_typo h2{height: 30px; line-height: 30px; font-size: 30px;}
-    #Home .home_typo .portfolio_stroke {transform: scale(0.4); transform-origin: left top; margin-top: 25px;}
+    #Home .home_typo .portfolio_stroke {transform: scale(0.36); transform-origin: left top; margin-top: 25px;}
 }
 
 /* 자기소개 */
@@ -140,13 +140,15 @@ nav ul li a.active{color:#1853fe; font-family:Pretendard-Bold; opacity:1;}
 #Projects h3{position:relative; margin-top: 35px; text-align:center;}
 #Projects h3 img{height:32px;}
 #Projects .projects_wrap{position:relative; width:1000px; margin:60px auto 0 auto;}
-#Projects .projects_card{position:relative; width:100%; height:auto; margin-bottom:35px; border:1px solid #d0d0d0; border-radius:10px; overflow:hidden; box-sizing:border-box;}
-#Projects .projects_card:last-child{margin-bottom: 0;}
-#Projects .projects_card .card_img{position: absolute; top: 0; left: 0; width:300px; height: 100%; border-radius: 10px 0 0 10px; object-fit: cover; background-color: #F0F0F0;}
-#Projects .projects_card .card_txt{width:100%; padding:30px 0 30px 350px; box-sizing: border-box;}
+#Projects .projects_wrap:after{content: ""; display: block; clear: both;}
+#Projects .projects_card{position:relative; width:480px; height:auto; border:1px solid #d0d0d0; border-radius:10px; overflow:hidden; box-sizing:border-box;}
+#Projects .projects_card:first-child{float: left;}
+#Projects .projects_card:last-child{float: right;}
+#Projects .projects_card .card_img{width:100%; height: 250px; border-radius: 10px 10px 0 0; object-fit: contain; background-color: #F0F0F0;}
+#Projects .projects_card .card_txt{width:100%; padding:30px 20px; box-sizing: border-box;}
 #Projects .projects_card .card_title{font-family:Pretendard-Black; height:30px; line-height:30px; font-size:30px; color:#909090;}
 #Projects .projects_card .card_content{font-family:Pretendard-Regular; height:16px; line-height:16px; font-size:16px; color:#505050; margin-top:12px;}
-#Projects .projects_card .card_more{display:none; font-family:Pretendard-Bold; position: absolute; top: 50%; right: 20px; height:18px; line-height:18px; margin-top: -9px; font-size:18px; color:#303030; letter-spacing:4px;}
+#Projects .projects_card .card_more{display:none; font-family:Pretendard-Bold; position: absolute; bottom: 32px; right: 20px; height:18px; line-height:18px; margin-top: -9px; font-size:18px; color:#303030; letter-spacing:4px;}
 #Projects .projects_card .card_more img{vertical-align:top; margin:5px 0 0 4px;}
 #Projects .projects_card:hover{margin-top:0; border:3px solid #1853fe;}
 #Projects .projects_card:hover .card_title{color:#1853fe}
@@ -155,12 +157,13 @@ nav ul li a.active{color:#1853fe; font-family:Pretendard-Bold; opacity:1;}
 @media screen and (max-width: 1024px){
     #About h3 img {height: 30px;}
     #Projects .projects_wrap{width: 100%; margin: 50px auto 0 auto; padding: 0 20px; box-sizing: border-box;}
-    #Projects .projects_card{margin-bottom: 15px;}
-    #Projects .projects_card .card_img{position: relative; width: 100%; height: 80px; border-radius: 10px 10px 0 0;}
+    #Projects .projects_card{float: none; width: 100%; margin-bottom: 15px;}
+    #Projects .projects_card:last-child{margin-bottom: 0;}
+    #Projects .projects_card .card_img{position: relative; height :150px; border-radius: 10px 10px 0 0;}
     #Projects .projects_card .card_txt{padding: 15px;}
     #Projects .projects_card .card_title{height: auto; line-height: 24px; font-size: 16px;}
     #Projects .projects_card .card_content{height: auto; line-height: 20px; margin-top: 3px; font-size: 12px;}
-    #Projects .projects_card .card_more{position: relative; top: unset; right: unset; margin-top: 15px; font-size: 14px;}
+    #Projects .projects_card .card_more{position: relative; bottom: unset; right: unset; margin-top: 10px; font-size: 14px;}
 }
 
 
