@@ -44,19 +44,17 @@ let planDay = [
 ]
 
 // 정기배달 이용방법
-const popService = document.getElementById('popService');
 function toggleService(){
-    popService.classList.toggle('hidden');
+    document.getElementById('popService').classList.toggle('hidden');
 }
 
 // 메뉴소개
-const popIntro = document.getElementById('popIntro');
 function toggleIntro(){
-    popIntro.classList.toggle('hidden');
+    document.getElementById('popIntro').classList.toggle('hidden');
 }
 
 function typeIntro(){
-    popIntro.classList.remove('hidden');
+    document.getElementById('popIntro').classList.remove('hidden');
     let typeIntroValue = document.querySelector('input[name="tabType"]:checked').value;
     for (let i = 0; i < type.length; i ++) {
         let typeClass = "."+type[i].name+"Intro"
@@ -84,6 +82,7 @@ function planDayCheck(){
 
 // 결제예정 합계
 let result = 0;
+let resultPrice = 0;
 function amountCount(typeIndex, count) {
     // 체크된 요일 갯수 확인
     let planDayConut = 0;
@@ -122,7 +121,7 @@ function amountCount(typeIndex, count) {
     console.log("메뉴가격 * 메뉴수량 총 합 : " + totalTypeCount);
 
     result = planDayConut * totalTypeCount;
-    let resultPrice = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    resultPrice = result.toLocaleString('ko-KR');
     document.querySelector(' .resultAmount').innerText = resultPrice+"원";
 }
 
