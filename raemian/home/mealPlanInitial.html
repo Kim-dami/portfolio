@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minidum-scale=1.0, maxidum-scale=1.0, user-scalable=no">
+    <title>정기배달 신청</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/component.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <script type="text/javascript" src="../js/home.js"></script>
+</head>
+<body>
+    <main id="mealPlan" class="initial bgGray">
+        <header>
+            <h1>정기배달 신청</h1>
+            <button class="btnHowService" onclick="toggleService();">
+                <svg viewBox="0 0 18 18">
+                    <g>
+                        <path d="m9,1.8c-3.98,0-7.2,3.22-7.2,7.2s3.22,7.2,7.2,7.2,7.2-3.22,7.2-7.2c0-3.97-3.23-7.2-7.2-7.2m0-1.8c4.97,0,9,4.03,9,9s-4.03,9-9,9S0,13.97,0,9,4.03,0,9,0Z"/>
+                        <path d="m7.88,10.62h1.84c-.22-1.79,2.28-2.4,2.28-4.21,0-1.63-1.26-2.41-2.99-2.41-1.14,0-2.24.46-3.01,1.28l1.16.94c.41-.43.99-.69,1.59-.71.59-.08,1.13.32,1.21.9,0,.05,0,.09,0,.14,0,1.21-2.44,2.04-2.1,4.08Zm.91,3.38c.69.03,1.29-.48,1.32-1.16.04-.67-.5-1.25-1.19-1.28-.04,0-.09,0-.13,0-.69-.02-1.27.51-1.29,1.18s.53,1.24,1.22,1.26c.02,0,.05,0,.07,0Z"/>
+                    </g>
+                </svg>
+                <span class="blind">정기배달 이용방법</span>
+            </button>
+        </header>
+        <div class="bgContent bgGray">
+            <fieldset class="setIntro">
+                <button class="btnIntro" onclick="toggleIntro();">
+                    <svg class="iconIntro">
+                        <rect width="16" height="16"></rect>
+                        <circle r="7" cx="8" cy="8"></circle>
+                        <path d="m8.66,9.71h-1.33l-.13-6h1.59l-.13,6Zm-.66,2.58c-.16,0-.32-.04-.46-.12-.14-.08-.25-.19-.33-.33-.08-.14-.12-.3-.12-.46,0-.16.04-.31.12-.45.08-.14.19-.25.33-.33.14-.08.3-.12.46-.12.16,0,.31.04.45.12.14.08.25.19.33.33.08.14.12.29.12.45,0,.16-.04.32-.12.46-.08.14-.19.25-.33.33-.13.08-.29.13-.45.13Z"></path>
+                    </svg>
+                    한번만 신청하면 알아서 매주 배달! 메뉴가 궁금하다면?
+                </button>
+            </fieldset>
+            <section class="sectionSpot">
+                <h3>
+                    배달장소
+                    <div class="textRight">* 최초 신청 후 홈 > ‘정기배달 설정‘ 에서 변경가능</div><!-- 최초 정기배달 신청은 배달장소가 지정인 경우 -->
+                </h3>
+                <p class="designation">룸서비스 (101동 1205호)</p><!-- 최초 정기배달 신청은 배달장소가 지정인 경우 -->
+            </section>
+            <section class="sectionPlan">
+                <h3>
+                    저녁 정기배달
+                    <div class="textRight"><span class="fontMain">오후 6시 도착</span></div>
+                </h3>
+                <div class="areaDay">
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-1" value="Mon" checked="checked" onchange="planDayCheck();" />
+                        <label for="is-1" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            월
+                        </label>
+                    </fieldset>
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-2" checked="checked"  onchange="planDayCheck();"/>
+                        <label for="is-2" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            화
+                        </label>
+                    </fieldset>
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-3" checked="checked"  onchange="planDayCheck();"/>
+                        <label for="is-3" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            수
+                        </label>
+                    </fieldset>
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-4" checked="checked"  onchange="planDayCheck();"/>
+                        <label for="is-4" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            목
+                        </label>
+                    </fieldset>
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-5" checked="checked"  onchange="planDayCheck();"/>
+                        <label for="is-5" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            금
+                        </label>
+                    </fieldset>
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-6" disabled  onchange="planDayCheck();"/>
+                        <label for="is-6" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            토
+                        </label>
+                    </fieldset>
+                    <fieldset class="setSquare">
+                        <input type="checkbox" name="regularDay" class="inputSquare" id="is-7" disabled  onchange="planDayCheck();"/>
+                        <label for="is-1" class="labelSquare">
+                            <svg viewBox="0 0 16 16" class="iconSquare">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m6.97,11.81l-3.97-3.97.8-.8,3.16,3.1,5.24-5.23.8.8-6.03,6.1Z"/>
+                                </g>
+                            </svg>
+                            일
+                        </label>
+                    </fieldset>
+                </div>
+                <ul class="ulType">
+                    <li class="liType">
+                        <span class="name">도시락</span>
+                        <span class="price">(10,000원)</span>
+                        <div class="quantityType">
+                            <fieldset class="setQuantity">
+                                <button class="btnQuantity" onclick="amountCount(0,'minus')">-</button>
+                            </fieldset>
+                            <span class="dinnerQuantity fontDisable">0</span><!-- 수량이 없을경우 fontDisable 클래스 -->
+                            <fieldset class="setQuantity">
+                                <button class="btnQuantity" onclick="amountCount(0,'plus')">+</button>
+                            </fieldset>
+                        </div>
+                        개씩
+                    </li>
+                    <li class="liType">
+                        <span class="name">샐러드</span>
+                        <span class="price">(5,000원)</span>
+                        <div class="quantityType">
+                            <fieldset class="setQuantity">
+                                <button class="btnQuantity" onclick="amountCount(1,'minus')">-</button>
+                            </fieldset>
+                            <span class="saladQuantity fontDisable">0</span><!-- 수량이 없을경우 fontDisable 클래스 -->
+                            <fieldset class="setQuantity">
+                                <button class="btnQuantity" onclick="amountCount(1,'plus')">+</button>
+                            </fieldset>
+                        </div>
+                        개씩
+                    </li>
+                </ul>
+            </section>
+            <section class="sectionPlanNotice">
+                <div class="titleNotice">꼭 읽어주세요!</div>
+                <ul class="ulNotice">
+                    <li class="liNotice">- 신청한 정기배달은 ‘다음주’부터 배달시작됨</li>
+                    <li class="liNotice">- 요일별로 다르게 주문추가 / 취소 필요시 ‘홈’에서 설정가능</li>
+                    <li class="liNotice">- 매주 월요일 00:00~00:05 크레딧으로 자동결제됨</li>
+                    <li class="liNotice">- 신청정보는 홈 > ‘정기배달 설정’에서 변경가능</li>
+                </ul>
+            </section>
+        </div>
+        <div id="bottomFix"><!-- 식단 구독설정 하단고정 -->
+            <section class="sectionPlanStep">
+                <div class="areaSum ">
+                    <div class="leftSum">결제예정</div>
+                    <div class="rightSum">매주 <span class="resultAmount amount"></span></div>
+                </div>
+                <fieldset class="setFull">
+                    <button class="btnFull bgMain" onclick="enterHome();">정기배달 신청하고 매주 받아보기</button>
+                </fieldset>
+            </section>
+        </div>
+    </main>
+
+    <div id="popService" class="hidden" onclick="toggleService();"><!-- 식단 구독서비스 이용방법 -->
+        <div class="bgPopService">
+            <section class="sectionTitle">
+                <p class="subtitle">한번만 신청하면 알아서 매주 배달해주는</p>
+                <h2>푸드 컨시어지 ‘정기배달’</h2>
+            </section>
+            <section class="sectionStep">
+                <ol class="olStep">
+                    <li class="liStep">
+                        <div class="title fontMain">신청방법</div>
+                        <div class="body">배달받을 장소 · 시간 · 메뉴 · 갯수를 선택한 뒤<br />하단의 ‘정기배달 신청/설정’ 버튼을 눌러주면 완료</div>
+                    </li>
+                    <li class="liStep">
+                        <div class="title fontMain">변경방법</div>
+                        <div class="body">홈 하단  > ‘정기배달 설정’에서 언제든지<br />직접 원하는대로 변경 및 재신청 가능해요</div>
+                    </li>
+                    <li class="liStep">
+                        <div class="title fontMain">결제</div>
+                        <div class="body">주문시 선충전된 크레딧에서 자동결제돼요!</div>
+                    </li>
+                    <li class="liStep">
+                        <div class="title fontMain">추가주문</div>
+                        <div class="body">정기배달 수량보다 갑자기 음식이 더 필요할땐?<br />홈에서 원하는 메뉴를 선택해 ‘추가주문’하면 OK</div>
+                    </li>
+                    <li class="liStep">
+                        <div class="title fontMain">주문취소</div>
+                        <div class="body">홈에서 ‘취소하기’ 또는 홈 하단 ‘주문내역’을 눌러<br />주문상세내역으로 이동하면 취소가능해요</div>
+                    </li>
+                </ol>
+            </section>
+            <section class="sectionFull">
+                <fieldset class="setFull">
+                    <button class="btnFull bgMain" onclick="toggleService();">확인</button>
+                </fieldset>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="popIntro" class="hidden" onclick="toggleIntro();"><!-- 정기배달 메뉴 소개 팝업 -->
+        <div class="bgPopIntro">
+            <section class="sectionTitle">
+                <h2>정기배달 메뉴</h2>
+            </section>
+            <section class="sectionTabType">
+                <fieldset class="setTabType">
+                    <input type="radio" name="tabType" class="inputTabType" id="itt-1" value="dinner" checked="checked" onchange="typeIntro();" />
+                    <label for="itt-1" class="labelTabType">도시락</label>
+                </fieldset>
+                <fieldset class="setTabType">
+                    <input type="radio" name="tabType" class="inputTabType" value="salad" id="itt-2" onchange="typeIntro();" />
+                    <label for="itt-2" class="labelTabType">샐러드</label>
+                </fieldset>
+            </section>
+            <section class="sectionIntroduction dinnerIntro"><!-- 도시락 소개 -->
+                <div class="areaPhoto">
+                    <img src="../img/imgDinnerBig.png" alt="도시락">
+                </div>
+                <dl class="dlIntroduction">
+                    <dt class="title">매일 바뀌는 식사</dt>
+                    <dd class="description">메인요리, 국, 밑반찬까지 균형잡힌 한상</dd>
+                </dl>
+                <dl class="dlIntroduction">
+                    <dt class="title">다채로운 제철메뉴</dt>
+                    <dd class="description">계절기운 담아 더욱 신선한 이색별미</dd>
+                </dl>
+                <dl class="dlIntroduction">
+                    <dt class="title">안전한 식재료</dt>
+                    <dd class="description">안심하고 먹을 수 있는 영양설계</dd>
+                </dl>
+            </section>
+            <section class="sectionIntroduction saladIntro hidden"><!-- 셀러드 소개 -->
+                <div class="areaPhoto">
+                    <img src="../img/imgSaladBig.png" alt="샐러드">
+                </div>
+                <dl class="dlIntroduction">
+                    <dt class="title">간편한 한 끼</dt>
+                    <dd class="description">칼로리는 낮추고 영양밸런스는 높게</dd>
+                </dl>
+                <dl class="dlIntroduction">
+                    <dt class="title">든든한 구성</dt>
+                    <dd class="description">샐러드&하프 샌드위치로 포만감 있게</dd>
+                </dl>
+                <dl class="dlIntroduction">
+                    <dt class="title">건강한 즐거움</dt>
+                    <dd class="description">신선한 식재료를 그대로 담아 맛있게</dd>
+                </dl>
+            </section>
+            <section class="sectionFull">
+                <fieldset class="setFull">
+                    <button class="btnFull bgMain" onclick="toggleIntro();">확인</button>
+                </fieldset>
+            </section>
+        </div>
+    </div>
+
+    <div id="bottomSheet" class="hidden"><!-- 식단 구독설정 컨펌 -->
+        <div class="bgBottomSheet">
+            <section class="sectionSheetFold">
+                <fieldset class="setSheetFold">
+                    <button class="btnSheetFold">
+                        <img src="../img/btnSheetFold.png" alt="바텀시트접기" />
+                    </button>
+                </fieldset>
+            </section>
+            <section class="sectionConfirm">
+                <dl class="dlConfirm">
+                    <dt class="titleConfirm">구독자명</dt>
+                    <dd class="contentConfirm">김철수</dd>
+                </dl>
+                <dl class="dlConfirm">
+                    <dt class="titleConfirm">연락처</dt>
+                    <dd class="contentConfirm">
+                        01012345678<span class="message">(주문 관련 메시지가 발송됨)</span>
+                    </dd>
+                </dl>
+                <dl class="dlConfirm">
+                    <dt class="titleConfirm">적용일</dt>
+                    <dd class="contentConfirm">
+                        다음주부터수령
+                        <div class="contentNotSet">
+                            <span class="fontMain">단, 다음주 재료소진 및 휴무로<br />
+                            주문되지 않는 건이 있으니 확인해주세요</span>
+                            <ul class="ulNotSet">
+                                <li class="liNotSet">[월요일] 도시락 1개</li>
+                                <li class="liNotSet">[화요일] 도시락 1개, 샐러드 1개</li>
+                                <li class="liNotSet">[수요일] 도시락 1개</li>
+                                <li class="liNotSet">[목요일] 도시락 1개, 샐러드 2개</li>
+                                <li class="liNotSet">[금요일] 도시락 1개</li>
+                                <li class="liNotSet">[토요일] 샐러드 1개</li>
+                                <li class="liNotSet">[일요일] 샐러드 2개</li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="sectionFull">
+                <fieldset class="setFull">
+                    <button class="btnFull bgMain">확인</button>
+                </fieldset>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

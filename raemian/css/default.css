@@ -1,0 +1,151 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : default
+	설　명 : 폰트 및 초기화
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+/* 폰트 */
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-ExtraLight.woff) format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard-Medium;
+    src: url(font/Pretendard-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-semiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-ExtraBold.woff) format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url(font/Pretendard-Black.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 초기화 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt,
+var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+
+html {-webkit-text-size-adjust: 100%; -webkit-overflow-scrolling: touch; -ms-text-size-adjust: 100%; -webkit-touch-callout: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent}
+
+a {display:block; color:inherit; text-decoration:none; cursor:pointer; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+a:link, a:hover, a:active, a:visited, a:any-link, a:-webkit-any-link {display:block; margin:0; padding:0; border:0; outline:0; font-size:100%; background:transparent; color:inherit; text-decoration:none; cursor:pointer;}
+
+article, aside, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{display:block;}
+
+audio,canvas,progress,video {display: inline-block; vertical-align: baseline}
+audio:not([controls]) {display: none; height: 0}
+
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+
+b,strong {font-weight: 600}
+sub,sup {position: relative; font-size: .75rem; vertical-align: baseline}
+sup {top: -.3em}
+sub {bottom: -.25em}
+small {font-size: .75rem}
+
+button, input, select, textarea {margin: 0; color: inherit; vertical-align: middle; font-family: inherit; text-transform: none; appearance: none; -webkit-appearance: none; -webkit-tap-highlight-color: rgba(255,255,255,0); -moz-appearance: none; box-shadow: none}
+
+button, input[type=button], input[type=reset], input[type=submit]
+{overflow: visible; -webkit-tap-highlight-color: rgba(255,255,255,0); border: none; border-radius: 0; outline: 0; padding: 0; background: 0 0; vertical-align: middle; cursor: pointer}
+button[disabled], input[disabled] {cursor: default}
+button::-moz-focus-inner, input::-moz-focus-inner {padding: 0; border: 0}
+
+input {line-height: normal; border: none; outline: 0; caret-color: #505050}
+input[type=search] {box-sizing: content-box; -webkit-appearance: textfield; -webkit-box-sizing: content-box; -moz-box-sizing: content-box}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{height: auto; margin: 0; -webkit-appearance: none}
+input[type=checkbox]::-ms-check {border: none; outline: 0}
+input::-ms-clear {display: none}
+input::placeholder {color: #A0A0A0;}
+select {outline: 0}
+select::-ms-expand {display: none}
+
+textarea {overflow: auto; vertical-align: baseline; caret-color: #505050;}
+textarea::placeholder {color: #A0A0A0;}
+
+fieldset {min-width: 0; margin: 0; padding: 0; border: none; outline: 0}
+legend {margin: 0; padding: 0; border: 0}
+
+nav, ul, ol, li {list-style:none;}
+
+table {border-collapse:collapse; border-spacing:0;}
+td,th {padding: 0}
+
+img {border: 0; -ms-interpolation-mode: bicubic}
+
+*{margin:0; padding:0;}
+
+.hidden {display:none!important;}
+.blind{position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden;}
