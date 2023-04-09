@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>수령장소</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
+    <!-- 페이지별 css 파일 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+    <div id="selectSpot">
+        <header>
+            <h1>
+                이화여자대학교
+                <svg class="iconSelect">
+                    <g>
+                        <rect width="16" height="16"></rect>
+                        <path d="m12,6l-4,4-4-4"></path>
+                    </g>
+                </svg>
+                <a href="mapSpot.html" class="linkMap">
+                    <svg viewBox="0 0 16 16" class="iconMap">
+                        <g>
+                            <rect width="16" height="16"/>
+                            <path id="_패스_12091" data-name="패스 12091" class="cls-2" d="m1,4.1v10.4l4.45-2.6,5.09,2.6,4.45-2.6V1.5l-4.45,2.6L5.45,1.5,1,4.1Z"/>
+                            <path id="_패스_12092" data-name="패스 12092" class="cls-2" d="m5.45,1.5v10.13"/>
+                            <path id="_패스_12093" data-name="패스 12093" class="cls-2" d="m10.55,4.37v10.13"/>
+                        </g>
+                    </svg>
+                </a>
+            </h1>
+        </header>
+        <main class="bgGray">
+            <section class="sectionSpot">
+                <ul class="ulSpot">
+                    <li class="liSpot">
+                        <button class="spot" onclick="sheetSpot(0);">
+                            포스트관
+                            <div class="areaImgSpot">
+                                <img src="https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1CA_1669088813.jpeg" class="imgSpot">
+                            </div>
+                        </button>
+                    </li>
+                    <li class="liSpot">
+                        <button class="spot" onclick="sheetSpot(1);">
+                            한우리집
+                            <div class="areaImgSpot">
+                                <img src="https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1C8_1662098676.png" class="imgSpot">
+                            </div>
+                        </button>
+                    </li>
+                    <li class="liSpot">
+                        <button class="spot" onclick="sheetSpot(2);">
+                            이하우스 301동
+                            <div class="areaImgSpot">
+                                <img src="https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1C4_1662098726.png" class="imgSpot">
+                            </div>
+                        </button>
+                    </li>
+                    <li class="liSpot">
+                        <button class="spot" onclick="sheetSpot(3);">
+                            이하우스 204동
+                            <div class="areaImgSpot">
+                                <img src="https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1C3_1662098736.png" class="imgSpot">
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <div class="bottomSheet isFixedBig insideBottom hidden">
+            <div class="sheetBg">
+                <div class="sheetFold">
+                    <button class="btnSheetFold" onclick="sheetToggle();"><span class="foldBar"></span></button>
+                </div>
+                <div class="sheetContent">
+                    <section class="sectionImgLocation">
+                        <img src="" class="imgLocation" id="imgLocation">
+                        <div id="mapLocation" class="hidden"></div>
+                    </section>
+                    <section class="sectionInfoLocation">
+                        <div class="name">
+                            <span id="nameLocation"></span>
+                            <button class="btnChangeImg hidden" id="btnChangeImg" onclick="imgMapToggle();">사진보기</button>
+                            <button class="btnChangeMap" id="btnChangeMap" onclick="imgMapToggle();">지도보기</button>
+                        </div>
+                        <div class="timebelt">
+                            <div class="titleTimebelt">수령시간</div>
+                            <ul class="ulTimebelt">
+                                <li class="liTimebelt">(이화)점심1 : 12:20:00 ~ 12:35:00</li>
+                                <li class="liTimebelt">(이화)점심2 : 13:10:00 ~ 13:30:00</li>
+                                <li class="liTimebelt">(이화)저녁1 : 18:20:00 ~ 18:35:00</li>
+                                <li class="liTimebelt">(이화)저녁2 : 19:10:00 ~ 19:30:00</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+                <section class="sectionHalf">
+                    <fieldset class="setHalf">
+                        <button class="btnHalf borderMain fontMain" onclick="sheetToggle();">다른장소 보기</button>
+                    </fieldset>
+                    <fieldset class="setHalf">
+                        <button class="btnHalf bgMain" onclick="sheetToggle();">수령장소 선택</button>
+                    </fieldset>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d6ee3b50d9e3014b32a2e293d761c1e3"></script>
+    <script>
+        // 수령장소 위치 배열
+        let spotPositions = [
+            {
+                name: '포스트관',
+                imgSrc: 'https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1CA_1669088813.jpeg',
+                latlng: new kakao.maps.LatLng(37.56362467754646, 126.94692721411657)
+            },
+            {
+                name: '한우리집',
+                imgSrc: 'https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1C8_1662098676.png',
+                latlng: new kakao.maps.LatLng(37.564446028105145, 126.95024300932963)
+            },
+            {
+                name: '이하우스 301동',
+                imgSrc: 'https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1C4_1662098726.png',
+                latlng: new kakao.maps.LatLng(37.565446228690824, 126.95046872102391)
+            },
+            {
+                name: '이하우스 204동',
+                imgSrc: 'https://baedalgeek.s3.ap-northeast-2.amazonaws.com/place/dev/1C/building/1C3_1662098736.png',
+                latlng: new kakao.maps.LatLng(37.56696001506523, 126.95073937652792)
+            }
+        ];
+
+        function sheetToggle(){
+            document.querySelector('.bottomSheet').classList.toggle('hidden');
+        }
+
+        function sheetSpot(index){
+            sheetToggle();
+            let imgLocation = document.getElementById('imgLocation');
+            let nameLocation = document.getElementById('nameLocation');
+            console.log(spotPositions[index].imgSrc+" "+spotPositions[index].name);
+            imgLocation.src = spotPositions[index].imgSrc;
+            nameLocation.innerText = spotPositions[index].name;
+
+
+            let containerLocation = document.getElementById('mapLocation'); // 지도를 표시할 div
+            let optionsLocation = {
+                center: spotPositions[index].latlng, // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+            let mapLocation = new kakao.maps.Map(containerLocation, optionsLocation); //지도 생성 및 객체 리턴
+
+            let imageSrc = 'https://baedalgeek.s3.ap-northeast-2.amazonaws.com/newImage/marker_main.svg', // 마커 이미지 주소
+                imageNormalSize = new kakao.maps.Size(20, 27), // 마커 노멀사이즈
+                imageBigSize = new kakao.maps.Size(30, 41), // 마커 빅사이즈
+                imageOption = {offset: new kakao.maps.Point(10, 27)}; // 마커 사이즈 옵션
+
+            // 마커 이미지 생성
+            let markerNormalImage = new kakao.maps.MarkerImage(imageSrc, imageNormalSize, imageOption),
+                markerBigImage = new kakao.maps.MarkerImage(imageSrc, imageBigSize, imageOption);
+
+            // 마커 생성
+            let marker = new kakao.maps.Marker({
+                position: spotPositions[index].latlng,
+                image: markerNormalImage // 마커 이미지
+            });
+
+            marker.setMap(mapLocation);
+        }
+
+        function imgMapToggle(){
+            document.getElementById('imgLocation').classList.toggle('hidden');
+            document.getElementById('mapLocation').classList.toggle('hidden');
+            document.getElementById('btnChangeImg').classList.toggle('hidden');
+            document.getElementById('btnChangeMap').classList.toggle('hidden');
+        }
+    </script>
+
+
+    <div id="popProject" onclick="closeProject();">
+        <div class="bgPopProject">
+            <button class="btnClosePop">
+                <svg viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="10"/>
+                    <line x1="6.19" y1="5.91" x2="13.64" y2="13.55"/>
+                    <line x1="6.19" y1="13.55" x2="13.64" y2="5.91"/>
+                </svg>
+            </button>
+            <div class="titleProject">배달긱 수령장소</div>
+            <div class="bodyProject">
+                <dl>
+                    <dt>프로젝트 목표</dt>
+                    <dd>예약합배송 수령장소를 사진 및 위치를 리스트와 지도에서 확인하는 기능 개발</dd>
+                </dl>
+                <dl>
+                    <dt>기술</dt>
+                    <dd>#HTML #CSS #JavaScript</dd>
+                </dl>
+                <dl>
+                    <dt>작업사항</dt>
+                    <dd>
+                        <p>수령장소 페이지에서 리스트 클릭시 해당 수령장소관련 정보가 바텀시트 출력</p>
+                        <p>수령장소 바텀시트에서 사진/지도보기 토글로 확인가능</p>
+                        <p>수령장소 지도보기에서 각 리스트 클릭시 지도 센터 이동</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <style>
+        #popProject{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0,0,0,60%);}
+        #popProject .bgPopProject{position: fixed; top: 50%; left: 50%; width: 320px; height: auto; margin-top: -250px; margin-left: -160px; border-radius: 5px; background-color: #FFFFFF; overflow: hidden;}
+        #popProject .bgPopProject .btnClosePop{position: absolute; top: 0; right: 0; z-index: 10; padding: 20px;}
+        #popProject .bgPopProject .btnClosePop svg{width: 20px; height: 20px; vertical-align: top; transform: scale(1.25);}
+        #popProject .bgPopProject .btnClosePop circle{fill: #e5ebff;}
+        #popProject .bgPopProject .btnClosePop line{fill: none; stroke: #1853fe; stroke-width: 1.5; stroke-linecap: round;
+            stroke-miterlimit: 4;}
+        #popProject .bgPopProject .titleProject{position: relative; width: 100%; height: auto; line-height: 20px; padding: 20px; box-sizing: border-box; color: #1853fe; font-size: 20px; font-weight: bold;}
+        #popProject .bgPopProject .bodyProject{position: relative; width: 100%; height: auto; padding: 10px 20px 20px 20px; box-sizing: border-box; overflow-y: auto;}
+        #popProject .bgPopProject .bodyProject dl{width: 100%; height: auto; margin-bottom: 20px;}
+        #popProject .bgPopProject .bodyProject dl:last-child{margin-bottom: 0;}
+        #popProject .bgPopProject .bodyProject dt{width: 100%; height: auto; line-height: 16px; margin-bottom: 10px; color: #131313; font-size: 16px; font-weight: bold;}
+        #popProject .bgPopProject .bodyProject dd{width: 100%; height: auto; line-height: 18px; padding: 0 5px; box-sizing: border-box; color: #505050; font-size: 14px;}
+        #popProject .bgPopProject .bodyProject dd p{position: relative; width: 100%; margin-bottom: 5px; padding-left: 10px; box-sizing: border-box;}
+        #popProject .bgPopProject .bodyProject dd p:before{content: "-"; position: absolute; top: 0; left: 0; line-height: 18px;}
+        #popProject .bgPopProject .bodyProject dd p:last-child{margin-bottom: 0;}
+    </style>
+    <script>
+        function closeProject(){
+            document.getElementById('popProject').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

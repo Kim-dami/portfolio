@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	/* fullpage */
 	$('#fullpage').fullpage({
-		anchors: ['firstSection', 'secondSection', 'thirdSection'],
+		anchors: ['firstSection', 'secondSection', 'thirdSection','fourthSection'],
 		sectionsColor: ['#101010', '#fff', '#fff'],
 		sectionSelector: '.vertical-scrolling',
 		navigation: true,

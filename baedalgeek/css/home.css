@@ -1,0 +1,159 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : home
+	설　명 : 서비스장소 선택, 수령장소 선택, 홈
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+/* 검색 */
+header .areaSearch{position: relative; height: auto; margin: 0 20px 15px 20px;}
+header .setSearch{position: relative; width: 100%; height: auto;}
+header .inputSearch{display: block; position: relative; width: 100%; height: 40px; line-height: 12px; padding: 13px 80px 13px 15px; border: 1px solid #F0F0F0; border-radius: 5px; box-sizing: border-box; background-color: transparent;}
+header .labelSearch{position: absolute; top: 0; left: 15px; line-height: 40px; color: #A0A0A0; font-size: 12px;}
+header .inputSearch:focus + .labelSearch,
+header .inputSearch:valid + .labelSearch{display: none;}
+header .btnDelete{position: absolute; top: 12px; right: 45px;}
+header .iconDelete{width: 16px; height: 16px; vertical-align: top;}
+header .iconDelete rect{fill: none;}
+header .iconDelete circle{fill: #f0f0f0;}
+header .iconDelete line{fill: none; stroke: #505050; stroke-linecap: round; stroke-miterlimit: 4; stroke-width: 1px;}
+header .btnSubmit{position: absolute; top: 5px; right: 10px;}
+header .iconSubmit{width: 30px; height: 30px; vertical-align: top;}
+header .linkMap{position: absolute; top: 0; right: 0; z-index: 10; width: 50px; height: 50px; line-height: 50px; text-align: center;}
+header .linkMap:focus{background-color: #F8F8F8;}
+header .linkMap .iconMap{width: 16px; height: 16px; margin-top: 17px; vertical-align: top;}
+header .linkMap .iconMap rect{fill: none;}
+header .linkMap .iconMap path{fill: none; stroke: #505050; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.3px;}
+
+/* 장소 셀렉트 */
+header .iconSelect {width: 16px; height: 16px; vertical-align: top; margin-top: 17px;}
+header .iconSelect rect {fill: none;}
+header .iconSelect path {fill: none; stroke: #505050; stroke-miterlimit: 4; stroke-width: 2px;}
+
+/* 서비스장소 */
+#selectPlace{position: relative; width: 100%; height: 100%; box-sizing: border-box; padding-top: 105px;}
+
+.sectionSort{position: relative; z-index: 10; width: 100%; height: auto; padding: 20px 20px 0 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.sectionSort .setSort{position: relative; width: 155px; height: 28px; background-color: #F0F0F0; border-radius: 15px;}
+.sectionSort .areaRadio{position: absolute; top: 0; width: 80px; height: 28px;}
+.sectionSort .areaRadio:first-child{left: 0;}
+.sectionSort .areaRadio:last-child{right: 0;}
+.sectionSort .radioSort{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; width: 100%; height: 100%; opacity: 0; cursor: pointer;}
+.sectionSort .labelSort{display: block; position: relative; width: 100%; height: 100%; line-height: 28px; border-radius: 15px; background-color: transparent; color: #A0A0A0; font-size: 12px; text-align: center;}
+.sectionSort .radioSort:checked + .labelSort{background-color: #FFFFFF; color: #131313; font-weight: 700;  box-shadow: 0 1px 5px rgba(0,0,0,10%);}
+.sectionSort .linkPlaceMap{position: absolute; top: 20px; right: 20px; line-height: 28px;}
+.sectionSort .linkPlaceMap .iconMyLocation{margin-top: 6px;}
+
+.sectionPlace{position: relative; width: 100%; height: auto; padding: 0 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.sectionPlace .ulPlace{position: relative; width: 100%; height: auto;}
+.sectionPlace .liPlace{position: relative; width: 100%; height: auto; border-bottom: 1px solid #F0F0F0;}
+.sectionPlace .liPlace:last-child{border-bottom: none;}
+.sectionPlace .firstLetter{line-height: 12px; padding: 20px 0 0 5px; box-sizing: border-box; color: #A0A0A0; font-size: 12px;}
+.sectionPlace .place{position: relative; width: 100%; height: auto; line-height: 14px; padding: 20px 40px 20px 5px; box-sizing: border-box;}
+.sectionPlace .place.disable{color: #a0a0a0;}
+.sectionPlace .place .fontMain{font-weight: 700;}
+.sectionPlace .place .distance{position: absolute; top: 0; right: 0; line-height: 14px; padding: 20px 0; color: #A0A0A0; font-size: 12px; text-align: right;}
+.sectionPlace .titleOpen{position: relative; width: 100%; height: auto; line-height: 16px; padding: 30px 0 15px 0; color: #131313; font-size: 16px; font-weight: 700;}
+.sectionPlace .ulIndex{position: fixed; top: 165px; right: 20px; z-index: 10; width: 15px; height: auto; margin-bottom: 35px; padding: 3px 0; border-radius: 10px; background-color: #F8F8F8;}
+.sectionPlace .liIndex{position: relative; width: 15px; height: 30px; line-height: 30px; margin: 7px 0; color: #A0A0A0; text-align: center; font-size: 10px; font-weight: 700; cursor: pointer;}
+.sectionPlace .liIndex:after{content: ""; position: absolute; bottom: -3px; left: 50%; width: 2px; height: 2px; margin-left: -1px; border-radius: 100%; background-color: #D8D8D8;}
+.sectionPlace .liIndex:last-child:after{display: none;}
+.sectionPlace .bigIndex{position: fixed; top: 50%; left: 50%; width: 40px; height: 40px; line-height: 38px; margin-top: -20px; margin-left: -20px; border: 1px solid #F0F0F0; background-color: #F8F8F8; font-size: 24px; font-weight: 900; text-align: center; animation-name: big; animation-duration: 1s; animation-iteration-count: 1; opacity: 0;}
+
+.sectionPlace.consonant{padding-right: 55px;}
+.sectionPlace.consonant .firstLetter{display: block;}
+.sectionPlace.consonant .place .distance{display: none;}
+.sectionPlace.consonant .ulIndex{display: block;}
+.sectionPlace.distance{padding-right: 20px;}
+.sectionPlace.distance .firstLetter{display: none;}
+.sectionPlace.distance .place .distance{display: block;}
+.sectionPlace.distance .ulIndex{display: none;}
+
+@keyframes big {
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    70%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+/* 서비스장소 검색 */
+#searchPlace{position: relative; width: 100%; height: 100%; box-sizing: border-box; padding-top: 105px;}
+
+.sectionResult{width: 100%; height: auto; line-height: 14px; padding: 20px 20px 0 20px; box-sizing: border-box; background-color: #FFFFFF; font-size: 14px; text-align: right;}
+
+/* 지도로 찾기 */
+#map{position: relative; width: 100%; height: 100%; box-sizing: border-box; padding-top: 50px; padding-bottom: 230px;}
+
+.sectionMap{position: relative; width: 100%; height: 100%;}
+.sectionMap #mapPlace,
+.sectionMap #mapSpot{position: relative; width: 100%; height: 100%;}
+
+.sectionMyLocation{position: fixed; bottom: 275px; right: 25px;}
+.sectionMyLocation .btnMyLocation{display: block; width: 40px; height: 40px; line-height: 40px; border: none; border-radius: 100%; background-color: #FFFFFF; text-align: center; box-shadow: 0 1px 5px rgba(0,0,0,10%);}
+.sectionMyLocation .btnMyLocation .iconMyLocation{margin-top: 10px; transform: scale(1.25); transform-origin: top center;}
+
+.iconMyLocation{width: 16px; height: 16px; vertical-align: top;}
+.iconMyLocation rect{fill: none;}
+.iconMyLocation circle{fill: none; stroke: #505050;}
+.iconMyLocation line{fill: none; stroke: #505050; stroke-linecap: round;}
+
+/* 수령장소 */
+#selectSpot{position: relative; width: 100%; height: 100%; box-sizing: border-box; padding-top: 50px;}
+
+.sectionSpot{position: relative; width: 100%; height: auto; padding: 0 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.sectionSpot .ulSpot{position: relative; width: 100%; height: auto;}
+.sectionSpot .liSpot{position: relative; width: 100%; height: auto; border-bottom: 1px solid #F0F0F0;}
+.sectionSpot .liSpot:last-child{border-bottom: none;}
+.sectionSpot .spot{position: relative; width: 100%; height: auto; line-height: 14px; padding: 30px 50px 30px 5px; box-sizing: border-box; text-align: left;}
+.sectionSpot .spot .fontMain{margin-right: 5px; font-weight: 700;}
+.sectionSpot .areaImgSpot{position: absolute; top: 50%; right: 0; width: 50px; height: 52px; margin-top: -26px; border-radius: 5px; background-color: #F8F8F8; overflow: hidden;}
+.sectionSpot .imgSpot{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+.sectionVote{position: relative; width: 100%; height: auto; margin-top: 5px; padding: 30px 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.sectionVote .areaText{width: 100%; height: auto; margin-bottom: 20px;}
+.sectionVote .areaText .titleVote{width: 100%; height: auto; line-height: 16px; margin-bottom: 10px; color: #131313; font-size: 16px; font-weight: 700;}
+.sectionVote .areaText .bodyVote{width: 100%; height: auto; line-height: 16px; color: #A0A0A0; font-size: 12px;}
+.sectionVote .ulVote{position: relative; width: 100%; height: auto; margin-bottom: 20px;}
+.sectionVote .liVote{position: relative; width: 100%; height: auto; margin-bottom: 15px; border-radius: 5px; background-color: #FFFFFF; box-shadow: 0 1px 5px rgba(0,0,0,10%);}
+.sectionVote .liVote:last-child{margin-bottom: 0;}
+.sectionVote .liVote .areaLeft{width: 100%; height: auto; padding: 12px 120px 12px 12px; box-sizing: border-box;}
+.sectionVote .liVote .areaLeft .nameLocation{width: 100%; height: auto; line-height: 14px; margin-bottom: 8px;}
+.sectionVote .liVote .areaLeft .areaProgress{position: relative; width: 100%; height: 14px; background-color: #F0F0F0;}
+.sectionVote .liVote .areaLeft .progress{position: absolute; top: 0; bottom: 0; left: 0;}
+.sectionVote .liVote .areaLeft .number{position: absolute; top: 0; left: 5px; line-height: 14px; color: #FFFFFF; font-size: 10px; font-weight: 700;}
+.sectionVote .liVote .areaRight{position: absolute; top: 50%; right: 10px; margin-top: -22.5px;}
+.sectionVote .liVote .areaRight:after{content: ""; display: block; clear: both;}
+.sectionVote .liVote .areaRight .btnVote{display: block; float: left; width: 45px; height: 45px; line-height: 45px;}
+.sectionVote .liVote .areaRight .btnVote:first-child{margin-right: 10px;}
+.sectionVote .liVote .areaRight .btnVote img{display: block; width: 100%; height: 100%; vertical-align: top; object-fit: contain;}
+
+.popUp .popBg #mapVote{position: relative; width: 280px; height: 200px; margin: 0 auto;}
+
+/* 수령장소 바텀시트 */
+.sectionImgLocation{width: 200px; height: 200px; margin: 5px auto 0 auto; border-radius: 5px; background-color: #F8F8F8; overflow: hidden;}
+.sectionImgLocation .imgLocation{display: block; width: 100%; height: 100%; object-fit: cover;}
+.sectionImgLocation #mapLocation{position: relative; width: 100%; height: 100%;}
+
+.sectionInfoLocation{position: relative; width: 100%; height: auto; padding: 30px 20px 20px 20px; box-sizing: border-box;}
+.sectionInfoLocation .name{position: relative; width: 100%; height: auto; line-height: 20px; margin-bottom: 20px; padding-right: 60px; box-sizing: border-box; color: #131313; font-size: 20px; font-weight: 700;}
+.sectionInfoLocation .name .btnChangeImg{position: absolute; top: 0; right: 0; line-height: 20px; color: #505050; font-size: 14px; font-weight: 500; text-align: right;}
+.sectionInfoLocation .name .btnChangeMap{position: absolute; top: 0; right: 0; line-height: 20px; color: #505050; font-size: 14px; font-weight: 500; text-align: right;}
+.sectionInfoLocation .timebelt{position: relative; width: 100%; height: auto; padding: 0 5px; box-sizing: border-box;}
+.sectionInfoLocation .timebelt .titleTimebelt{width: 100%; height: auto; line-height: 14px; margin-bottom: 12px; color: #131313; font-weight: 700;}
+.sectionInfoLocation .timebelt .ulTimebelt{position: relative; width: 100%; height: auto;}
+.sectionInfoLocation .timebelt .liTimebelt{position: relative; width: 100%; height: auto; line-height: 16px; margin-bottom: 5px; color: #A0A0A0; font-size: 12px;}
+.sectionInfoLocation .timebelt .liTimebelt:last-child{margin-bottom: 0;}
+
+/* 수령장소 제안 */
+#applySpot{position: relative; width: 100%; height: 100%; box-sizing: border-box; padding-top: 50px; padding-bottom: 70px;}
+.sectionApply{position: relative; width: 100%; height: auto; padding: 20px; box-sizing: border-box; background: #FFFFFF;}
+.sectionApply .olApply{position: relative; width: 100%; height: auto;}
+.sectionApply .liApply{position: relative; width: 100%; height: auto; margin-bottom: 20px;}
+.sectionApply .liApply:last-child{margin-bottom: 0;}
+.sectionApply .liApply .howToApply{width: 100%; height: auto; line-height: 18px; margin-bottom: 10px;}
+.sectionApply .liApply #mapApply{position: relative; width: 100%; height: 320px;}
+.sectionApply .liApply .setName{position: relative; width: 100%; height: auto;}
+.sectionApply .liApply .setName .inputName{display: block; width: 100%; height: 40px; line-height: 38px; padding: 0 15px; border: 1px solid #F0F0F0; border-radius: 5px; box-sizing: border-box; background-color: #FFFFFF; font-size: 14px;}
+.sectionApply .liApply .setName .inputName:focus,
+.sectionApply .liApply .setName .inputName:active{border: 1px solid #505050;}
