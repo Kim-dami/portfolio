@@ -171,7 +171,7 @@
 
 /* 정기배달 메뉴 소개 팝업 */
 #popIntro{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0,0,0,60%);}
-#popIntro .bgPopIntro{position: fixed; top: 50%; left: 50%; width: 320px; height: auto; margin-top: -250px; margin-left: -160px; border-radius: 5px; background-color: #FFFFFF; overflow: hidden;}
+#popIntro .bgPopIntro{position: fixed; top: 50%; left: 50%; width: 320px; height: auto; margin-top: -300px; margin-left: -160px; border-radius: 5px; background-color: #FFFFFF; overflow: hidden;}
 #popIntro .bgPopIntro .sectionTitle{position: relative; width: 100%; height: auto; padding: 30px 20px 15px 20px; box-sizing: border-box;}
 #popIntro .bgPopIntro .sectionTitle h2{line-height: 1.42rem; color: #131313; font-size: 1.42rem; font-weight: 600; letter-spacing: -0.5px;}
 #popIntro .bgPopIntro .sectionTabType{position: relative; width: 100%; height: auto; padding: 0 15px 15px 15px; box-sizing: border-box;}
@@ -191,7 +191,7 @@
 #popIntro .bgPopIntro .sectionFull{padding: 0 20px 18px 20px;}
 
 @media (min-width: 1080px){
-    #popIntro .bgPopIntro{width: 400px; margin-top: -360px; margin-left: -200px; padding: 10px; box-sizing: border-box;}
+    #popIntro .bgPopIntro{width: 400px; margin-top: -300px; margin-left: -200px; padding: 10px; box-sizing: border-box;}
 }
 
 /* 배달장소 변경 바텀시트 */
