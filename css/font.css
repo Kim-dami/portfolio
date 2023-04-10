@@ -2,48 +2,48 @@
 
 @font-face {
     font-family: Pretendard-Black;
-    src: url(font/Pretendard-Black.otf);
-    src: url(font/Pretendard-Black.otf) format('opentype');
+    src: url(font/Pretendard-Black.woff);
+    src: url(font/Pretendard-Black.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Pretendard-ExtraBold;
-    src: url(font/Pretendard-ExtraBold.otf);
-    src: url(font/Pretendard-ExtraBold.otf) format('opentype');
+    src: url(font/Pretendard-ExtraBold.woff);
+    src: url(font/Pretendard-ExtraBold.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Pretendard-Bold;
-    src: url(font/Pretendard-Bold.otf);
-    src: url(font/Pretendard-Bold.otf) format('opentype');
+    src: url(font/Pretendard-Bold.woff);
+    src: url(font/Pretendard-Bold.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Pretendard-Medium;
-    src: url(font/Pretendard-Medium.otf);
-    src: url(font/Pretendard-Medium.otf) format('opentype');
+    src: url(font/Pretendard-Medium.woff);
+    src: url(font/Pretendard-Medium.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Pretendard-Regular;
-    src: url(font/Pretendard-Regular.otf);
-    src: url(font/Pretendard-Regular.otf) format('opentype');
+    src: url(font/Pretendard-Regular.woff);
+    src: url(font/Pretendard-Regular.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: Pretendard-Light;
-    src: url(font/Pretendard-Light.otf);
-    src: url(font/Pretendard-Light.otf) format('opentype');
+    src: url(font/Pretendard-Light.woff);
+    src: url(font/Pretendard-Light.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
