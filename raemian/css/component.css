@@ -12,6 +12,9 @@
 	보더컬러 : #F0F0F0
 	배경컬러 : #F8F8F8, #F0F0F0
 ---------------------------------------------*/
+/* 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 /* 전역스타일 */
 html,body{height: 100%; background-color: #FFFFFF; color: #505050; font-family: Pretendard; font-size: 14px; font-weight: 500;}
 .bgWhite{background-color: #FFFFFF;}

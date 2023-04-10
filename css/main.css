@@ -26,7 +26,7 @@
 body{font-family: Pretendard; font-weight: 500; color:#505050;}
 header{position:fixed; top:0; left:0; z-index:100;}
 header h1{position:relative;}
-header h1 a{position:relative; line-height:24px; padding:40px 100px; font-family: Pretendard; font-weight: 700; font-size:24px; text-align:center;}
+header h1 a{position:relative; line-height:24px; padding:40px 100px; font-weight: 700; font-size:24px; text-align:center;}
 header h1.bg_black .logo_familyname{color:#fff;}
 header h1.bg_white .logo_familyname{color:#303030;}
 header h1 .logo_givenname{color:#1853fe;}
@@ -35,17 +35,17 @@ header h1 .logo_givenname{color:#1853fe;}
 nav{position:fixed; top:0; right:150px; z-index:100;}
 nav ul{position:relative;}
 nav ul li{position:relative; display:inline-block;;}
-nav ul li a{position:relative; line-height:24px; padding:40px 25px; font-family: Pretendard; font-weight: 500; font-size:16px; text-align:center; opacity:0.8;}
+nav ul li a{position:relative; line-height:24px; padding:40px 25px; font-weight: 500; font-size:16px; text-align:center; opacity:0.8;}
 nav ul.bg_black li a{color:#fff;}
 nav ul.bg_white li a{color:#101010;}
-nav ul li a.active{color:#1853fe; font-family: Pretendard; font-weight: 700; opacity:1;}
+nav ul li a.active{color:#1853fe; font-weight: 700; opacity:1;}
 
 /* 홈 */
 #Home{position:relative;}
 #Home video{position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.2;}
 #Home .home_typo{position:absolute; top:50%; left:100px; margin-top:-150px;}
 #Home .home_typo .typo_bar{width:40px; height:10px; background:#1853fe; margin-bottom:25px;}
-#Home .home_typo h2{height:70px; line-height:70px; font-family: Pretendard; font-weight: 700; color:#fff; font-size:60px;}
+#Home .home_typo h2{height:70px; line-height:70px; font-weight: 700; color:#fff; font-size:60px;}
 #Home .home_typo .portfolio_stroke {position:relative; width:897px; height:122px; margin-top:35px;}
 #Home .home_typo .portfolio_stroke path {fill:none; stroke:#1853FE; stroke-width:5; stroke-miterlimit:10; stroke-dasharray:550; stroke-dashoffset:550;}
 #Home .srcoll_line{position:absolute; left:50%; bottom:100px; width:2px; height:0; margin-left:-1px; background:#fff; opacity:0.5;}
@@ -89,13 +89,13 @@ nav ul li a.active{color:#1853fe; font-family: Pretendard; font-weight: 700; opa
 #About .about_wrap .about_column:nth-child(1){margin-right:80px;}
 #About .about_wrap .about_my_img{width:300px; margin:35px 0;}
 #About .about_wrap .about_txt{width:100%; text-align:center;}
-#About .about_wrap .about_txt .name{font-family: Pretendard; font-weight: 900; height:30px; line-height:30px; font-size:30px; color:#1853FE; margin-bottom:7px;}
-#About .about_wrap .about_txt .birth{font-family: Pretendard; font-weight: 500; height:16px; line-height:16px; font-size:16px; color:#505050; letter-spacing:-0.5px;}
+#About .about_wrap .about_txt .name{font-weight: 900; height:30px; line-height:30px; font-size:30px; color:#1853FE; margin-bottom:7px;}
+#About .about_wrap .about_txt .birth{font-weight: 500; height:16px; line-height:16px; font-size:16px; color:#505050; letter-spacing:-0.5px;}
 #About .about_wrap .about_dl{position:relative; margin-bottom:35px;}
 #About .about_wrap .about_dl:last-child{margin-bottom:0px}
-#About .about_wrap .about_dt{height:18px; line-height:18px; margin-bottom:15px; font-family: Pretendard; font-weight: 700; font-size:18px; color:#303030;}
-#About .about_wrap .about_dd{line-height:24px; font-family: Pretendard; font-weight: 500; font-size:14px; color:#505050;}
-#About .about_wrap .about_dd .date{font-family: Pretendard; font-weight: 300; font-size:13px; color:#A0A0A0;}
+#About .about_wrap .about_dt{height:18px; line-height:18px; margin-bottom:15px; font-weight: 700; font-size:18px; color:#303030;}
+#About .about_wrap .about_dd{line-height:24px; font-weight: 500; font-size:14px; color:#505050;}
+#About .about_wrap .about_dd .date{font-weight: 300; font-size:13px; color:#A0A0A0;}
 #About .about_wrap .history_dd{margin-bottom: 15px; line-height:20px;}
 #About .about_wrap .history_dd .date{margin-bottom: 3px;}
 #About .about_wrap .history_dd:last-child{margin-bottom:0px;}
@@ -148,9 +148,9 @@ nav ul li a.active{color:#1853fe; font-family: Pretendard; font-weight: 700; opa
 #Projects .projects_card:last-child{float: right;}
 #Projects .projects_card .card_img{width:100%; height: 250px; border-radius: 10px 10px 0 0; object-fit: contain; background-color: #F0F0F0;}
 #Projects .projects_card .card_txt{width:100%; padding:30px 20px; box-sizing: border-box;}
-#Projects .projects_card .card_title{font-family: Pretendard; font-weight: 900;height:30px; line-height:30px; font-size:30px; color:#909090;}
-#Projects .projects_card .card_content{font-family: Pretendard; font-weight: 500; height:16px; line-height:16px; font-size:16px; color:#505050; margin-top:12px;}
-#Projects .projects_card .card_more{display:none; font-family: Pretendard; font-weight: 700; position: absolute; bottom: 32px; right: 20px; height:18px; line-height:18px; margin-top: -9px; font-size:18px; color:#303030; letter-spacing:4px;}
+#Projects .projects_card .card_title{font-weight: 900;height:30px; line-height:30px; font-size:30px; color:#909090;}
+#Projects .projects_card .card_content{font-weight: 500; height:16px; line-height:16px; font-size:16px; color:#505050; margin-top:12px;}
+#Projects .projects_card .card_more{display:none; font-weight: 700; position: absolute; bottom: 32px; right: 20px; height:18px; line-height:18px; margin-top: -9px; font-size:18px; color:#303030; letter-spacing:4px;}
 #Projects .projects_card .card_more img{vertical-align:top; margin:5px 0 0 4px;}
 #Projects .projects_card:hover{margin-top:0; border:3px solid #1853fe;}
 #Projects .projects_card:hover .card_title{color:#1853fe}
