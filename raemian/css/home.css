@@ -166,7 +166,7 @@
 
 @media (min-width: 1080px){
     #mealPlan .sectionInfo .contentInfo .break{display: unset;}
-    #popService .bgPopService{width: 400px; margin-top: -360px; margin-left: -200px; padding: 10px; box-sizing: border-box;}
+    #popService .bgPopService{width: 400px; margin-top: -300px; margin-left: -200px; padding: 10px; box-sizing: border-box;}
 }
 
 /* 정기배달 메뉴 소개 팝업 */
