@@ -1,0 +1,223 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : component
+	설　명 : 전역스타일 및 컴포넌트
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+/*---------------------------------------------
+	메인컬러 : #009DAD
+	폰트컬러 : #131313, #505050, #A0A0A0
+	보더컬러 : #F0F0F0
+	배경컬러 : #F8F8F8, #F0F0F0
+---------------------------------------------*/
+/* 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 전역스타일 */
+html,body{height: 100%; background-color: #FFFFFF; color: #505050; font-family: Pretendard; font-size: 14px; font-weight: 500;}
+.bgWhite{background-color: #FFFFFF;}
+.bgGray{background-color: #F8F8F8;}
+.bgDisable{background-color: #A0A0A0!important;}
+.fontDisable{color: #A0A0A0!important;}
+.bgMain{background-color: #009DAD!important;}
+.fontMain{color: #009DAD!important;}
+.borderMain{border-color: #009DAD!important; border-style: solid;}
+
+/* 헤더 */
+header{position: absolute; top: 0; right: 0; left: 0; z-index: 2000; width: 100%; height: auto; background-color: #FFFFFF; box-shadow: 0 1px 4px rgba(0,0,0,6%); overflow: hidden;}
+header .linkBack{position: absolute; top: 0; left: 0; z-index: 10; width: 50px; height: 50px; line-height: 50px; text-align: center;}
+header .linkBack:focus{background-color: #F8F8F8;}
+header .linkBack .iconBack{width: 16px; height: 16px; margin-top: 17px; vertical-align: top;}
+header .linkBack .iconBack rect{fill: none;}
+header .linkBack .iconBack path{fill: none; stroke: #505050; stroke-width: 1;}
+header h1{position: relative; width: 100%; height: 50px; line-height: 50px; color: #131313; font-size:1.14rem; font-weight: 600; text-align: center;}
+
+/* 메인 */
+main{position: relative; width: 100%; height: 100%; box-sizing: border-box;}
+main .bgContent{position: relative; width:100%; height: 100%; overflow-y: auto;}
+main h2{position: relative; width: 100%; height: auto; line-height: 1.42rem; color:#131313; font-size: 1.42rem; font-weight: 600;}
+main h3{position: relative; width: 100%; height: auto; line-height: 1.14rem; color:#131313; font-size: 1.14rem; font-weight: 600;}
+
+/* 하단 고정*/
+#bottomFix{position: absolute; right: 0; bottom: 0; left: 0; z-index: 1000; width: 100%; height: auto;}
+
+/* 하단 고정 네비 */
+nav{position: relative; z-index: 100; width: 100%; height: auto; background-color: #FFFFFF; box-shadow: 0 -1px 4px rgba(0,0,0,6%); overflow: hidden;}
+nav:after{content: ""; display: block; clear: both;}
+nav .linkNav{float: left; width:25%; height: 50px; background-color: #FFFFFF; text-align: center;}
+nav .linkNav:hover,
+nav .linkNav:focus{background-color: #F8F8F8;}
+nav .linkNav .iconNav{width: 16px; height: 16px; margin:9px 0 2px 0;}
+nav .linkNav .iconNav .areaIcon{fill: none;}
+nav .linkNav .iconNav .stroke{fill: none; stroke: #A0A0A0; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1.2px;}
+nav .linkNav .iconNav .fill{fill: none; stroke: #A0A0A0; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1.2px;}
+nav .linkNav.active .iconNav .stroke{stroke: #009DAD;}
+nav .linkNav.active .iconNav .fill{fill: #009DAD; stroke: #009DAD;}
+nav .linkNav .txtNav{line-height: 0.86rem; color: #A0A0A0; font-size: 0.86rem;}
+nav .linkNav.active .txtNav{color: #009DAD;}
+
+/* 라스트 없음 */
+.sectionNone{position: relative; width: 100%; height: auto; padding: 100px 0; text-align: center;}
+.sectionNone .iconNone{width: 55px; height: 55px; margin-bottom: 20px; vertical-align: top; }
+.sectionNone .iconNone path{fill: #D8D8D8;}
+.sectionNone .iconNone circle{fill: none; stroke: #D8D8D8; stroke-width: 3px;}
+.sectionNone .textNone{color: #A0A0A0; font-size: 1.14rem;}
+
+/* 전역 아이콘 */
+.iconMore{width: 16px; height: 16px; vertical-align: top;}
+.iconMore rect{fill: none;}
+.iconMore path{fill: none; stroke: #505050; stroke-width: 1;}
+.iconUnfold{width: 16px; height: 16px; vertical-align: top;}
+.iconUnfold rect{fill: none;}
+.iconUnfold path{fill: none; stroke: #505050; stroke-width: 1;}
+.iconFold{width: 16px; height: 16px; vertical-align: top;}
+.iconFold rect{fill: none;}
+.iconFold path{fill: none; stroke: #505050; stroke-width: 1;}
+
+/* 하단 라인 인풋 */
+.setBottomLine{position: relative; width: 100%; height: auto;}
+.setBottomLine .inputBottomLine{position: relative; width: 100%; height: auto; line-height: 1rem; padding: 14px 0; border-bottom: 1px solid #F0F0F0; border-radius: 0; background-color: transparent; color: #505050;}
+.setBottomLine .inputBottomLine:focus {border-bottom: 1px solid #131313;}
+
+/* 보더 인풋 */
+.setBorder{position: relative; width: 100%; height: auto;}
+.setBorder .inputBorder{position: relative; width: 100%; height: auto; line-height: 1rem; padding: 14px; box-sizing: border-box; border: 1px solid #F0F0F0; border-radius:5px; background-color: #FFFFFF; color: #505050;}
+.setBorder .inputBorder:focus {border: 1px solid #131313;}
+
+/* 라디어스 체크박스 */
+.setRadius{position: relative; width: 100%; height: auto;}
+.setRadius .inputRadius{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0;}
+.setRadius .labelRadius{display: block; width:100%; height: auto; line-height: 16px;}
+.setRadius .labelRadius .iconRadius{width: 16px; height: 16px; margin-right: 5px; vertical-align: top;}
+.setRadius .labelRadius .iconRadius rect{fill: none;}
+.setRadius .labelRadius .iconRadius .checkbox{fill: #FFFFFF; stroke: #A0A0A0; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1px;}
+.setRadius .labelRadius .iconRadius .check{fill: none; stroke: #FFFFFF; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1px;}
+.setRadius .inputRadius:checked + .labelRadius .iconRadius .checkbox{fill: #009DAD; stroke: #009DAD;}
+
+/* 사각 체크박스 */
+.setSquare{position: relative; width: 100%; height: auto;}
+.setSquare .inputSquare{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0;}
+.setSquare .labelSquare{display: block; width:100%; height: auto; line-height: 16px;}
+.setSquare .labelSquare .iconSquare{width: 16px; height: 16px; margin-right: 5px; vertical-align: top;}
+.setSquare .labelSquare .iconSquare rect{fill: #FFFFFF; stroke: #D8D8D8; stroke-linejoin: round; stroke-linecap: round; stroke-width: 1px;}
+.setSquare .labelSquare .iconSquare path{fill: #FFFFFF; stroke: none;}
+.setSquare .inputSquare:checked + .labelSquare rect{fill: #009DAD; stroke: #009DAD;}
+.setSquare .inputSquare:checked + .labelSquare path{fill: #FFFFFF;}
+.setSquare .inputSquare:disabled + .labelSquare rect{fill: #F0F0F0; stroke: #F0F0F0;}
+.setSquare .inputSquare:disabled + .labelSquare path{fill: #F0F0F0;}
+
+/* 원 두개 라디오 */
+.setTwoCircles{position: relative; width: 100%; height: auto;}
+.setTwoCircles .inputTwoCircles{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0;}
+.setTwoCircles .labelTwoCircles{display: block; width:100%; height: auto; line-height: 16px;}
+.setTwoCircles .labelTwoCircles .iconTwoCircles{width: 16px; height: 16px; margin-right: 10px; vertical-align: top;}
+.setTwoCircles .labelTwoCircles .iconTwoCircles rect{fill: none;}
+.setTwoCircles .labelTwoCircles .iconTwoCircles path{fill: #D8D8D8;}
+.setTwoCircles .labelTwoCircles .iconTwoCircles circle{fill: none;}
+.setTwoCircles .inputTwoCircles:checked + .labelTwoCircles .iconTwoCircles path,
+.setTwoCircles .inputTwoCircles:checked + .labelTwoCircles .iconTwoCircles circle
+{fill: #009DAD;}
+
+/* 원형 체크 아이콘 */
+.iconCircle{width: 16px; height: 16px;}
+.iconCircle rect{fill: none;}
+.iconCircle circle{fill: #009dad;}
+.iconCircle path{fill: #FFFFFF;}
+
+/* 풀 버튼 */
+.sectionFull{position: relative; width: 100%; height: auto; padding: 15px 20px 18px 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.setFull{position: relative; width: 100%; height: auto;}
+.setFull .btnFull{display: block; width: 100%; height: 40px; line-height: 40px; border-radius: 5px; color: #F0F0F0; font-size: 1.14rem; font-weight: 600; text-align: center;}
+
+/* 반 버튼 */
+.sectionHalf{position: relative; width: 100%; height: auto; padding: 15px 20px 18px 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.sectionHalf:after{content: ""; display: block; clear: both;}
+.setHalf{position: relative; width: 50%; height: auto; box-sizing: border-box;}
+.setHalf:first-child{float: left; padding-right: 5px;}
+.setHalf:last-child{float: right; padding-left: 5px;}
+.sectionHalf .btnHalf{display: block; width: 100%; height: 40px; border-radius: 5px; font-size: 1.14rem; font-weight: 600; text-align: center;}
+.sectionHalf .borderMain{line-height: 38px; border-width: 1px; background-color: #FFFFFF;}
+.sectionHalf .bgMain{line-height: 40px; color: #F0F0F0;}
+
+/* 금액 버튼 */
+#bottomFix .sectionAmount{position: relative; z-index: 10; width: 100%; height: auto; padding:8px 20px 8px 120px; border-top: 1px solid #E0E0E0; box-sizing: border-box; background-color: #F8F8F8;}
+#bottomFix .sectionAmount .leftAmount{position: absolute; top: 0; left: 20px; bottom: 0; padding: 12px 0;}
+#bottomFix .sectionAmount .leftAmount .quantity{line-height: 0.86rem; margin-bottom: 4px; color: #A0A0A0; font-size: 0.86rem;}
+#bottomFix .sectionAmount .leftAmount .amount{line-height: 1.14rem; color: #131313; font-size: 1.14rem; font-weight: 600; letter-spacing: -0.5px;}
+#bottomFix .sectionAmount .sectionFull,
+#bottomFix .sectionAmount .sectionHalf{padding: 0; background-color: transparent;}
+
+/* 주문뱃지 */
+.badgeOrder{position: relative; width: 125%; height: auto; line-height: 0.65rem; padding: 5px 1px 5px 5px; border: 1px solid #F8F8F8; box-sizing: border-box; color: #131313; font-size: 0.72rem; font-weight: 600; text-align: left; letter-spacing: -0.5px; word-break: keep-all; transform: scale(0.8); transform-origin: left;}
+.badgeOrder:after{content: ""; display: block; position: absolute; top: 0; left: -1px; bottom: 0; width: 3px; border-radius: 3px;}
+.badgeOrder.subscribe:after{background-color: #009dad;}
+.badgeOrder.add:after{background-color: #F7A639;}
+
+/* 바텀시트 */
+#bottomSheet{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0,0,0,60%);}
+#bottomSheet .bgBottomSheet{position: fixed; right: 0; bottom: 0; left: 0; width: 100%; height: auto; max-height: 500px; border-radius: 20px 20px 0 0; background-color: #FFFFFF; overflow-x: hidden; overflow-y: auto;}
+#bottomSheet .bgBottomSheet .sectionSheetFold{position: relative; width: 100%; height: auto;}
+#bottomSheet .bgBottomSheet .setSheetFold{position: relative; width: 100%; height: auto;}
+#bottomSheet .bgBottomSheet .btnSheetFold{display: block; width: 100%; height: 40px; line-height: 40px; text-align: center;}
+#bottomSheet .bgBottomSheet .btnSheetFold img{vertical-align: top; width: 40px; height: 10px; margin-top: 15px;}
+#bottomSheet .bgBottomSheet h3{position: relative; width: 100%; height: auto; line-height: 1.14rem; padding: 0 20px; box-sizing: border-box; color:#131313; font-size: 1.14rem; font-weight: 600;}
+#bottomSheet .sectionRadioCheck{position: relative; width: 100%; padding: 20px 20px 85px 20px; box-sizing: border-box;}
+#bottomSheet .sectionRadioCheck .setTwoCircles{margin-bottom: 20px;}
+#bottomSheet .sectionRadioCheck .setTwoCircles:last-child{margin-bottom: 0;}
+#bottomSheet .bgBottomSheet .sectionFull{position: fixed; right: 0; bottom: 0; left: 0; z-index: 10; padding: 10px 20px; border-top: 1px solid #F0F0F0;}
+#bottomSheet .bgBottomSheet .sectionHalf{position: fixed; right: 0; bottom: 0; left: 0; z-index: 10; padding: 10px 20px; border-top: 1px solid #F0F0F0;}
+
+/* 고객센터 */
+.sectionCs{position: relative; width: 100%; height: auto; padding: 20px; box-sizing: border-box; background-color: #FFFFFF;}
+.sectionCs .titleCs{width: 100%; height: auto; line-height: 16px; margin-bottom: 15px; clear: both;}
+.sectionCs .titleCs .time{margin-left: 5px; color: #A0A0A0; font-size: 0.86rem;}
+.sectionCs .areaLink{position: relative; width: 100%; height: auto;}
+.sectionCs .areaLink:after{content: ""; display: block; clear: both;}
+.sectionCs .areaFull{position: relative; width: 100%; box-sizing: border-box;}
+.sectionCs .linkCs{display: block; width: 100%; height: 35px; line-height: 33px; border: 1px solid #F0F0F0; border-radius: 5px; box-sizing: border-box; background-color: #FFFFFF; text-align: center;}
+.sectionCs .linkCs:hover{background-color: #F8F8F8;}
+.sectionCs .linkCs .iconCall{width: 16px; height: 16px; vertical-align: top; margin-top: 9px;}
+.sectionCs .linkCs .iconCall rect{fill: none;}
+.sectionCs .linkCs .iconCall path{fill: #505050;}
+.sectionCs .linkCs .iconKakao{width: 16px; height: 16px; vertical-align: top; margin-top: 9px; margin-left: -2px;}
+.sectionCs .linkCs .iconKakao rect{fill: none;}
+.sectionCs .linkCs .iconKakao path{fill: #505050;}
+
+/* 데이트픽커 */
+.sectionPicker{position: absolute; z-index: 10; height: auto; padding: 0 15px; border-radius: 5px; background-color: #FFFFFF; box-shadow: 0 2px 8px rgba(0,0,0,12%); overflow: hidden;}
+.sectionPicker .areaCurrent{position: relative; width:100%; height: 45px; line-height: 45px; border-bottom: 1px solid #F0F0F0; color: #131313; font-weight: 600; text-align: center;}
+.sectionPicker .areaCurrent .setPrevious,
+.sectionPicker .areaCurrent .setNext{position: absolute; top: 5px; bottom: 0; z-index: 10; width: 35px; height: 35px; line-height: 45px; text-align: center;}
+.sectionPicker .areaCurrent .setPrevious{left: 0;}
+.sectionPicker .areaCurrent .setNext{right: 0;}
+.sectionPicker .areaCurrent .btnPrevious,
+.sectionPicker .areaCurrent .btnNext{display: block; width: 100%; height: 100%;}
+.sectionPicker .areaCurrent .btnPrevious:hover,
+.sectionPicker .areaCurrent .btnNext:hover{background-color: #F8F8F8;}
+.sectionPicker .areaCurrent svg{width: 16px; height: 16px;}
+.sectionPicker .areaCurrent rect{fill: none;}
+.sectionPicker .areaCurrent path{fill: none; stroke: #505050; stroke-width: 1;}
+.sectionPicker .areaDateTable{position: relative; width:100%; height: auto; margin: 7px 0;}
+.sectionPicker .areaDateTable th{position: relative; width: 14.28%; height: 32px; line-height: 32px; color: #505050; font-size: 0.86rem; font-weight: 500; text-align: center;}
+.sectionPicker .areaDateTable td{position: relative; width: 14.28%; height: auto;}
+.sectionPicker .areaDateTable .inputDate{position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: 0;}
+.sectionPicker .areaDateTable .labelDate{display: block; width: 100%; height: 32px; line-height: 32px; border-radius: 5px; box-sizing: border-box; color: #505050; font-size: 0.86rem; text-align: center;}
+.sectionPicker .areaDateTable .inputDate:disabled + .labelDate{color: #A0A0A0;}
+.sectionPicker .areaDateTable .inputDate:hover + .labelDate{background-color: #F8F8F8;}
+.sectionPicker .areaDateTable .checked + .labelDate{line-height: 30px; border-width: 1px;}
+.sectionPicker .areaButton{position: relative; width:100%; height: auto; padding: 10px 0; border-top: 1px solid #F0F0F0; text-align: right;}
+.sectionPicker .areaButton .setPickerCancel{display: inline-block; margin-right: 5px;}
+.sectionPicker .areaButton .btnPickerCancel{width: 80px; height: 32px; line-height: 30px; border-width: 1px; border-radius: 5px; box-sizing: border-box; background-color: #FFFFFF; font-weight: 600; text-align: center;}
+.sectionPicker .areaButton .setPicker{display: inline-block;}
+.sectionPicker .areaButton .btnPicker{width: 80px; height: 32px; line-height: 32px; border-radius: 5px; color: #FFFFFF; font-weight: 600; text-align: center;}
+
+/* 반응형 웹사이즈 */
+@media (min-width: 1080px){
+    html,body{background-color: #F8F8F8; font-size: 16px;}
+    main{width: 1080px; margin-left: auto; margin-right: auto;}
+    #bottomSheet .bgBottomSheet{width: 1080px; left: 50%; margin-left: -540px;}
+    #bottomSheet .bgBottomSheet .sectionFull{width: 1080px; left: 50%; margin-left: -540px;}
+    #bottomSheet .bgBottomSheet .sectionHalf{width: 1080px; left: 50%; margin-left: -540px;}
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>입장하기</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/component.css">
+    <link rel="stylesheet" type="text/css" href="../css/enter.css">
+    <script type="text/javascript" src="../js/enter.js"></script>
+</head>
+<body>
+    <main id="enter" class="bgWhite">
+        <div class="bgContent bgWhite">
+            <div class="title">
+                <div class="subtitle">한번만 신청하면 알아서 매주 정기배달</div>
+                푸드 컨시어지 서비스
+            </div>
+            <section class="sectionInput">
+                <fieldset class="setBottomLine">
+                    <input type="text" class="inputBottomLine" id="userNumber" placeholder="회원번호" value="" tabindex="1" onkeyup="enterCheck();"/>
+                </fieldset>
+                <fieldset class="setBottomLine">
+                    <input type="text" class="inputBottomLine" id="enterCode" placeholder="입장코드" value="" tabindex="2" onkeyup="enterCheck();"/>
+                </fieldset>
+            </section>
+            <section class="sectionSubmit">
+                <fieldset class="setFull">
+                    <button class="btnFull bgDisable" id="btnEnter" disabled="disabled" tabindex="3" onclick="enterLink();">입장하기</button>
+                </fieldset>
+            </section>
+        </div>
+        <div id="bottomFix">
+            <section class="sectionCs">
+                <div class="titleCs">
+                    고객센터<span class="time">06:00 ~ 22:00 연중무휴 (설날 ∙추석 연휴제외)</span>
+                </div>
+                <div class="areaLink">
+                    <div class="areaFull">
+                        <a href="tel:1668-4175" class="linkCs">
+                            <svg viewBox="0 0 16 16" class="iconCall">
+                                <g>
+                                    <rect width="16" height="16"/>
+                                    <path d="m13.66,11.4c-.64-.56-1.35-1.03-2.1-1.41-.63-.3-.86-.3-1.31.02-.37.27-.61.52-1.04.43-.8-.36-1.51-.89-2.09-1.55-.66-.58-1.19-1.29-1.55-2.09-.09-.43.16-.67.43-1.04.32-.45.33-.68.02-1.31-.38-.76-.85-1.47-1.41-2.1-.46-.46-.56-.36-.82-.27-.26.11-.51.24-.75.4-.39.22-.7.55-.9.95-.18.38-.38,1.1.66,2.97.77,1.43,1.76,2.74,2.91,3.88h0c1.15,1.16,2.46,2.14,3.89,2.91,1.87,1.05,2.58.84,2.97.67.4-.2.73-.51.95-.9.16-.24.29-.49.4-.75.08-.25.19-.35-.27-.81Z" />
+                                </g>
+                            </svg>
+                            1668-4175
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="popProject" onclick="closeProject();">
+        <div class="bgPopProject">
+            <button class="btnClosePop">
+                <svg viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="10"/>
+                    <line x1="6.19" y1="5.91" x2="13.64" y2="13.55"/>
+                    <line x1="6.19" y1="13.55" x2="13.64" y2="5.91"/>
+                </svg>
+            </button>
+            <div class="titleProject">래미안 푸드컨시어지</div>
+            <div class="bodyProject">
+                <dl>
+                    <dt>프로젝트 목표</dt>
+                    <dd>원하는 요일, 원하는 메뉴와 수량으로 정기배달으르 이용하는 서비스 개발</dd>
+                </dl>
+                <dl>
+                    <dt>기술</dt>
+                    <dd>#HTML #CSS #JavaScript</dd>
+                </dl>
+                <dl>
+                    <dt>작업사항</dt>
+                    <dd>
+                        <p>입장하기 페이지 내 회원번호, 입장코드 입력시 버튼 활성화</p>
+                        <p>정기배달 페이지 내 서비스 이용안내 팝업</p>
+                        <p>정기배달 페이지 내 메뉴소개 팝업</p>
+                        <p>메뉴소개 팝업 내 메뉴별 소개 출력</p>
+                        <p>정기배달 미신청시 알럿</p>
+                        <p>요일, 메뉴, 수량 선택시 결제예상 금액 출력</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <style>
+        #popProject{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0,0,0,60%);}
+        #popProject .bgPopProject{position: fixed; top: 50%; left: 50%; width: 320px; height: auto; margin-top: -250px; margin-left: -160px; border-radius: 5px; background-color: #FFFFFF; overflow: hidden;}
+        #popProject .bgPopProject .btnClosePop{position: absolute; top: 0; right: 0; z-index: 10; padding: 20px;}
+        #popProject .bgPopProject .btnClosePop svg{width: 20px; height: 20px; vertical-align: top; transform: scale(1.25);}
+        #popProject .bgPopProject .btnClosePop circle{fill: #e5ebff;}
+        #popProject .bgPopProject .btnClosePop line{fill: none; stroke: #1853fe; stroke-width: 1.5; stroke-linecap: round;
+            stroke-miterlimit: 4;}
+        #popProject .bgPopProject .titleProject{position: relative; width: 100%; height: auto; line-height: 20px; padding: 20px; box-sizing: border-box; color: #1853fe; font-size: 20px; font-weight: bold;}
+        #popProject .bgPopProject .bodyProject{position: relative; width: 100%; height: auto; padding: 10px 20px 20px 20px; box-sizing: border-box; overflow-y: auto;}
+        #popProject .bgPopProject .bodyProject dl{width: 100%; height: auto; margin-bottom: 20px;}
+        #popProject .bgPopProject .bodyProject dl:last-child{margin-bottom: 0;}
+        #popProject .bgPopProject .bodyProject dt{width: 100%; height: auto; line-height: 16px; margin-bottom: 10px; color: #131313; font-size: 16px; font-weight: bold;}
+        #popProject .bgPopProject .bodyProject dd{width: 100%; height: auto; line-height: 18px; padding: 0 5px; box-sizing: border-box; color: #505050; font-size: 14px;}
+        #popProject .bgPopProject .bodyProject dd p{position: relative; width: 100%; margin-bottom: 5px; padding-left: 10px; box-sizing: border-box;}
+        #popProject .bgPopProject .bodyProject dd p:before{content: "-"; position: absolute; top: 0; left: 0; line-height: 18px;}
+        #popProject .bgPopProject .bodyProject dd p:last-child{margin-bottom: 0;}
+    </style>
+    <script>
+        function closeProject(){
+            document.getElementById('popProject').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

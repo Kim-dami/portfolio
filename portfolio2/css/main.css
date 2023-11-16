@@ -1,0 +1,171 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : main
+	설　명 : 포트폴리오 메인페이지
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 화면 가운데 정렬 */
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+/* 헤더 */
+body{font-family: Pretendard; font-weight: 500; color:#505050;}
+header{position:fixed; top:0; left:0; z-index:100;}
+header h1{position:relative;}
+header h1 a{position:relative; line-height:24px; padding:40px 100px; font-weight: 700; font-size:24px; text-align:center;}
+header h1.bg_black .logo_familyname{color:#fff;}
+header h1.bg_white .logo_familyname{color:#303030;}
+header h1 .logo_givenname{color:#1853fe;}
+
+/* 네비 */
+nav{position:fixed; top:0; right:150px; z-index:100;}
+nav ul{position:relative;}
+nav ul li{position:relative; display:inline-block;;}
+nav ul li a{position:relative; line-height:24px; padding:40px 25px; font-weight: 500; font-size:16px; text-align:center; opacity:0.8;}
+nav ul.bg_black li a{color:#fff;}
+nav ul.bg_white li a{color:#101010;}
+nav ul li a.active{color:#1853fe; font-weight: 700; opacity:1;}
+
+/* 홈 */
+#Home{position:relative;}
+#Home video{position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.2;}
+#Home .home_typo{position:absolute; top:50%; left:100px; margin-top:-150px;}
+#Home .home_typo .typo_bar{width:40px; height:10px; background:#1853fe; margin-bottom:25px;}
+#Home .home_typo h2{height:70px; line-height:70px; font-weight: 700; color:#fff; font-size:60px;}
+#Home .home_typo .portfolio_stroke {position:relative; width:897px; height:122px; margin-top:35px;}
+#Home .home_typo .portfolio_stroke path {fill:none; stroke:#1853FE; stroke-width:5; stroke-miterlimit:10; stroke-dasharray:550; stroke-dashoffset:550;}
+#Home .srcoll_line{position:absolute; left:50%; bottom:100px; width:2px; height:0; margin-left:-1px; background:#fff; opacity:0.5;}
+#Home.ani .home_typo .portfolio_stroke path{animation: svg_stroke 1s ease-in forwards;}
+#Home.ani .srcoll_line{animation: scroll_stroke 0.2s ease-in forwards; animation-delay:1s;}
+@keyframes svg_stroke {
+    0%{stroke-dashoffset:550;}
+    100% {stroke-dashoffset:0;}
+}
+@keyframes scroll_stroke {
+    0%{height:0; bottom:100px;}
+    100% {height:100px; bottom:0;}
+}
+.ex_portfolio_stroke{display:none;}
+ /* IE10+ */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .portfolio_stroke{display:none;}
+    .ex_portfolio_stroke{display:block; position:relative; width:897px; height:122px; margin-top:25px;}
+    .ex_portfolio_stroke .st0{fill:none;stroke:#1853FE;stroke-width:5;stroke-miterlimit:10;}
+}
+@media screen and (max-width: 1024px){
+    header h1 a{padding: 30px 20px;}
+    nav{right: 10px;}
+    nav ul li a{padding: 30px 10px;}
+    #Home .home_typo{left: 20px; margin-top:  -180px;}
+    #Home .home_typo .typo_bar {width: 30px; height: 6px; margin-bottom: 15px;}
+    #Home .home_typo h2{height: 30px; line-height: 30px; font-size: 30px;}
+    #Home .home_typo .portfolio_stroke {transform: scale(0.36); transform-origin: left top; margin-top: 25px;}
+}
+
+/* 자기소개 */
+#About{position:relative;}
+#About h3{position:relative; text-align:center;}
+#About h3 img{height:32px;}
+#About .about_wrap{position:relative; width:1000px; margin:60px auto 0 auto;}
+#About .about_wrap::after{content:""; display:block; clear:both;}
+#About .about_wrap .about_left{float:left; width: 450px; text-align: center;}
+#About .about_wrap .about_right{float:right;}
+#About .about_wrap .about_right:after{content: ""; display: block; clear: both;}
+#About .about_wrap .about_column{float: left;}
+#About .about_wrap .about_column:nth-child(1){margin-right:80px;}
+#About .about_wrap .about_my_img{width:300px; margin:35px 0;}
+#About .about_wrap .about_txt{width:100%; text-align:center;}
+#About .about_wrap .about_txt .name{font-weight: 900; height:30px; line-height:30px; font-size:30px; color:#1853FE; margin-bottom:7px;}
+#About .about_wrap .about_txt .birth{font-weight: 500; height:16px; line-height:16px; font-size:16px; color:#505050; letter-spacing:-0.5px;}
+#About .about_wrap .about_dl{position:relative; margin-bottom:35px;}
+#About .about_wrap .about_dl:last-child{margin-bottom:0px}
+#About .about_wrap .about_dt{height:18px; line-height:18px; margin-bottom:15px; font-weight: 700; font-size:18px; color:#303030;}
+#About .about_wrap .about_dd{line-height:24px; font-weight: 500; font-size:14px; color:#505050;}
+#About .about_wrap .about_dd .date{font-weight: 300; font-size:13px; color:#A0A0A0;}
+#About .about_wrap .history_dd{margin-bottom: 15px; line-height:20px;}
+#About .about_wrap .history_dd .date{margin-bottom: 3px;}
+#About .about_wrap .history_dd:last-child{margin-bottom:0px;}
+#About .about_wrap .license_dd .date{margin-right: 7px;}
+#About .about_wrap .skill{position:relative; width:275px; height:14px; line-height:14px; padding:10px 0;}
+#About .about_wrap .skill .skill_graph{position:absolute; top:10px; right:0px;}
+#About .about_wrap .skill .skill_graph .percent{float:left; margin-right:4px; width:14px; height:14px; background:#e0e0e0;}
+#About .about_wrap .skill .skill_fill .fill{animation: percent_fill 0.1s ease-in forwards;}
+@keyframes percent_fill {
+    0%{background:#e0e0e0;}
+    100% {background:#1853fe;}
+}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(2){animation-delay:0.1s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(3){animation-delay:0.2s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(4){animation-delay:0.3s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(5){animation-delay:0.4s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(6){animation-delay:0.5s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(7){animation-delay:0.6s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(8){animation-delay:0.7s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(9){animation-delay:0.8s;}
+#About .about_wrap .skill .skill_fill .fill:nth-of-type(10){animation-delay:0.9s;}
+
+@media screen and (max-width: 1024px){
+    #About h3 img {height: 30px;}
+    #About .about_wrap{width: 100%; margin-top: 50px; padding:  0 20px; box-sizing: border-box;}
+    #About .about_wrap .about_left{float: none; width: 100%;}
+    #About .about_wrap .about_right{float: none; width: 320px; margin: 30px auto 0 auto;}
+    #About .about_wrap .about_column:nth-child(1){margin-right:20px;}
+    #About .about_wrap .about_my_img{display: none;}
+    #About .about_wrap .about_txt .name{display: inline-block; height: 25px; line-height: 25px; font-size: 25px;}
+    #About .about_wrap .about_txt .birth{display: inline-block;}
+    #About .about_wrap .about_dt{height: 16px; line-height: 16px; margin-bottom: 10px; font-size: 16px;}
+    #About .about_wrap .about_dd{font-size: 12px;}
+    #About .about_wrap .about_dd .date{font-size: 10px;}
+    #About .about_wrap .history_dd{line-height: 18px;}
+    #About .about_wrap .skill{width: 170px; height: auto; padding: 0; margin-bottom: 15px;}
+    #About .about_wrap .skill .skill_graph{position: relative; top: 0; margin-top: 10px; width: 100%; height: auto;}
+    #About .about_wrap .skill .skill_graph:after{content: ""; display: block; clear: both;}
+    #About .about_wrap .skill .skill_graph .percent{margin-right: 3px;}
+}
+
+/* 프로젝트 소개 */
+#Projects{position:relative;}
+#Projects h3{position:relative; margin-top: 35px; text-align:center;}
+#Projects h3 img{height:32px;}
+#Projects .projects_wrap{position:relative; width:1000px; margin:60px auto 0 auto;}
+#Projects .projects_wrap:after{content: ""; display: block; clear: both;}
+#Projects .projects_card{position:relative; width:480px; height:auto; border:1px solid #d0d0d0; border-radius:10px; overflow:hidden; box-sizing:border-box;}
+#Projects .projects_card:first-child{float: left;}
+#Projects .projects_card:last-child{float: right;}
+#Projects .projects_card .card_img{width:100%; height: 250px; border-radius: 10px 10px 0 0; object-fit: contain; background-color: #F0F0F0;}
+#Projects .projects_card .card_txt{width:100%; padding:30px 20px; box-sizing: border-box;}
+#Projects .projects_card .card_title{font-weight: 900;height:30px; line-height:30px; font-size:30px; color:#909090;}
+#Projects .projects_card .card_content{font-weight: 500; height:16px; line-height:16px; font-size:16px; color:#505050; margin-top:12px;}
+#Projects .projects_card .card_more{display:none; font-weight: 700; position: absolute; bottom: 32px; right: 20px; height:18px; line-height:18px; margin-top: -9px; font-size:18px; color:#303030; letter-spacing:4px;}
+#Projects .projects_card .card_more img{vertical-align:top; margin:5px 0 0 4px;}
+#Projects .projects_card:hover{margin-top:0; border:3px solid #1853fe;}
+#Projects .projects_card:hover .card_title{color:#1853fe}
+#Projects .projects_card:hover .card_more{display:block;}
+
+@media screen and (max-width: 1024px){
+    #About h3 img {height: 30px;}
+    #Projects .projects_wrap{width: 100%; margin: 50px auto 0 auto; padding: 0 20px; box-sizing: border-box;}
+    #Projects .projects_card{float: none; width: 100%; margin-bottom: 15px;}
+    #Projects .projects_card:last-child{margin-bottom: 0;}
+    #Projects .projects_card .card_img{position: relative; height :150px; border-radius: 10px 10px 0 0;}
+    #Projects .projects_card .card_txt{padding: 15px;}
+    #Projects .projects_card .card_title{height: auto; line-height: 24px; font-size: 16px;}
+    #Projects .projects_card .card_content{height: auto; line-height: 20px; margin-top: 3px; font-size: 12px;}
+    #Projects .projects_card .card_more{position: relative; bottom: unset; right: unset; margin-top: 10px; font-size: 14px;}
+}
+
+

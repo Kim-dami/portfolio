@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : home
+	설　명 : 홈 및 식단 구독설
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+#home{padding: 50px 0;}
+#home .iconMap{width: 16px; height: 16px; vertical-align: top; margin: 16px 4px 0 0;}
+#home .iconMap rect{fill: none;}
+#home .iconMap path{fill: #009dad;}
+#home .iconMap circle{fill: #FFFFFF;}
+
+#home .setRight{position: absolute;}
+#home .btnRight{line-height: 0.86rem; padding: 2px 1px; border-bottom: 1px solid #A0A0A0; background-color: transparent; color: #505050; font-size: 0.86rem; font-weight: 500;}
+
+#home .sectionWeekSelect{position: relative; z-index: 10; width: 100%; height: auto; padding: 15px 10px; box-sizing: border-box; background-color: #F8F8F8;}
+#home .sectionWeekSelect:after{content: ""; display: block; clear: both;}
+#home .sectionWeekSelect .setWeekSelect{display: inline-block; position: relative; margin-left: 5px;}
+#home .sectionWeekSelect .setWeekSelect:first-child{margin-left: 0;}
+#home .sectionWeekSelect .inputWeekSelect{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0;}
+#home .sectionWeekSelect .labelWeekSelect{display: block; width: 90px; height: 32px; line-height: 32px; border-radius: 16px; background-color: #FFFFFF; color: #A0A0A0; font-size: 1.14rem; font-weight: 600; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,12%);}
+#home .sectionWeekSelect .inputWeekSelect:checked + .labelWeekSelect{background-color: #009dad; color: #FFFFFF;}
+#home .sectionWeekSelect .setRight{top: 22px; right: 20px;}
+#home .sectionWeekSelect .contentZoom{position: absolute; right: 15px; top: 50px; padding: 10px; border-radius: 5px; box-sizing: border-box; background-color: #FFFFFF; box-shadow: 0 2px 8px rgba(0,0,0,12%);}
+#home .sectionWeekSelect .linkZoom{position: relative; width: 210px; line-height: 16px; padding: 10px 5px; box-sizing: border-box; font-size: 0.86rem; text-align: left; cursor: pointer;}
+#home .sectionWeekSelect .linkZoom:hover,
+#home .sectionWeekSelect .linkZoom:focus{background-color: #F8F8F8;}
+#home .sectionWeekSelect .iconMore{position: absolute; right: 5px; top:50%; margin-top: -8px;}
+#home .sectionWeekSelect .iconMore path{stroke: #A0A0A0;}
+
+#home .sectionMyOrder{position: relative; width: 100%; height: auto; padding: 0 10px 15px 10px; box-sizing: border-box; background-color: #F8F8F8;}
+#home .sectionMyOrder h3{padding: 0 0 15px 10px;}
+#home .tableWeekly{position: relative; width: 100%; height: auto;}
+#home .tableWeekly td{position: relative; width: 12.5%; border: 1px solid #F0F0F0; background-color: #FFFFFF;}
+#home .tableWeekly .tdDate{height: 44px; vertical-align: middle; text-align: center;}
+#home .tableWeekly .tdTime{height: 47px; vertical-align: middle; text-align: center;}
+#home .tableWeekly .tdMyOrder{height: 47px; vertical-align: top; text-align: center; padding: 2px; box-sizing: border-box;}
+#home .tableWeekly .date{line-height: 0.76rem; margin-top: 3px; margin-bottom: 3px; color: #A0A0A0; font-size: 0.76rem;}
+#home .tableWeekly .dayOfWeek{line-height: 1rem; color: #131313; font-size: 1rem; font-weight: 600;}
+#home .tableWeekly .nameTime{line-height: 1rem; color: #131313; font-size: 1rem; font-weight: 600;}
+#home .tableWeekly .myOrderNone{text-align: center; line-height: 47px; color: #A0A0A0; font-size: 0.76rem;}
+#home .tableWeekly .setMyOrder{width: 100%; height: auto;}
+#home .tableWeekly .btnMyOrder{display: block; position: relative; width: 100%; height: auto; border: none; background-color: transparent; outline: none;}
+
+#home .sectionTimeBelt{position: relative; width: 100%; height: auto; padding: 20px 20px 15px 20px; box-sizing: border-box; background-color: #FFFFFF;}
+#home .sectionTimeBelt h3{margin-bottom: 15px;}
+#home .sectionTimeBelt .setRight{top: 10px; right: 0;}
+#home .sectionTimeBelt .areaTimeBelt{position: relative; width: 100%; height: auto;}
+#home .sectionTimeBelt .areaTimeBelt:after{content: ""; display: block; clear: both;}
+#home .sectionTimeBelt .setTimeBelt{float: left; position: relative; height: auto; box-sizing: border-box;}
+#home .sectionTimeBelt .setTimeBelt:first-child{width: 60%; padding-right: 3px;}
+#home .sectionTimeBelt .setTimeBelt:last-child{width: 40%; padding-left: 3px;}
+#home .sectionTimeBelt .btnTimeBelt{position: relative; width: 100%; height: 40px; line-height: 38px; padding: 0 35px 0 38px; border: 1px solid #F0F0F0; border-radius: 5px; box-sizing: border-box; background-color: #FFFFFF; color: #131313; font-size: 1rem; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+#home .sectionTimeBelt .btnTimeBelt .iconUnfold{position: absolute; top: 11px; right: 11px;}
+#home .sectionTimeBelt .btnTimeBelt .iconTimeBelt{position: absolute; top: 11px; left: 12px; width: 16px; height: 16px;}
+#home .sectionTimeBelt .btnTimeBelt .iconTimeBelt rect{fill: none;}
+#home .sectionTimeBelt .btnTimeBelt .iconTimeBelt path{fill: #009dad; fill-rule: evenodd;}
+#home .sectionTimeBelt .btnTimeBelt .iconTimeBelt circle{fill: none; stroke: #009dad; stroke-width: 1.5px;}
+#home .sectionTimeBelt .btnTimeBelt .iconTimeBelt line{fill: none; stroke: #009dad; stroke-width: 1.5px;}
+#home .sectionTimeBelt .textArrival{line-height: 1rem; padding: 10px 10px 0 10px; box-sizing: border-box; font-size: 0.86rem;}
+#home .sectionTimeBelt .textArrival .fontMain{font-weight: 600;}
+
+#home .sectionType{position: relative; width: 100%; height: auto; margin-bottom: 5px; padding: 0 20px 20px 20px; box-sizing: border-box; background-color: #FFFFFF;}
+#home .sectionType .areaStore{position: relative; width: 100%; height: auto; margin-bottom: 15px; border:1px solid #F0F0F0; border-radius: 5px; box-sizing: border-box; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,12%);}
+#home .sectionType .areaStore:last-child{margin-bottom: 0;}
+#home .sectionType .areaStore .orderIsClosed{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; width: 100%; height: 100%; background-color: rgba(19,19,19,50%);}
+#home .sectionType .areaStore .orderIsClosed .textClosed{position: absolute; top: 50%; left: 50%; color: #FFFFFF; font-weight: 600; transform: translate(-50%, -50%);}
+#home .sectionType .storeName{position: relative; width: 100%; height: auto; line-height: 16px; padding: 15px 50px 15px 15px; border-bottom: 1px solid #F0F0F0; box-sizing: border-box; color: #131313; font-weight: 600;}
+#home .sectionType .textRight{position: absolute; top: 15px; right: 15px; line-height: 16px; color: #A0A0A0; font-size: 0.86rem; font-weight: 500; text-align: right;}
+#home .sectionType .menuIsClosed .photoType{opacity: 40%;}
+#home .sectionType .menuIsClosed .infoType{opacity: 40%;}
+#home .sectionType .menuIsClosed .textClosed{position: absolute; top: 7px; right: 15px; width: 104px; height: 50px; line-height: 50px; color: #A0A0A0; font-weight: 600; text-align: center;}
+
+.ulType{position: relative; width: 100%; height: auto; padding: 7px 0;}
+.liType{position: relative; width: 100%; height: auto; padding: 7px 15px; box-sizing: border-box;}
+.liType:after{content: ""; display: block; clear: both;}
+.photoType{position: absolute; top: 7px; left: 15px; width: 80px; height: 50px; border-radius: 5px; background-color: #F8F8F8; overflow: hidden;}
+.photoType img{width:100%; height:100%; object-fit: cover;}
+.infoType{width: 100%; height: 50px; padding: 8px 114px 8px 92px; box-sizing: border-box;}
+.infoType .name{line-height: 1rem; color: #131313; margin-bottom: 5px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.infoType .price{line-height: 0.86rem; font-size: 0.86rem; color: #A0A0A0;}
+.quantityType{position: absolute; top: 50%; right: 15px; width: 103px; height: 32px; margin-top: -17px; border: 1px solid #F0F0F0;}
+.quantityType:after{content: ""; display: block; clear: both;}
+.quantityType .setQuantity{float: left; width: 30px; height: 32px;}
+.quantityType .btnQuantity{display: block; width: 100%; height: 100%; line-height: 32px; color: #505050; font-size: 1.28rem; font-weight: 500; text-align: center;}
+.quantityType .fontDisable,
+.quantityType .fontMain{float: left; width: 40px; height: 32px; line-height: 32px; text-align: center; border-left: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0;}
+.quantityType .fontMain{font-weight: 600;}
+#bottomFix .sectionNotSet{position: absolute; top: -34px; left: 37.5%; height: 24px; line-height: 24px; padding: 0 10px; border-radius: 12px; color: #FFFFFF; font-size: 0.86rem; text-align: center; transform: translateX(-50%) translateY(0); animation-name: notSetBounce; animation-duration: 1.8s; animation-iteration-count: 2;}
+@keyframes notSetBounce {
+    0%{transform: translateX(-50%) translateY(0);}
+    20%{transform: translateX(-50%) translateY(0);}
+    40%{transform: translateX(-50%) translateY(-12px);}
+    50%{transform: translateX(-50%) translateY(0);}
+    60%{transform: translateX(-50%) translateY(-6px);}
+    80%{transform: translateX(-50%) translateY(0);}
+    100%{transform: translateX(-50%) translateY(0);}
+}
+#bottomFix .sectionNotSet:after{content: ""; display: block; position: absolute; bottom: -16px; left: 50%; width: 0; right: 0; margin-left: -6px; border-top: 8px solid #009dad; border-right: 6px solid transparent; border-bottom: 8px solid transparent; border-left: 6px solid transparent;}
+
+/* 식단 구독설정 */
+#mealPlan {padding: 50px 0 152px 0;}
+#mealPlan.initial{padding: 50px 0 125px 0;}
+
+#mealPlan .setIntro{position: relative; width: 100%; height: auto; padding: 15px 15px 0 15px; box-sizing: border-box; background-color: #FFFFFF;}
+#mealPlan .setIntro .btnIntro{display: block; width: 100%; height: auto; line-height: 16px; padding: 8px; border: 1px solid rgba(0,157,173,6%); border-radius: 5px; box-sizing: border-box; background-color: rgba(0,157,173,5%); color: #131313; font-size: 1rem; font-weight: 600; text-align: left; letter-spacing: -0.5px;}
+#mealPlan .setIntro .iconIntro{width: 16px; height: 16px; vertical-align: top; margin-right: 2px;}
+#mealPlan .setIntro .iconIntro rect{fill: none;}
+#mealPlan .setIntro .iconIntro circle{fill: #009dad;}
+#mealPlan .setIntro .iconIntro path{fill: #FFFFFF;}
+
+#mealPlan .sectionSpot{position: relative; width: 100%; height: auto; padding: 20px; box-sizing: border-box; background-color: #FFFFFF; margin-bottom: 5px;}
+#mealPlan .sectionSpot h3{margin-bottom: 15px;}
+#mealPlan .sectionSpot .textRight{position: absolute; top: 0; right: 0; line-height: 1.14rem; color: #A0A0A0; font-size: 0.86rem; font-weight: 500; text-align: right; letter-spacing: -0.5px;}
+#mealPlan .sectionSpot .designation{width: 100%; line-height: 1.14rem; padding: 0 5px; box-sizing: border-box;}
+#mealPlan .sectionSpot .setSpot{position: relative; width: 100%; height: auto;}
+#mealPlan .sectionSpot .btnSpot{position: relative; width: 100%; height: 40px; line-height: 38px; padding: 0 30px 0 15px; border: 1px solid #F0F0F0; border-radius: 5px; box-sizing: border-box; background-color: #FFFFFF; color: #505050; font-size: 1rem; font-weight: 500; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+#mealPlan .sectionSpot .btnSpot .iconUnfold{position: absolute; top: 11px; right: 12px;}
+
+#mealPlan .sectionPlan{position: relative; width: 100%; height: auto; padding: 20px; box-sizing: border-box; background-color: #FFFFFF; margin-bottom: 5px;}
+#mealPlan .sectionPlan h3{margin-bottom: 15px;}
+#mealPlan .sectionPlan .textRight{position: absolute; top: 0; right: 0; line-height: 1.14rem; color: #A0A0A0; font-size: 0.86rem; font-weight: 500; text-align: right;}
+#mealPlan .sectionPlan .areaDay{position: relative; width: 100%; height: auto; margin-bottom: 16px; padding: 0 5px; box-sizing: border-box;}
+#mealPlan .sectionPlan .areaDay:after{content: ""; display: block; clear: both;}
+#mealPlan .sectionPlan .areaDay .setSquare{float: left; width: unset; margin-right: 12px;}
+#mealPlan .sectionPlan .areaDay .setSquare:last-child{margin-right: 0;}
+#mealPlan .sectionPlan .areaDay .setSquare .labelSquare .iconSquare{margin-right: 2px;}
+
+#mealPlan .sectionPlan .liType{line-height: 34px; margin-bottom: 10px; padding: 0 5px; box-sizing: border-box;}
+#mealPlan .sectionPlan .liType:last-child{margin-bottom: 0;}
+#mealPlan .sectionPlan .liType .name{color: #131313}
+#mealPlan .sectionPlan .liType .price{margin-right: 10px; color: #A0A0A0; font-size: 0.86rem;}
+#mealPlan .sectionPlan .liType .quantityType{position: unset; right: unset; top: unset; display: inline-block; vertical-align: top; margin: 0 2px 0 0;}
+
+#mealPlan .sectionPlanNotice{position: relative; width: 100%; height: auto; margin-top: 5px; padding: 15px 20px 20px 20px; box-sizing: border-box;}
+#mealPlan .sectionPlanNotice .titleNotice{width: 100%; height: auto; line-height: 0.86rem; margin-bottom: 10px; color: #131313; font-size: 0.86rem;}
+#mealPlan .sectionPlanNotice .liNotice{width: 100%; height: auto; margin-top: 5px; line-height: 1rem; color: #A0A0A0; font-size: 0.86rem;}
+
+#bottomFix .sectionPlanStep{position: relative; width: 100%; height: auto; padding: 15px 20px; box-sizing: border-box; background-color: #FFFFFF; box-shadow: 0 -1px 4px rgba(0,0,0,6%);}
+#bottomFix .sectionPlanStep .areaSum{position: relative; width: 100%; height: auto; margin-bottom: 15px;}
+#bottomFix .sectionPlanStep .areaSum:after{content: ""; display: block; clear: both;}
+#bottomFix .sectionPlanStep .areaSum .leftSum{float: left; line-height: 1.14rem; color: #A0A0A0;}
+#bottomFix .sectionPlanStep .areaSum .rightSum{float: right; line-height: 1.14rem; color: #A0A0A0;}
+#bottomFix .sectionPlanStep .areaSum .rightSum .amount{margin-left: 5px; color: #131313; font-size: 1.14rem; font-weight: 600;}
+#bottomFix .sectionPlanStep .setNextTime{margin-top: 10px; color: #A0A0A0; font-size: 0.86rem; text-align: center;}
+#bottomFix .sectionPlanStep .btnNextTime{display: inline-block; line-height: 0.86rem; padding: 0 10px; color: #A0A0A0; font-size: 1rem; text-align: center;}
+
+/* 식단 구독서비스 이용방법 팝업 */
+.btnHowService{position: absolute; top: 0; right: 0; width: 50px; height: 50px; line-height: 50px; text-align: center;}
+.btnHowService svg{width: 18px; height: 18px; vertical-align: middle;}
+.btnHowService svg path{fill: #505050;}
+#popService{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0,0,0,60%);}
+#popService .bgPopService{position: fixed; top: 50%; left: 50%; width: 320px; height: auto; margin-top: -280px; margin-left: -160px; border-radius: 5px; background-color: #FFFFFF; overflow: hidden;}
+#popService .bgPopService .sectionTitle{position: relative; width: 100%; height: auto; padding: 20px 20px 5px 20px; box-sizing: border-box;}
+#popService .bgPopService .sectionTitle .subtitle{line-height: 1rem; margin-bottom: 5px; font-size: 1rem;}
+#popService .bgPopService .sectionTitle h2{line-height: 1.42rem; color: #131313; font-size: 1.42rem; font-weight: 600; letter-spacing: -0.5px;}
+#popService .bgPopService .sectionStep{position: relative; width: 100%; height: auto; padding: 0 20px; box-sizing: border-box;}
+#popService .bgPopService .sectionStep .olStep{position: relative; width: 100%; height: auto;}
+#popService .bgPopService .sectionStep .liStep{position: relative; width: 100%; height: auto; padding: 15px 0; border-bottom: 1px solid #F0F0F0;}
+#popService .bgPopService .sectionStep .liStep:last-child{padding: 20px 0 15px 0; border-bottom: none;}
+#popService .bgPopService .sectionStep .title{line-height: 1.14rem; margin-bottom: 6px; font-size: 1.14rem; font-weight: 600; letter-spacing: -0.5px;}
+#popService .bgPopService .sectionStep .body{line-height: 1.07rem; color: #505050; font-size: 0.86rem;}
+#popService .bgPopService .sectionFull{padding: 5px 20px 18px 20px;}
+
+@media (min-width: 1080px){
+    #mealPlan .sectionInfo .contentInfo .break{display: unset;}
+    #popService .bgPopService{width: 400px; margin-top: -300px; margin-left: -200px; padding: 10px; box-sizing: border-box;}
+}
+
+/* 정기배달 메뉴 소개 팝업 */
+#popIntro{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0,0,0,60%);}
+#popIntro .bgPopIntro{position: fixed; top: 50%; left: 50%; width: 320px; height: auto; margin-top: -300px; margin-left: -160px; border-radius: 5px; background-color: #FFFFFF; overflow: hidden;}
+#popIntro .bgPopIntro .sectionTitle{position: relative; width: 100%; height: auto; padding: 30px 20px 15px 20px; box-sizing: border-box;}
+#popIntro .bgPopIntro .sectionTitle h2{line-height: 1.42rem; color: #131313; font-size: 1.42rem; font-weight: 600; letter-spacing: -0.5px;}
+#popIntro .bgPopIntro .sectionTabType{position: relative; width: 100%; height: auto; padding: 0 15px 15px 15px; box-sizing: border-box;}
+#popIntro .bgPopIntro .sectionTabType:after{content: ""; display: block; clear: both;}
+#popIntro .bgPopIntro .sectionTabType .setTabType{float: left; position: relative; margin: 3px;}
+#popIntro .bgPopIntro .sectionTabType .inputTabType{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0;}
+#popIntro .bgPopIntro .sectionTabType .labelTabType{display: inline-block; height: 30px; line-height: 28px; padding: 0 15px; border: 1px solid #F0F0F0; border-radius: 15px; box-sizing: border-box;}
+#popIntro .bgPopIntro .sectionTabType .inputTabType:checked + .labelTabType{line-height: 26px; padding: 0 14px; border: 2px solid #009dad; color: #009dad; font-weight: 600;}
+#popIntro .bgPopIntro .sectionIntroduction{position: relative; width: 100%; height: auto; padding: 0 20px 20px 20px; box-sizing: border-box;}
+#popIntro .bgPopIntro .sectionIntroduction .areaPhoto{width: 100%; height: 120px; margin-bottom: 18px;}
+#popIntro .bgPopIntro .sectionIntroduction .areaPhoto img{width: 100%; height: 120px; object-fit: cover;}
+#popIntro .bgPopIntro .sectionIntroduction .dlIntroduction{width: 100%; height: auto; margin-bottom: 15px;}
+#popIntro .bgPopIntro .sectionIntroduction .dlIntroduction:last-child{margin-bottom: 0;}
+#popIntro .bgPopIntro .sectionIntroduction .title{width: 100%; height: auto; margin-bottom: 7px; color: #131313; font-weight: 600;}
+#popIntro .bgPopIntro .sectionIntroduction .description{width: 100%; height: auto; font-size: 0.86rem;}
+
+#popIntro .bgPopIntro .sectionFull{padding: 0 20px 18px 20px;}
+
+@media (min-width: 1080px){
+    #popIntro .bgPopIntro{width: 400px; margin-top: -300px; margin-left: -200px; padding: 10px; box-sizing: border-box;}
+}
+
+/* 배달장소 변경 바텀시트 */
+#bottomSheet .bgBottomSheet .warning{position: relative; width: 100%; height: auto; line-height: 0.86rem; margin-top: 10px; padding: 0 20px; box-sizing: border-box; color:#D10000; font-size: 0.86rem; font-weight: 600;}
+
+/* 식단 구독설정 컨펌 바텀시트 */
+#bottomSheet .bgBottomSheet .sectionConfirm{position: relative; width:100%; height: auto; padding: 10px 0 80px 0;}
+#bottomSheet .bgBottomSheet .dlConfirm{position: relative; width:100%; height: auto; margin-bottom: 20px; padding: 0 20px; box-sizing: border-box;}
+#bottomSheet .bgBottomSheet .dlConfirm:last-child{margin-bottom: 0;}
+#bottomSheet .bgBottomSheet .titleConfirm{position: absolute; top: 0; left: 20px; line-height: 1.28rem; color: #131313; font-weight: 600;}
+#bottomSheet .bgBottomSheet .contentConfirm{position: relative; width:100%; height:auto; line-height: 1.28rem; padding-left: 90px; box-sizing: border-box;;}
+#bottomSheet .bgBottomSheet .contentConfirm .authPhoneNumber{display: inline-block; vertical-align: top; line-height: 0.86rem; margin: -1px 0 0 5px; padding: 3px 6px; border-width: 1px; border-radius: 10px; font-size: 0.86rem; font-weight: 600;}
+#bottomSheet .bgBottomSheet .contentConfirm .message{margin-left: 3px; font-size: 0.86rem;}
+#bottomSheet .bgBottomSheet .dlConfirm .contentNotSet{width: 100%; height: auto; line-height: 1.14rem; margin-top: 12px; padding: 12px; box-sizing: border-box; background-color: #F8F8F8; font-size: 0.86rem; font-weight: 600;}
+#bottomSheet .bgBottomSheet .dlConfirm .ulNotSet{width: 100%; height: auto; margin-top: 10px;}
+#bottomSheet .bgBottomSheet .dlConfirm .liNotSet{line-height: 1.14rem; margin-bottom: 3px; color: #131313; font-size: 0.86rem; font-weight: 600; letter-spacing: -0.5px;}
+#bottomSheet .bgBottomSheet .dlConfirm .liNotSet:last-child{margin-bottom: 0;}
