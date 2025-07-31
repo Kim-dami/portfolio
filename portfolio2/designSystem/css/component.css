@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : component
+	설　명 : 전역스타일 및 컴포넌트
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/*--------------------------------------------- 커스텀 영역---------------------------------------------*/
+
+/*--------------------------------------------- 결과 영역---------------------------------------------*/
+.areaResult{position: fixed; top: 0; right: 0; bottom: 0; padding: 80px 120px 80px 80px; box-sizing: border-box;}
+.areaResult .bgIphone{position: relative; height: 100%;}
+.areaResult .imgIhone{height: 100%; object-fit: cover;}
+.areaResult .innerIphone{position: absolute; top: 9%; right: 4.3%; bottom: 2.2%; left: 4.3%; z-index: 100; border-radius:0 0 70px 7.4; /* 높이 * 7.45% px */ background-color: green;}
