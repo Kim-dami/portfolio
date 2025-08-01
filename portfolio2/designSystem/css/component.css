@@ -11,7 +11,7 @@
 
 /*--------------------------------------------- 결과 영역---------------------------------------------*/
 body{background-color: #F8FAFC;}
-.areaFull{position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; 
+.areaFull{display: flex; 
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
