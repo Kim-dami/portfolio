@@ -11,12 +11,12 @@
 
 /*--------------------------------------------- 결과 영역---------------------------------------------*/
 body{background-color: #F8FAFC;}
-.areaFull{display: flex; 
+.areaFull{position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; 
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;}
-.areaResult{display: flex; padding: 80px 120px 80px 40px; box-sizing: border-box;}
+.areaResult{display: flex; padding: 80px 80px 80px 20px; box-sizing: border-box;}
 .areaResult .imgIhone{width: 100%; height: 100%; object-fit: contain;}
-.areaCustom{display: flex; padding: 80px 40px 80px 120px; box-sizing: border-box;}
+.areaCustom{display: flex; padding: 80px 40px 20px 80px; box-sizing: border-box;}
 .areaCustom .imgStart{width: 100%; height: 100%; object-fit: contain;}
