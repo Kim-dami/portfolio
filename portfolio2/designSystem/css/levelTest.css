@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : levelTest
+	설　명 : UI·UX 레벨테스트
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+.olQuestion{position: relative; width: 100%; height: 100%; background: rgba(255,255,255,0.1); backdrop-filter: blur(30px); border: 1px solid rgba(255,255,255,0.4); border-radius: 50px;}
+.olQuestion .liQuestion{display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center;}
+
+.olQuestion .liQuestion .areaProgress{display: flex; width: 500px; background-color: #;}
+.olQuestion .liQuestion .areaEmoji{display: flex;}
+.olQuestion .liQuestion .question{display: flex; line-height: 40px; margin-bottom: 20px; font-size: 40px; font-weight: 700; text-align: center; color: #FFF;}
+.olQuestion .liQuestion .areaBoolean{display: flex;}
