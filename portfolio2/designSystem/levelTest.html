@@ -19,22 +19,52 @@
         <h2>분양의신 어플, 내가 만들어볼게요!</h2>
         <h1>보기 좋고 쓰기 좋게, UI·UX 디자인</h1>
     </header>
-    <main class="labelTest">
-        <ol class="olQuestion">
-            <li class="liQuestion">
-                <div class="areaProgress"></div>
-                <div class="areaEmoji question">
+    <main class="lavelTest">
+        <ol class="olLavelTest">
+            <li class="liLavelTest">
+                <div class="areaProgress">
+                    <div class="graph"><div class="now" style="width: 100px;"></div></div>
+                    <div class="number"><span class="now">1</span>/<span class="all">5</span></div>
+                    <!-- liQuestion의 순서*100을 graph의 now의 width값으로 넣고 number의 now에 innerHTML로 넣는다 -->
+                </div>
+                <div class="areaQuestion">
+                    <div class="areaEmoji question">
+                        <img src="img/imgEmojiQuestion.png" class="imgQuestion">
+                    </div>
+                    <h3>어느 쪽이 더 오래 읽기 좋은가요?</h3>
+                    <div class="areaBoolean">
+                        <fieldset class="setBoolean">
+                            <input type="radio" name="question-01" value=true />
+                            <label class="labelBoolean">
+                                <img src="img/imgQuestionRight-01.png" alt="왼쪽 맞춤된 글"/>
+                                <div class="buttonSelect">선택</div>
+                            </label>
+                        </fieldset>
+                        <fieldset class="setBoolean">
+                            <input type="radio" name="question-01" value=true />
+                            <label class="labelBoolean">
+                                <img src="img/imgQuestionWrong-01.png" alt="왼쪽 맞춤된 글"/>
+                                <div class="buttonSelect">선택</div>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="areaAnswer hidden">
+                    <div class="areaEmoji question">
+                        <img src="img/imgEmojiRight.png" class="imgRight hidden">
+                        <img src="img/imgEmojiWrong.png" class="imgWrong hidden">
+                        <h3>왼쪽 맞춤이 오래 읽기 좋습니다.</h3>
+                        <div class="answer">
+                            <div>
+
+                            </div>
+                            <a href="#" class="explanation">
+                                
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="question">어느 쪽이 더 오래 읽기 좋은가요?</div>
-                <div class="areaBoolean">
-                    <div class="boolean true">
-                    </div>
-                    <div class="boolean false">
-
-                    </div>
-                </div>
-
             </li>
         </ol>
     </main>

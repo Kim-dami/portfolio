@@ -6,10 +6,26 @@
 	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
 			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
 ---------------------------------------------*/
-.olQuestion{position: relative; width: 100%; height: 100%; background: rgba(255,255,255,0.1); backdrop-filter: blur(30px); border: 1px solid rgba(255,255,255,0.4); border-radius: 50px;}
-.olQuestion .liQuestion{display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center;}
+.olLavelTest{position: relative; width: 100%; height: 100%; background: rgba(255,255,255,0.1); backdrop-filter: blur(30px); border: 1px solid rgba(255,255,255,0.4); border-radius: 50px;}
+.olLavelTest .liLavelTest{display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center; position: relative; width: 100%; height: 100%;}
 
-.olQuestion .liQuestion .areaProgress{display: flex; width: 500px; background-color: #;}
-.olQuestion .liQuestion .areaEmoji{display: flex;}
-.olQuestion .liQuestion .question{display: flex; line-height: 40px; margin-bottom: 20px; font-size: 40px; font-weight: 700; text-align: center; color: #FFF;}
-.olQuestion .liQuestion .areaBoolean{display: flex;}
+.liLavelTest .areaProgress{display: flex; flex-direction: row; justify-content: space-around; align-items: center; position: relative; width: 550px; height: auto; margin-bottom: 20px;}
+.liLavelTest .areaProgress .graph{position: relative; display: flex; position: relative; width: 500px; height: 10px; border-radius: 5px; background-color: #1D375D;}
+.liLavelTest .areaProgress .graph .now{position: absolute; top: 0; left: 0; bottom: 0; border-radius: 5px; background-color: #fff;}
+.liLavelTest .areaProgress .number{display: flex; height: auto; line-height: 16px; font-size: 16px; font-weight: 400; color: #64748B;}
+.liLavelTest .areaProgress .number .now{margin-right: 5px; font-size: 16px; font-size: 500; color: #FFF;}
+.liLavelTest .areaProgress .number .all{margin-left: 5px; font-size: inherit; font-weight: inherit; color: inherit;}
+
+.liLavelTest .areaQuestion{display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center; position: relative; height: auto;}
+
+.liLavelTest .areaEmoji{display: flex; position: relative; height: auto;}
+.liLavelTest .areaEmoji img{width: 135px; height: 135px;}
+
+.liLavelTest h3{display: flex; line-height: 40px; font-size: 40px; font-weight: 700; text-align: center; color: #FFF;}
+
+.liLavelTest .areaBoolean{display: flex;}
+.liLavelTest .setBoolean{position: relative; width: 440px; height: auto;}
+.liLavelTest .setBoolean input[type="radio"]{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; width: 100%; height: 100%; opacity: 0;}
+.liLavelTest .setBoolean .labelBoolean{position: relative; width: 100%; height: auto;}
+.liLavelTest .setBoolean .labelBoolean img{width: 100%;}
+.liLavelTest .setBoolean .labelBoolean .buttonSelect{width: 80px; height: 40px; line-height: 40px; margin: 0 auto; border-radius: 20px;; background-color: rgba(255,255,255,0.2); color: #FFF; font-size: 24px; font-weight: 500; text-align: center;}
