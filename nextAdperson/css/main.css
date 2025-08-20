@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : main
+	설　명 : 포트폴리오 메인페이지
+	클래스명 : 카멜케이스, 태그역활 + 컨텐츠내용 조합, 넘버링은 하이픈
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / margin / padding / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 화면 가운데 정렬 */
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.background{position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: url(../img/baMain.jpg) no-repeat center center!important; background-size: cover!important;}
+
+.areaSubTitle{position: absolute; top: 100px; left: 120px;}
+.areaSubTitle .leftSubTitle{font-size: 30px; color: rgba(255,255,255,0.5);}
+
+.areaTitle{position: absolute; bottom: 150px; left: 120px;}
+.areaTitle .firstTitle{height: 150px; line-height: 150px; overflow: hidden;}
+.areaTitle .firstTitle span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+.areaTitle .secondTitle{height: 60px; line-height: 60px; overflow: hidden;}
+.areaTitle .secondTitle span{display: block; font-size: 60px; color: #FFF; transform:translateY(60px); transition: transform 0.6s;}
+
+.areaTitle .firstTitle.up span{transform:translateY(0);}
+.areaTitle .secondTitle.up span{transform:translateY(0);}
+
+.areaOpening{position: relative; height: 90px; line-height: 90px; overflow: hidden; text-align: center;}
+.areaOpening span{display: block; font-size: 90px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+
+.areaOpening.up span{transform:translateY(0);}
+
+
+
+
+
+
+.mainStep .linkMainStep .subTitle, .mainStep .linkMainStep .title{opacity: 0; visibility: hidden; transition: opacity 0.6s, visibility 0.5s;}
+.mainStep .linkMainStep .title{transition-delay: 0.3s;}
+.mainStep .linkMainStep .title span{transition-delay: 0.3s;}
+.mainStep .linkMainStep .subTitle span{transform: translateY(-9px); transition: transform 1s;}
+.mainStep .linkMainStep .title span{transform: translateY(-9px); transition: transform 1.5s;}
+.mainStep .linkMainStep .subTitle.visible, .mainStep .linkMainStep .title.visible{opacity: 1;visibility: visible;}
+.mainStep .linkMainStep .subTitle.visible span, .mainStep .linkMainStep .title.visible span{transform: translateY(0);}
