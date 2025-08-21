@@ -8,6 +8,7 @@
 ---------------------------------------------*/
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* 화면 가운데 정렬 */
 .fp-section.fp-table, .fp-slide.fp-table {
@@ -22,27 +23,48 @@
     height: 100%;
 }
 
-.background{position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: url(../img/baMain.jpg) no-repeat center center!important; background-size: cover!important;}
+/* 배경 */
+.background{position: fixed; top: 0; right: 0; bottom: 0; left: 0;}
+.background li{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+.background .bgSection1::after{content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);;}
+.background .bgSection1 video{width: 100%; height: 100%; object-fit: cover;}
 
-.areaSubTitle{position: absolute; top: 100px; left: 120px;}
-.areaSubTitle .leftSubTitle{font-size: 30px; color: rgba(255,255,255,0.5);}
+/* 섹션 1 */
+#section1 .areaSubTitle{position: absolute; top: 100px; left: 120px; right: 120px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+#section1 .areaSubTitle .left{display: flex; font-size: 30px; color: rgba(255,255,255,0.5);}
+#section1 .areaSubTitle .right{display: flex;}
+#section1 .areaSubTitle .right img{width: 145px;}
+#section1 .areaTitle{position: absolute; bottom: 180px; left: 120px;}
+#section1 .areaTitle .first{height: 150px; line-height: 150px; margin-bottom: 15px;; overflow: hidden;}
+#section1 .areaTitle .first span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section1 .areaTitle .second{height: 68px; overflow: hidden;}
+#section1 .areaTitle .second img{display: block; height: 100%; transform:translateY(68px); transition: transform 0.6s;}
 
-.areaTitle{position: absolute; bottom: 150px; left: 120px;}
-.areaTitle .firstTitle{height: 150px; line-height: 150px; overflow: hidden;}
-.areaTitle .firstTitle span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
-.areaTitle .secondTitle{height: 60px; line-height: 60px; overflow: hidden;}
-.areaTitle .secondTitle span{display: block; font-size: 60px; color: #FFF; transform:translateY(60px); transition: transform 0.6s;}
+#section1.step1 .areaTitle .first span{transform:translateY(0);}
+#section1.step1 .areaTitle .second img{transform:translateY(0);}
 
-.areaTitle .firstTitle.up span{transform:translateY(0);}
-.areaTitle .secondTitle.up span{transform:translateY(0);}
+/* 섹션 2 */
+#section2 .areaDoor{position: absolute; top:0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
+#section2 .areaDoor li{float: left; width: 33.333%; height: 100%; background-color: rgba(0,0,0,0.7);}
+#section2 .areaDoor .door1{transform:translateY(100%); transition: transform 0.6s;}
+#section2 .areaDoor .door2{transform:translateY(100%); transition: transform 0.6s;}
+#section2 .areaDoor .door3{transform:translateY(100%); transition: transform 0.6s;}
 
-.areaOpening{position: relative; height: 90px; line-height: 90px; overflow: hidden; text-align: center;}
-.areaOpening span{display: block; font-size: 90px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section2 .areaOpening .allinone{position: relative; height: 90px; line-height: 90px; margin-bottom: 60px; overflow: hidden; text-align: center;}
+#section2 .areaOpening .allinone span{display: block; font-size: 90px; font-weight: 700; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section2 .areaOpening .open{position: relative; height: 150px; line-height: 150px; overflow: hidden; text-align: center;}
+#section2 .areaOpening .open span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
 
-.areaOpening.up span{transform:translateY(0);}
+#section2.step1 .areaDoor .door1{transform:translateY(0);}
+#section2.step2 .areaDoor .door2{transform:translateY(0);}
+#section2.step3 .areaDoor .door3{transform:translateY(0);}
+#section2.step4 .areaOpening .allinone span{transform:translateY(0);}
+#section2.step5 .areaOpening .open span{transform:translateY(0);}
 
 
-
+/* 섹션 3 */
+#section3{background-color: #000;}
+#section3 h3{position: absolute; top: 100px; left: 120px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
 
 
 
