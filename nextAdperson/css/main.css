@@ -23,25 +23,28 @@
     height: 100%;
 }
 
+
 /* 배경 */
 .background{position: fixed; top: 0; right: 0; bottom: 0; left: 0;}
 .background li{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 .background .bgSection1::after{content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);;}
 .background .bgSection1 video{width: 100%; height: 100%; object-fit: cover;}
 
+
 /* 섹션 1 */
-#section1 .areaSubTitle{position: absolute; top: 100px; left: 120px; right: 120px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+#section1 .areaSubTitle{position: absolute; top: 100px; left: 150px; right: 150px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
 #section1 .areaSubTitle .left{display: flex; font-size: 30px; color: rgba(255,255,255,0.5);}
 #section1 .areaSubTitle .right{display: flex;}
 #section1 .areaSubTitle .right img{width: 145px;}
-#section1 .areaTitle{position: absolute; bottom: 180px; left: 120px;}
-#section1 .areaTitle .first{height: 150px; line-height: 150px; margin-bottom: 15px;; overflow: hidden;}
+#section1 .areaTitle{position: absolute; bottom: 180px; left: 150px;}
+#section1 .areaTitle .first{height: 150px; line-height: 150px; margin-bottom: 35px;; overflow: hidden;}
 #section1 .areaTitle .first span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
 #section1 .areaTitle .second{height: 68px; overflow: hidden;}
 #section1 .areaTitle .second img{display: block; height: 100%; transform:translateY(68px); transition: transform 0.6s;}
 
 #section1.step1 .areaTitle .first span{transform:translateY(0);}
 #section1.step1 .areaTitle .second img{transform:translateY(0);}
+
 
 /* 섹션 2 */
 #section2 .areaDoor{position: absolute; top:0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
@@ -61,15 +64,16 @@
 #section2.step4 .areaOpening .allinone span{transform:translateY(0);}
 #section2.step5 .areaOpening .open span{transform:translateY(0);}
 
+
 /* 섹션 3 */
 #section3{background-color: #000;}
-#section3 h3{position: absolute; top: 160px; left: 185px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section3 .ulContents{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 185px 0 185px;}
-#section3 .liContents{position: relative; display: flex; width: 22%; background-color: #000; padding-bottom: 35%; opacity:0; transition: opacity 0.6s;}
-#section3 .liContents video{position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; opacity: 0.7; border-radius: 30px; object-fit: cover;}
-#section3 .liContents .number{position: absolute; top: 50px; left: 40px; z-index: 10; color: #FFF; font-size: 20px; font-weight: 400;}
-#section3 .liContents .content{position: absolute; bottom: 50px; left: 40px; z-index: 10; line-height: 40px; font-size: 28px; color: #FFF;}
-#section3 .liContents .content p{line-height: 44px; margin-bottom: 20px; font-family: "Montserrat", sans-serif; font-size: 44px; font-weight: 500; color: inherit;}
+#section3 h3{position: absolute; top: 160px; left: 200px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+#section3 .ulContents{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 200px 0 200px;}
+#section3 .liContents{position: relative; display: flex; width: 23%; background-color: #000; padding-bottom: 35%; opacity:0; transition: opacity 0.6s;}
+#section3 .liContents video{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0.7; border-radius: 30px; object-fit: cover;}
+#section3 .liContents .number{position: absolute; top: 60px; left: 50px; z-index: 10; color: #FFF; font-size: 20px; font-weight: 400;}
+#section3 .liContents .content{position: absolute; bottom: 60px; left: 50px; z-index: 10; line-height: 40px; font-size: 28px; color: #FFF;}
+#section3 .liContents .content p{line-height: 44px; margin-bottom: 25px; font-family: "Montserrat", sans-serif; font-size: 50px; font-weight: 500; color: inherit;}
 
 #section3.step1 .liContents:nth-of-type(1){opacity: 1;}
 #section3.step2 .liContents:nth-of-type(2){opacity: 1;}
@@ -79,10 +83,58 @@
 
 /* 섹션 4 */
 #section4{background-color: #000;}
-#section4 h3{position: absolute; top: 160px; left: 185px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section4 .ulHistory {position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; height: 100%; margin: 0 185px; padding-top: 260px; box-sizing: border-box;}
+#section4 h3{position: absolute; top: 160px; left: 200px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+#section4 .ulHistory {position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; height: 100%; margin: 0 300px 0 200px; padding-top: 260px; box-sizing: border-box;}
 #section4 .liHistory{position: relative; display: flex; width: 20%; height: 100%;}
-#section4 .liHistory::before{content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background-color: #2A2A2A;}
+#section4 .liHistory::before{content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 0; background-color: #2A2A2A; transition: height 0.6s;}
 #section4 .liHistory:nth-of-type(5)::before{background-color: #69AFFF;}
-#section4 .liHistory{position: relative; width: 100%; height: auto;}
-#section4 .liHistory .bar{position: absolute; top: ;}
+#section4 .liHistory .textHistory{position: absolute; width: 100%; height: auto; padding: 0 30px; box-sizing: border-box; opacity: 0; transition: opacity 0.6s}
+#section4 .liHistory:nth-of-type(1) .textHistory{bottom: 15%;}
+#section4 .liHistory:nth-of-type(2) .textHistory{bottom: 25%;}
+#section4 .liHistory:nth-of-type(3) .textHistory{bottom: 35%;}
+#section4 .liHistory:nth-of-type(4) .textHistory{bottom: 45%;}
+#section4 .liHistory:nth-of-type(5) .textHistory{bottom: 60%;}
+#section4 .liHistory .bar{position: absolute; top: -20px; left: -8px; width: 20px; height: 4px; background-color: #4C4C4C;}
+#section4 .liHistory .year{line-height: 40px; margin-bottom: 20px; font-size: 40px; font-weight: 700; color: #FFF;}
+#section4 .liHistory .text{line-height: 28px; font-size: 28px; font-weight: 500; color: #FFF;}
+#section4 .liHistory:nth-of-type(5) .bar{background-color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .year{line-height: 80px; margin-bottom: 10px; font-size: 80px; font-weight: 700; color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .team{line-height: 60px; margin-bottom: 20px; font-size: 60px; font-weight: 600; color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .text{line-height: 44px; font-size: 30px;}
+
+#section4.step1 .liHistory:nth-of-type(1)::before{height: 100%;}
+#section4.step2 .liHistory:nth-of-type(1) .textHistory{opacity: 1;}
+#section4.step3 .liHistory:nth-of-type(2)::before{height: 100%;}
+#section4.step4 .liHistory:nth-of-type(2) .textHistory{opacity: 1;}
+#section4.step5 .liHistory:nth-of-type(3)::before{height: 100%;}
+#section4.step6 .liHistory:nth-of-type(3) .textHistory{opacity: 1;}
+#section4.step7 .liHistory:nth-of-type(4)::before{height: 100%;}
+#section4.step8 .liHistory:nth-of-type(4) .textHistory{opacity: 1;}
+#section4.step9 .liHistory:nth-of-type(5)::before{height: 100%;}
+#section4.step10 .liHistory:nth-of-type(5){background: url(../img/bgHistoryPlatform.png) no-repeat left top; background-size: 100% 100%;}
+#section4.step11 .liHistory:nth-of-type(5) .textHistory{opacity: 1;}
+
+
+/* 섹션 5 */
+#section5{background-color: #000;}
+#section5 .fp-tableCell{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 0 0 200px;}
+#section5 .bgSection5{position: absolute; top: 0; left: 200px; right: 300px;}
+#section5 .bgSection5 img{width: 100%; object-fit: contain;}
+#section5 .ulRole{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; width: 30%;}
+#section5 .liRole{position: relative;display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; margin-bottom: 60px; font-size: 35px; font-weight: 300; color: #FFF; opacity: 0.2; transition: all 0.6s;}
+#section5 .liRole b{font-weight: 500;}
+#section5 .liRole.active{font-size: 60px; opacity: 1;}
+#section5 .areaMember{position: relative; display: flex; width: 70%; overflow: hidden;}
+#section5 .ulMember{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center;}
+#section5 .liMember{position: relative; flex: 0 0 auto; width: 360px; height: 600px; margin-right: 30px; border-radius: 30px; background-color: #0043F1;}
+#section5 .liMember .whoAreYou{position: absolute; left: 50px; bottom: 60px;}
+#section5 .liMember .whoAreYou .name{line-height: 40px; margin-bottom: 15px; font-size: 40px; font-weight: 600; color: #FFF;}
+#section5 .liMember .whoAreYou .job{line-height: 28px; font-size: 28px; font-weight: 500; color: #FFF;}
+
+
+/* 섹션 6 */
+#section5{background-color: #000;}
+#section5 .bgSection5{position: absolute; top: 0; left: 50%; bottom: 0;}
+
+
+/* 섹션 7 */
