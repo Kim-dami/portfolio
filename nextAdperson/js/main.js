@@ -78,6 +78,9 @@ $(document).ready(function() {
                 setTimeout(function() {
 					$("#section4").addClass("step11");
 				}, 1500);
+				//배경동영상 교체
+				$(".background li").eq(0).addClass("hidden");
+				$(".background li").eq(1).removeClass("hidden");
 			}
 			// #sectoin5에 왔을 때 step 애니메이션 실행
 			if(index == 5){
@@ -112,7 +115,14 @@ $(document).ready(function() {
 			// #section3를 떠날 때 step 애니메이션 클래스를 제거
 			if (index === 4) {
 				$('#section3').removeClass('step1 step2 step3 step4');
-			} 
+			}
+			// #section5에서 #section4로 올라갈때
+			if (index === 4 && direction == 'up'){
+				//배경동영상 교체
+				$(".background li").eq(0).removeClass("hidden");
+				$(".background li").eq(1).addClass("hidden");
+				
+			}
 			// #section4를 떠날 때 step 애니메이션 클래스를 제거
 			if (index === 5) {
 				$('#section4').removeClass('step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11');
@@ -131,7 +141,7 @@ $(document).ready(function() {
 
 	$(function(){
 		var rolling = $("#section5 .ulMember");
-		var speed = 2; // px per frame (속도 조절)
+		var speed = 1.5; // px per frame (속도 조절)
 
 		// 리스트 복제 → 무한 롤링 느낌
 		rolling.append(rolling.html());
