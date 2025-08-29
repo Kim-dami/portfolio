@@ -22,29 +22,32 @@
     width: 100%;
     height: 100%;
 }
-
+#fullpage{position: relative; z-index: 100; width: 1920px; margin: 0 auto;}
+.english{font-family: "Montserrat", sans-serif; font-size: inherit; font-weight: inherit;}
 
 /* 배경 */
-.background{position: fixed; top: 0; right: 0; bottom: 0; left: 0;}
+.background{position: fixed; top: 0; bottom: 0; left: 50%; width: 1920px; margin-left: -960px;}
 .background li{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 .background li video{width: 100%; height: 100%; object-fit: cover;}
+.background li img{width: 100%; height: 100%; object-fit: cover;}
 .background .bgSection1::after{content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);}
 .background .bgSection8::after{content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8) ;}
-.background .bgSection8 h3{position: absolute; top: 160px; left: 200px; z-index: 10; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+.background .bgSection8 h3{position: absolute; top: 160px; left: 190px; z-index: 10; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF; transition: opacity 0.6s;}
+.background .bgSection12 img{object-fit: fill;}
 
 
 /* 섹션 1 */
-#section1 .areaSubTitle{position: absolute; top: 100px; left: 150px; right: 150px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+#section1 .areaSubTitle{position: absolute; top: 100px; left: 120px; right: 120px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
 #section1 .areaSubTitle .left{display: flex; font-size: 30px; color: rgba(255,255,255,0.5);}
 #section1 .areaSubTitle .right{display: flex;}
 #section1 .areaSubTitle .right img{width: 145px;}
-#section1 .areaTitle{position: absolute; bottom: 180px; left: 150px;}
-#section1 .areaTitle .first{height: 150px; line-height: 150px; margin-bottom: 35px;; overflow: hidden;}
-#section1 .areaTitle .first span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section1 .areaTitle{position: absolute; bottom: 160px; left: 120px;}
+#section1 .areaTitle .first{height: 142px; margin-bottom: 30px;; overflow: hidden;}
+#section1 .areaTitle .first img{display: block; height: 100%; transform:translateY(142px); transition: transform 0.6s;}
 #section1 .areaTitle .second{height: 68px; overflow: hidden;}
 #section1 .areaTitle .second img{display: block; height: 100%; transform:translateY(68px); transition: transform 0.6s;}
 
-#section1.step1 .areaTitle .first span{transform:translateY(0);}
+#section1.step1 .areaTitle .first img{transform:translateY(0);}
 #section1.step1 .areaTitle .second img{transform:translateY(0);}
 
 
@@ -55,10 +58,11 @@
 #section2 .areaDoor .door2{transform:translateY(100%); transition: transform 0.6s;}
 #section2 .areaDoor .door3{transform:translateY(100%); transition: transform 0.6s;}
 
-#section2 .areaOpening .allinone{position: relative; height: 90px; line-height: 90px; margin-bottom: 60px; overflow: hidden; text-align: center;}
-#section2 .areaOpening .allinone span{display: block; font-size: 90px; font-weight: 700; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section2 .areaOpening .allinone{position: relative; height: 80px; line-height: 80px; margin-bottom: 60px; overflow: hidden; text-align: center;}
+#section2 .areaOpening .allinone span{display: block; font-size: 80px; font-weight: 400; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section2 .areaOpening .allinone b{font-weight: inherit; letter-spacing: -1px;}
 #section2 .areaOpening .open{position: relative; height: 150px; line-height: 150px; overflow: hidden; text-align: center;}
-#section2 .areaOpening .open span{display: block; font-size: 150px; font-weight: 900; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
+#section2 .areaOpening .open span{display: block; font-size: 150px; font-weight: 700; color: #FFF; transform:translateY(150px); transition: transform 0.6s;}
 
 #section2.step1 .areaDoor .door1{transform:translateY(0);}
 #section2.step2 .areaDoor .door2{transform:translateY(0);}
@@ -69,13 +73,13 @@
 
 /* 섹션 3 */
 #section3{background-color: #000;}
-#section3 h3{position: absolute; top: 160px; left: 200px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section3 .ulContents{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 200px 0 200px;}
+#section3 h3{position: absolute; top: 160px; left: 190px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+#section3 .ulContents{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 190px 0 190px;}
 #section3 .liContents{position: relative; display: flex; width: 23%; background-color: #000; padding-bottom: 35%; opacity:0; transition: opacity 0.6s;}
-#section3 .liContents video{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0.7; border-radius: 30px; object-fit: cover;}
-#section3 .liContents .number{position: absolute; top: 60px; left: 50px; z-index: 10; color: #FFF; font-size: 20px; font-weight: 400;}
-#section3 .liContents .content{position: absolute; bottom: 60px; left: 50px; z-index: 10; line-height: 40px; font-size: 28px; color: #FFF;}
-#section3 .liContents .content p{line-height: 44px; margin-bottom: 25px; font-family: "Montserrat", sans-serif; font-size: 50px; font-weight: 500; color: inherit;}
+#section3 .liContents video{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0.8; border-radius: 30px; object-fit: cover;}
+#section3 .liContents .number{position: absolute; top: 50px; left: 40px; z-index: 10; color: #FFF; font-size: 20px; font-weight: 400;}
+#section3 .liContents .content{position: absolute; bottom: 50px; left: 40px; z-index: 10; line-height: 36px; font-size: 28px; color: #FFF;}
+#section3 .liContents .content p{line-height: 44px; margin-bottom: 25px; font-family: "Montserrat", sans-serif; font-size: 44px; font-weight: 500; color: inherit;}
 
 #section3.step1 .liContents:nth-of-type(1){opacity: 1;}
 #section3.step2 .liContents:nth-of-type(2){opacity: 1;}
@@ -85,24 +89,25 @@
 
 /* 섹션 4 */
 #section4{background-color: #000;}
-#section4 h3{position: absolute; top: 160px; left: 200px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section4 .ulHistory {position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; height: 100%; margin: 0 300px 0 200px; padding-top: 260px; box-sizing: border-box;}
+#section4 h3{position: absolute; top: 160px; left: 190px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+#section4 .ulHistory {position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; height: 100%; margin: 0 200px 0 190px; padding-top: 260px; box-sizing: border-box;}
 #section4 .liHistory{position: relative; display: flex; width: 20%; height: 100%;}
 #section4 .liHistory::before{content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 0; background-color: #2A2A2A; transition: height 0.6s;}
 #section4 .liHistory:nth-of-type(5)::before{background-color: #69AFFF;}
-#section4 .liHistory .textHistory{position: absolute; width: 100%; height: auto; padding: 0 30px; box-sizing: border-box; opacity: 0; transition: opacity 0.6s}
+#section4 .liHistory .textHistory{position: absolute; width: 100%; height: auto; padding: 0 30px; box-sizing: border-box; opacity: 0; transition: opacity 0.6s; }
 #section4 .liHistory:nth-of-type(1) .textHistory{bottom: 15%;}
 #section4 .liHistory:nth-of-type(2) .textHistory{bottom: 25%;}
 #section4 .liHistory:nth-of-type(3) .textHistory{bottom: 35%;}
 #section4 .liHistory:nth-of-type(4) .textHistory{bottom: 45%;}
 #section4 .liHistory:nth-of-type(5) .textHistory{bottom: 60%;}
 #section4 .liHistory .bar{position: absolute; top: -20px; left: -8px; width: 20px; height: 4px; background-color: #4C4C4C;}
-#section4 .liHistory .year{line-height: 40px; margin-bottom: 20px; font-size: 40px; font-weight: 700; color: #FFF;}
-#section4 .liHistory .text{line-height: 28px; font-size: 28px; font-weight: 500; color: #FFF;}
+#section4 .liHistory .year{line-height: 40px; margin-bottom: 20px; font-family: "Montserrat", sans-serif; font-size: 40px; font-weight: 700; color: #FFF;}
+#section4 .liHistory .text{line-height: 28px; font-size: 28px; font-weight: 500; color: #FFF; letter-spacing: -1px;}
 #section4 .liHistory:nth-of-type(5) .bar{background-color: #69AFFF;}
-#section4 .liHistory:nth-of-type(5) .year{line-height: 80px; margin-bottom: 10px; font-size: 80px; font-weight: 700; color: #69AFFF;}
-#section4 .liHistory:nth-of-type(5) .team{line-height: 60px; margin-bottom: 20px; font-size: 60px; font-weight: 600; color: #69AFFF;}
-#section4 .liHistory:nth-of-type(5) .text{line-height: 44px; font-size: 30px;}
+#section4 .liHistory:nth-of-type(5) .year{line-height: 60px; margin-bottom: 10px; font-size: 60px; font-weight: 700; color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .year svg{vertical-align: top; margin-top: 5px;;}
+#section4 .liHistory:nth-of-type(5) .team{line-height: 40px; margin-bottom: 20px; font-size: 40px; font-weight: 600; color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .text{line-height: 40px;}
 
 #section4.step1 .liHistory:nth-of-type(1)::before{height: 100%;}
 #section4.step2 .liHistory:nth-of-type(1) .textHistory{opacity: 1;}
@@ -119,47 +124,115 @@
 
 /* 섹션 5 */
 #section5{background-color: #000;}
-#section5 .fp-tableCell{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 0 0 200px;}
-#section5 .bgSection5{position: absolute; top: 0; left: 200px; right: 300px;}
-#section5 .bgSection5 img{width: 100%; object-fit: contain;}
-#section5 .ulRole{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; width: 30%;}
-#section5 .liRole{position: relative;display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; margin-bottom: 60px; font-size: 35px; font-weight: 300; color: #FFF; opacity: 0.2; transition: all 0.6s;}
-#section5 .liRole b{font-weight: 500;}
-#section5 .liRole.active{font-size: 60px; opacity: 1;}
-#section5 .areaMember{position: relative; display: flex; width: 70%; overflow: hidden;}
+#section5 .fp-tableCell{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; padding-left: 190px; box-sizing: border-box;}
+#section5 .ulRole{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; width: 37%;}
+#section5 .liRole{position: relative;display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: flex-start; margin-bottom: 60px; font-size: 35px; font-weight: 200; color: #FFF; opacity: 0.2; transition: all 0.6s;}
+#section5 .liRole b{font-weight: 600;}
+#section5 .liRole.active{font-size: 50px; opacity: 1;}
+#section5 .areaMember{position: relative; display: flex; width: 63%; overflow: hidden;}
 #section5 .ulMember{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: center;}
-#section5 .liMember{position: relative; flex: 0 0 auto; width: 360px; height: 600px; margin-right: 30px; border-radius: 30px; background-color: #0043F1;}
-#section5 .liMember .whoAreYou{position: absolute; left: 50px; bottom: 60px;}
-#section5 .liMember .whoAreYou .name{line-height: 40px; margin-bottom: 15px; font-size: 40px; font-weight: 600; color: #FFF;}
-#section5 .liMember .whoAreYou .job{line-height: 28px; font-size: 28px; font-weight: 500; color: #FFF;}
+#section5 .liMember{position: relative; flex: 0 0 auto; width: 360px; height: 600px; margin-right: 30px; border-radius: 30px; background-color: #5080FF;}
+#section5 .liMember .imgMember{width: 100%; height: 100%;}
 
 
-/* 섹션 6 */
-#section6{background-color: #000;}
-#section6 .bgSection6{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-#section6 .bgSection6 img{height: 100%; object-fit: contain;}
-#section6 h3{position: absolute; top: 160px; left: 200px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section6 .ulProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 0 200px;}
-#section6 .liProcess{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 22%; padding: 120px 0 140px 0; border-radius: 50px; border: 1px solid rgba(255,255,255,0.6); box-sizing: border-box; color: #FFF; transition: all 0.6s;}
-#section6 .liProcess .number{margin-bottom: 60px; font-size: 24px; text-align: center;}
-#section6 .liProcess .title{margin-bottom: 50px; font-size: 50px; font-weight: 600; text-align: center;}
-#section6 .liProcess .mainExplain{line-height: 140%; font-size: 35px;; font-weight: 600; text-align: center;}
-#section6 .liProcess .subExplain{display: none; margin-top: 50px; line-height: 160%; font-size: 24px;; font-weight: 300; text-align: center;}
-#section6 .liProcess.active{width: 26%; padding: 100px 0 120px 0; border: none; background-color: #0059FF;}
-#section6 .liProcess.active .subExplain{display: block;}
+/* 섹션 6 15 */
+#section6, #section15{background-color: #000;}
+#section6 .bgSection6, #section15 .bgSection15{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+#section6 .bgSection6 img, #section15 .bgSection15 img{width: 100%; height: 100%;}
+#section6 h3, #section15 h3{position: absolute; top: 160px; left: 190px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+#section6 .ulProcess, #section15 .ulProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 0 190px;}
+#section6 .liProcess, #section15 .liProcess{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 22%; padding: 80px 0 105px 0; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); box-sizing: border-box; color: #FFF; transition: all 0.6s;}
+#section6 .liProcess .number, #section15 .liProcess .number{margin-bottom: 60px; font-size: 22px; font-weight: 200; text-align: center; opacity: 0.8;}
+#section6 .liProcess .title, #section15 .liProcess .title{margin-bottom: 50px; font-size: 50px; font-weight: 600; text-align: center;}
+#section6 .liProcess .mainExplain, #section15 .liProcess .mainExplain{line-height: 40px; font-size: 32px;; font-weight: 500; text-align: center;}
+#section6 .liProcess .subExplain, #section15 .liProcess .subExplain{display: none; margin-top: 50px; line-height: 160%; font-size: 24px; font-weight: 200; text-align: center;}
+#section6 .liProcess.active, #section15 .liProcess.active{width: 27%; padding: 80px 0 90px 0; border: none; background-color: #0059FF;}
+#section6 .liProcess.active .subExplain, #section15 .liProcess.active .subExplain{display: block;}
 
 
-/* 섹션 7 */
-#section7{background-color: #000;}
-#section7 .bgSection7{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-#section7 .bgSection7 img{height: 100%; object-fit: contain;}
+/* 섹션 7 16 */
+#section7, #section16{background-color: #000;}
+#section7 .bgSection7, #section16 .bgSection16{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+#section7 .bgSection7 img, #section16 .bgSection16 img{width: 100%; height: 100%;}
 
 
-/* 섹션 8 9 10*/
+/* 섹션 8 9 10 */
 #section8 .fp-tableCell, #section9 .fp-tableCell, #section10 .fp-tableCell{text-align: center;}
-#section8 .fp-tableCell .imgIpad, #section9 .fp-tableCell .imgIpad, #section10 .fp-tableCell .imgIpad{margin-top: 100px; width: 55%}
+#section8 .fp-tableCell .imgIpad, #section9 .fp-tableCell .imgIpad, #section10 .fp-tableCell .imgIpad{margin-top: 50px; width: 55%}
 
 
 /* 섹션 11 */
 #section11{background-color: #000;}
-#section11 h3{position: absolute; top: 160px; left: 200px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
+#section11 .bgSection11{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+#section11 .bgSection11 img{width: 100%; height: 100%;}
+#section11 .areaContract{position: relative; width: 415px; margin: 0 auto 40px auto; padding-right: 700px; overflow: hidden;}
+#section11 .areaContract span{display: block; color: #87BBF6; font-size: 120px; font-weight: 600; transform:translateX(-415px); transition: transform 0.6s;}
+#section11 .areaProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; margin-bottom: 190px;}
+#section11 .areaProcess .areaArrow{position: relative; width: 600px; margin-right: 50px; overflow: hidden;}
+#section11 .areaProcess .areaArrow img{width: 100%; transform:translateX(-600px); transition: transform 0.6s;}
+#section11 .areaProcess .areaAdvertising{position: relative; width: 428px; overflow: hidden;}
+#section11 .areaProcess .areaAdvertising img{width: 100%; transform:translateX(-428px); transition: transform 0.6s;}
+#section11 .areaFlow{position: absolute; right: 0; bottom: -100px; left: 0; z-index: 10; line-height: 320px; font-family: Montserrat; font-size: 320px; font-weight: 600; opacity: 0.25; background: linear-gradient(180deg, #6892FF 20%, rgba(104, 146, 255, 0.40) 75%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+#section11.step1 .areaContract span{transform:translateX(0);}
+#section11.step2 .areaArrow img{transform:translateX(0);}
+#section11.step3 .areaAdvertising img{transform:translateX(0);}
+
+
+/* 섹션 12 */
+#section12 .fp-tableCell{text-align: center;}
+#section12 .fp-tableCell .imgIpad{margin-top: 50px; width: 55%}
+#section12  .areaHowTo{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;}
+#section12  .areaHowTo .areaMission{position: absolute; top: 50%; left: 50%; display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; width: 1550px; padding: 170px 190px; box-sizing: border-box; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.30); background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(10px); transform: translate(-50%, -50%) scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section12  .areaHowTo .titleMisiion{position: relative; width: 32%; line-height: 60px; color: #FFF; font-size: 60px; font-weight: 600; text-align: left;}
+#section12  .areaHowTo .olMission{position: relative; width: 68%;}
+#section12  .areaHowTo .liMission{position: relative; line-height: 30px; margin-bottom: 60px; color: #FFF; font-size: 30px; font-weight: 300; text-align: left;}
+#section12  .areaHowTo .liMission:last-of-type{margin-bottom: 0;}
+#section12  .areaHowTo .liMission .number{display: inline-block; vertical-align: top; width: 30px; height: 30px; line-height: 28px; margin-right: 20px; border: 1px solid rgba(210,222,255,0.2); box-sizing: border-box; color: #FFF; font-size: 18px; font-weight: 600; text-align: center;}
+#section12  .areaHowTo .liMission .highlight{display: inline-block; margin-top: 10px; padding-left: 50px; color: #FFD277; font-size: 22px;}
+#section12  .areaHowTo .liMission b{font-weight: 600;}
+
+#section12.step1 .areaHowTo .areaMission{animation: popIn12 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
+
+@keyframes popIn12{
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.80); }
+  60%  { opacity: 1; transform: translate(-50%, -50%) scale(1.02); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+/* 섹션 13 */
+#section13 .fp-tableCell{text-align: center;}
+#section13 .fp-tableCell .imgIpad{margin-top: 50px; width: 55%}
+#section13 .areaProcess, #section13 .areaData{position: absolute; bottom: 100px; width: 500px; padding: 80px 0; box-sizing: border-box; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.30); background: rgba(0, 0, 0, 0.20); backdrop-filter: blur(10px); text-align: center; transform: scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section13 .areaProcess{left: 190px;}
+#section13 .areaData{right: 190px;}
+#section13 .imgProcess, #section13 .imgData{width:180px; height: 58px; margin: 0 auto 30px auto;}
+#section13 .titleProcess, #section13 .titleData{line-height: 40px; margin-bottom: 20px; color: #FFF; font-size: 40px; font-weight: 600;}
+#section13 .contentProcess, #section13 .contentData{line-height: 26px; color: #FFF; font-size: 26px;}
+
+#section13.step1 .areaProcess, #section13.step1 .areaData{animation: popIn13 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
+
+@keyframes popIn13{
+  0%   { opacity: 0; transform: scale(0.80); }
+  60%  { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+
+/* 섹션 14 */
+#section14 .fp-tableCell{text-align: center;}
+#section14 .fp-tableCell .imgIpad{margin-top: 100px; width: 55%}
+#section14  .areaHowTo{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;}
+#section14  .areaHowTo .areaMission{position: absolute; top: 50%; left: 50%; display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; width: 1550px; padding: 130px 190px; box-sizing: border-box; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.20); backdrop-filter: blur(10px); transform: translate(-50%, -50%) scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section14  .areaHowTo .titleMisiion{position: relative; width: 32%; line-height: 60px; color: #FFF; font-size: 60px; font-weight: 600; text-align: left;}}
+#section14  .areaHowTo .olMission{position: relative; width: 68%;}
+#section14  .areaHowTo .liMission{position: relative; line-height: 30px; margin-bottom: 60px; color: #FFF; font-size: 30px; font-weight: 300; text-align: left;}
+#section14  .areaHowTo .liMission:last-of-type{margin-bottom: 0;}
+#section14  .areaHowTo .liMission .number{display: inline-block; vertical-align: top; width: 30px; height: 30px; line-height: 28px; margin-right: 20px; border: 1px solid rgba(210,222,255,0.2); box-sizing: border-box; color: #FFF; font-size: 18px; font-weight: 600; text-align: center;}
+#section14  .areaHowTo .liMission .highlight{display: inline-block; margin-top: 10px; padding-left: 50px; color: #FFD277; font-size: 22px;}
+#section14  .areaHowTo .liMission b{font-weight: 600;}
+#section14  .areaHowTo hr{width: 100%; color: #D9D9D9; margin: 90px 0; opacity: 0.2;}
+
+
+#section14.step1 .areaHowTo .areaMission{animation: popIn12 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
+
