@@ -74,7 +74,7 @@ $(document).ready(function() {
 				}, 1200);
                 setTimeout(function() {
 					$("#section4").addClass("step10");
-				}, 1400);
+				}, 1300);
                 setTimeout(function() {
 					$("#section4").addClass("step11");
 				}, 1500);
@@ -163,8 +163,12 @@ $(document).ready(function() {
 					}
 				});
 			}
-
-
+			// #sectoin16에 왔을 때 step 애니메이션 실행
+			if(index == 16){
+				//배경동영상 교체
+				$(".background li").addClass("hidden");
+				$(".background li").eq(3).removeClass("hidden");
+			}
 		},
 		onLeave: function(index, nextIndex, direction){
 			// #section2를 떠날 때 #section1 애니메이션 클래스를 제거
