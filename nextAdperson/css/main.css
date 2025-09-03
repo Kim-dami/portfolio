@@ -347,15 +347,19 @@
 
 /* 섹션 26 */
 #section26{background-color: #000;}
-#section26 .areaStep{position: relative; width: 1084px; height: auto; margin: -50px auto 0 auto;}
+#section26 .areaStep{position: relative; right: 0; width: 1084px; height: auto; margin: -50px auto 0 auto; transition: right 0.6s;}
 #section26 .areaStep .areaArrow{position: absolute; top: 80px; right: 0; left: 0;}
 #section26 .areaStep .ulStep{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; width: 100%; height: auto;}
 #section26 .areaStep .liStep{position: relative; width: 100%; height: 639px;}
 #section26 .areaStep .liStep img{height: 100%; object-fit: contain;}
+#section26 .areaStep .imgFinal{position: absolute; top: 50%; right: -440px; margin-top: -320px; height: 639px; opacity: 0; transition: opacity 0.6s;}
+
+#section26.step1 .areaStep{right: 250px;}
+#section26.step2 .areaStep .imgFinal{opacity: 1;}
 
 
 /* 섹션 27 */
-#section27{background-color: #000;}
+#section27{background-color: #000; overflow: hidden;}
 #section27 .areaSynergyPlatform{position: relative; height: 950px; text-align: left;}
 #section27 .areaSynergyPlatform .bgSynergyPlatform{height: 100%; object-fit: contain;}
 #section27 .areaSynergyPlatform .ulSynergyPlatform{position: absolute; top: 114px; left: 75px; height: 852px;}

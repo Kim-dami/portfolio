@@ -38,13 +38,13 @@ $(document).ready(function() {
 				}, 0);
                 setTimeout(function() {
 					$("#section3").addClass("step2");
-				}, 400);
+				}, 300);
                 setTimeout(function() {
 					$("#section3").addClass("step3");
-				}, 800);
+				}, 600);
                 setTimeout(function() {
 					$("#section3").addClass("step4");
-				}, 1200);
+				}, 900);
 			}
 			// #sectoin4에 왔을 때 step 애니메이션 실행
 			if(index == 4){
@@ -92,13 +92,13 @@ $(document).ready(function() {
 				}, 0);
                 setTimeout(function() {
 					$("#section7").addClass("step2");
-				}, 200);
+				}, 300);
                 setTimeout(function() {
 					$("#section7").addClass("step3");
-				}, 400);
+				}, 600);
                 setTimeout(function() {
 					$("#section7").addClass("step4");
-				}, 600);
+				}, 900);
 			}
 			// #sectoin11에 왔을 때 step 애니메이션 실행
 			if(index == 11){
@@ -117,6 +117,7 @@ $(document).ready(function() {
 			}
 			// #sectoin16에 왔을 때 step 애니메이션 실행
 			if(index == 16){
+				$("#section16").addClass("step1");
 				//배경동영상 교체
 				$(".background li").addClass("hidden");
 				$(".background li").eq(3).removeClass("hidden");
@@ -172,13 +173,11 @@ $(document).ready(function() {
 			// #section5를 떠날 때 #section4 애니메이션 클래스를 제거
 			if (index === 5) {
 				$('#section4').removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12");
-				enterCount4 = 0;
 			}
 			// #section6를 떠날 때 #section5 애니메이션 클래스를 제거
 			if (index === 6) {
 				$("#section5 .liRole").removeClass("active");
 				$("#section5 .liRole").eq(0).addClass("active");
-				enterCount5 = 1;
 			}
 			// #section8에서 #section9로 떠날때 타이틀 없어짐
 			if (index === 8 && direction == 'down'){
@@ -200,17 +199,14 @@ $(document).ready(function() {
 			// #section13를 떠날 때 #section12 애니메이션 클래스를 제거
 			if (index === 13) {
 				$("#section12").removeClass("step1");
-				enterCount12 = 0;
 			}
 			// #section14를 떠날 때 #section13 애니메이션 클래스를 제거
 			if (index === 14) {
 				$("#section13").removeClass("step1");
-				enterCount13 = 0;
 			}
 			// #section15를 떠날 때 #section14 애니메이션 클래스를 제거
 			if (index === 15) {
 				$("#section14").removeClass("step1");
-				enterCount14 = 0;
 			}
 		}
 		
@@ -267,10 +263,6 @@ $(document).ready(function() {
 			if(idx === 15){
 				$("#section15 .liProcess").eq(2).toggleClass("active");
 			}
-			// #sectoin16일때 엔터 애니메이션 실행
-			if(idx === 16){
-				$("#section16").toggleClass("step1");
-			}
 			// #sectoin17일때 엔터 애니메이션 실행
 			if(idx === 17){
 				var $ul  = $('#section17 .ulNecessity');
@@ -311,6 +303,13 @@ $(document).ready(function() {
 			// #sectoin20일때 엔터 애니메이션 실행
 			if(idx === 20){
 				$("#section20").toggleClass("step1");
+			}
+			// #sectoin26일때 엔터 애니메이션 실행
+			if(idx === 26){
+				$("#section26").toggleClass("step1");
+                setTimeout(function() {
+					$("#section26").toggleClass("step2");
+				}, 100);
 			}
 			// #sectoin27일때 엔터 애니메이션 실행
 			if(idx === 27){
