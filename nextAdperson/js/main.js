@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	var enterCount5 = 1;
+
+
 	$('#fullpage').fullpage({
 		sectionSelector: '.vertical-scrolling',
 		navigation: true,
@@ -82,22 +85,20 @@ $(document).ready(function() {
 				$(".background li").addClass("hidden");
 				$(".background li").eq(1).removeClass("hidden");
 			}
-			// #sectoin5에 왔을 때 step 애니메이션 실행
-			if(index == 5){
-				var enterCount5 = 1;
-				$(document).on("keydown", function(e){
-					if(e.key === "Enter"){
-						var items = $("#section5 .liRole");
-						var total = items.length;
-						items.removeClass("active");
-						items.eq(enterCount5).addClass("active");
-						enterCount5++;
-						if(enterCount5 >= total){
-							enterCount5 = 0; // total 이상이면 다시 처음으로
-						}
-						console.log("enterCount5:", enterCount5);
-					}
-				});
+			// #sectoin7에 왔을 때 step 애니메이션 실행
+			if(index == 7){
+                setTimeout(function() {
+					$("#section7").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section7").addClass("step2");
+				}, 200);
+                setTimeout(function() {
+					$("#section7").addClass("step3");
+				}, 400);
+                setTimeout(function() {
+					$("#section7").addClass("step4");
+				}, 600);
 			}
 			// #sectoin11에 왔을 때 step 애니메이션 실행
 			if(index == 11){
@@ -114,60 +115,26 @@ $(document).ready(function() {
 				$(".background li").addClass("hidden");
 				$(".background li").eq(2).removeClass("hidden");
 			}
-			// #sectoin12에 왔을 때 step 애니메이션 실행
-			if(index == 12){
-				var enterCount12 = 0;
-				$(document).on("keydown", function(e){
-					if(e.key === "Enter"){
-						enterCount12++;
-						if(enterCount12 % 2 === 1){
-							$("#section12").addClass("step1");
-						} else {
-							$("#section12").removeClass("step1");
-						}
-						console.log("enterCount12:", enterCount12);
-						e.preventDefault();
-					}
-				});
-			}
-			// #sectoin13에 왔을 때 step 애니메이션 실행
-			if(index == 13){
-				var enterCount13 = 0;
-				$(document).on("keydown", function(e){
-					if(e.key === "Enter"){
-						enterCount13++;
-						if(enterCount13 % 2 === 1){
-							$("#section13").addClass("step1");
-						} else {
-							$("#section13").removeClass("step1");
-						}
-						console.log("enterCount13:", enterCount13);
-						e.preventDefault();
-					}
-				});
-			}
-			
-			// #sectoin14에 왔을 때 step 애니메이션 실행
-			if(index == 14){
-				var enterCount14 = 0;
-				$(document).on("keydown", function(e){
-					if(e.key === "Enter"){
-						enterCount14++;
-						if(enterCount14 % 2 === 1){
-							$("#section14").addClass("step1");
-						} else {
-							$("#section14").removeClass("step1");
-						}
-						console.log("enterCount14:", enterCount14);
-						e.preventDefault();
-					}
-				});
-			}
 			// #sectoin16에 왔을 때 step 애니메이션 실행
 			if(index == 16){
 				//배경동영상 교체
 				$(".background li").addClass("hidden");
 				$(".background li").eq(3).removeClass("hidden");
+			}
+			// #sectoin21에 왔을 때 step 애니메이션 실행
+			if(index == 21){
+                setTimeout(function() {
+					$("#section21").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section21").addClass("step2");
+				}, 300);
+			}
+			// #sectoin21에 왔을 때 step 애니메이션 실행
+			if(index == 25){
+                setTimeout(function() {
+					$("#section25").addClass("step1");
+				}, 0);
 			}
 		},
 		onLeave: function(index, nextIndex, direction){
@@ -192,7 +159,8 @@ $(document).ready(function() {
 			}
 			// #section5를 떠날 때 #section4 애니메이션 클래스를 제거
 			if (index === 5) {
-				$('#section4').removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11");
+				$('#section4').removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12");
+				enterCount4 = 0;
 			}
 			// #section6를 떠날 때 #section5 애니메이션 클래스를 제거
 			if (index === 6) {
@@ -237,6 +205,103 @@ $(document).ready(function() {
 	});
 
 	$.fn.fullpage.setAllowScrolling(true);
+
+	
+	$(document).on('keydown', function(e){
+		if(e.key === 'Enter'){
+			e.preventDefault();
+			if(e.repeat) return;
+			var idx = $('#fullpage .section.active').index() + 1;
+			// #section4일때 엔터 애니메이션 실행
+			if(idx === 4){
+				$("#section4").toggleClass("step12");
+			}
+			//#section5일때 엔터 애니메이션 실행
+			if(idx === 5){
+				var items = $("#section5 .liRole");
+				var total = items.length;
+				items.removeClass("active");
+				items.eq(enterCount5).addClass("active");
+				enterCount5++;
+				if(enterCount5 >= total){
+					enterCount5 = 0; // total 이상이면 다시 처음으로
+				}
+			}
+			//#section6일때 엔터 애니메이션 실행
+			if(idx === 6){
+				$("#section6 .liProcess").eq(1).toggleClass("active");
+			}
+			//#section7일때 엔터 애니메이션 실행
+			if(idx === 7){
+				$("#section7").toggleClass("step5");
+			}
+			// #sectoin9일때 엔터 애니메이션 실행
+			if(idx === 9){
+				$("#section9").toggleClass("step1");
+			}
+			// #sectoin12일때 엔터 애니메이션 실행
+			if(idx === 12){
+				$("#section12").toggleClass("step1");
+			}
+			// #sectoin13일때 엔터 애니메이션 실행
+			if(idx === 13){
+				$("#section13").toggleClass("step1");
+			}
+			// #sectoin14일때 엔터 애니메이션 실행
+			if(idx === 14){
+				$("#section14").toggleClass("step1");
+			}
+			// #sectoin15일때 엔터 애니메이션 실행
+			if(idx === 15){
+				$("#section15 .liProcess").eq(2).toggleClass("active");
+			}
+			// #sectoin16일때 엔터 애니메이션 실행
+			if(idx === 16){
+				$("#section16").toggleClass("step1");
+			}
+			// #sectoin17일때 엔터 애니메이션 실행
+			if(idx === 17){
+				var $ul  = $('#section17 .ulNecessity');
+				var $lis = $ul.find('li');
+				if(!$lis.length) return;
+
+				var $active = $lis.filter('.active');
+				if(!$active.length){
+				// 안전장치: active가 없다면 첫번째를 활성화만 하고 종료
+				$lis.removeClass('active').eq(0).addClass('active');
+				return;
+				}
+
+				// 현재 active의 "보이는 전체 폭"(margin 포함)만큼 이동
+				var shift = $active.outerWidth(true);
+
+				// 다음 타깃 결정 (마지막이면 처음으로 루프)
+				var activeIdx = $active.index();
+				var nextIdx = (activeIdx + 1) % $lis.length;
+
+				// 애니메이션으로 왼쪽으로 밀어 다음 li를 190px 위치로 가져옴
+				// (ul의 left을 현재 값에서 -shift 만큼 감소)
+				$ul.stop(true).animate(
+					{ left: '-=' + shift },     // 현재 left에서 감소
+					600,                        // 속도
+					'swing',                    // 이징
+					function(){
+						// 애니메이션 끝나면 active 교체
+						$lis.removeClass('active').eq(nextIdx).addClass('active');
+
+						// 루프 완료 후(마지막에서 처음으로 넘어갈 때) 점프 복원 처리
+						// 전체를 한 바퀴 밀었다면 left가 190px - 총폭이 되므로
+						// 처음으로 돌아갈 때 부드럽게 리셋하고 싶으면 아래 주석 해제:
+				
+					}
+				);
+			}
+			// #sectoin20일때 엔터 애니메이션 실행
+			if(idx === 20){
+				$("#section20").toggleClass("step1");
+			}
+		}
+	});
 
 
 	$(function(){
