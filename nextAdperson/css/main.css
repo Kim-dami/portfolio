@@ -321,12 +321,14 @@
 #section21.step2 .areaMaterial .imgIMaterial{opacity: 1;}
 
 
-/* 섹션 24 30 */
-#section24, #section30{background-color: #000;}
-#section24 .bgSection24, #section30 .bgSection30{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-#section24 .bgSection24 video, #section30 .bgSection30 video{width: 100%; height: 100%; object-fit: cover; opacity: 0.4;}
-#section24 .areaBreakTime, #section30 .areaAward{position: relative; line-height: 170px; font-family: Montserrat; font-size: 180px; font-weight: 700; letter-spacing: -4px; background: linear-gradient(108deg, #FFF 7%, #D5E8FF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-#section24 .areaBreakTime .subscript, #section30 .areaAward .subscript{line-height: 26px; margin-top: 50px; color: #FFF; font-size: 26px; font-weight: 400; letter-spacing: 0;}
+/* 섹션 24 29 30 */
+#section24, #section29, #section30{background-color: #000;}
+#section24 .bgSection24, #section29 .bgSection29, #section30 .bgSection30{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+#section24 .bgSection24 video, #section29 .bgSection29 video, #section30 .bgSection30 video{width: 100%; height: 100%; object-fit: cover; opacity: 0.4;}
+#section24 .areaBreakTime, #section29 .areaQnA, #section30 .areaAward{position: relative;}
+#section24 .areaBreakTime .title, #section29 .areaQnA .title, #section30 .areaAward .title{line-height: 170px; font-family: Montserrat; font-size: 180px; font-weight: 700; letter-spacing: -4px; background: linear-gradient(108deg, #FFF 7%, #D5E8FF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#section29 .areaQnA .title small{font-size: 120px;}
+#section24 .areaBreakTime .subscript, #section29 .areaQnA .subscript, #section30 .areaAward .subscript{line-height: 26px; margin-top: 50px; color: rgba(255,255,255,0.4); font-size: 26px; font-weight: 400; letter-spacing: 0;}
 
 
 /* 섹션 25 */
@@ -395,8 +397,3 @@
 #section28 .areaThe{position: relative; line-height: 120px; color: #FFF; font-size: 120px; font-weight: 300;}
 #section28 .areaThe .imgThe{display: block; width: 180px; height: 131px; margin: 0 auto 25px auto;}
 #section28 .areaThe b{color: inherit; font-size: inherit; font-weight: 700;}
-
-
-/* 섹션 29 */
-#section29 .bgSection29{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-#section29 .bgSection29 img{width: 100%; height: 100%; object-fit: cover;}
