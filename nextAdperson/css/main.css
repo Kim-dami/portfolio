@@ -354,6 +354,38 @@
 
 /* 섹션 27 */
 #section27{background-color: #000;}
+#section27 .areaSynergyPlatform{position: relative; height: 950px; text-align: left;}
+#section27 .areaSynergyPlatform .bgSynergyPlatform{height: 100%; object-fit: contain;}
+#section27 .areaSynergyPlatform .ulSynergyPlatform{position: absolute; top: 114px; left: 75px; height: 852px;}
+#section27 .areaSynergyPlatform .liSynergyPlatform{position: absolute; left: 0; height: 244px;}
+#section27 .areaSynergyPlatform .liSynergyPlatform img{height: 100%; object-fit: contain;}
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(4){top: 0;}
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(2),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(5){top: 50%; margin-top: -122px;}
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(3),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(6){bottom: 0;}
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(2),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(3){opacity: 0; transition: opacity 0.6s;}
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(4),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(5),
+#section27 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(6){display: none;}
+#section27 .areaSynergy{position: absolute; top: 50%; right: -757px; height: 950px; margin-top: -475px; text-align: right; transition: right 0.6s;}
+#section27 .areaSynergy .bgSynergy{height: 100%; object-fit: contain;}
+
+#section27.step1 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1){opacity: 1;}
+#section27.step2 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(2){opacity: 1;}
+#section27.step3 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(3){opacity: 1;}
+#section27.step4 .areaSynergyPlatform .bgSynergyPlatform{opacity: 0.45;}
+#section27.step4 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1),
+#section27.step4 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(2),
+#section27.step4 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(3){display: none;}
+#section27.step4 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(4),
+#section27.step4 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(5),
+#section27.step4 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(6){display: block;}
+#section27.step5 .areaSynergy{right: 0;}
+
 
 
 /* 섹션 28 */

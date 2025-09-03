@@ -136,6 +136,18 @@ $(document).ready(function() {
 					$("#section25").addClass("step1");
 				}, 0);
 			}
+			// #sectoin27에 왔을 때 step 애니메이션 실행
+			if(index == 27){
+                setTimeout(function() {
+					$("#section27").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section27").addClass("step2");
+				}, 300);
+                setTimeout(function() {
+					$("#section27").addClass("step3");
+				}, 600);
+			}
 		},
 		onLeave: function(index, nextIndex, direction){
 			// #section2를 떠날 때 #section1 애니메이션 클래스를 제거
@@ -299,6 +311,13 @@ $(document).ready(function() {
 			// #sectoin20일때 엔터 애니메이션 실행
 			if(idx === 20){
 				$("#section20").toggleClass("step1");
+			}
+			// #sectoin27일때 엔터 애니메이션 실행
+			if(idx === 27){
+				$("#section27").toggleClass("step4");
+                setTimeout(function() {
+					$("#section27").toggleClass("step5");
+				}, 100);
 			}
 		}
 	});
