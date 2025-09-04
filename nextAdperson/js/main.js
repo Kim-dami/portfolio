@@ -42,9 +42,6 @@ $(document).ready(function() {
                 setTimeout(function() {
 					$("#section3").addClass("step4");
 				}, 900);
-				//배경동영상 교체
-				$(".background li").addClass("hidden");
-				$(".background li").eq(1).removeClass("hidden");
 			}
 			// #sectoin4에 왔을 때 step 애니메이션 실행
 			if(index == 4){
@@ -86,12 +83,6 @@ $(document).ready(function() {
 				$(".background li").eq(1).removeClass("hidden");
 			}
 			// #sectoin10에 왔을 때 step 애니메이션 실행
-			if(index == 9){
-				//배경동영상 교체
-				$(".background li").addClass("hidden");
-				$(".background li").eq(2).removeClass("hidden");
-			}
-			// #sectoin10에 왔을 때 step 애니메이션 실행
 			if(index == 10){
                 setTimeout(function() {
 					$("#section10").addClass("step1");
@@ -124,7 +115,6 @@ $(document).ready(function() {
 				$(".background li").addClass("hidden");
 				$(".background li").eq(3).removeClass("hidden");
 			}
-
 			// #sectoin19에 왔을 때 step 애니메이션 실행
 			if(index == 19){
 				//배경동영상 교체
@@ -161,9 +151,103 @@ $(document).ready(function() {
 		},
 		onLeave: function(index, nextIndex, direction){
 			// #section2를 떠날 때 #section1 애니메이션 클래스를 제거
-			// if (index === 2) {
-			// 	$("#section1").removeClass("step1");
-			// }
+			if(index === 2) {
+				$("#section1").removeClass("step1");
+			}
+			// #section3를 떠날 때 #section2 애니메이션 클래스를 제거
+			if(index === 3) {
+				$("#section2").removeClass("step1 step2 step3 step4 step5");
+			}
+			// #section4를 떠날 때 #section3 애니메이션 클래스를 제거
+			if(index === 4) {
+				$("#section3").removeClass("step1 step2 step3 step4");
+			}
+			if(index === 4 && direction === "up") {
+				console.log("up");
+				$(".background li").addClass("hidden");
+				$(".background li").eq(0).removeClass("hidden");
+			}
+			// #section5를 떠날 때 #section4 애니메이션 클래스를 제거
+			if(index === 5) {
+				$("#section4").removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12");
+			}
+			// #section9를 떠날 때 #section8 애니메이션 클래스를 제거
+			if(index === 9) {
+				$("#section8").removeClass("step1");
+			}
+			// #section10를 떠날 때 #section9 애니메이션 클래스를 제거
+			if(index === 10) {
+				$("#section9 .liProcess").eq(1).removeClass("active");
+			}
+			if(index === 10 && direction === "up") {
+				console.log("up");
+				$(".background li").addClass("hidden");
+				$(".background li").eq(1).removeClass("hidden");
+			}
+			// #section11를 떠날 때 #section10 애니메이션 클래스를 제거
+			if(index === 11) {
+				$("#section10").removeClass("step1 step2 step3 step4 step5");
+			}
+			// #section13를 떠날 때 #section12 애니메이션 클래스를 제거
+			if(index === 13) {
+				$("#section12").removeClass("step1");
+			}
+			// #section14를 떠날 때
+			if(index === 14 && direction === "up") {
+				console.log("up");
+				$(".background li").addClass("hidden");
+				$(".background li").eq(2).removeClass("hidden");
+			}
+			// #section15를 떠날 때 #section14 애니메이션 클래스를 제거
+			if(index === 15) {
+				$("#section14").removeClass("step1 step2 step3");
+			}
+			// #section16를 떠날 때 #section15 애니메이션 클래스를 제거
+			if(index === 16) {
+				$("#section15").removeClass("step1");
+			}
+			// #section17를 떠날 때 #section16 애니메이션 클래스를 제거
+			if(index === 17) {
+				$("#section16").removeClass("step1");
+			}
+			// #section18를 떠날 때 #section17 애니메이션 클래스를 제거
+			if(index === 18) {
+				$("#section17").removeClass("step1");
+			}
+			// #section19를 떠날 때 #section18 애니메이션 클래스를 제거
+			if(index === 19) {
+				$("#section18").removeClass("step1");
+			}
+			if(index === 19 && direction === "up") {
+				console.log("up");
+				$(".background li").addClass("hidden");
+				$(".background li").eq(3).removeClass("hidden");
+			}
+			// #section20를 떠날 때 #section18 애니메이션 클래스를 제거
+			if(index === 20) {
+				$("#section19 .ulNecessity .liNecessity").removeClass("active");
+				$("#section19 .ulNecessity .liNecessity").eq(0).addClass("active");
+			}
+			// #section25를 떠날 때 #section24 애니메이션 클래스를 제거
+			if(index === 25) {
+				$("#section24").removeClass("step1");
+			}
+			// #section26를 떠날 때 #section25 애니메이션 클래스를 제거
+			if(index === 26) {
+				$("#section25").removeClass("step1 step2");
+			}
+			// #section30를 떠날 때 #section29 애니메이션 클래스를 제거
+			if(index === 30) {
+				$("#section29").removeClass("step1");
+			}
+			// #section31를 떠날 때 #section30 애니메이션 클래스를 제거
+			if(index === 31) {
+				$("#section30").removeClass("step1");
+			}
+			// #section32를 떠날 때 #section31 애니메이션 클래스를 제거
+			if(index === 32) {
+				$("#section31").removeClass("step1 step2 step3 step4 step5");
+			}
 		}
 		
 	});
