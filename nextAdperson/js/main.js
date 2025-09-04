@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	var enterCount5 = 1;
-
-
 	$('#fullpage').fullpage({
 		sectionSelector: '.vertical-scrolling',
 		navigation: true,
@@ -45,6 +42,9 @@ $(document).ready(function() {
                 setTimeout(function() {
 					$("#section3").addClass("step4");
 				}, 900);
+				//배경동영상 교체
+				$(".background li").addClass("hidden");
+				$(".background li").eq(1).removeClass("hidden");
 			}
 			// #sectoin4에 왔을 때 step 애니메이션 실행
 			if(index == 4){
@@ -85,129 +85,85 @@ $(document).ready(function() {
 				$(".background li").addClass("hidden");
 				$(".background li").eq(1).removeClass("hidden");
 			}
-			// #sectoin7에 왔을 때 step 애니메이션 실행
-			if(index == 7){
-                setTimeout(function() {
-					$("#section7").addClass("step1");
-				}, 0);
-                setTimeout(function() {
-					$("#section7").addClass("step2");
-				}, 300);
-                setTimeout(function() {
-					$("#section7").addClass("step3");
-				}, 600);
-                setTimeout(function() {
-					$("#section7").addClass("step4");
-				}, 900);
-			}
-			// #sectoin11에 왔을 때 step 애니메이션 실행
-			if(index == 11){
-                setTimeout(function() {
-					$("#section11").addClass("step1");
-				}, 0);
-                setTimeout(function() {
-					$("#section11").addClass("step2");
-				}, 300);
-                setTimeout(function() {
-					$("#section11").addClass("step3");
-				}, 800);
+			// #sectoin10에 왔을 때 step 애니메이션 실행
+			if(index == 9){
 				//배경동영상 교체
 				$(".background li").addClass("hidden");
 				$(".background li").eq(2).removeClass("hidden");
 			}
-			// #sectoin16에 왔을 때 step 애니메이션 실행
-			if(index == 16){
-				$("#section16").addClass("step1");
+			// #sectoin10에 왔을 때 step 애니메이션 실행
+			if(index == 10){
+                setTimeout(function() {
+					$("#section10").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section10").addClass("step2");
+				}, 300);
+                setTimeout(function() {
+					$("#section10").addClass("step3");
+				}, 600);
+                setTimeout(function() {
+					$("#section10").addClass("step4");
+				}, 900);
+				//배경동영상 교체
+				$(".background li").addClass("hidden");
+				$(".background li").eq(2).removeClass("hidden");
+			}
+			// #sectoin14에 왔을 때 step 애니메이션 실행
+			if(index == 14){
+                setTimeout(function() {
+					$("#section14").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section14").addClass("step2");
+				}, 300);
+                setTimeout(function() {
+					$("#section14").addClass("step3");
+				}, 800);
 				//배경동영상 교체
 				$(".background li").addClass("hidden");
 				$(".background li").eq(3).removeClass("hidden");
 			}
-			// #sectoin21에 왔을 때 step 애니메이션 실행
-			if(index == 21){
-                setTimeout(function() {
-					$("#section21").addClass("step1");
-				}, 0);
-                setTimeout(function() {
-					$("#section21").addClass("step2");
-				}, 300);
+
+			// #sectoin19에 왔을 때 step 애니메이션 실행
+			if(index == 19){
+				//배경동영상 교체
+				$(".background li").addClass("hidden");
+				$(".background li").eq(4).removeClass("hidden");
 			}
-			// #sectoin21에 왔을 때 step 애니메이션 실행
+			// #sectoin25에 왔을 때 step 애니메이션 실행
 			if(index == 25){
                 setTimeout(function() {
 					$("#section25").addClass("step1");
 				}, 0);
-			}
-			// #sectoin27에 왔을 때 step 애니메이션 실행
-			if(index == 27){
                 setTimeout(function() {
-					$("#section27").addClass("step1");
+					$("#section25").addClass("step2");
+				}, 300);
+			}
+			// #sectoin29에 왔을 때 step 애니메이션 실행
+			if(index == 29){
+                setTimeout(function() {
+					$("#section29").addClass("step1");
+				}, 0);
+			}
+			// #sectoin31에 왔을 때 step 애니메이션 실행
+			if(index == 31){
+                setTimeout(function() {
+					$("#section31").addClass("step1");
 				}, 0);
                 setTimeout(function() {
-					$("#section27").addClass("step2");
+					$("#section31").addClass("step2");
 				}, 300);
                 setTimeout(function() {
-					$("#section27").addClass("step3");
+					$("#section31").addClass("step3");
 				}, 600);
 			}
 		},
 		onLeave: function(index, nextIndex, direction){
 			// #section2를 떠날 때 #section1 애니메이션 클래스를 제거
-			if (index === 2) {
-				$("#section1").removeClass("step1");
-			}
-			// #section3를 떠날 때 #section2 애니메이션 클래스를 제거
-			if (index === 3) {
-				$('#section2').removeClass("step1 step2 step3 step4 step5");
-			}
-			// #section4를 떠날 때 #section3 애니메이션 클래스를 제거
-			if (index === 4) {
-				$('#section3').removeClass("step1 step2 step3 step4");
-			}
-			// #section4에서 #section3로 올라갈때
-			if (index === 4 && direction == 'up'){
-				//배경동영상 교체
-				$(".background li").addClass("hidden");
-				$(".background li").eq(0).removeClass("hidden");
-				
-			}
-			// #section5를 떠날 때 #section4 애니메이션 클래스를 제거
-			if (index === 5) {
-				$('#section4').removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12");
-			}
-			// #section6를 떠날 때 #section5 애니메이션 클래스를 제거
-			if (index === 6) {
-				$("#section5 .liRole").removeClass("active");
-				$("#section5 .liRole").eq(0).addClass("active");
-			}
-			// #section8에서 #section9로 떠날때 타이틀 없어짐
-			if (index === 8 && direction == 'down'){
-				$(".background li:nth-of-type(2) h3").css("opacity","0");
-			}
-			// #section9에서 #section8로 떠날때 타이틀 생김
-			if (index === 9 && direction == 'up'){
-				$(".background li:nth-of-type(2) h3").css("opacity","1");
-			}
-			// #section12를 떠날 때 #section11 애니메이션 클래스를 제거
-			if (index === 12) {
-				$("#section11").removeClass("step1 step2 step3");
-			}
-			if (index === 11 && direction == 'up'){
-				//배경동영상 교체
-				$(".background li").addClass("hidden");
-				$(".background li").eq(1).removeClass("hidden");
-			}
-			// #section13를 떠날 때 #section12 애니메이션 클래스를 제거
-			if (index === 13) {
-				$("#section12").removeClass("step1");
-			}
-			// #section14를 떠날 때 #section13 애니메이션 클래스를 제거
-			if (index === 14) {
-				$("#section13").removeClass("step1");
-			}
-			// #section15를 떠날 때 #section14 애니메이션 클래스를 제거
-			if (index === 15) {
-				$("#section14").removeClass("step1");
-			}
+			// if (index === 2) {
+			// 	$("#section1").removeClass("step1");
+			// }
 		}
 		
 	});
@@ -224,48 +180,41 @@ $(document).ready(function() {
 			if(idx === 4){
 				$("#section4").toggleClass("step12");
 			}
-			//#section5일때 엔터 애니메이션 실행
-			if(idx === 5){
-				var items = $("#section5 .liRole");
-				var total = items.length;
-				items.removeClass("active");
-				items.eq(enterCount5).addClass("active");
-				enterCount5++;
-				if(enterCount5 >= total){
-					enterCount5 = 0; // total 이상이면 다시 처음으로
-				}
+			//#section8일때 엔터 애니메이션 실행
+			if(idx === 8){
+				$("#section8").toggleClass("step1");
 			}
-			//#section6일때 엔터 애니메이션 실행
-			if(idx === 6){
-				$("#section6 .liProcess").eq(1).toggleClass("active");
-			}
-			//#section7일때 엔터 애니메이션 실행
-			if(idx === 7){
-				$("#section7").toggleClass("step5");
-			}
-			// #sectoin9일때 엔터 애니메이션 실행
+			//#section9일때 엔터 애니메이션 실행
 			if(idx === 9){
-				$("#section9").toggleClass("step1");
+				$("#section9 .liProcess").eq(1).toggleClass("active");
+			}
+			//#section10일때 엔터 애니메이션 실행
+			if(idx === 10){
+				$("#section10").toggleClass("step5");
 			}
 			// #sectoin12일때 엔터 애니메이션 실행
 			if(idx === 12){
 				$("#section12").toggleClass("step1");
 			}
-			// #sectoin13일때 엔터 애니메이션 실행
-			if(idx === 13){
-				$("#section13").toggleClass("step1");
-			}
-			// #sectoin14일때 엔터 애니메이션 실행
-			if(idx === 14){
-				$("#section14").toggleClass("step1");
-			}
 			// #sectoin15일때 엔터 애니메이션 실행
 			if(idx === 15){
-				$("#section15 .liProcess").eq(2).toggleClass("active");
+				$("#section15").toggleClass("step1");
+			}
+			// #sectoin16일때 엔터 애니메이션 실행
+			if(idx === 16){
+				$("#section16").toggleClass("step1");
 			}
 			// #sectoin17일때 엔터 애니메이션 실행
 			if(idx === 17){
-				var $ul  = $('#section17 .ulNecessity');
+				$("#section17").toggleClass("step1");
+			}
+			// #sectoin18일때 엔터 애니메이션 실행
+			if(idx === 18){
+				$("#section18").toggleClass("step1");
+			}
+			// #sectoin19일때 엔터 애니메이션 실행
+			if(idx === 19){
+				var $ul  = $('#section19 .ulNecessity');
 				var $lis = $ul.find('li');
 				if(!$lis.length) return;
 
@@ -300,47 +249,47 @@ $(document).ready(function() {
 					}
 				);
 			}
-			// #sectoin20일때 엔터 애니메이션 실행
-			if(idx === 20){
-				$("#section20").toggleClass("step1");
+			// #sectoin24일때 엔터 애니메이션 실행
+			if(idx === 24){
+				$("#section24").toggleClass("step1");
 			}
-			// #sectoin26일때 엔터 애니메이션 실행
-			if(idx === 26){
-				$("#section26").toggleClass("step1");
+			// #sectoin30일때 엔터 애니메이션 실행
+			if(idx === 30){
+				$("#section30").toggleClass("step1");
                 setTimeout(function() {
-					$("#section26").toggleClass("step2");
+					$("#section30").toggleClass("step2");
 				}, 100);
 			}
-			// #sectoin27일때 엔터 애니메이션 실행
-			if(idx === 27){
-				$("#section27").toggleClass("step4");
+			// #sectoin31일때 엔터 애니메이션 실행
+			if(idx === 31){
+				$("#section31").toggleClass("step4");
                 setTimeout(function() {
-					$("#section27").toggleClass("step5");
+					$("#section31").toggleClass("step5");
 				}, 100);
 			}
 		}
 	});
 
 
-	$(function(){
-		var rolling = $("#section5 .ulMember");
-		var speed = 1.5; // px per frame (속도 조절)
+	// $(function(){
+	// 	var rolling = $("#section5 .ulMember");
+	// 	var speed = 1.5; // px per frame (속도 조절)
 
-		// 리스트 복제 → 무한 롤링 느낌
-		rolling.append(rolling.html());
+	// 	// 리스트 복제 → 무한 롤링 느낌
+	// 	rolling.append(rolling.html());
 
-		function tick(){
-			var left = parseInt(rolling.css("transform").split(",")[4]) || 0;
-			// 왼쪽으로 이동
-			rolling.css("transform", "translateX(" + (left - speed) + "px)");
+	// 	function tick(){
+	// 		var left = parseInt(rolling.css("transform").split(",")[4]) || 0;
+	// 		// 왼쪽으로 이동
+	// 		rolling.css("transform", "translateX(" + (left - speed) + "px)");
 
-			// 절반 이상 밀렸으면 원위치
-			if(Math.abs(left) >= rolling[0].scrollWidth/2){
-			rolling.css("transform", "translateX(0px)");
-			}
+	// 		// 절반 이상 밀렸으면 원위치
+	// 		if(Math.abs(left) >= rolling[0].scrollWidth/2){
+	// 		rolling.css("transform", "translateX(0px)");
+	// 		}
 
-			requestAnimationFrame(tick);
-		}
-		tick();
-	});
+	// 		requestAnimationFrame(tick);
+	// 	}
+	// 	tick();
+	// });
 });
