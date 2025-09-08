@@ -140,7 +140,7 @@
 /* 섹션 5 6 7 */
 #section5, #section6, #section7{background: transparent;}
 #section5 .areaTeam, #section6 .areaTeam, #section7 .areaTeam{position: relative; width: 100%; height: auto;}
-#section5 .areaTeam .subTeam, #section6 .areaTeam .subTeam, #section7 .areaTeam .subTeam{line-height: 70px; margin-bottom: 5px; font-size: 70px; font-weight: 300; color: #FFF; overflow: hidden;}
+#section5 .areaTeam .subTeam, #section6 .areaTeam .subTeam, #section7 .areaTeam .subTeam{line-height: 70px; margin-bottom: 15px; font-size: 70px; font-weight: 300; color: #FFF; overflow: hidden;}
 #section5 .areaTeam .mainTeam, #section6 .areaTeam .mainTeam, #section7 .areaTeam .mainTeam{line-height: 80px; font-size: 80px; font-weight: 600; color: #FFF; overflow: hidden;}
 #section5 .areaTeam span, #section6 .areaTeam span, #section7 .areaTeam span{display: inline-block; transform: translateY(100%);}
 #section5 .areaTeam span.wave, #section6 .areaTeam span.wave, #section7 .areaTeam span.wave{animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;}
