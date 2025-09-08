@@ -205,13 +205,14 @@
 #section10.step5 .liFlowChart:nth-of-type(2){border: 4px solid #9ecbff;}
 
 
-/* 섹션 11 13 20 21 22 23 26 27 */
+/* 섹션 11 13 18 21 22 23 24 26 27 */
 #section11 .fp-tableCell .imgIpad,
 #section13 .fp-tableCell .imgIpad,
-#section20 .fp-tableCell .imgIpad,
+#section18 .fp-tableCell .imgIpad,
 #section21 .fp-tableCell .imgIpad,
 #section22 .fp-tableCell .imgIpad,
 #section23 .fp-tableCell .imgIpad,
+#section24 .fp-tableCell .imgIpad,
 #section26 .fp-tableCell .imgIpad,
 #section27 .fp-tableCell .imgIpad
 {margin-top: 50px; width: 55%}
@@ -305,38 +306,28 @@
 #section17.step1 .areaHowTo .areaMission{animation: popIn12 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
 
 
-/* 섹션 18 */
-#section18{background-color: #000;}
-#section18 .bgSection18{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-#section18 .bgSection18 img{width: 100%; height: 100%;}
-#section18 .ulUIUX{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center;}
-#section18 .liUIUX{position: relative; line-height: 200px; font-family: Montserrat; color: #FFF; font-size: 200px; font-weight: 700;; letter-spacing: -4px;}
-#section18 .liUIUX .meaning{position: relative; display: inline-block; vertical-align: top; width: 0px; line-height: inherit; color: #83C3FF; font-size: inherit; font-weight: inherit; letter-spacing: inherit; opacity: 0.25; overflow: hidden; transition: width 0.6s;}
-
-#section18.step1 .liUIUX:nth-of-type(1) .meaning{width: 289px;}
-#section18.step1 .liUIUX:nth-of-type(2) .meaning{width: 768px;}
-#section18.step1 .liUIUX:nth-of-type(3) .meaning{width: 289px;}
-#section18.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(1){width: 111px;}
-#section18.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(2){width: 796px;}
-
-
 /* 섹션 19 */
 #section19{background-color: #000;}
-#section19 .areaBestUIUX{position: relative; color: #FFF; margin: 0 190px 20px 190px; font-family: Montserrat; font-size: 80px; text-align: left; font-weight: 600; letter-spacing: -2px;}
-#section19 .areaNecessity{position: relative; width: 100%; overflow: hidden;}
-#section19 .ulNecessity{position: relative; left: 185px; width: max-content; white-space: nowrap; font-size: 0;}
-#section19 .liNecessity{position: relative; float: left; line-height: 100px; margin-right: 40px; color: #FFF; font-family: Montserrat; font-size: 100px; text-align: left; font-weight: 600; letter-spacing: -4px; opacity: 0.2; transition: opacity 0.6s;}
-#section19 .liNecessity.active{opacity: 1;}
+#section19 .bgSection19{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+#section19 .bgSection19 img{width: 100%; height: 100%;}
+#section19 .ulUIUX{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center;}
+#section19 .liUIUX{position: relative; line-height: 200px; font-family: Montserrat; color: #FFF; font-size: 200px; font-weight: 700;; letter-spacing: -4px;}
+#section19 .liUIUX .meaning{position: relative; display: inline-block; vertical-align: top; width: 0px; line-height: inherit; color: #83C3FF; font-size: inherit; font-weight: inherit; letter-spacing: inherit; opacity: 0.25; overflow: hidden; transition: width 0.6s;}
+
+#section19.step1 .liUIUX:nth-of-type(1) .meaning{width: 289px;}
+#section19.step1 .liUIUX:nth-of-type(2) .meaning{width: 768px;}
+#section19.step1 .liUIUX:nth-of-type(3) .meaning{width: 289px;}
+#section19.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(1){width: 111px;}
+#section19.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(2){width: 796px;}
 
 
-/* 섹션 24 */
-#section24{background-color: #000;}
-#section24 .titleWhy{position: relative; line-height: 60px; margin-bottom: 40px; color: #FFF; font-size: 50px;}
-#section24 .ulWhy{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; margin: 0 190px;}
-#section24 .liWhy{width: 760px; height: 0px; line-height: 36px; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; color: rgba(255,255,255,0.6); border-radius: 15px; background: url("../img/bgWhy.png") no-repeat center center; background-size: cover; font-size: 26px; font-weight: 300; text-align: center; overflow: hidden; transition: height 0.6s;}
-#section24 .liWhy .pWhy{margin-bottom: 20px; color: #FFF; font-size: 35px; font-weight: 500;} 
-
-#section24.step1 .liWhy{height: 260px;}
+/* 섹션 20 */
+#section20{background-color: #000;}
+#section20 .areaBestUIUX{position: relative; color: #FFF; margin: 0 190px 20px 190px; font-family: Montserrat; font-size: 80px; text-align: left; font-weight: 600; letter-spacing: -2px;}
+#section20 .areaNecessity{position: relative; width: 100%; overflow: hidden;}
+#section20 .ulNecessity{position: relative; left: 185px; width: max-content; white-space: nowrap; font-size: 0;}
+#section20 .liNecessity{position: relative; float: left; line-height: 100px; margin-right: 40px; color: #FFF; font-family: Montserrat; font-size: 100px; text-align: left; font-weight: 600; letter-spacing: -4px; opacity: 0.2; transition: opacity 0.6s;}
+#section20 .liNecessity.active{opacity: 1;}
 
 
 /* 섹션 25 */

@@ -163,8 +163,8 @@ $(document).ready(function() {
 				$(".background li").addClass("hidden");
 				$(".background li").eq(3).removeClass("hidden");
 			}
-			// #sectoin19에 왔을 때 step 애니메이션 실행
-			if(index == 19){
+			// #sectoin20에 왔을 때 step 애니메이션 실행
+			if(index == 20){
 				//배경동영상 교체
 				$(".background li").addClass("hidden");
 				$(".background li").eq(4).removeClass("hidden");
@@ -274,23 +274,19 @@ $(document).ready(function() {
 			if(index === 18) {
 				$("#section17").removeClass("step1");
 			}
-			// #section19를 떠날 때 #section18 애니메이션 클래스를 제거
-			if(index === 19) {
-				$("#section18").removeClass("step1");
-			}
-			if(index === 19 && direction === "up") {
+			if(index === 20 && direction === "up") {
 				console.log("up");
 				$(".background li").addClass("hidden");
 				$(".background li").eq(3).removeClass("hidden");
 			}
-			// #section20를 떠날 때 #section18 애니메이션 클래스를 제거
+			// #section20를 떠날 때 #section19 애니메이션 클래스를 제거
 			if(index === 20) {
-				$("#section19 .ulNecessity .liNecessity").removeClass("active");
-				$("#section19 .ulNecessity .liNecessity").eq(0).addClass("active");
+				$("#section19").removeClass("step1");
 			}
-			// #section25를 떠날 때 #section24 애니메이션 클래스를 제거
-			if(index === 25) {
-				$("#section24").removeClass("step1");
+			// #section21를 떠날 때 #section20 애니메이션 클래스를 제거
+			if(index === 21) {
+				$("#section20 .ulNecessity .liNecessity").removeClass("active");
+				$("#section20 .ulNecessity .liNecessity").eq(0).addClass("active");
 			}
 			// #section26를 떠날 때 #section25 애니메이션 클래스를 제거
 			if(index === 26) {
@@ -352,13 +348,13 @@ $(document).ready(function() {
 			if(idx === 17){
 				$("#section17").toggleClass("step1");
 			}
-			// #sectoin18일때 엔터 애니메이션 실행
-			if(idx === 18){
-				$("#section18").toggleClass("step1");
-			}
 			// #sectoin19일때 엔터 애니메이션 실행
 			if(idx === 19){
-				var $ul  = $('#section19 .ulNecessity');
+				$("#section19").toggleClass("step1");
+			}
+			// #sectoin20일때 엔터 애니메이션 실행
+			if(idx === 20){
+				var $ul  = $('#section20 .ulNecessity');
 				var $lis = $ul.find('li');
 				if(!$lis.length) return;
 
@@ -392,10 +388,6 @@ $(document).ready(function() {
 				
 					}
 				);
-			}
-			// #sectoin24일때 엔터 애니메이션 실행
-			if(idx === 24){
-				$("#section24").toggleClass("step1");
 			}
 			// #sectoin30일때 엔터 애니메이션 실행
 			if(idx === 30){
