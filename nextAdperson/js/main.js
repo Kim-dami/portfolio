@@ -1,4 +1,25 @@
 $(document).ready(function() {
+
+	$(function(){
+		const waves = document.querySelectorAll(".areaTeam p");
+
+		waves.forEach((wave) => {
+			let delayIdx = 0;
+
+			wave.innerHTML = wave.textContent
+			.split("")
+			.map((letter) => {
+				if (letter === " ") {
+				return " "; // span 만들지 않고 그냥 공백 반환
+				}
+				// 공백이 아닌 경우에만 delayIdx를 쓰고 증가
+				return `<span style="animation-delay:${delayIdx++ * 20}ms">${letter}</span>`;
+			})
+			.join("");
+		});
+	});
+
+
 	$('#fullpage').fullpage({
 		sectionSelector: '.vertical-scrolling',
 		navigation: true,
@@ -81,6 +102,33 @@ $(document).ready(function() {
 				//배경동영상 교체
 				$(".background li").addClass("hidden");
 				$(".background li").eq(1).removeClass("hidden");
+			}
+			// #sectoin5에 왔을 때 step 애니메이션 실행
+			if(index == 5){
+				$("#section5 .areaTeam p span").addClass("wave");
+			}
+			// #sectoin5에 왔을 때 step 애니메이션 실행
+			if(index == 6){
+				$("#section6 .areaTeam p span").addClass("wave");
+			}
+			// #sectoin5에 왔을 때 step 애니메이션 실행
+			if(index == 7){
+				$("#section7 .areaTeam p span").addClass("wave");
+			}
+			// #sectoin9에 왔을 때 step 애니메이션 실행
+			if(index == 9){
+                setTimeout(function() {
+					$("#section9").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section9").addClass("step2");
+				}, 300);
+                setTimeout(function() {
+					$("#section9").addClass("step3");
+				}, 600);
+                setTimeout(function() {
+					$("#section9").addClass("step4");
+				}, 900);
 			}
 			// #sectoin10에 왔을 때 step 애니메이션 실행
 			if(index == 10){
@@ -170,6 +218,18 @@ $(document).ready(function() {
 			// #section5를 떠날 때 #section4 애니메이션 클래스를 제거
 			if(index === 5) {
 				$("#section4").removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12");
+			}
+			// #section6를 떠날 때 #section5 애니메이션 클래스를 제거
+			if(index === 6) {
+				$("#section5 .areaTeam p span").removeClass("wave");
+			}
+			// #section7를 떠날 때 #section6 애니메이션 클래스를 제거
+			if(index === 7) {
+				$("#section6 .areaTeam p span").removeClass("wave");
+			}
+			// #section8를 떠날 때 #section7 애니메이션 클래스를 제거
+			if(index === 8) {
+				$("#section7 .areaTeam p span").removeClass("wave");
 			}
 			// #section9를 떠날 때 #section8 애니메이션 클래스를 제거
 			if(index === 9) {
@@ -353,6 +413,8 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
 
 
 	// $(function(){
