@@ -184,6 +184,18 @@ $(document).ready(function() {
 					$("#section29").addClass("step1");
 				}, 0);
 			}
+			// #sectoin30에 왔을 때 step 애니메이션 실행
+			if(index == 30){
+                setTimeout(function() {
+					$("#section30").addClass("step1");
+				}, 0);
+                setTimeout(function() {
+					$("#section30").addClass("step2");
+				}, 300);
+                setTimeout(function() {
+					$("#section30").addClass("step3");
+				}, 600);
+			}
 			// #sectoin31에 왔을 때 step 애니메이션 실행
 			if(index == 31){
                 setTimeout(function() {
@@ -246,7 +258,7 @@ $(document).ready(function() {
 			}
 			// #section11를 떠날 때 #section10 애니메이션 클래스를 제거
 			if(index === 11) {
-				$("#section10").removeClass("step1 step2 step3 step4 step5");
+				$("#section10").removeClass("step1 step2 step3 step4 step5 step6 step7 step8 step9 step10");
 			}
 			// #section13를 떠날 때 #section12 애니메이션 클래스를 제거
 			if(index === 13) {
@@ -287,6 +299,7 @@ $(document).ready(function() {
 			if(index === 21) {
 				$("#section20 .ulNecessity .liNecessity").removeClass("active");
 				$("#section20 .ulNecessity .liNecessity").eq(0).addClass("active");
+				$("#section20 .ulNecessity").css('left', '185px');
 			}
 			// #section26를 떠날 때 #section25 애니메이션 클래스를 제거
 			if(index === 26) {
@@ -298,7 +311,7 @@ $(document).ready(function() {
 			}
 			// #section31를 떠날 때 #section30 애니메이션 클래스를 제거
 			if(index === 31) {
-				$("#section30").removeClass("step1");
+				$("#section30").removeClass("step1 step2 step3 step4 step5");
 			}
 			// #section32를 떠날 때 #section31 애니메이션 클래스를 제거
 			if(index === 32) {
@@ -329,8 +342,21 @@ $(document).ready(function() {
 				$("#section9 .liProcess").eq(1).toggleClass("active");
 			}
 			//#section10일때 엔터 애니메이션 실행
-			if(idx === 10){
-				$("#section10").toggleClass("step5");
+			if (idx === 10) {
+				const $section = $('#section10');
+				const classes = ['step5', 'step6', 'step7', 'step8', 'step9', 'step10'];
+
+				// 현재 붙어있는 step 클래스가 뭔지 찾기
+				let currentIndex = classes.findIndex(cls => $section.hasClass(cls));
+
+				// 기존 step 클래스 제거
+				$section.removeClass(classes.join(' '));
+
+				// 다음 step 클래스 인덱스 계산 (순환)
+				let nextIndex = (currentIndex + 1) % classes.length;
+
+				// 다음 step 클래스 추가
+				$section.addClass(classes[nextIndex]);
 			}
 			// #sectoin12일때 엔터 애니메이션 실행
 			if(idx === 12){
@@ -391,9 +417,9 @@ $(document).ready(function() {
 			}
 			// #sectoin30일때 엔터 애니메이션 실행
 			if(idx === 30){
-				$("#section30").toggleClass("step1");
+				$("#section30").toggleClass("step4");
                 setTimeout(function() {
-					$("#section30").toggleClass("step2");
+					$("#section30").toggleClass("step5");
 				}, 100);
 			}
 			// #sectoin31일때 엔터 애니메이션 실행
