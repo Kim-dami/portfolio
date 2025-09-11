@@ -346,10 +346,10 @@ $(document).ready(function() {
 				const next = (($ul.data('step') || 0) + 1) % 3; // 0→1→2→0...
 				$ul.data('step', next);
 
-				// 1회: -1920, 2회: -3840, 3회: 0
+				// 1회: -906, 2회: -3840, 3회: 0
 				let x;
-				if (next === 1) x = -1920;
-				else if (next === 2) x = -3840;
+				if (next === 1) x = -906;
+				else if (next === 2) x = -1812;
 				else x = 0;
 
 				$ul.css('transform', `translateX(${x}px)`);

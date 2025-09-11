@@ -16,7 +16,6 @@ body{background-color: #000;}
     display: table;
     table-layout:fixed;
     width: 100%;
-    overflow: hidden;
 }
 .fp-tableCell {
     position: relative;
@@ -43,15 +42,15 @@ body{background-color: #000;}
 
 
 /* 섹션 1 */
-#section1 .areaSubTitle{position: absolute; top: 100px; left: 120px; right: 120px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
-#section1 .areaSubTitle .left{display: flex; font-size: 30px; color: rgba(255,255,255,0.5);}
+#section1 .areaSubTitle{position: absolute; top: 50px; left: 60px; right: 60px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+#section1 .areaSubTitle .left{display: flex; font-size: 15px; color: rgba(255,255,255,0.5);}
 #section1 .areaSubTitle .right{display: flex;}
-#section1 .areaSubTitle .right img{width: 145px;}
-#section1 .areaTitle{position: absolute; bottom: 160px; left: 120px;}
-#section1 .areaTitle .first{height: 142px; margin-bottom: 30px;; overflow: hidden;}
-#section1 .areaTitle .first img{display: block; height: 100%; transform:translateY(142px); transition: transform 0.6s;}
-#section1 .areaTitle .second{height: 68px; overflow: hidden;}
-#section1 .areaTitle .second img{display: block; height: 100%; transform:translateY(68px); transition: transform 0.6s;}
+#section1 .areaSubTitle .right img{width: 72.5px;}
+#section1 .areaTitle{position: absolute; bottom: 80px; left: 60px;}
+#section1 .areaTitle .first{height: 71px; margin-bottom: 15px;; overflow: hidden;}
+#section1 .areaTitle .first img{display: block; height: 100%; transform:translateY(71px); transition: transform 0.6s;}
+#section1 .areaTitle .second{height: 34px; overflow: hidden;}
+#section1 .areaTitle .second img{display: block; height: 100%; transform:translateY(34px); transition: transform 0.6s;}
 
 #section1.step1 .areaTitle .first img{transform:translateY(0);}
 #section1.step1 .areaTitle .second img{transform:translateY(0);}
@@ -59,16 +58,17 @@ body{background-color: #000;}
 
 /* 섹션 2 */
 #section2 .areaDoor{position: absolute; top:0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
-#section2 .areaDoor li{float: left; width: 33.333%; height: 100%; background-color: rgba(0,0,0,0.7);}
+#section2 .areaDoor li{float: left; width: 33%; height: 100%; background-color: rgba(0,0,0,0.7);}
+#section2 .areaDoor li:last-of-type{width: 34%;}
 #section2 .areaDoor .door1{transform:translateY(100%); transition: transform 0.6s;}
 #section2 .areaDoor .door2{transform:translateY(100%); transition: transform 0.6s;}
 #section2 .areaDoor .door3{transform:translateY(100%); transition: transform 0.6s;}
 
-#section2 .areaOpening .allinone{position: relative; height: 60px; line-height: 60px; margin-bottom: 35px; overflow: hidden; text-align: center;}
-#section2 .areaOpening .allinone span{display: block; font-size: 60px; font-weight: 400; color: #FFF; transform:translateY(60px); transition: transform 0.6s;}
-#section2 .areaOpening .allinone b{font-weight: inherit; letter-spacing: -2px;}
-#section2 .areaOpening .open{position: relative; height: 130px; line-height: 130px; overflow: hidden; text-align: center;}
-#section2 .areaOpening .open span{display: block; font-size: 130px; font-weight: 700; color: #FFF; transform:translateY(130px); transition: transform 0.6s;}
+#section2 .areaOpening .allinone{position: relative; height: 30px; line-height: 30px; margin-bottom: 17.5px; overflow: hidden; text-align: center;}
+#section2 .areaOpening .allinone span{display: block; font-size: 30px; font-weight: 400; color: #FFF; transform:translateY(30px); transition: transform 0.6s;}
+#section2 .areaOpening .allinone b{font-weight: inherit; letter-spacing: -1px;}
+#section2 .areaOpening .open{position: relative; height: 65px; line-height: 65px; overflow: hidden; text-align: center;}
+#section2 .areaOpening .open span{display: block; font-size: 65px; font-weight: 700; color: #FFF; transform:translateY(65px); transition: transform 0.6s;}
 
 #section2.step1 .areaDoor .door1{transform:translateY(0);}
 #section2.step2 .areaDoor .door2{transform:translateY(0);}
@@ -79,13 +79,13 @@ body{background-color: #000;}
 
 /* 섹션 3 */
 #section3{background-color: #000;}
-#section3 h3{position: absolute; top: 160px; left: 190px; line-height: 30px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section3 .ulContents{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 80px 190px 0 190px;}
+#section3 h3{position: absolute; top: 80px; left: 95px; line-height: 15px; font-family: "Montserrat", sans-serif; font-size: 15px; font-weight: 500; color: #FFF;}
+#section3 .ulContents{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; margin: 40px 95px 0 95px;}
 #section3 .liContents{position: relative; display: flex; width: 23%; background-color: #000; padding-bottom: 35%; opacity:0; transition: opacity 0.6s;}
-#section3 .liContents video{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0.8; border-radius: 30px; object-fit: cover;}
-#section3 .liContents .number{position: absolute; top: 50px; left: 40px; z-index: 10; color: #FFF; font-size: 20px; font-weight: 300;}
-#section3 .liContents .content{position: absolute; bottom: 50px; left: 40px; z-index: 10; line-height: 36px; font-size: 28px; color: #FFF; text-align: left;}
-#section3 .liContents .content p{line-height: 44px; margin-bottom: 25px; font-family: "Montserrat", sans-serif; font-size: 44px; font-weight: 500; color: inherit;}
+#section3 .liContents video{position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; opacity: 0.8; border-radius: 15px; object-fit: cover;}
+#section3 .liContents .number{position: absolute; top: 25px; left: 20px; z-index: 10; color: #FFF; font-size: 10px; font-weight: 300;}
+#section3 .liContents .content{position: absolute; bottom: 25px; left: 20px; z-index: 10; line-height: 18px; font-size: 14px; color: #FFF; text-align: left;}
+#section3 .liContents .content p{line-height: 22px; margin-bottom: 12.5px; font-family: "Montserrat", sans-serif; font-size: 22px; font-weight: 500; color: inherit;}
 
 #section3.step1 .liContents:nth-of-type(1){opacity: 1;}
 #section3.step2 .liContents:nth-of-type(2){opacity: 1;}
@@ -95,35 +95,35 @@ body{background-color: #000;}
 
 /* 섹션 4 */
 #section4{background-color: #000;}
-#section4 h3{position: absolute; top: 160px; left: 190px; z-index: 10; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section4 .ulHistory {position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; height: 100%; margin: 0 190px;}
+#section4 h3{position: absolute; top: 80px; left: 95px; z-index: 10; font-family: "Montserrat", sans-serif; font-size: 15px; font-weight: 500; color: #FFF;}
+#section4 .ulHistory {position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; height: 100%; margin: 0 95px;}
 #section4 .liHistory{position: relative; display: flex; width: 20%; height: 100%;}
-#section4 .liHistory::before{content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 0; background-color: #2A2A2A; transition: height 0.6s;}
+#section4 .liHistory::before{content: ""; position: absolute; top: 0; left: 0; width: 1.5px; height: 0; background-color: #2A2A2A; transition: height 0.6s;}
 #section4 .liHistory:nth-of-type(5)::before{background: linear-gradient(180deg, rgba(105, 175, 255, 0.00) 0%, #69AFFF 30%, rgba(105, 175, 255, 0.00) 115%);}
-#section4 .liHistory .history{position: absolute; width: 100%; height: auto; padding: 0 30px; box-sizing: border-box; text-align: left; opacity: 0; transition: opacity 0.6s;}
+#section4 .liHistory .history{position: absolute; width: 100%; height: auto; padding: 0 15px; box-sizing: border-box; text-align: left; opacity: 0; transition: opacity 0.6s;}
 #section4 .liHistory:nth-of-type(1) .history{bottom: 20%;}
 #section4 .liHistory:nth-of-type(2) .history{bottom: 30%;}
 #section4 .liHistory:nth-of-type(3) .history{bottom: 40%;}
 #section4 .liHistory:nth-of-type(4) .history{bottom: 50%;}
-#section4 .liHistory:nth-of-type(5) .history{bottom: 60%;}
-#section4 .liHistory .bar{position: absolute; top: 20px; left: -8px; width: 20px; height: 4px; background-color: #4C4C4C;}
-#section4 .liHistory .year{line-height: 40px; margin-bottom: 20px; font-family: "Montserrat", sans-serif; font-size: 40px; font-weight: 600; color: #FFF;}
-#section4 .liHistory .sales{line-height: 140%; font-size: 25px; font-weight: 500; color: rgba(255,255,255,0.8); letter-spacing: -1px;}
-#section4 .liHistory .highlight{line-height: 30px; margin-left: 75px; color: #FFA251; font-size: 30px; font-weight: 400;}
-#section4 .liHistory .highlight small{font-size: 18px;}
-#section4 .liHistory:nth-of-type(5) .bar{top: 30px; background-color: #69AFFF;}
-#section4 .liHistory:nth-of-type(5) .year{line-height: 60px; font-size: 70px; font-weight: 700; color: #69AFFF;}
-#section4 .liHistory:nth-of-type(5) .business{line-height: 50px; font-size: 50px; font-weight: inherit; color: inherit;}
-#section4 .liHistory .text{position: absolute; bottom: 50px; width: 100%; height: auto; line-height: 30px; padding: 0 30px; box-sizing: border-box; font-size: 18px; color: rgba(255, 255, 255, 0.6); text-align: left; opacity: 0; transition: opacity 0.6s;}
-#section4 .areaPlatform{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); opacity: 0; pointer-events: none; transition: opacity 0.6s;}
-#section4 .popPlatform{position: absolute; top: 50%; left: 50%; z-index: 30; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 900px; height: 600px; margin: -300px 0 0 -450px; background: #000; opacity: 0.8; backdrop-filter: blur(10px);}
-#section4 .popPlatform .titlePlatform{display: flex; line-height: 100px; margin-bottom: 50px; background: linear-gradient(93deg, #87BBF6 0%, #4775D8 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 100px; font-weight: 600;}
-#section4 .popPlatform .titlePlatform svg{vertical-align: top; margin: 13px 30px 0 -30px;}
-#section4 .popPlatform .contentPlatform{position: relative; width: 100%; height: auto; line-height: 140%; margin-bottom: 40px; padding: 55px 0; text-align: center; font-family: Montserrat; background: linear-gradient(95deg, #72B2FA 10%, #B0C5FF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: 300; letter-spacing: -2px;}
-#section4 .popPlatform .contentPlatform::before{content: ""; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 3px; background: linear-gradient(90deg, rgba(105, 175, 255, 0.00) 0%, #69AFFF 53%, rgba(105, 175, 255, 0.00) 100%);}
-#section4 .popPlatform .contentPlatform::after{content: ""; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 3px; background: linear-gradient(90deg, rgba(105, 175, 255, 0.00) 0%, #69AFFF 53%, rgba(105, 175, 255, 0.00) 100%);}
+#section4 .liHistory:nth-of-type(5) .history{bottom: 60%; padding-right: 0;}
+#section4 .liHistory .bar{position: absolute; top: 10px; left: -4px; width: 10px; height: 2px; background-color: #4C4C4C;}
+#section4 .liHistory .year{line-height: 20px; margin-bottom: 10px; font-family: "Montserrat", sans-serif; font-size: 20px; font-weight: 600; color: #FFF;}
+#section4 .liHistory .sales{line-height: 140%; font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,0.8); letter-spacing: -0.5px;}
+#section4 .liHistory .highlight{line-height: 15px; margin-left: 37.5px; color: #FFA251; font-size: 15px; font-weight: 400;}
+#section4 .liHistory .highlight small{font-size: 9px;}
+#section4 .liHistory:nth-of-type(5) .bar{top: 15px; background-color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .year{line-height: 30px; font-size: 35px; font-weight: 700; color: #69AFFF;}
+#section4 .liHistory:nth-of-type(5) .business{line-height: 25px; font-size: 25px; font-weight: inherit; color: inherit;}
+#section4 .liHistory .text{position: absolute; bottom: 25px; width: 100%; height: auto; line-height: 15px; padding: 0 15px; box-sizing: border-box; font-size: 9px; color: rgba(255, 255, 255, 0.6); text-align: left; opacity: 0; transition: opacity 0.6s;}
+#section4 .areaPlatform{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); opacity: 0; pointer-events: none; transition: opacity 0.6s;}
+#section4 .popPlatform{position: absolute; top: 50%; left: 50%; z-index: 30; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 450px; height: 300px; margin: -150px 0 0 -225px; background: #000; opacity: 0.8; backdrop-filter: blur(5px);}
+#section4 .popPlatform .titlePlatform{display: flex; line-height: 50px; margin-bottom: 25px; background: linear-gradient(93deg, #87BBF6 0%, #4775D8 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: 600;}
+#section4 .popPlatform .titlePlatform svg{vertical-align: top; margin: 6.5px 15px 0 -15px;}
+#section4 .popPlatform .contentPlatform{position: relative; width: 100%; height: auto; line-height: 140%; margin-bottom: 20px; padding: 27.5px 0; text-align: center; font-family: Montserrat; background: linear-gradient(95deg, #72B2FA 10%, #B0C5FF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 25px; font-weight: 300; letter-spacing: -1px;}
+#section4 .popPlatform .contentPlatform::before{content: ""; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 1.5px; background: linear-gradient(90deg, rgba(105, 175, 255, 0.00) 0%, #69AFFF 53%, rgba(105, 175, 255, 0.00) 100%);}
+#section4 .popPlatform .contentPlatform::after{content: ""; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 1.5px; background: linear-gradient(90deg, rgba(105, 175, 255, 0.00) 0%, #69AFFF 53%, rgba(105, 175, 255, 0.00) 100%);}
 #section4 .popPlatform .contentPlatform b{background: linear-gradient(95deg, #72B2FA 9.14%, #B0C5FF 99.51%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: inherit; font-size: inherit; font-weight: 500;}
-#section4 .popPlatform .businessPlatform{color: rgba(255,255,255,0.7); font-size: 22px; font-weight: 300; text-align: center;}
+#section4 .popPlatform .businessPlatform{color: rgba(255,255,255,0.7); font-size: 11px; font-weight: 300; text-align: center;}
 
 #section4.step1 .liHistory:nth-of-type(1)::before{height: 100%;}
 #section4.step2 .liHistory:nth-of-type(1) .history{opacity: 1;}
@@ -142,8 +142,8 @@ body{background-color: #000;}
 /* 섹션 5 6 7 */
 #section5, #section6, #section7{background: transparent;}
 #section5 .areaTeam, #section6 .areaTeam, #section7 .areaTeam{position: relative; width: 100%; height: auto;}
-#section5 .areaTeam .subTeam, #section6 .areaTeam .subTeam, #section7 .areaTeam .subTeam{line-height: 70px; margin-bottom: 15px; font-size: 70px; font-weight: 300; color: #FFF; overflow: hidden;}
-#section5 .areaTeam .mainTeam, #section6 .areaTeam .mainTeam, #section7 .areaTeam .mainTeam{line-height: 80px; font-size: 80px; font-weight: 600; color: #FFF; overflow: hidden;}
+#section5 .areaTeam .subTeam, #section6 .areaTeam .subTeam, #section7 .areaTeam .subTeam{line-height: 35px; margin-bottom: 7.5px; font-size: 35px; font-weight: 300; color: #FFF; overflow: hidden;}
+#section5 .areaTeam .mainTeam, #section6 .areaTeam .mainTeam, #section7 .areaTeam .mainTeam{line-height: 40px; font-size: 40px; font-weight: 600; color: #FFF; overflow: hidden;}
 #section5 .areaTeam span, #section6 .areaTeam span, #section7 .areaTeam span{display: inline-block; transform: translateY(100%);}
 #section5 .areaTeam span.wave, #section6 .areaTeam span.wave, #section7 .areaTeam span.wave{animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;}
 
@@ -160,13 +160,13 @@ body{background-color: #000;}
 
 /* 섹션 8 */
 #section8 .areaMember{width: 100%; overflow: hidden;}
-#section8 .ulMember{display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: flex-start; align-items: center; position: relative; width: 5760px; height: 1080px; transition: transform 0.6s;}
-#section8 .liMember{width: 1920px; height: 1080px;}
+#section8 .ulMember{display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: flex-start; align-items: center; position: relative; width: 2718px; height: 512px; transition: transform 0.6s;}
+#section8 .liMember{width: 906px; height: 512px;}
 #section8 .liMember:nth-of-type(2){background-color: #000;}
 #section8 .liMember:nth-of-type(3){background-color: #000;}
 #section8 .liMember:nth-of-type(1) .areaTeam{height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-#section8 .liMember:nth-of-type(1) .subTeam{line-height: 70px; margin-bottom: 15px; font-size: 70px; font-weight: 300; color: #FFF; overflow: hidden;}
-#section8 .liMember:nth-of-type(1) .mainTeam{line-height: 80px; font-size: 80px; font-weight: 600; color: #FFF; overflow: hidden;}
+#section8 .liMember:nth-of-type(1) .subTeam{line-height: 35px; margin-bottom: 7.5px; font-size: 35px; font-weight: 300; color: #FFF; overflow: hidden;}
+#section8 .liMember:nth-of-type(1) .mainTeam{line-height: 40px; font-size: 40px; font-weight: 600; color: #FFF; overflow: hidden;}
 #section8 .liMember:nth-of-type(1) p span{display: inline-block; transform: translateY(100%);}
 #section8 .liMember:nth-of-type(1) p span.wave{animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;}
 #section8 .liMember img{width: 100%; height: 100%;}
@@ -176,14 +176,14 @@ body{background-color: #000;}
 #section9{background-color: #000;}
 #section9 .bgSection9{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section9 .bgSection9 img{width: 100%; height: 100%;}
-#section9 h3{position: absolute; top: 160px; left: 190px; line-height: 30px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section9 .ulProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 1550px; margin: 50px auto 0 auto;}
-#section9 .liProcess{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 23%; height: 460px; padding: 80px 0 105px 0; border-radius: 50px; border: 1px solid rgba(255,255,255,0.4); box-sizing: border-box; color: #FFF; opacity: 0; transition: all 0.6s;}
-#section9 .liProcess .number{margin-bottom: 60px; font-size: 22px; font-weight: 200; text-align: center; opacity: 0.8;}
-#section9 .liProcess .title{margin-bottom: 50px; font-size: 50px; font-weight: 600; text-align: center;}
-#section9 .liProcess .mainExplain{line-height: 38px; font-size: 28px;; font-weight: 400; text-align: center;}
-#section9 .liProcess .subExplain{position: absolute; right: 0; bottom: 90px; left: 0; line-height: 160%; font-size: 22px; font-weight: 100; text-align: center; opacity: 0; transition: all 0.6s; transition-delay: 0.3s;}
-#section9 .liProcess.active{height: 600px; padding: 70px 0 240px 0; border-color: #0059FF; background-color: #0059FF;}
+#section9 h3{position: absolute; top: 80px; left: 95px; line-height: 15px; font-family: "Montserrat", sans-serif; font-size: 15px; font-weight: 500; color: #FFF;}
+#section9 .ulProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 775px; margin: 25px auto 0 auto;}
+#section9 .liProcess{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 23%; height: 230px; padding: 40px 0 52.5px 0; border-radius: 25px; border: 0.5px solid rgba(255,255,255,0.4); box-sizing: border-box; color: #FFF; opacity: 0; transition: all 0.6s;}
+#section9 .liProcess .number{margin-bottom: 30px; font-size: 11px; font-weight: 200; text-align: center; opacity: 0.8;}
+#section9 .liProcess .title{margin-bottom: 25px; font-size: 25px; font-weight: 600; text-align: center;}
+#section9 .liProcess .mainExplain{line-height: 19px; font-size: 14px;; font-weight: 400; text-align: center;}
+#section9 .liProcess .subExplain{position: absolute; right: 0; bottom: 45px; left: 0; line-height: 160%; font-size: 11px; font-weight: 100; text-align: center; opacity: 0; transition: all 0.6s; transition-delay: 0.3s;}
+#section9 .liProcess.active{height: 300px; padding: 35px 0 120px 0; border-color: #0059FF; background-color: #0059FF;}
 #section9 .liProcess.active .subExplain{opacity: 1;}
 
 #section9.step1 .liProcess:nth-of-type(1){opacity: 1;}
@@ -196,12 +196,12 @@ body{background-color: #000;}
 #section10{background-color: #000;}
 #section10 .bgSection10{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section10 .bgSection10 img{width: 100%; height: 100%; object-fit: fill;}
-#section10 h3{position: absolute; top: 160px; left: 190px; line-height: 30px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF;}
-#section10 .description{position: absolute; top: 210px; left: 190px; line-height: 40px; font-family: "Montserrat", sans-serif; font-size: 40px; font-weight: 500; color: #FFF;}
-#section10 .ulFlowChart{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 1550px; margin: 100px auto 0 auto;}
-#section10 .liFlowChart{position: relative; height: 500px; border-radius: 50px; border: 1px solid #52525E; opacity: 0; transition: opacity 0.6s, border-color 0.3s;}
-#section10 .liFlowChart img{height: 100%; border-radius: 50px; object-fit: contain;}
-#section10 .liPmProcess{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); opacity: 0; pointer-events: none;}
+#section10 h3{position: absolute; top: 80px; left: 95px; line-height: 15px; font-family: "Montserrat", sans-serif; font-size: 15px; font-weight: 500; color: #FFF;}
+#section10 .description{position: absolute; top: 105px; left: 95px; line-height: 20px; font-family: "Montserrat", sans-serif; font-size: 20px; font-weight: 500; color: #FFF;}
+#section10 .ulFlowChart{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 775px; margin: 50px auto 0 auto;}
+#section10 .liFlowChart{position: relative; height: 250px; border-radius: 25px; border: 0.5px solid #52525E; opacity: 0; transition: opacity 0.6s, border-color 0.3s;}
+#section10 .liFlowChart img{height: 100%; border-radius: 25px; object-fit: contain;}
+#section10 .liPmProcess{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); opacity: 0; pointer-events: none;}
 #section10 .liPmProcess img{width: 100%; height: 100%; object-fit: contain;}
 
 
@@ -217,7 +217,7 @@ body{background-color: #000;}
 #section10.step8 .liPmProcess:nth-of-type(3){opacity: 0;}
 #section10.step8 .liPmProcess:nth-of-type(4){opacity: 1;}
 #section10.step9 .liPmProcess:nth-of-type(4){opacity: 0;}
-#section10.step10 .liFlowChart:nth-of-type(2){border: 4px solid #9ecbff;}
+#section10.step10 .liFlowChart:nth-of-type(2){border: 2px solid #9ecbff;}
 
 
 /* 섹션 11 13 18 21 22 23 24 26 27 */
@@ -230,13 +230,13 @@ body{background-color: #000;}
 #section24 .fp-tableCell .imgIpad,
 #section26 .fp-tableCell .imgIpad,
 #section27 .fp-tableCell .imgIpad
-{margin-top: 50px; width: 55%}
+{margin-top: 40px; width: 50%}
 
 
 /* 섹션 12 */
-#section12 .fp-tableCell .imgIpad{margin-top: 50px; width: 55%}
-#section12 .areaSymbol{position: absolute; right: -130px; bottom: -130px; z-index: 10; padding: 30px; box-sizing: border-box; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); text-align: center; transform: scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
-#section12 .areaSymbol img{width: 587px; height: 313px;}
+#section12 .fp-tableCell .imgIpad{margin-top: 40px; width: 50%}
+#section12 .areaSymbol{position: absolute; right: -65px; bottom: -65px; z-index: 10; padding: 15px; box-sizing: border-box; border-radius: 15px; border: 0.5px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); text-align: center; transform: scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section12 .areaSymbol img{width: 293.5px; height: 156.5px;}
 
 #section12.step1 .areaSymbol{animation: popIn12 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
 
@@ -251,14 +251,14 @@ body{background-color: #000;}
 #section14{background-color: #000;}
 #section14 .bgSection14{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section14 .bgSection14 img{width: 100%; height: 100%;}
-#section14 .areaContract{position: relative; width: 415px; margin: 0 auto 40px auto; padding-right: 700px; overflow: hidden;}
-#section14 .areaContract span{display: block; color: #87BBF6; font-size: 120px; font-weight: 600; transform:translateX(-415px); transition: transform 0.6s;}
-#section14 .areaProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; margin-bottom: 190px;}
-#section14 .areaProcess .areaArrow{position: relative; width: 600px; margin-right: 50px; overflow: hidden;}
-#section14 .areaProcess .areaArrow img{width: 100%; transform:translateX(-600px); transition: transform 0.6s;}
-#section14 .areaProcess .areaAdvertising{position: relative; width: 428px; overflow: hidden;}
-#section14 .areaProcess .areaAdvertising img{width: 100%; transform:translateX(-428px); transition: transform 0.6s;}
-#section14 .areaFlow{position: absolute; right: 0; bottom: -100px; left: 0; z-index: 10; line-height: 320px; font-family: Montserrat; font-size: 320px; font-weight: 600; opacity: 0.25; background: linear-gradient(180deg, #6892FF 20%, rgba(104, 146, 255, 0.40) 75%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#section14 .areaContract{position: relative; width: 207.5px; margin: 0 auto 20px auto; padding-right: 350px; overflow: hidden;}
+#section14 .areaContract span{display: block; color: #87BBF6; font-size: 60px; font-weight: 600; transform:translateX(-207.5px); transition: transform 0.6s;}
+#section14 .areaProcess{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; margin-bottom: 95px;}
+#section14 .areaProcess .areaArrow{position: relative; width: 300px; margin-right: 25px; overflow: hidden;}
+#section14 .areaProcess .areaArrow img{width: 100%; transform:translateX(-300px); transition: transform 0.6s;}
+#section14 .areaProcess .areaAdvertising{position: relative; width: 214px; overflow: hidden;}
+#section14 .areaProcess .areaAdvertising img{width: 100%; transform:translateX(-214px); transition: transform 0.6s;}
+#section14 .areaFlow{position: absolute; right: 0; bottom: -50px; left: 0; z-index: 10; line-height: 160px; font-family: Montserrat; font-size: 160px; font-weight: 600; opacity: 0.25; background: linear-gradient(180deg, #6892FF 20%, rgba(104, 146, 255, 0.40) 75%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 
 #section14.step1 .areaContract span{transform:translateX(0);}
 #section14.step2 .areaArrow img{transform:translateX(0);}
@@ -266,15 +266,15 @@ body{background-color: #000;}
 
 
 /* 섹션 15 */
-#section15 .fp-tableCell .imgIpad{margin-top: 50px; width: 55%}
+#section15 .fp-tableCell .imgIpad{margin-top: 40px; width: 50%}
 #section15  .areaHowTo{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;}
-#section15  .areaHowTo .areaMission{position: absolute; top: 50%; left: 50%; display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; width: 1550px; padding: 170px 190px; box-sizing: border-box; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); transform: translate(-50%, -50%) scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
-#section15  .areaHowTo .titleMisiion{position: relative; width: 28%; line-height: 60px; color: #FFF; font-size: 60px; font-weight: 600; text-align: left;}
+#section15  .areaHowTo .areaMission{position: absolute; top: 50%; left: 50%; display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; width: 775px; padding: 85px 95px; box-sizing: border-box; border-radius: 25px; border: 0.5px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); transform: translate(-50%, -50%) scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section15  .areaHowTo .titleMisiion{position: relative; width: 28%; line-height: 30px; color: #FFF; font-size: 30px; font-weight: 600; text-align: left;}
 #section15  .areaHowTo .olMission{position: relative; width: 72%;}
-#section15  .areaHowTo .liMission{position: relative; line-height: 30px; margin-bottom: 60px; color: #FFF; font-size: 30px; font-weight: 200; text-align: left;}
+#section15  .areaHowTo .liMission{position: relative; line-height: 15px; margin-bottom: 30px; color: #FFF; font-size: 15px; font-weight: 200; text-align: left;}
 #section15  .areaHowTo .liMission:last-of-type{margin-bottom: 0;}
-#section15  .areaHowTo .liMission .number{display: inline-block; vertical-align: top; width: 30px; height: 30px; line-height: 28px; margin-right: 20px; border: 1px solid rgba(210,222,255,0.2); box-sizing: border-box; color: #FFF; font-size: 18px; font-weight: 600; text-align: center;}
-#section15  .areaHowTo .liMission .highlight{display: inline-block; margin-top: 10px; padding-left: 50px; color: #FFD277; font-size: 22px;}
+#section15  .areaHowTo .liMission .number{display: inline-block; vertical-align: top; width: 15px; height: 15px; line-height: 14px; margin-right: 10px; border: 0.5px solid rgba(210,222,255,0.2); box-sizing: border-box; color: #FFF; font-size: 9px; font-weight: 600; text-align: center;}
+#section15  .areaHowTo .liMission .highlight{display: inline-block; margin-top: 5px; padding-left: 25px; color: #FFD277; font-size: 11px;}
 #section15  .areaHowTo .liMission b{font-weight: 600;}
 
 #section15.step1 .areaHowTo .areaMission{animation: popIn15 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
@@ -287,13 +287,13 @@ body{background-color: #000;}
 
 
 /* 섹션 16 */
-#section16 .fp-tableCell .imgIpad{margin-top: 50px; width: 55%}
-#section16 .areaProcess, #section16 .areaData{position: absolute; bottom: 100px; width: 500px; padding: 80px 0; box-sizing: border-box; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); text-align: center; transform: scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
-#section16 .areaProcess{left: 190px;}
-#section16 .areaData{right: 190px;}
-#section16 .imgProcess, #section16 .imgData{width:180px; height: 58px; margin: 0 auto 30px auto;}
-#section16 .titleProcess, #section16 .titleData{line-height: 40px; margin-bottom: 20px; color: #FFF; font-size: 40px; font-weight: 600;}
-#section16 .contentProcess, #section16 .contentData{line-height: 26px; color: #FFF; font-size: 26px;}
+#section16 .fp-tableCell .imgIpad{margin-top: 40px; width: 50%}
+#section16 .areaProcess, #section16 .areaData{position: absolute; bottom: 50px; width: 250px; padding: 40px 0; box-sizing: border-box; border-radius: 25px; border: 0.5px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); text-align: center; transform: scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section16 .areaProcess{left: 95px;}
+#section16 .areaData{right: 95px;}
+#section16 .imgProcess, #section16 .imgData{width:90px; height: 29px; margin: 0 auto 15px auto;}
+#section16 .titleProcess, #section16 .titleData{line-height: 20px; margin-bottom: 10px; color: #FFF; font-size: 20px; font-weight: 600;}
+#section16 .contentProcess, #section16 .contentData{line-height: 13px; color: #FFF; font-size: 13px;}
 
 #section16.step1 .areaProcess, #section16.step1 .areaData{animation: popIn16 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
 
@@ -305,17 +305,17 @@ body{background-color: #000;}
 
 
 /* 섹션 17 */
-#section17 .fp-tableCell .imgIpad{margin-top: 100px; width: 55%}
+#section17 .fp-tableCell .imgIpad{margin-top: 40px; width: 50%}
 #section17  .areaHowTo{position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;}
-#section17  .areaHowTo .areaMission{position: absolute; top: 50%; left: 50%; display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; width: 1550px; padding: 130px 190px; box-sizing: border-box; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); transform: translate(-50%, -50%) scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
-#section17  .areaHowTo .titleMisiion{position: relative; width: 28%; line-height: 60px; color: #FFF; font-size: 60px; font-weight: 600; text-align: left;}
+#section17  .areaHowTo .areaMission{position: absolute; top: 50%; left: 50%; display: flex; flex-direction: row; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; width: 775px; padding: 65px 95px; box-sizing: border-box; border-radius: 25px; border: 0.5px solid rgba(255, 255, 255, 0.4); background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); transform: translate(-50%, -50%) scale(0.80); transform-origin: center; opacity: 0; pointer-events: none; will-change: transform, opacity;}
+#section17  .areaHowTo .titleMisiion{position: relative; width: 28%; line-height: 30px; color: #FFF; font-size: 30px; font-weight: 600; text-align: left;}
 #section17  .areaHowTo .olMission{position: relative; width: 72%;}
-#section17  .areaHowTo .liMission{position: relative; line-height: 30px; margin-bottom: 60px; color: #FFF; font-size: 30px; font-weight: 200; text-align: left;}
+#section17  .areaHowTo .liMission{position: relative; line-height: 15px; margin-bottom: 30px; color: #FFF; font-size: 15px; font-weight: 200; text-align: left;}
 #section17  .areaHowTo .liMission:last-of-type{margin-bottom: 0;}
-#section17  .areaHowTo .liMission .number{display: inline-block; vertical-align: top; width: 30px; height: 30px; line-height: 28px; margin-right: 20px; border: 1px solid rgba(210,222,255,0.2); box-sizing: border-box; color: #FFF; font-size: 18px; font-weight: 600; text-align: center;}
-#section17  .areaHowTo .liMission .highlight{display: inline-block; margin-top: 10px; padding-left: 50px; color: #FFD277; font-size: 22px;}
+#section17  .areaHowTo .liMission .number{display: inline-block; vertical-align: top; width: 15px; height: 15px; line-height: 14px; margin-right: 10px; border: 0.5px solid rgba(210,222,255,0.2); box-sizing: border-box; color: #FFF; font-size: 9px; font-weight: 600; text-align: center;}
+#section17  .areaHowTo .liMission .highlight{display: inline-block; margin-top: 5px; padding-left: 25px; color: #FFD277; font-size: 11px;}
 #section17  .areaHowTo .liMission b{font-weight: 600;}
-#section17  .areaHowTo hr{width: 100%; color: #D9D9D9; margin: 90px 0; opacity: 0.2;}
+#section17  .areaHowTo hr{width: 100%; color: #D9D9D9; margin: 45px 0; opacity: 0.2;}
 
 
 #section17.step1 .areaHowTo .areaMission{animation: popIn12 360ms cubic-bezier(.2,.8,.2,1) forwards; pointer-events: auto;}
@@ -326,22 +326,22 @@ body{background-color: #000;}
 #section19 .bgSection19{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section19 .bgSection19 img{width: 100%; height: 100%;}
 #section19 .ulUIUX{position: relative; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center;}
-#section19 .liUIUX{position: relative; line-height: 200px; font-family: Montserrat; color: #FFF; font-size: 200px; font-weight: 700;; letter-spacing: -4px;}
+#section19 .liUIUX{position: relative; line-height: 100px; font-family: Montserrat; color: #FFF; font-size: 100px; font-weight: 700;; letter-spacing: -2px;}
 #section19 .liUIUX .meaning{position: relative; display: inline-block; vertical-align: top; width: 0px; line-height: inherit; color: #83C3FF; font-size: inherit; font-weight: inherit; letter-spacing: inherit; opacity: 0.25; overflow: hidden; transition: width 0.6s;}
 
-#section19.step1 .liUIUX:nth-of-type(1) .meaning{width: 289px;}
-#section19.step1 .liUIUX:nth-of-type(2) .meaning{width: 768px;}
-#section19.step1 .liUIUX:nth-of-type(3) .meaning{width: 289px;}
-#section19.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(1){width: 111px;}
-#section19.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(2){width: 796px;}
+#section19.step1 .liUIUX:nth-of-type(1) .meaning{width: 144.5px;}
+#section19.step1 .liUIUX:nth-of-type(2) .meaning{width: 384px;}
+#section19.step1 .liUIUX:nth-of-type(3) .meaning{width: 144.5px;}
+#section19.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(1){width: 55.5px;}
+#section19.step1 .liUIUX:nth-of-type(4) .meaning:nth-of-type(2){width: 398px;}
 
 
 /* 섹션 20 */
 #section20{background-color: #000;}
-#section20 .areaBestUIUX{position: relative; color: #FFF; margin: 0 190px 20px 190px; font-family: Montserrat; font-size: 80px; text-align: left; font-weight: 600; letter-spacing: -2px;}
+#section20 .areaBestUIUX{position: relative; color: #FFF; margin: 0 95px 10px 95px; font-family: Montserrat; font-size: 40px; text-align: left; font-weight: 600; letter-spacing: -1px;}
 #section20 .areaNecessity{position: relative; width: 100%; overflow: hidden;}
-#section20 .ulNecessity{position: relative; left: 185px; width: max-content; white-space: nowrap; font-size: 0;}
-#section20 .liNecessity{position: relative; float: left; line-height: 100px; margin-right: 40px; color: #FFF; font-family: Montserrat; font-size: 100px; text-align: left; font-weight: 600; letter-spacing: -4px; opacity: 0.2; transition: opacity 0.6s;}
+#section20 .ulNecessity{position: relative; left: 92.5px; width: max-content; white-space: nowrap; font-size: 0;}
+#section20 .liNecessity{position: relative; float: left; line-height: 50px; margin-right: 20px; color: #FFF; font-family: Montserrat; font-size: 50px; text-align: left; font-weight: 600; letter-spacing: -2px; opacity: 0.2; transition: opacity 0.6s;}
 #section20 .liNecessity.active{opacity: 1;}
 
 
@@ -350,9 +350,9 @@ body{background-color: #000;}
 #section25 .bgSection21{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section25 .bgSection21 img{width: 100%; height: 100%; object-fit: fill;}
 #section25 .areaMaterial{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-evenly; align-items: center; height: 100vh; overflow: hidden;}
-#section25 .areaMaterial .titleMaterial{line-height: 100px; color: #FFF; font-size: 90px; font-weight: 600; text-align: left; opacity: 0; transition: opacity 0.6s;}
-#section25 .areaMaterial .titleMaterial svg{display: block; width: 80px; height: 80px; margin-bottom: 40px;}
-#section25 .areaMaterial .titleMaterial .subscript{line-height: 32px; font-size: 32px; font-weight: 300; color: rgba(255,255,255,0.6);}
+#section25 .areaMaterial .titleMaterial{line-height: 50px; color: #FFF; font-size: 45px; font-weight: 600; text-align: left; opacity: 0; transition: opacity 0.6s;}
+#section25 .areaMaterial .titleMaterial svg{display: block; width: 40px; height: 40px; margin-bottom: 20px;}
+#section25 .areaMaterial .titleMaterial .subscript{line-height: 16px; font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.6);}
 #section25 .areaMaterial .imgIMaterial{height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s;}
 
 #section25.step1 .areaMaterial .titleMaterial{opacity: 1;}
@@ -364,54 +364,54 @@ body{background-color: #000;}
 #section28 .bgSection28, #section33 .bgSection33, #section34 .bgSection34{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section28 .bgSection28 video, #section33 .bgSection33 video, #section34 .bgSection34 video{width: 100%; height: 100%; object-fit: cover; opacity: 0.4;}
 #section28 .areaBreakTime, #section33 .areaQnA, #section34 .areaToBegin{position: relative;}
-#section34 .areaToBegin{margin: 0 190px; text-align: left;}
-#section28 .areaBreakTime .title, #section33 .areaQnA .title{line-height: 170px; font-family: Montserrat; font-size: 180px; font-weight: 700; letter-spacing: -4px; background: linear-gradient(108deg, #FFF 7%, #D5E8FF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-#section34 .areaToBegin img{width: 762px; height: 376px;}
-#section33 .areaQnA .title small{font-size: 120px;}
-#section28 .areaBreakTime .subscript, #section33 .areaQnA .subscript{line-height: 26px; margin-top: 50px; color: rgba(255,255,255,0.4); font-size: 26px; font-weight: 400; letter-spacing: 0;}
+#section34 .areaToBegin{margin: 0 95px; text-align: left;}
+#section28 .areaBreakTime .title, #section33 .areaQnA .title{line-height: 85px; font-family: Montserrat; font-size: 90px; font-weight: 700; letter-spacing: -2px; background: linear-gradient(108deg, #FFF 7%, #D5E8FF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#section34 .areaToBegin img{width: 381px; height: 188px;}
+#section33 .areaQnA .title small{font-size: 60px;}
+#section28 .areaBreakTime .subscript, #section33 .areaQnA .subscript{line-height: 13px; margin-top: 25px; color: rgba(255,255,255,0.4); font-size: 13px; font-weight: 400; letter-spacing: 0;}
 
 
 /* 섹션 29 */
 #section29{background-color: #000;}
-#section29 .bgSection29{position: absolute; top: 50%; left: 50%; width: 1920px; height: 1080px; margin-top: -540px; margin-left: -960px;;}
+#section29 .bgSection29{position: absolute; top: 50%; left: 50%; width: 960px; height: 540px; margin-top: -270px; margin-left: -480px;;}
 #section29 .bgSection29 img{width: 100%; height: 100%;}
-#section29 h3{position: absolute; top: 160px; left: 190px; right: 190px; line-height: 30px; font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 500; color: #FFF; text-align: left;}
+#section29 h3{position: absolute; top: 80px; left: 95px; right: 95px; line-height: 15px; font-family: "Montserrat", sans-serif; font-size: 15px; font-weight: 500; color: #FFF; text-align: left;}
 #section29 h3 .right{float: right; opacity: 0.4;}
-#section29 h3 .right .english{letter-spacing: -1px;}
-#section29 .nowDirection{position: absolute; top: 50%; left: 50%; margin-top: -225px; margin-left: -680px; width: 835px; height: 760px;}
-#section29 .nowDirection .moveDircetion{position: relative; width: 0px; height: 100%; background: linear-gradient(270deg, rgba(87, 126, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 100%); border-right: 3px dashed #3874DE; box-sizing: border-box; transition: width 0.6s;}
-#section29 .imgDirection{position: absolute; top: 50%; left: 50%; z-index: 20; width: 1920px; height: 1080px; margin-top: -540px; margin-left: -960px;}
+#section29 h3 .right .english{letter-spacing: -0.5px;}
+#section29 .nowDirection{position: absolute; top: 50%; left: 50%; margin-top: -112.5px; margin-left: -340px; width: 417.5px; height: 380px;}
+#section29 .nowDirection .moveDircetion{position: relative; width: 0px; height: 100%; background: linear-gradient(270deg, rgba(87, 126, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 100%); border-right: 1.5px dashed #3874DE; box-sizing: border-box; transition: width 0.6s;}
+#section29 .imgDirection{position: absolute; top: 50%; left: 50%; z-index: 20; width: 906px; height: 512px; margin-top: -256px; margin-left: -453px;}
 
-#section29.step1 .nowDirection .moveDircetion{width: 835px;}
+#section29.step1 .nowDirection .moveDircetion{width: 417.5px;}
 
 
 /* 섹션 30 */
 #section30{background-color: #000;}
-#section30 .areaStep{position: relative; right: 0; width: 1084px; height: auto; margin: -50px auto 0 auto; transition: right 0.6s;}
-#section30 .areaStep .areaArrow{position: absolute; top: 80px; right: 0; left: 0;}
+#section30 .areaStep{position: relative; right: 0; width: 542px; height: auto; margin: -25px auto 0 auto; transition: right 0.6s;}
+#section30 .areaStep .areaArrow{position: absolute; top: 34px; right: 0; left: 0;}
 #section30 .areaStep .ulStep{position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; width: 100%; height: auto;}
-#section30 .areaStep .liStep{position: relative; width: 100%; height: 639px; opacity: 0; transition: opacity 0.6s;}
+#section30 .areaStep .liStep{position: relative; width: 100%; height: 319.5px; opacity: 0; transition: opacity 0.6s;}
 #section30 .areaStep .liStep img{height: 100%; object-fit: contain;}
-#section30 .areaStep .imgFinal{position: absolute; top: 50%; right: -440px; margin-top: -320px; height: 639px; opacity: 0; transition: opacity 0.6s;}
+#section30 .areaStep .imgFinal{position: absolute; top: 50%; right: -220px; margin-top: -160px; height: 319.5px; opacity: 0; transition: opacity 0.6s;}
 
 
 #section30.step1 .areaStep .liStep:nth-of-type(1){opacity: 1;}
 #section30.step2 .areaStep .liStep:nth-of-type(2){opacity: 1;}
 #section30.step3 .areaStep .liStep:nth-of-type(3){opacity: 1;}
-#section30.step4 .areaStep{right: 250px;}
+#section30.step4 .areaStep{right: 125px;}
 #section30.step5 .areaStep .imgFinal{opacity: 1;}
 
 /* 섹션 31 */
 #section31{background-color: #000; overflow: hidden;}
-#section31 .areaSynergyPlatform{position: relative; height: 950px; text-align: left;}
+#section31 .areaSynergyPlatform{position: relative; height: 475px; text-align: left;}
 #section31 .areaSynergyPlatform .bgSynergyPlatform{height: 100%; object-fit: contain;}
-#section31 .areaSynergyPlatform .ulSynergyPlatform{position: absolute; top: 45px; left: 75px; height: 852px;}
-#section31 .areaSynergyPlatform .liSynergyPlatform{position: absolute; left: 0; height: 244px;}
+#section31 .areaSynergyPlatform .ulSynergyPlatform{position: absolute; top: 22.5px; left: 37.5px; height: 426px;}
+#section31 .areaSynergyPlatform .liSynergyPlatform{position: absolute; left: 0; height: 122px;}
 #section31 .areaSynergyPlatform .liSynergyPlatform img{height: 100%; object-fit: contain;}
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1),
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(4){top: 0;}
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(2),
-#section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(5){top: 50%; margin-top: -122px;}
+#section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(5){top: 50%; margin-top: -61px;}
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(3),
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(6){bottom: 0;}
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1),
@@ -420,7 +420,7 @@ body{background-color: #000;}
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(4),
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(5),
 #section31 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(6){display: none;}
-#section31 .areaSynergy{position: absolute; top: 50%; right: -757px; height: 950px; margin-top: -475px; text-align: right; transition: right 0.6s;}
+#section31 .areaSynergy{position: absolute; top: 50%; right: -378.5px; height: 475px; margin-top: -237.5px; text-align: right; transition: right 0.6s;}
 #section31 .areaSynergy .bgSynergy{height: 100%; object-fit: contain;}
 
 #section31.step1 .areaSynergyPlatform .liSynergyPlatform:nth-of-type(1){opacity: 1;}
@@ -439,6 +439,6 @@ body{background-color: #000;}
 #section32{background-color: #000;}
 #section32 .bgSection32{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 #section32 .bgSection32 video{width: 100%; height: 100%; object-fit: cover; opacity: 0.4;}
-#section32 .areaThe{position: relative; line-height: 120px; color: #FFF; font-size: 120px; font-weight: 300;}
-#section32 .areaThe .imgThe{display: block; width: 180px; height: 131px; margin: 0 auto 25px auto;}
+#section32 .areaThe{position: relative; line-height: 60px; color: #FFF; font-size: 60px; font-weight: 300;}
+#section32 .areaThe .imgThe{display: block; width: 90px; height: 65.5px; margin: 0 auto 12.5px auto;}
 #section32 .areaThe b{color: inherit; font-size: inherit; font-weight: 700;}
