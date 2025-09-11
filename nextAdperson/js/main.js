@@ -107,13 +107,17 @@ $(document).ready(function() {
 			if(index == 5){
 				$("#section5 .areaTeam p span").addClass("wave");
 			}
-			// #sectoin5에 왔을 때 step 애니메이션 실행
+			// #sectoin6에 왔을 때 step 애니메이션 실행
 			if(index == 6){
 				$("#section6 .areaTeam p span").addClass("wave");
 			}
-			// #sectoin5에 왔을 때 step 애니메이션 실행
+			// #sectoin7에 왔을 때 step 애니메이션 실행
 			if(index == 7){
 				$("#section7 .areaTeam p span").addClass("wave");
+			}
+			// #sectoin8에 왔을 때 step 애니메이션 실행
+			if(index == 8){
+				$("#section8 .areaTeam p span").addClass("wave");
 			}
 			// #sectoin9에 왔을 때 step 애니메이션 실행
 			if(index == 9){
@@ -245,7 +249,7 @@ $(document).ready(function() {
 			}
 			// #section9를 떠날 때 #section8 애니메이션 클래스를 제거
 			if(index === 9) {
-				$("#section8").removeClass("step1");
+				$("#section8 .areaTeam p span").removeClass("wave");
 			}
 			// #section10를 떠날 때 #section9 애니메이션 클래스를 제거
 			if(index === 10) {
@@ -335,7 +339,20 @@ $(document).ready(function() {
 			}
 			//#section8일때 엔터 애니메이션 실행
 			if(idx === 8){
-				$("#section8").toggleClass("step1");
+				const $ul = $('#section8 .ulMember');
+				if ($ul.length === 0) return;
+
+				// 직전 단계 불러와 +1
+				const next = (($ul.data('step') || 0) + 1) % 3; // 0→1→2→0...
+				$ul.data('step', next);
+
+				// 1회: -1920, 2회: -3840, 3회: 0
+				let x;
+				if (next === 1) x = -1920;
+				else if (next === 2) x = -3840;
+				else x = 0;
+
+				$ul.css('transform', `translateX(${x}px)`);
 			}
 			//#section9일때 엔터 애니메이션 실행
 			if(idx === 9){
