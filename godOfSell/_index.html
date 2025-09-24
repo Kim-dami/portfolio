@@ -1,0 +1,892 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="fp-enabled">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Alvaro Trigo Lopez">
+	<meta name="Resource-type" content="Document">
+	<link rel="icon" href="favicon.ico">
+	<title>분양의신</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/_fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/_common.css">
+	<link rel="stylesheet" type="text/css" href="css/_layout.css">
+	<link rel="stylesheet" type="text/css" href="css/_main.css">
+</head>
+
+<body>
+	<!-- 스플래시 이미지 -->
+    <div class="splash" id="intro">
+        <img src="images/splash.jpg" alt="분양 올인원 플랫폼, 분양의신">
+    </div>
+
+	<!-- 온보딩 -->
+	<div class="onboarding slider-container">
+		<!-- 슬라이더 -->
+        <div class="slider">
+            <div class="slider-item">
+				<div class="slider-text">
+					<div class="sub-text">인기 현장부터 숨은 꿀 현장까지</div>
+					<div class="main-text">실시간 분양현장 구인구직</div>
+				</div>
+				<div class="slider-img">
+					<div class="mobile-item"><img src="images/mobile1-1.png" alt="현장"></div>
+					<div class="mobile">
+						<div class="white-shadow"></div>
+						<img src="images/mobile1.png" alt="구인구직">
+					</div>
+				</div>
+			</div>
+            <div class="slider-item">
+				<div class="slider-text">
+					<div class="sub-text">불필요한 정보는 NO</div>
+					<div class="main-text">핵심만 파악해서 보여주는 분양PLUS</div>
+				</div>
+				<div class="slider-img">
+					<div class="mobile-item"><img src="images/mobile2-1.png" alt="현장"></div>
+					<div class="mobile">
+						<div class="white-shadow"></div>
+						<img src="images/mobile2.png" alt="분양플러스스">
+					</div>
+				</div>
+			</div>
+            <div class="slider-item">
+				<div class="slider-text">
+					<div class="sub-text">예민한 질문도 눈치 보지 않고</div>
+					<div class="main-text">익명 자유게시판과 분양톡</div>
+				</div>
+				<div class="slider-img">
+					<div class="mobile-item"><img src="images/mobile3-1.png" alt="현장"></div>
+					<div class="mobile">
+						<div class="white-shadow"></div>
+						<img src="images/mobile3.png" alt="분양톡">
+					</div>
+				</div>
+			</div>
+        </div>
+
+        <!-- 다음 버튼 -->
+        <button class="custom-next">다음으로</button>
+	</div>
+
+	<!-- 헤더 -->
+	<header>
+		<a class="btn-home" href="_index.html"></a>
+		<form class="form-search">
+			<div class="search-wrap">
+				<div class="ic-search">
+					<svg width="20" height="20" viewBox="0 0 20 20">
+						<path id="패스_14" data-name="패스 14" d="M19.755,18.606l-3.437-3.361h0l-.081-.123a.809.809,0,0,0-1.137,0h0a8.113,8.113,0,0,1-10.519.34A7.679,7.679,0,0,1,2.876,5.31,8.075,8.075,0,0,1,12.953,2.342a7.741,7.741,0,0,1,4.314,9.385.779.779,0,0,0,.182.772.822.822,0,0,0,.774.232.8.8,0,0,0,.593-.54h0a9.334,9.334,0,0,0-5-11.25A9.754,9.754,0,0,0,1.689,4.085a9.256,9.256,0,0,0,1.36,12.194,9.789,9.789,0,0,0,12.535.515l3.044,2.976a.819.819,0,0,0,1.137,0,.784.784,0,0,0,0-1.12h0Z" transform="translate(0.205 0.216)" fill="#0000ed" stroke="#0000ed" stroke-width="0.4"/>
+					</svg>				  
+				</div>
+				<input type="text" placeholder="찾으시는 정보를 입력하세요">
+			</div>
+		</form>
+		<div class="header-menu">
+			<button type="button" class="btn-open-alarm">
+				<svg width="28" height="28" viewBox="0 0 28 28">
+					<g id="그룹_13" data-name="그룹 13" transform="translate(0 1.6)">
+					  <rect id="사각형_23" data-name="사각형 23" width="28" height="28" transform="translate(0)" fill="none"/>
+					  <path id="합치기_1" data-name="합치기 1" d="M10.471,23.751a4.628,4.628,0,0,1-1.206-.605,5.015,5.015,0,0,1-1.1-1.074,4.1,4.1,0,0,1-.7-1.529H2.83q-.05,0-.1,0H1.019a.973.973,0,1,1,0-1.945h.794v-8.8a10.337,10.337,0,0,1,.14-1.633A9.308,9.308,0,0,1,2.693,5.8a8.77,8.77,0,0,1,1.168-1.9A9.953,9.953,0,0,1,5.593,2.186,10.16,10.16,0,0,1,7.718.91,10.441,10.441,0,0,1,10.166.161a10.568,10.568,0,0,1,2.8-.114,11.428,11.428,0,0,1,1.6.265,10.831,10.831,0,0,1,1.5.5,10.171,10.171,0,0,1,4.425,3.527,9.372,9.372,0,0,1,1.728,5.389s0,.005,0,.008v.017c.008.4,0,.795,0,1.191v7.647h.766a.973.973,0,1,1,0,1.945H21.3q-.049,0-.1,0h-.03c-.239,0-.476,0-.715,0H16.538a3.622,3.622,0,0,1-.154.5,4.837,4.837,0,0,1-.865,1.417,4.629,4.629,0,0,1-2.254,1.376,4.916,4.916,0,0,1-1.28.168A4.586,4.586,0,0,1,10.471,23.751Zm1.305-1.694Zm.562-.018A3.973,3.973,0,0,0,13,21.868a3.863,3.863,0,0,0,.606-.337,3.707,3.707,0,0,0,.459-.437,3.6,3.6,0,0,0,.342-.552H9.587a3.542,3.542,0,0,0,.338.547,3.713,3.713,0,0,0,.464.442A3.762,3.762,0,0,0,11,21.87a3.735,3.735,0,0,0,.652.168A3.937,3.937,0,0,0,12.338,22.039Zm.074-.007.079-.009ZM11.1,21.914Zm-.188-.075-.057-.022Zm2.205-.012.026-.01ZM10.5,21.617Zm-.5-.428Zm4.364-.535.024-.055Zm-4.735,0L9.608,20.6Zm10.548-2.064q0-.118,0-.236V9.731a8.342,8.342,0,0,0-.063-1.014,8.4,8.4,0,0,0-.548-1.941,8.941,8.941,0,0,0-1.115-1.821,9.213,9.213,0,0,0-1.448-1.381A9.434,9.434,0,0,0,15.13,2.528,9.644,9.644,0,0,0,13.066,2a9.748,9.748,0,0,0-2.127,0,9.524,9.524,0,0,0-2.048.527A9.339,9.339,0,0,0,7.02,3.565,9.256,9.256,0,0,0,5.558,4.96,8.733,8.733,0,0,0,4.463,6.751a8.487,8.487,0,0,0-.554,1.965c-.016.126-.029.254-.038.381-.036.476-.023.955-.023,1.432v8.063Zm-.045-9.76c0-.031-.009-.062-.014-.092ZM20.116,8.7q-.008-.065-.017-.13C20.1,8.616,20.11,8.66,20.116,8.7ZM19.61,6.867ZM19.538,6.7l-.029-.068ZM4.491,6.684l.041-.094Zm.967-1.6.032-.039Zm13.093-.007-.016-.02ZM17.089,3.634ZM16.9,3.5l-.019-.014Zm-8.184-.9.109-.043Zm6.562,0-.072-.028Zm-2.071-.574Zm-2.409,0L10.918,2Zm.172-.021.1-.013Z" transform="translate(2 2)" fill="#333d4b"/>
+					  <g id="타원_2" data-name="타원 2" transform="translate(20 2)" fill="#0000ed" stroke="#fff" stroke-width="3.6">
+						<circle cx="3" cy="3" r="3" stroke="none"/>
+						<circle cx="3" cy="3" r="4.8" fill="none"/>
+					  </g>
+					</g>
+				  </svg>				  
+			</button>
+		</div>
+	</header>
+
+	<!-- 메인 메뉴 탭 -->
+	<div class="main-menu-tab">
+		<ul>
+			<li class="on"><a href="_index.html">홈</a></li>
+			<li><a href="jobPosting.html">구인공고</a></li>
+			<li><a href="salePlus.html">분양<label></label></a></li>
+			<li><a href="community.html">커뮤니티</a></li>
+			<li><a class="alert-link1">분양TV</a></li>
+			<li><a class="alert-link2">스토어</a></li>
+		</ul>
+	</div>
+
+	<!-- 메인메뉴 컨텐츠 -->
+	<div class="main-content-wrap">
+		<div class="main-visual swiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide slide1"><img src="images/main-visual-img1.png" alt="메인배너"></li>
+				<li class="swiper-slide slide2"><img src="images/main-visual-img2.jpg" alt="메인배너"></li>
+				<li class="swiper-slide slide3"><img src="images/main-visual-img3.png" alt="메인배너"></li>
+			</ul>
+			<div class="swiper-ctrl-wrap">
+				<div class="swiper-ctrl">
+					<div class="slide-counter">
+						<span id="current-slide">01</span> / <span id="total-slide">03</span>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<div class="main-quick-menu">
+			<ul>
+				<li class="btn-quick jobPosting"><a href="jobPosting.html">
+					<div class="icon">
+						<svg id="그룹_68" data-name="그룹 68" width="40" height="39.748" viewBox="0 0 40 39.748">
+							<g id="그룹_74" data-name="그룹 74" transform="translate(4.829 8.081)">
+							<path id="패스_49" data-name="패스 49" d="M97.725,63.607a.418.418,0,0,0-.467.151,5.241,5.241,0,0,1-8.469,0,.418.418,0,0,0-.468-.151q-.376.123-.749.266h0a7.292,7.292,0,0,0-4.539,8.165l1.174,6.173a4.148,4.148,0,0,0,4.075,3.373h9.484a4.148,4.148,0,0,0,4.075-3.373l1.186-6.24A7.213,7.213,0,0,0,98.539,63.9l-.054-.021q-.377-.146-.76-.27Z" transform="translate(-82.903 -54.591)" fill="#0000ed" fill-rule="evenodd"/>
+							<circle id="타원_5" data-name="타원 5" cx="6.079" cy="6.079" r="6.079" transform="translate(4.041)" fill="#f6c9b6"/>
+							<path id="패스_50" data-name="패스 50" d="M148.021,101H151.5a.418.418,0,1,0,0-.837h-3.483a.418.418,0,0,0,0,.837Z" transform="translate(-134.613 -83.827)" fill="#fbeded" fill-rule="evenodd"/>
+							</g>
+							<path id="패스_25" data-name="패스 25" d="M39.246,40.97l1.925-1.925L44.625,42.5,42.7,44.424Z" transform="translate(-15.344 -15.395)" fill="#333d4b"/>
+							<path id="패스_26" data-name="패스 26" d="M26.514,5.562a14.936,14.936,0,0,0-21.133,0c-9.449,9.449-2.629,25.5,10.564,25.5A14.946,14.946,0,0,0,26.514,5.562ZM24.1,24.288a11.536,11.536,0,1,1,0-16.315A11.449,11.449,0,0,1,24.1,24.288Z" transform="translate(-0.983 -1.184)" fill="#333d4b"/>
+							<path id="패스_27" data-name="패스 27" d="M55.738,50.712l-9.254-9.254a1.293,1.293,0,0,0-1.785,0L41.65,44.506a1.259,1.259,0,0,0,0,1.784L50.9,55.544a1.262,1.262,0,0,0,1.785,0L55.738,52.5a1.26,1.26,0,0,0,0-1.783Z" transform="translate(-16.108 -16.166)" fill="#333d4b"/>
+						</svg>					  
+					</div>
+					<div class="text">구인공고</div>
+				</a></li>
+				<li class="btn-quick scrapJob"><a href="mypage.html">
+					<div class="icon">
+						<svg width="60" height="60" viewBox="0 0 60 60">
+							<g id="그룹_1283" data-name="그룹 1283" transform="translate(-120 -300)">
+							<rect id="사각형_26" data-name="사각형 26" width="60" height="60" rx="10" transform="translate(120 300)" fill="#f2f4f6"/>
+							<g id="그룹_70" data-name="그룹 70" transform="translate(132.393 310)">
+								<path id="패스_29" data-name="패스 29" d="M1.25,6.477A1.227,1.227,0,0,1,2.477,5.25H7.387a1.227,1.227,0,1,1,0,2.455H2.477A1.227,1.227,0,0,1,1.25,6.477Zm0,9.818a1.227,1.227,0,0,1,1.227-1.227H7.387a1.227,1.227,0,0,1,0,2.455H2.477A1.227,1.227,0,0,1,1.25,16.3Zm0,9.818a1.227,1.227,0,0,1,1.227-1.227H7.387a1.227,1.227,0,1,1,0,2.455H2.477A1.227,1.227,0,0,1,1.25,26.114Z" transform="translate(-1.25 1.296)" fill="#8b95a1" fill-rule="evenodd"/>
+								<path id="패스_30" data-name="패스 30" d="M5.477,1.25A1.227,1.227,0,0,0,4.25,2.477V35.205a1.227,1.227,0,0,0,1.227,1.227H31.66a1.227,1.227,0,0,0,1.227-1.227V2.477A1.227,1.227,0,0,0,31.66,1.25Z" transform="translate(0.659 -1.25)" fill="#333d4b" fill-rule="evenodd"/>
+								<path id="패스_31" data-name="패스 31" d="M8.977,5.25A1.227,1.227,0,0,0,7.75,6.477v6.546A1.227,1.227,0,0,0,8.977,14.25H23.7a1.227,1.227,0,0,0,1.227-1.227V6.477A1.227,1.227,0,0,0,23.7,5.25Z" transform="translate(2.887 1.296)" fill="#f9f9f9" fill-rule="evenodd"/>
+								<g id="그룹_73" data-name="그룹 73" transform="translate(10.708 17.354)">
+								<path id="패스_45" data-name="패스 45" d="M95.337,63.6a.351.351,0,0,0-.392.127,4.4,4.4,0,0,1-7.1,0,.351.351,0,0,0-.392-.126q-.316.1-.628.223h0a6.117,6.117,0,0,0-3.808,6.85L84,75.857a3.48,3.48,0,0,0,3.418,2.83H95.37a3.48,3.48,0,0,0,3.418-2.83l1-5.234a6.05,6.05,0,0,0-3.764-6.774l-.045-.018q-.316-.122-.637-.227Z" transform="translate(-82.903 -56.04)" fill="#0000ed" fill-rule="evenodd"/>
+								<circle id="타원_4" data-name="타원 4" cx="5.099" cy="5.099" r="5.099" transform="translate(3.39)" fill="#f6c9b6"/>
+								<path id="패스_46" data-name="패스 46" d="M147.954,100.869h2.922a.351.351,0,1,0,0-.7h-2.922a.351.351,0,0,0,0,.7Z" transform="translate(-136.706 -86.46)" fill="#fbeded" fill-rule="evenodd"/>
+								</g>
+							</g>
+							</g>
+						</svg>					  
+					</div>
+					<div class="text">스크랩한 공고</div>
+				</a></li>
+				<li class="btn-quick freeBoard"><a href="community.html">
+					<div class="icon">
+						<svg id="그룹_1284" data-name="그룹 1284" width="40" height="41.726" viewBox="0 0 40 41.726">
+							<path id="패스_32" data-name="패스 32" d="M35.422,94.688a.351.351,0,0,0-.166-.632,2.778,2.778,0,0,1-2.4-2.239l-.984-5.178a5.4,5.4,0,0,1,.224-2.844.351.351,0,0,0-.2-.443A5.443,5.443,0,0,0,28.97,83l-.043.007q-.3.047-.6.11a.351.351,0,0,0-.276.306,3.9,3.9,0,0,1-5.46,3.154.351.351,0,0,0-.4.087q-.2.222-.388.456h0a5.516,5.516,0,0,0,.115,7.067L25,97.764a3.154,3.154,0,0,0,3.965.672l6.172-3.563A3.145,3.145,0,0,0,35.422,94.688Z" transform="translate(-19.568 -72.131)" fill="#0000ed" fill-rule="evenodd"/>
+							<path id="패스_34" data-name="패스 34" d="M76.9,111.8l1.429-.825a.351.351,0,0,0-.351-.608l-1.429.825a.351.351,0,1,0,.351.608Z" transform="translate(-65.969 -94.904)" fill="#e2f4fc" fill-rule="evenodd"/>
+							<path id="패스_35" data-name="패스 35" d="M79.128,111.026l.005.027.134.7,1.353-.781a.351.351,0,0,0,.17-.363l0-.013a.355.355,0,0,0-.04-.1.351.351,0,0,0-.479-.129Z" transform="translate(-68.257 -94.904)" fill="#c5e8f8" fill-rule="evenodd"/>
+							<path id="패스_37" data-name="패스 37" d="M160.782,83.4a.351.351,0,0,0-.2.441,5.332,5.332,0,0,1,.21,2.778l-1,5.234a2.778,2.778,0,0,1-2.39,2.238.351.351,0,0,0-.164.632,3.177,3.177,0,0,0,.284.185L163.7,98.47a3.154,3.154,0,0,0,3.965-.672l3.117-3.615a5.457,5.457,0,0,0,.115-6.989l-.027-.034q-.191-.237-.394-.463a.351.351,0,0,0-.4-.086,3.9,3.9,0,0,1-5.461-3.152.351.351,0,0,0-.277-.306q-.292-.062-.589-.108h0a5.5,5.5,0,0,0-2.965.353Z" transform="translate(-133.098 -72.167)" fill="#f7d349" fill-rule="evenodd"/>
+							<path id="패스_39" data-name="패스 39" d="M16.886,56.641a4.6,4.6,0,1,0,6.29,1.685A4.607,4.607,0,0,0,16.886,56.641Zm35.4,0a4.6,4.6,0,1,0,1.685,6.29A4.607,4.607,0,0,0,52.281,56.64Z" transform="translate(-14.583 -49.75)" fill="#f6c9b6" fill-rule="evenodd"/>
+							<path id="패스_40" data-name="패스 40" d="M95.337,63.6a.351.351,0,0,0-.392.127,4.4,4.4,0,0,1-7.1,0,.351.351,0,0,0-.392-.126q-.316.1-.628.223h0a6.117,6.117,0,0,0-3.808,6.85L84,75.857a3.48,3.48,0,0,0,3.418,2.83H95.37a3.48,3.48,0,0,0,3.418-2.83l1-5.234a6.05,6.05,0,0,0-3.764-6.774l-.045-.018q-.316-.122-.637-.227Z" transform="translate(-71.397 -56.04)" fill="#333d4b" fill-rule="evenodd"/>
+							<circle id="타원_3" data-name="타원 3" cx="5.099" cy="5.099" r="5.099" transform="translate(14.896)" fill="#f6c9b6"/>
+							<path id="패스_41" data-name="패스 41" d="M147.954,100.869h2.922a.351.351,0,1,0,0-.7h-2.922a.351.351,0,0,0,0,.7Z" transform="translate(-125.199 -86.46)" fill="#fbeded" fill-rule="evenodd"/>
+							<path id="패스_42" data-name="패스 42" d="M211.717,130.541l2.267,1.309a.351.351,0,0,0,.351-.608l-2.267-1.309a.351.351,0,1,0-.351.608Z" transform="translate(-178.369 -111.174)" fill="#f3f9f4" fill-rule="evenodd"/>
+							<path id="패스_43" data-name="패스 43" d="M90.815,39.386a1.25,1.25,0,0,0,1.25-1.242c.008-1.624-.219-4.372-1.763-5.329a15.1,15.1,0,0,1-4.264-4.929c-.31-.537-2.268-.978-2.132,1.232s2.123,4.611,2.985,5.339c0,0-5.358-2.284-6.822-4.107S79.051,24.9,78.364,24.6s-2.186-.641-2.132,1.643.71,6.411,2.132,7.393c1.248.863,5.568,2.969,6.6,4.943a1.2,1.2,0,0,0,1.113.755C87.289,39.386,89.462,39.386,90.815,39.386Z" transform="translate(-73.731 2.34)" fill="#f6c9b6" fill-rule="evenodd"/>
+							<path id="패스_44" data-name="패스 44" d="M14.584,0a1.25,1.25,0,0,1,1.25,1.242c.008,1.624-.219,4.372-1.763,5.329A15.1,15.1,0,0,0,9.808,11.5c-.31.537-2.268.978-2.132-1.232S9.8,5.657,10.66,4.929c0,0-5.358,2.284-6.822,4.107s-1.019,5.453-1.705,5.75S-.053,15.427,0,13.143.712,6.732,2.133,5.75C3.382,4.888,7.7,2.781,8.732.807A1.2,1.2,0,0,1,9.845.053C11.058,0,13.231,0,14.584,0Z" transform="translate(37.5 41.726) rotate(180)" fill="#f6c9b6" fill-rule="evenodd"/>
+						</svg>					  
+					</div>
+					<div class="text">자유게시판</div>
+				</a></li>
+				<li class="btn-quick saleTalk"><a href="saleTalk.html">
+					<div class="icon">
+						<svg id="그룹_78" data-name="그룹 78" width="33.333" height="32.208" viewBox="0 0 33.333 32.208">
+							<g id="그룹_75" data-name="그룹 75" transform="translate(0 9.986)">
+								<path id="패스_51" data-name="패스 51" d="M12.169,1.058A11.111,11.111,0,0,0,3.345,18.921c-.454,1.247-.622,2.709-.166,3.164.492.492,2.157.258,3.458-.28A11.111,11.111,0,1,0,12.169,1.058Z" transform="translate(-1.058 -1.058)" fill="#5454f3"/>
+								<path id="패스_52" data-name="패스 52" d="M17.026,16.171H5.006a1.074,1.074,0,1,1,0-2.147h12.02a1.074,1.074,0,1,1,0,2.147Z" transform="translate(0.095 -3.987)" fill="#fff"/>
+							</g>
+							<g id="그룹_77" data-name="그룹 77" transform="translate(11.111)">
+								<path id="패스_51-2" data-name="패스 51" d="M12.169,1.058a11.111,11.111,0,0,1,8.824,17.863c.454,1.247.622,2.709.166,3.164-.492.492-2.157.258-3.458-.28A11.111,11.111,0,1,1,12.169,1.058Z" transform="translate(-1.058 -1.058)" fill="#333d4b"/>
+								<g id="그룹_76" data-name="그룹 76" transform="translate(4.074 9.722)">
+								<circle id="타원_6" data-name="타원 6" cx="1.389" cy="1.389" r="1.389" transform="translate(11.111)" fill="#fff"/>
+								<circle id="타원_7" data-name="타원 7" cx="1.389" cy="1.389" r="1.389" transform="translate(5.556)" fill="#fff"/>
+								<circle id="타원_8" data-name="타원 8" cx="1.389" cy="1.389" r="1.389" transform="translate(0)" fill="#fff"/>
+								</g>
+							</g>
+						</svg>					  
+					</div>
+					<div class="text">분양 TALK</div>
+				</a></li>
+				<li class="btn-quick sms"><a class="alert-link3">
+					<div class="icon">
+						<svg id="그룹_79" data-name="그룹 79" width="32.502" height="33.333" viewBox="0 0 32.502 33.333">
+							<path id="패스_55" data-name="패스 55" d="M37.933,5.09V32.243a3.09,3.09,0,0,1-3.09,3.09H19.127a3.09,3.09,0,0,1-3.09-3.09V5.09A3.09,3.09,0,0,1,19.127,2H34.843a3.09,3.09,0,0,1,3.09,3.09Z" transform="translate(-5.432 -2)" fill="#333d4b"/>
+							<path id="패스_57" data-name="패스 57" d="M20.043,32.431a1.008,1.008,0,0,1-1.006-1.007V6.007A1.008,1.008,0,0,1,20.044,5H35.759a1.008,1.008,0,0,1,1.007,1.007V31.425a1.008,1.008,0,0,1-1.007,1.006H20.044Z" transform="translate(-6.348 -2.917)" fill="#e6e6fd"/>
+							<g id="그룹_81" data-name="그룹 81" transform="translate(0 2.083)">
+								<path id="패스_51" data-name="패스 51" d="M10.317,1.058a9.259,9.259,0,0,1,7.353,14.886c.378,1.039.518,2.258.139,2.637-.41.41-1.8.215-2.881-.233A9.259,9.259,0,1,1,10.317,1.058Z" transform="translate(-1.058 -1.058)" fill="#f7d349"/>
+								<g id="그룹_76" data-name="그룹 76" transform="translate(3.395 8.102)">
+								<circle id="타원_6" data-name="타원 6" cx="1.157" cy="1.157" r="1.157" transform="translate(9.259)" fill="#333d4b"/>
+								<circle id="타원_7" data-name="타원 7" cx="1.157" cy="1.157" r="1.157" transform="translate(4.63)" fill="#333d4b"/>
+								<circle id="타원_8" data-name="타원 8" cx="1.157" cy="1.157" r="1.157" transform="translate(0)" fill="#333d4b"/>
+								</g>
+							</g>
+						</svg>					  
+					</div>
+					<div class="text">SMS</div>
+				</a></li>
+				<li class="btn-quick notice"><a class="alert-link4">
+					<div class="icon">
+						<svg id="그룹_82" data-name="그룹 82" width="37.234" height="40" viewBox="0 0 37.234 40">
+							<path id="패스_58" data-name="패스 58" d="M12.317,41.479H38.646A1.3,1.3,0,0,0,39.963,40.2V8.276A1.3,1.3,0,0,0,38.646,7H12.317A1.3,1.3,0,0,0,11,8.276V40.2A1.3,1.3,0,0,0,12.317,41.479Z" transform="translate(-6.865 -4.24)" fill="#d1d6db"/>
+							<path id="패스_59" data-name="패스 59" d="M41.418,33.093,18.889,42.885a1.356,1.356,0,0,1-1.786-.7L5.118,14.695a1.358,1.358,0,0,1,.7-1.793L28.35,3.109a1.356,1.356,0,0,1,1.786.7l11.985,27.48a1.358,1.358,0,0,1-.7,1.793Z" transform="translate(-5.003 -2.997)" fill="#5454f3"/>
+							<circle id="타원_9" data-name="타원 9" cx="2.758" cy="2.758" r="2.758" transform="translate(19.996 2.76)" fill="#333d4b"/>
+							<circle id="타원_10" data-name="타원 10" cx="2.069" cy="2.069" r="2.069" transform="translate(18.617 2.76)" fill="#6b7684"/>
+							<path id="패스_64" data-name="패스 64" d="M152.878,185.535a6.9,6.9,0,1,1,6.9-6.9A6.969,6.969,0,0,1,152.878,185.535Z" transform="translate(-134.261 -157.179)" fill="#f7d349"/>
+							<path id="패스_65" data-name="패스 65" d="M240.352,215.181a1.171,1.171,0,1,0,1.137,1.171A1.116,1.116,0,0,0,240.352,215.181Zm-.879-1.394a.881.881,0,0,0,1.759,0l.249-4.353a1.13,1.13,0,1,0-2.256,0Z" transform="translate(-221.735 -191.421)" fill="#333d4b"/>
+						</svg>					  
+					</div>
+					<div class="text">공지사항</div>
+				</a></li>
+				<li class="btn-quick jobEnrollment"><a href="jobPosting.html">
+					<div class="icon">
+						<svg id="그룹_83" data-name="그룹 83" width="40" height="36.727" viewBox="0 0 40 36.727">
+							<path id="패스_66" data-name="패스 66" d="M32.073,15.6V6.142a1.549,1.549,0,0,0-1.549-1.549H9.846v6.316A1.549,1.549,0,0,1,8.3,12.459H2l0,0V37.128a1.549,1.549,0,0,0,1.549,1.549H30.522a1.549,1.549,0,0,0,1.549-1.549V15.6Z" transform="translate(0.728 -4.593)" fill="#fff"/>
+							<path id="패스_67" data-name="패스 67" d="M8.733,4.593,4.239,9.1l4.5-4.512Z" transform="translate(1.834 -4.593)" fill="#e4edf2"/>
+							<path id="패스_68" data-name="패스 68" d="M9.846,10.909V4.593L5.346,9.1,2,12.459H8.3A1.551,1.551,0,0,0,9.846,10.909Z" transform="translate(0.728 -4.593)" fill="#e5e8eb"/>
+							<g id="그룹_85" data-name="그룹 85" transform="translate(0 13.044)">
+								<path id="패스_45" data-name="패스 45" d="M95.905,63.6a.367.367,0,0,0-.41.132,4.6,4.6,0,0,1-7.429,0,.367.367,0,0,0-.41-.132q-.33.108-.657.234h0A6.4,6.4,0,0,0,83.016,71l1.03,5.415a3.639,3.639,0,0,0,3.575,2.959H95.94a3.639,3.639,0,0,0,3.575-2.959l1.041-5.474a6.327,6.327,0,0,0-3.936-7.084l-.047-.018Q96.241,63.714,95.905,63.6Z" transform="translate(-82.903 -55.695)" fill="#0000ed" fill-rule="evenodd"/>
+								<circle id="타원_4" data-name="타원 4" cx="5.332" cy="5.332" r="5.332" transform="translate(3.545)" fill="#f6c9b6"/>
+								<path id="패스_46" data-name="패스 46" d="M147.97,100.9h3.056a.367.367,0,1,0,0-.734H147.97a.367.367,0,0,0,0,.734Z" transform="translate(-136.208 -85.833)" fill="#fbeded" fill-rule="evenodd"/>
+							</g>
+							<path id="합치기_11" data-name="합치기 11" d="M.806,8.328a.806.806,0,0,1,0-1.612h5.43a.806.806,0,0,1,0,1.612Zm0-3.358a.806.806,0,0,1,0-1.612H8.42a.806.806,0,0,1,0,1.612Zm0-3.358A.806.806,0,0,1,.806,0H8.42a.806.806,0,0,1,0,1.612Z" transform="translate(18.524 5.345)" fill="#333d4b"/>
+							<g id="그룹_86" data-name="그룹 86" transform="translate(22.432 12.498)">
+								<path id="패스_69" data-name="패스 69" d="M17.945,6.792a2.4,2.4,0,0,0-2.508-2.508l-2.817.134A4.139,4.139,0,0,0,9.395,6.225l-2.789,4.1a3.813,3.813,0,0,0,5.3,5.3L16,12.835a4.139,4.139,0,0,0,1.807-3.226Z" transform="translate(-0.381 -4.281)" fill="#0000ed"/>
+								<path id="패스_70" data-name="패스 70" d="M17.246,4.983,7.062,15.167h0a3.813,3.813,0,0,1-.457-4.84l2.789-4.1a4.139,4.139,0,0,1,3.226-1.807l2.817-.134A2.387,2.387,0,0,1,17.246,4.983Z" transform="translate(-0.381 -4.281)" fill="#3333f1" fill-rule="evenodd"/>
+								<path id="패스_71" data-name="패스 71" d="M12.4,9.674a.654.654,0,0,1,0,.924L.676,22.156a.654.654,0,1,1-.924-.924L11.479,9.674A.654.654,0,0,1,12.4,9.674Z" transform="translate(0.44 -4.95)" fill="#d1d6db" fill-rule="evenodd"/>
+							</g>
+						</svg>					  
+					</div>
+					<div class="text">공고 등록</div>
+				</a></li>
+				<li class="btn-quick adPassage"><a class="alert-link5">
+					<div class="icon">
+						<svg id="그룹_87" data-name="그룹 87" xmlns="http://www.w3.org/2000/svg" width="40" height="32.5" viewBox="0 0 40 32.5">
+							<rect id="사각형_29" data-name="사각형 29" width="40" height="26.667" rx="5" fill="#8a8af7"/>
+							<path id="패스_72" data-name="패스 72" d="M55.555,146.795H24.55a1,1,0,1,1,0-2H55.555a1,1,0,1,1,0,2Z" transform="translate(-20.053 -124.132)" fill="#fff"/>
+							<path id="다각형_1" data-name="다각형 1" d="M4.2,1.067a1,1,0,0,1,1.6,0l3,4a1,1,0,0,1-.8,1.6H2a1,1,0,0,1-.8-1.6Z" transform="translate(24.583 6.25) rotate(90)" fill="#fff"/>
+							<rect id="사각형_30" data-name="사각형 30" width="28.333" height="3.333" rx="1.667" transform="translate(5.833 29.167)" fill="#333d4b"/>
+							<path id="패스_72-2" data-name="패스 72" d="M38.889,146.795H24.55a1,1,0,1,1,0-2H38.889a1,1,0,1,1,0,2Z" transform="translate(-20.053 -124.132)" fill="#0000ed"/>
+						</svg>				  
+					</div>
+					<div class="text">광고 문의</div>
+				</a></li>
+			</ul>
+		</div>
+		<div class="main-content site-list">
+			<div class="title">
+				<ul class="tab">
+					<li class="hotPlace on">
+						<div class="title-text">
+							지금 뜨는 현장
+							<div class="title-icon">
+								<svg width="13.514" height="18" viewBox="0 0 13.514 18">
+									<path id="패스_85" data-name="패스 85" d="M16.514,10.592a10.587,10.587,0,0,0-2.553-5.856c-1.126-1.5-1.952-2.628-1.952-4.355,0-.15-.075-.3-.225-.3a.335.335,0,0,0-.375,0A9.741,9.741,0,0,0,7.88,5.187,20.527,20.527,0,0,0,7.5,8.941C6,8.64,5.628,6.313,5.628,6.313c0-.15-.225-.3-.45-.3H5.1c-.075.075-1.952,1.051-2.1,4.88v.375a6.757,6.757,0,1,0,13.514,0ZM7.5,14.872v-.15a3.112,3.112,0,0,1,.225-1.2,1.381,1.381,0,0,0,1.276.9.355.355,0,0,0,.375-.375,6.722,6.722,0,0,1,.15-1.727,3.267,3.267,0,0,1,.751-1.426,5.192,5.192,0,0,0,.751,1.426,4.572,4.572,0,0,1,.976,2.327v.225a2.391,2.391,0,0,1-2.252,2.4A2.339,2.339,0,0,1,7.5,14.872Z" transform="translate(-3 -0.025)" fill="#d54e4e"/>
+								</svg>								  
+							</div>
+						</div>
+					</li>
+					<li class="expectedPlace">
+						<div class="title-text">
+							오픈 예정 현장
+							<div class="title-icon">
+								<svg width="24" height="24" viewBox="0 0 24 24">
+									<g id="그룹_339" data-name="그룹 339" transform="translate(-453 -361)" opacity="0.5">
+									  <rect id="사각형_118" data-name="사각형 118" width="24" height="24" transform="translate(453 361)" fill="none"/>
+									  <g id="그룹_1253" data-name="그룹 1253" transform="translate(454 362)">
+										<path id="패스_226" data-name="패스 226" d="M6.9,5.6A.9.9,0,0,1,6,4.7V2.9a.9.9,0,0,1,1.8,0V4.7a.9.9,0,0,1-.9.9Zm9,0a.9.9,0,0,1-.9-.9V2.9a.9.9,0,1,1,1.8,0V4.7a.9.9,0,0,1-.9.9Z" transform="translate(-0.4)" fill="#b0b0f9"/>
+										<path id="패스_227" data-name="패스 227" d="M17.3,4h-.9v.9a.9.9,0,0,1-1.8,0V4H7.4v.9a.9.9,0,0,1-1.8,0V4H4.7A2.7,2.7,0,0,0,2,6.7V8.5H20V6.7A2.7,2.7,0,0,0,17.3,4Z" transform="translate(0 -0.2)" fill="#0000ed"/>
+										<path id="합치기_23" data-name="합치기 23" d="M-1049-4406.5a.9.9,0,0,1,.9-.9.9.9,0,0,1,.9.9.9.9,0,0,1-.9.9A.9.9,0,0,1-1049-4406.5Zm-4.5,0a.9.9,0,0,1,.9-.9.9.9,0,0,1,.9.9.9.9,0,0,1-.9.9A.9.9,0,0,1-1053.5-4406.5Zm-4.5,0a.9.9,0,0,1,.9-.9.9.9,0,0,1,.9.9.9.9,0,0,1-.9.9A.9.9,0,0,1-1058-4406.5Zm9-3.6a.9.9,0,0,1,.9-.9.9.9,0,0,1,.9.9.9.9,0,0,1-.9.9A.9.9,0,0,1-1049-4410.1Zm-4.5,0a.9.9,0,0,1,.9-.9.9.9,0,0,1,.9.9.9.9,0,0,1-.9.9A.9.9,0,0,1-1053.5-4410.1Zm-4.5,0a.9.9,0,0,1,.9-.9.9.9,0,0,1,.9.9.9.9,0,0,1-.9.9A.9.9,0,0,1-1058-4410.1Z" transform="translate(1063.6 4422)" fill="#0000ed"/>
+										<path id="패스_228" data-name="패스 228" d="M2,9v9a2.7,2.7,0,0,0,2.7,2.7H17.3A2.7,2.7,0,0,0,20,18V9Zm4.5,8.1a.9.9,0,1,1,.9-.9A.9.9,0,0,1,6.5,17.1Zm0-3.6a.9.9,0,1,1,.9-.9A.9.9,0,0,1,6.5,13.5ZM11,17.1a.9.9,0,1,1,.9-.9A.9.9,0,0,1,11,17.1Zm0-3.6a.9.9,0,1,1,.9-.9A.9.9,0,0,1,11,13.5Zm4.5,3.6a.9.9,0,1,1,.9-.9A.9.9,0,0,1,15.5,17.1Zm0-3.6a.9.9,0,1,1,.9-.9A.9.9,0,0,1,15.5,13.5Z" transform="translate(0 -0.7)" fill="#b0b0f9"/>
+									  </g>
+									</g>
+								</svg>																
+							</div>
+						</div>
+					</li>
+				</ul>
+				<a href="#" class="btn-link-move">
+					<svg width="17.828" height="9.914" viewBox="0 0 17.828 9.914">
+						<path id="패스_13" data-name="패스 13" d="M4.459,14l7.5,7.5,7.5-7.5" transform="translate(-3.045 -12.586)" fill="none" stroke="#6b7684" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</svg>		  
+				</a>
+			</div>
+			<div class="content-wrap">
+				<ul class="site-list-wrap hotPlace">
+					<li><a href="#">
+						<div class="site-text">
+							<div class="label">4월 오픈 예정</div>
+							<div class="info">
+								<div class="name">마포 주상복합 빌리브 디에이블</div>
+								<div class="category">아파트</div>
+							</div>
+						</div>
+						<div class="img-shadow"></div>
+						<div class="site-img"><img src="images/ex-site1.jpg" alt="현장이미지"></div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><div class="site-text"><div class="label">4월 오픈 예정</div><div class="info"><div class="name">천안 직산 프라임마크써밋</div><div class="category">오피스텔</div></div></div><div class="img-shadow"></div><div class="site-img"><img src="images/ex-site2.jpg" alt="현장이미지"></div></a></li>
+					<li><a href="#"><div class="site-text"><div class="label">4월 오픈 예정</div><div class="info"><div class="name">힐스테이트 일반 아파트</div><div class="category">아파트</div></div></div><div class="img-shadow"></div><div class="site-img"><img src="images/ex-site3.jpg" alt="현장이미지"></div></a></li>
+					<li><a href="#"><div class="site-text"><div class="label">4월 오픈 예정</div><div class="info"><div class="name">마포 빌리브 에이센트</div><div class="category">오피스텔</div></div></div><div class="img-shadow"></div><div class="site-img"><img src="images/ex-site4.jpg" alt="현장이미지"></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+				<ul class="site-list-wrap expectedPlace" style="display:none;">
+					<li><a href="#">
+						<div class="site-text">
+							<div class="label">8월 오픈 예정</div>
+							<div class="info">
+								<div class="name">오픈 예정이지롱롱롱</div>
+								<div class="category">아파트</div>
+							</div>
+						</div>
+						<div class="img-shadow"></div>
+						<div class="site-img"><img src="images/ex-site5.jpg" alt="현장이미지"></div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><div class="site-text"><div class="label">9월 오픈 예정</div><div class="info"><div class="name">오픈 할까 말까</div><div class="category">오피스텔</div></div></div><div class="img-shadow"></div><div class="site-img"><img src="images/ex-site7.jpg" alt="현장이미지"></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+			</div>
+		</div>
+		<div class="main-content pushSite">
+			<div class="title">
+				<div class="title-text">
+					추천 공고
+					<div class="title-icon">
+						<svg id="그룹_359" data-name="그룹 359" xmlns="http://www.w3.org/2000/svg" width="21.021" height="17.145" viewBox="0 0 21.021 17.145">
+							<path id="패스_86" data-name="패스 86" d="M22.13,11.515l-.456-.643V9.715A1.773,1.773,0,0,0,19.851,8H15.856a.455.455,0,0,1-.387-.2.4.4,0,0,1-.02-.417l1.463-2.752a1.724,1.724,0,0,0-.086-1.766A1.963,1.963,0,0,0,15.184,2h-.545L9.593,7.083A5.38,5.38,0,0,0,8,10.885v3.973a4.433,4.433,0,0,0,4.558,4.286h4.95a2.316,2.316,0,0,0,1.9-.954l2.726-3.847a2.425,2.425,0,0,0,0-2.831Z" transform="translate(-1.564 -2)" fill="#f6c8b6"/>
+							<path id="패스_87" data-name="패스 87" d="M14.639,2.214h.546a1.891,1.891,0,0,1,1.928,1.7,1.756,1.756,0,0,0-.526-1.347A1.993,1.993,0,0,0,15.185,2h-.547L9.594,7.084A5.38,5.38,0,0,0,8,10.885V11.1A5.38,5.38,0,0,1,9.593,7.3l5.046-5.084Zm.83,5.583a.462.462,0,0,1-.053-.113.41.41,0,0,0,.053.327.455.455,0,0,0,.387.2h3.995A1.773,1.773,0,0,1,21.674,9.93V9.715A1.773,1.773,0,0,0,19.851,8H15.856a.455.455,0,0,1-.387-.2Z" transform="translate(-1.564 2.286)" fill="#fff" opacity="0.2"/>
+							<path id="패스_88" data-name="패스 88" d="M22.13,15.933,19.4,19.779a2.316,2.316,0,0,1-1.9.954h-4.95A4.433,4.433,0,0,1,8,16.447v.214a4.433,4.433,0,0,0,4.558,4.286h4.95a2.316,2.316,0,0,0,1.9-.954l2.726-3.847a2.43,2.43,0,0,0,.453-1.522,2.44,2.44,0,0,1-.453,1.308Z" transform="translate(-1.564 -9.481)" opacity="0.05"/>
+							<path id="패스_89" data-name="패스 89" d="M0,9.857v9.43a.886.886,0,0,0,.912.857H5.47a.886.886,0,0,0,.912-.857V9.857A.886.886,0,0,0,5.47,9H.912A.886.886,0,0,0,0,9.857Z" transform="translate(0 -3.857)" fill="#3e62f6"/>
+							<path id="패스_90" data-name="패스 90" d="M5.47,21.607H.912A.886.886,0,0,1,0,20.75v.214a.886.886,0,0,0,.912.857H5.47a.886.886,0,0,0,.912-.857V20.75A.886.886,0,0,1,5.47,21.607Z" transform="translate(0 -10.464)" opacity="0.1"/>
+							<path id="패스_91" data-name="패스 91" d="M5.47,9H.912A.886.886,0,0,0,0,9.857v.214a.886.886,0,0,1,.912-.857H5.47a.886.886,0,0,1,.912.857V9.857A.886.886,0,0,0,5.47,9Z" transform="translate(0 1.286)" fill="#fff" opacity="0.2"/>
+						</svg>						  
+					</div>
+				</div>
+				<a href="jobPosting.html" class="btn-link-move">
+					<svg width="17.828" height="9.914" viewBox="0 0 17.828 9.914">
+						<path id="패스_13" data-name="패스 13" d="M4.459,14l7.5,7.5,7.5-7.5" transform="translate(-3.045 -12.586)" fill="none" stroke="#6b7684" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</svg>		  
+				</a>
+			</div>
+			<div class="content-wrap">
+				<ul class="pushSite-list">
+					<li><a href="#">
+						<div class="pushSite-img">
+							<div class="label">오피스텔</div>
+							<img src="images/ex-site2.jpg" alt="현장이미지">
+						</div>
+						<div class="pushSite-name">마포 주상복합 빌리브 디에이블</div>
+						<div class="pushSite-info-value">
+							<div class="item-list">
+								<div class="item">
+									<div class="category leader">팀장</div>
+									<div class="value-wrap">
+										<div class="label">RT</div>
+										<div class="value">9,000,000</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="category member">팀원</div>
+									<div class="value-wrap">
+										<div class="label">RT</div>
+										<div class="value">9,000,000</div>
+									</div>
+								</div>
+							</div>
+							<ul class="category-list">
+								<li>
+									<div class="text">일비</div>
+									<div class="value">1</div>
+								</li>
+								<li>
+									<div class="text">숙소</div>
+									<div class="value">20</div>
+								</li>
+							</ul>
+						</div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site4.jpg" alt="현장이미지"></div><div class="pushSite-name">마포 빌리브 에이센트</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category leader">팀장</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div><div class="item"><div class="category member">팀원</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">일비</div><div class="value">1</div></li><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">숙소</div><div class="value">20</div></li></ul></div></a></li>
+					<li><a href="#"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site5.jpg" alt="현장이미지"></div><div class="pushSite-name">마포 빌리브 에이센트</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category team">팀</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div><div class="item"><div class="category manager">본부장</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">교통</div><div class="value">1</div></li></ul></div></a></li>
+					<li><a href="#"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site7.jpg" alt="현장이미지"></div><div class="pushSite-name">천안 직산 프라임 마크써밋</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category team">팀</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">일비</div><div class="value">1</div></li><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">숙소</div><div class="value">20</div></li></ul></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+			</div>
+		</div>
+		<div class="main-content realTime-post">
+			<div class="title">
+				<div class="title-text">
+					실시간 인기글
+					<div class="title-icon">
+						<svg id="그룹_1255" data-name="그룹 1255" width="17.143" height="16.906" viewBox="0 0 17.143 16.906">
+							<path id="패스_229" data-name="패스 229" d="M19.3,12.16h-4.4a.668.668,0,0,0-.659.659v7.033a.659.659,0,0,0,.659.659h5.275a.659.659,0,0,0,.659-.659V13.7A1.547,1.547,0,0,0,19.3,12.16Z" transform="translate(-3.701 -3.606)" fill="#f7d349"/>
+							<path id="패스_230" data-name="패스 230" d="M8.184,14.16h-4.4A1.547,1.547,0,0,0,2.25,15.7v4.4a.659.659,0,0,0,.659.659H8.184a.659.659,0,0,0,.659-.659V14.819a.668.668,0,0,0-.659-.659Z" transform="translate(-2.25 -3.848)" fill="#f57d32"/>
+							<path id="패스_231" data-name="패스 231" d="M13.3,9.16H9.788A1.547,1.547,0,0,0,8.25,10.7V19.49a.659.659,0,0,0,.659.659h5.275a.659.659,0,0,0,.659-.659V10.7A1.547,1.547,0,0,0,13.3,9.16Z" transform="translate(-2.975 -3.244)" fill="#0000ed"/>
+							<path id="패스_232" data-name="패스 232" d="M12.168,2.659l.554,1.152,1.248.176a.44.44,0,0,1,.237.747l-.879.879.211,1.24a.431.431,0,0,1-.633.457L11.8,6.729l-1.116.58a.431.431,0,0,1-.624-.457l.193-1.284-.879-.879a.44.44,0,0,1,.237-.747l1.222-.132.563-1.125a.431.431,0,0,1,.774-.026Z" transform="translate(-3.095 -2.43)" fill="#ffc107"/>
+						</svg>
+					</div>
+				</div>
+				<a href="#" class="btn-link-move">
+					<svg width="17.828" height="9.914" viewBox="0 0 17.828 9.914">
+						<path id="패스_13" data-name="패스 13" d="M4.459,14l7.5,7.5,7.5-7.5" transform="translate(-3.045 -12.586)" fill="none" stroke="#6b7684" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</svg>		  
+				</a>
+			</div>
+			<div class="content-wrap">
+				<ul class="content-menu">
+					<li class="realTime-post hotTopic on">HOT TOPIC</li>
+					<li class="realTime-post recentPost">실시간 게시글</li>
+					<li class="realTime-post tip">꿀 TIP</li>
+				</ul>
+				<ul class="content-list hotTopic">
+					<li><a href="#">
+						<div class="hotTopic-item-text">
+							<div class="label-list">
+								<label class="label hot"></label>
+								<label class="category">분양상담</label>
+							</div>
+							<div class="title">직거래계약서 vs 중개거래계약서</div>
+							<div class="sub">어제보니까 쌍촌자이34가 무슨 9억4천에 계약했다는데 말도 안 되게 비싸 으에엑</div>
+							<div class="keyword">
+								<span>쌍촌동</span>
+								<span>아파트</span>
+								<span>직거래계약서</span>
+							</div>
+						</div>
+						<div class="hotTopic-item-img"><img src="images/ex-thumb1.png" alt="썸네일"></div>
+						<div class="hotTopic-item-info">
+							<div class="writerTime">
+								<label class="writer">김분양</label>
+								<label class="time">20시간전</label>
+							</div>
+							<div class="viewLikeComment">
+								<label class="view">
+									<svg width="17" height="10" viewBox="0 0 17 10">
+										<defs>
+										  <clipPath id="clip-path">
+											<rect id="사각형_279" data-name="사각형 279" width="17" height="10" transform="translate(0 0)" fill="#aeb0b3"/>
+										  </clipPath>
+										</defs>
+										<g id="그룹_1396" data-name="그룹 1396" transform="translate(0 0)">
+										  <g id="그룹_1395" data-name="그룹 1395" clip-path="url(#clip-path)">
+											<path id="패스_106" data-name="패스 106" d="M6.958,0C3.115,0,0,3.163,0,3.163S3.115,6.325,6.958,6.325s6.958-3.163,6.958-3.163S10.8,0,6.958,0m0,5.693a2.53,2.53,0,1,1,2.53-2.53,2.53,2.53,0,0,1-2.53,2.53" transform="translate(1.833 1.675)" fill="#aeb0b3"/>
+											<path id="패스_107" data-name="패스 107" d="M46.9,16.392a.631.631,0,0,1-.069-1.258,1.272,1.272,0,1,0,.665.832.631.631,0,0,1-.6.426" transform="translate(-37.474 -11.428)" fill="#aeb0b3"/>
+										  </g>
+										</g>
+									</svg>									  
+									541
+								</label>
+								<label class="like">
+									<svg width="12" height="10.352" viewBox="0 0 12 10.352">
+										<defs>
+										  <clipPath id="clip-path">
+											<rect id="사각형_277" data-name="사각형 277" width="12" height="10.352" fill="none"/>
+										  </clipPath>
+										</defs>
+										<g id="그룹_1389" data-name="그룹 1389" clip-path="url(#clip-path)">
+										  <path id="패스_104" data-name="패스 104" d="M11.1.9a3.076,3.076,0,0,0-4.35,0L6,1.651,5.249.9A3.076,3.076,0,0,0,.9,5.251l5.1,5.1,5.1-5.1A3.08,3.08,0,0,0,11.1.9" transform="translate(0 0)" fill="rgba(94,98,104,0.5)"/>
+										</g>
+									</svg>									  
+									65
+								</label>
+								<label class="comment">
+									<svg id="그룹_1390" data-name="그룹 1390" width="13" height="11.352" viewBox="0 0 13 11.352">
+										<defs>
+										  <clipPath id="clip-path">
+											<rect id="사각형_277" data-name="사각형 277" width="13" height="11.352" fill="none"/>
+										  </clipPath>
+										</defs>
+										<g id="그룹_1389" data-name="그룹 1389" clip-path="url(#clip-path)">
+										  <path id="합치기_9" data-name="합치기 9" d="M5.619,10.07,4.4,8.853H3.257A3.077,3.077,0,0,1,0,6.007V2.846A3.076,3.076,0,0,1,3.257,0H8.739A3.078,3.078,0,0,1,12,2.846V6.007A3.078,3.078,0,0,1,8.739,8.853H7.6L6.377,10.07a.547.547,0,0,1-.759,0ZM1.672,1.509a1.756,1.756,0,0,0-.64,1.337V6.007a1.753,1.753,0,0,0,.64,1.336A2.416,2.416,0,0,0,3.257,7.9h1.37a.538.538,0,0,1,.381.155L6,9.047l.993-.993A.539.539,0,0,1,7.369,7.9h1.37a2.422,2.422,0,0,0,1.587-.557,1.751,1.751,0,0,0,.642-1.336V2.846a1.752,1.752,0,0,0-.642-1.337A2.427,2.427,0,0,0,8.739.952H3.257A2.421,2.421,0,0,0,1.672,1.509Zm2.5,3.657a.478.478,0,1,1,0-.953H7.828a.478.478,0,1,1,0,.953Z" transform="translate(0.525 0.511)" fill="#aeb0b3"/>
+										</g>
+										<g id="그룹_1398" data-name="그룹 1398" transform="translate(0.5 0.55)">
+										  <path id="다각형_1" data-name="다각형 1" d="M1,0,2,2H0Z" transform="translate(7 9.45) rotate(180)" fill="#aeb0b3"/>
+										  <rect id="사각형_280" data-name="사각형 280" width="12" height="8.8" rx="3" fill="#aeb0b3"/>
+										  <path id="패스_109" data-name="패스 109" d="M1522.094,272.95h0Z" transform="translate(-1518 -268.3)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+										</g>
+									</svg>									  
+									32
+								</label>
+							</div>
+						</div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li class="noImg"><a href="#"><div class="hotTopic-item-text"><div class="label-list"><label class="label hot"></label><label class="category">분양상담</label></div><div class="title">운암자이25 30 34평/직장인 신혼 디딤돌대출</div><div class="sub">26년4월입주 신규아파트 25평  방3개 화장실2개 주방 욕실 다용도실 이 정도면 살만 하네</div><div class="keyword"><span>운암동</span><span>아파트</span><span>디딤돌대출</span><span>34평</span></div></div><div class="hotTopic-item-info"><div class="writerTime"><label class="writer">김분양</label><label class="time">20시간전</label></div><div class="viewLikeComment"><label class="view"><svg width="17" height="10" viewBox="0 0 17 10"><defs><clipPath id="clip-path"><rect id="사각형_279" data-name="사각형 279" width="17" height="10" transform="translate(0 0)" fill="#aeb0b3"/></clipPath></defs><g id="그룹_1396" data-name="그룹 1396" transform="translate(0 0)"><g id="그룹_1395" data-name="그룹 1395" clip-path="url(#clip-path)"><path id="패스_106" data-name="패스 106" d="M6.958,0C3.115,0,0,3.163,0,3.163S3.115,6.325,6.958,6.325s6.958-3.163,6.958-3.163S10.8,0,6.958,0m0,5.693a2.53,2.53,0,1,1,2.53-2.53,2.53,2.53,0,0,1-2.53,2.53" transform="translate(1.833 1.675)" fill="#aeb0b3"/><path id="패스_107" data-name="패스 107" d="M46.9,16.392a.631.631,0,0,1-.069-1.258,1.272,1.272,0,1,0,.665.832.631.631,0,0,1-.6.426" transform="translate(-37.474 -11.428)" fill="#aeb0b3"/></g></g></svg>541</label><label class="like"><svg width="12" height="10.352" viewBox="0 0 12 10.352"><defs><clipPath id="clip-path"><rect id="사각형_277" data-name="사각형 277" width="12" height="10.352" fill="none"/></clipPath></defs><g id="그룹_1389" data-name="그룹 1389" clip-path="url(#clip-path)"><path id="패스_104" data-name="패스 104" d="M11.1.9a3.076,3.076,0,0,0-4.35,0L6,1.651,5.249.9A3.076,3.076,0,0,0,.9,5.251l5.1,5.1,5.1-5.1A3.08,3.08,0,0,0,11.1.9" transform="translate(0 0)" fill="rgba(94,98,104,0.5)"/></g></svg>65</label><label class="comment"><svg id="그룹_1390" data-name="그룹 1390" width="13" height="11.352" viewBox="0 0 13 11.352"><defs><clipPath id="clip-path"><rect id="사각형_277" data-name="사각형 277" width="13" height="11.352" fill="none"/></clipPath></defs><g id="그룹_1389" data-name="그룹 1389" clip-path="url(#clip-path)"><path id="합치기_9" data-name="합치기 9" d="M5.619,10.07,4.4,8.853H3.257A3.077,3.077,0,0,1,0,6.007V2.846A3.076,3.076,0,0,1,3.257,0H8.739A3.078,3.078,0,0,1,12,2.846V6.007A3.078,3.078,0,0,1,8.739,8.853H7.6L6.377,10.07a.547.547,0,0,1-.759,0ZM1.672,1.509a1.756,1.756,0,0,0-.64,1.337V6.007a1.753,1.753,0,0,0,.64,1.336A2.416,2.416,0,0,0,3.257,7.9h1.37a.538.538,0,0,1,.381.155L6,9.047l.993-.993A.539.539,0,0,1,7.369,7.9h1.37a2.422,2.422,0,0,0,1.587-.557,1.751,1.751,0,0,0,.642-1.336V2.846a1.752,1.752,0,0,0-.642-1.337A2.427,2.427,0,0,0,8.739.952H3.257A2.421,2.421,0,0,0,1.672,1.509Zm2.5,3.657a.478.478,0,1,1,0-.953H7.828a.478.478,0,1,1,0,.953Z" transform="translate(0.525 0.511)" fill="#aeb0b3"/></g><g id="그룹_1398" data-name="그룹 1398" transform="translate(0.5 0.55)"><path id="다각형_1" data-name="다각형 1" d="M1,0,2,2H0Z" transform="translate(7 9.45) rotate(180)" fill="#aeb0b3"/><rect id="사각형_280" data-name="사각형 280" width="12" height="8.8" rx="3" fill="#aeb0b3"/><path id="패스_109" data-name="패스 109" d="M1522.094,272.95h0Z" transform="translate(-1518 -268.3)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/></g></svg>32</label></div></div></a></li>
+					<li><a href="#"><div class="hotTopic-item-text"><div class="label-list"><label class="label hot"></label><label class="category">분양상담</label></div><div class="title">직거래계약서 vs 중개거래계약서</div><div class="sub">어제보니까 쌍촌자이34가 무슨 9억4천에 계약했다는데 말도 안 되게 비싸 으에엑</div><div class="keyword"><span>쌍촌동</span><span>아파트</span><span>직거래계약서</span></div></div><div class="hotTopic-item-img"><img src="images/ex-thumb2.png" alt="썸네일"></div><div class="hotTopic-item-info"><div class="writerTime"><label class="writer">김분양</label><label class="time">20시간전</label></div><div class="viewLikeComment"><label class="view"><svg width="17" height="10" viewBox="0 0 17 10"><defs><clipPath id="clip-path"><rect id="사각형_279" data-name="사각형 279" width="17" height="10" transform="translate(0 0)" fill="#aeb0b3"/></clipPath></defs><g id="그룹_1396" data-name="그룹 1396" transform="translate(0 0)"><g id="그룹_1395" data-name="그룹 1395" clip-path="url(#clip-path)"><path id="패스_106" data-name="패스 106" d="M6.958,0C3.115,0,0,3.163,0,3.163S3.115,6.325,6.958,6.325s6.958-3.163,6.958-3.163S10.8,0,6.958,0m0,5.693a2.53,2.53,0,1,1,2.53-2.53,2.53,2.53,0,0,1-2.53,2.53" transform="translate(1.833 1.675)" fill="#aeb0b3"/><path id="패스_107" data-name="패스 107" d="M46.9,16.392a.631.631,0,0,1-.069-1.258,1.272,1.272,0,1,0,.665.832.631.631,0,0,1-.6.426" transform="translate(-37.474 -11.428)" fill="#aeb0b3"/></g></g></svg>541</label><label class="like"><svg width="12" height="10.352" viewBox="0 0 12 10.352"><defs><clipPath id="clip-path"><rect id="사각형_277" data-name="사각형 277" width="12" height="10.352" fill="none"/></clipPath></defs><g id="그룹_1389" data-name="그룹 1389" clip-path="url(#clip-path)"><path id="패스_104" data-name="패스 104" d="M11.1.9a3.076,3.076,0,0,0-4.35,0L6,1.651,5.249.9A3.076,3.076,0,0,0,.9,5.251l5.1,5.1,5.1-5.1A3.08,3.08,0,0,0,11.1.9" transform="translate(0 0)" fill="rgba(94,98,104,0.5)"/></g></svg>65</label><label class="comment"><svg id="그룹_1390" data-name="그룹 1390" width="13" height="11.352" viewBox="0 0 13 11.352"><defs><clipPath id="clip-path"><rect id="사각형_277" data-name="사각형 277" width="13" height="11.352" fill="none"/></clipPath></defs><g id="그룹_1389" data-name="그룹 1389" clip-path="url(#clip-path)"><path id="합치기_9" data-name="합치기 9" d="M5.619,10.07,4.4,8.853H3.257A3.077,3.077,0,0,1,0,6.007V2.846A3.076,3.076,0,0,1,3.257,0H8.739A3.078,3.078,0,0,1,12,2.846V6.007A3.078,3.078,0,0,1,8.739,8.853H7.6L6.377,10.07a.547.547,0,0,1-.759,0ZM1.672,1.509a1.756,1.756,0,0,0-.64,1.337V6.007a1.753,1.753,0,0,0,.64,1.336A2.416,2.416,0,0,0,3.257,7.9h1.37a.538.538,0,0,1,.381.155L6,9.047l.993-.993A.539.539,0,0,1,7.369,7.9h1.37a2.422,2.422,0,0,0,1.587-.557,1.751,1.751,0,0,0,.642-1.336V2.846a1.752,1.752,0,0,0-.642-1.337A2.427,2.427,0,0,0,8.739.952H3.257A2.421,2.421,0,0,0,1.672,1.509Zm2.5,3.657a.478.478,0,1,1,0-.953H7.828a.478.478,0,1,1,0,.953Z" transform="translate(0.525 0.511)" fill="#aeb0b3"/></g><g id="그룹_1398" data-name="그룹 1398" transform="translate(0.5 0.55)"><path id="다각형_1" data-name="다각형 1" d="M1,0,2,2H0Z" transform="translate(7 9.45) rotate(180)" fill="#aeb0b3"/><rect id="사각형_280" data-name="사각형 280" width="12" height="8.8" rx="3" fill="#aeb0b3"/><path id="패스_109" data-name="패스 109" d="M1522.094,272.95h0Z" transform="translate(-1518 -268.3)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/></g></svg>32</label></div></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+				<ul class="content-list recentPost" style="display:none;">
+					<li><a href="#">
+						<label class="number">1</label>
+						<div class="post-name">이것은 실시간 게시글 목록입니다</div>
+						<div class="comment-item">
+							<label class="ic-comment">
+								<svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439">
+									<path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/>
+								</svg>
+							</label>
+							<div class="value">1,789</div>
+						</div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><label class="number">2</label><div class="post-name">이것은 실시간 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<li><a href="#"><label class="number">3</label><div class="post-name">이것은 실시간 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<li><a href="#"><label class="number">4</label><div class="post-name">이것은 실시간 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<li><a href="#"><label class="number">5</label><div class="post-name">이것은 실시간 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+				<ul class="content-list tip" style="display:none;">
+					<li><a href="#">
+						<label class="number">1</label>
+						<div class="post-name">이것은 팁 게시글 목록입니다</div>
+						<div class="comment-item">
+							<label class="ic-comment">
+								<svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439">
+									<path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/>
+								</svg>
+							</label>
+							<div class="value">1,789</div>
+						</div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><label class="number">2</label><div class="post-name">이것은 팁 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<li><a href="#"><label class="number">3</label><div class="post-name">이것은 팁 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<li><a href="#"><label class="number">4</label><div class="post-name">이것은 팁 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<li><a href="#"><label class="number">5</label><div class="post-name">이것은 팁 게시글 목록입니다</div><div class="comment-item"><label class="ic-comment"><svg width="13.466" height="12.439" viewBox="0 0 13.466 12.439"><path id="합치기_8" data-name="합치기 8" d="M6.3,12.253,4.939,10.772H3.655A3.567,3.567,0,0,1,0,7.309V3.462A3.566,3.566,0,0,1,3.655,0H9.807a3.569,3.569,0,0,1,3.659,3.462V7.309a3.569,3.569,0,0,1-3.659,3.463H8.523L7.156,12.253a.58.58,0,0,1-.851,0ZM1.877,1.837a2.208,2.208,0,0,0-.718,1.625V7.309a2.206,2.206,0,0,0,.718,1.625,2.586,2.586,0,0,0,1.778.678H5.192A.581.581,0,0,1,5.62,9.8l1.109,1.208L7.843,9.8a.581.581,0,0,1,.427-.188H9.807a2.6,2.6,0,0,0,1.781-.678,2.207,2.207,0,0,0,.719-1.625V3.462a2.205,2.205,0,0,0-.719-1.625,2.6,2.6,0,0,0-1.781-.678H3.655A2.589,2.589,0,0,0,1.877,1.837Zm2.8,4.449a.58.58,0,0,1,0-1.159h4.1a.58.58,0,1,1,0,1.159Z" fill="#4e5968"/></svg></label><div class="value">1,789</div></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+			</div>
+		</div>
+		<div class="main-content news">
+			<div class="title">
+				<div class="title-text">
+					분양 뉴스
+					<div class="title-icon">
+						<svg id="그룹_1095" data-name="그룹 1095" xmlns="http://www.w3.org/2000/svg" width="18.857" height="18.856" viewBox="0 0 18.857 18.856">
+							<path id="패스_218" data-name="패스 218" d="M10.946,4H8V8.714l2.946-2.357Z" transform="translate(-5.643 -2.821)" fill="#0000a8"/>
+							<path id="패스_220" data-name="패스 220" d="M18.745,7.881l-.41.507a1.205,1.205,0,0,1-.952.451.295.295,0,0,0,.174-.536L9.428,2.062,1.291,8.3a.295.295,0,0,0,.183.536,1.205,1.205,0,0,1-.943-.451L.112,7.881A.642.642,0,0,1,.269,7l9.16-7,9.16,6.994A.642.642,0,0,1,18.745,7.881Z" transform="translate(-0.001)" fill="#0000ed"/>
+							<path id="패스_221" data-name="패스 221" d="M20.192,13.776H4.282a.295.295,0,0,1-.174-.536L12.237,7l8.138,6.24a.295.295,0,0,1-.183.536Z" transform="translate(-2.809 -4.938)" fill="#0000a8"/>
+							<path id="패스_222" data-name="패스 222" d="M15.071,7,8,12.421V22.615H22.142V12.421Z" transform="translate(-5.643 -4.938)" fill="#d1d6db"/>
+							<path id="합치기_22" data-name="합치기 22" d="M0,8.25V7.66H.589V7.071H14.731V7.66h.589V8.25ZM2.946,7.071V0H7.071V7.071Z" transform="translate(1.768 10.606)" fill="#000064"/>
+							<circle id="타원_46" data-name="타원 46" cx="0.295" cy="0.295" r="0.295" transform="translate(5.303 14.142)" fill="#d1d6da"/>
+							<rect id="사각형_306" data-name="사각형 306" width="1.768" height="1.768" transform="translate(12.374 10.607)" fill="#5454f3"/>
+							<rect id="사각형_307" data-name="사각형 307" width="1.768" height="1.768" transform="translate(10.017 10.607)" fill="#5454f3"/>
+							<rect id="사각형_308" data-name="사각형 308" width="1.768" height="1.768" transform="translate(12.374 12.964)" fill="#5454f3"/>
+							<rect id="사각형_309" data-name="사각형 309" width="1.768" height="1.768" transform="translate(10.017 12.964)" fill="#5454f3"/>
+						</svg>						  
+					</div>
+				</div>
+				<a href="#" class="btn-link-move">
+					<svg width="17.828" height="9.914" viewBox="0 0 17.828 9.914">
+						<path id="패스_13" data-name="패스 13" d="M4.459,14l7.5,7.5,7.5-7.5" transform="translate(-3.045 -12.586)" fill="none" stroke="#6b7684" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</svg>		  
+				</a>
+			</div>
+			<div class="content-wrap">
+				<ul class="content-menu">
+					<li class="news-post viewNews on">많이 본 뉴스</li>
+					<li class="news-post recentNews">최근 분양 뉴스</li>
+				</ul>
+				<ul class="news-list viewNews">
+					<li><a href="#">
+						<div class="news-img"><img src="images/n1.jpg" alt="썸네일"></div>
+						<div class="news-info">
+							<div class="label">
+								<svg width="15" height="15" viewBox="0 0 15 15">
+									<image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,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"/>
+								</svg>
+								조선일보
+							</div>
+							<div class="name">5년 만에 빗장 푼 오세훈…" 시기 적절했나" 논란 [거래허가 한달]</div>
+							<div class="sub">한때 주택 사업을 정리한다는 소문이 돌 정도라나 뭐나라 어쩌고 저쩌고</div>
+						</div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><div class="news-img"><img src="images/n2.jpg" alt="썸네일"></div><div class="news-info"><div class="label"><svg width="15" height="15" viewBox="0 0 15 15"><image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,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"/></svg>조선일보</div><div class="name">이라크서 잭팟 터뜨린 대우건설… 올 신규수주 14兆 도전장 [해외]</div><div class="sub">한때 주택 사업을 정리한다는 소문이 돌 정도라나 뭐나라 어쩌고 저쩌고</div></div></a></li>
+					<li><a href="#"><div class="news-img"><img src="images/n3.jpg" alt="썸네일"></div><div class="news-info"><div class="label"><svg width="15" height="15" viewBox="0 0 15 15"><image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAABHNCSVQICAgIfAhkiAAACcFJREFUaEPtWnmMVdUZ/93tLfPmvXnMxjaslQFbiThQpEVrS9KCUAekkS5S+aOlDRhFaokmtcbWYC3jQhEENMFqixSwsiRgCCU00VqW0kobEYphZMnAMMwwM7zt3neX/g7hkXF4y71vZjAlnuTLW+4533d+55xvvUdqbm7Gjdikz4H9n21rX+xYNdfgG6RJpDGkEaQqUujK2sT52UJqJB0l7SPtJZ3vzbXrLWAVnNQDpB+QxpMkj5N02P8Q6U3SG6RWj+Ov6d5TYAPJ8eekn3bZkZ7OKUEG60i/ITUVy6xYYCoFLiY9SSotVniBcTE+/zVpOSntVUYxwEZRyEbSbV6FFdn/A467n3TEy3ivwGZe0YGIFyG90Ffs3g9JW93y8gLsJ2T6Mklxy7yX+1nkt5D0ihu+boEtuALKDc++7iPArS4kxA2wejJ5+zPcqe4YxM7NJm3PB64QsJs5+ACp1yyfbNtw0mk4fn+hRc/3XOjcRNJHuTrlA6Zx0EHSrT2ZgeQ4kM+cRPL4x2jc+Re0tLShasZUjJ7znZ6wFWMPk75MyuoK8gFbwkHLipWudcbh/G0/jq99FYELFxCSVSTTFtoiIdS+9FsotbXFsu467rFcc8wFbBAHHCvmCKq6js7N29G8YQsiHTGE0wYipgXLspDy+3B6YCW+sPk1WJo4ED1u4kiOJl0ToeQCtpKdH/QqVjt4EKefX47gyXMI2jKg+mCmUghR3TWCaoUDafYMlD72kFfW+foLF3TNXLMBq2THU6SgW+mKaeLkq+vg37ETFc0tCMMH3XTQJiuQIhEkzBTSmgr5ppEYtmQR0qNGumXtpl+SnYaSLnTtnA3YI+zwohuOoo+vvQPNDath7n0flUhAjsdgm9ytYBiJSD+cDsqonnsPBtw9FeloP7Fnbll76SfiVhFTXm3ZgP2DT0XqUbBpsTian2qAsucAKiwTmpqGodgwAiG0lpQiMHkyKhbPRzpcUpBXDzuIOQsLmROYSBLPkQouq2KkcWz+Iyg/+gn6Ww58PI6GncRFuqeWYTUYuXgRnMki17wuTeRzNaSrRqT7jn2PDzcUmopA/cnS56DtehfV8SQijoS0nUY64seJoIQxL70Io1YYq+va5lLa+ozE7sCEbgkdy9v0P+9E0+9eQZUw5Y4NybBwUU7jfHkAoxuegXVrXSEWffFc6JjQtcutO7B3+N+0fFK1SzEcvm8++rd1QLFTkLlTiuJHW0CDdN/dqHn44b6YtBueYu7TcwE7zgc35ePy4YqVCL69G2U0HAk5AVNR4JdCaAr6MGnHRpgB117CzWS99PmYnUUSnHXHOvlvOBc3ORHH7gUPYcCRRpSmdeg0drqiwqLLi9bPwPAln9luiSlfIl1NgLsfRWFdcrbmvXux75dPYyhDJJ+Roq9S0UnPFNciuHN5A/zjxnpZ4bx9RfDcvTmSBPG/+MzRrj7wBOy9x59A4t33UUFf5aSS1C0FccjopM+q37wBZnm/HgOTL7Rh/6O/QOAcS+8K3TnzdRkqLqWY6oSjcLh4X3ny0WxyDP55NRfqDizvUdw4bRYGJGKsDaQh8SgGLEr1BXBRkTF921swomU9AibbDo4uehyhQ/9BBa2tQeNk8dN2FOj+AC7Q8Y/42UKEp0/JJkfUIkU4mFXHchoPiQni+m/eg+GwoXJdVP5WeBoVCmyHiTvXrIIzYniPgLWvWANz6zuoTBmQLrUj4BP6yyOpBXFeVXCqfyXq3lwHkwF1lpbXeOQ09wLYG9/6NoZRzsCaKgQoyE7aRKjgkmZiyAPzUHZX1pV0BVZ/axNal63GQEdGMtWOimgYVidrp5LMCFRBUziIsiUPoqz+3lz88pr7nA5aKO3vZ81BPyaNdWNvRjgcgkWhliZDV21Yt4zDiPrZsD2m/OL4taxdg/Y/bcKX0hrkWCcMzYYpOdBshe7Ex6OuIjFpAoY8T+fP7zlaXgedN6RaP28+Ao2nUB3wY+KkOihDytFu6Ax+S9DB7LhyRj1CQ4fAoVFx0wKnTuOj55Yj8O8PUc7QrMw0oDHmTEEHKEOXVHT4gjjrK8Vtm16HXpnXOIm64x9z6Vh/PjhLympPj23ZjgMvvIwok8dIWQATZk5BpGYQbBqRlDhCzIpDk++AFqERybFzEnVGazqLs9u2oW3LDoRjSUQZkoWYHfgcCxp3SlYltFBGql85zpVX4IvPLoU5ZpTQtlytYBAsBuZMW2RGGyunzkSt5oeUjMP0ORh7x+2onVgHtYKmOBhA3LJpMxXIY8dTPZiX8bfCI4tkEvqJRjTt3oPWXXtQQV9YTTMuJRPwiySU07b01OUVlUzAKC1F8/BBqF7wI6hfv6vQARBvaiZ07eQ50Ty0ai0aN25FWdqETJMfMxOwy6nYNCiDhw1HRdUAlIQYvNgSUlwIg3WP1lNNiJ9vhtKRoA+UEWU24E8k4dfT8MkSM2wDPgIxqccmF0GiWW80dYxdsQzpOldFMuHYXigELG9pQJQBNsz7MeTGMxgg+eGTLOpCjP6Gvo1Gkr4bGndCpZ6pYqfoHhwuQgmPZpD7oejUI9YVg4wegnyuqjQG9IUJ3YTJStZ5DtHH34JxTz8Fo8zVKwLXpQEBfBVJlJKzNjkex+aFi2AeOUGFt+CnQyuhvQgLQKx1+HisVNY7aCthUHf8DJDFbwEQTFBLWOTx85hKPKYGraLh05Dy+REPRzD4/u8iMofW1aUB4gRdF3MEmILlN9kwsOtXz6Bj3wFE9ASinGTAtOE3WCIQPlXlxDWJLoE7wGOl0bDQivOZghBNuExjY3NRTFq/toBK/zQNA+d+HwaNhYfmufwmeLsqmHZ+cBh/bWiAdPocI34bYR6vEmECCMbkMZXpwBXqlagrytStgL/kMqhYSkdpzWD0n/I1ROfcS1PuCVAGu+eCqRgoKpr7Sa5e8FlNTTiyfQdOvvd3yKxc+WjhZNui3vGoqhpsRi5qNIrSIcMw6KsTUTVpIhwCs4XlLK79i8NuJ3kucQtxInET5t+VFmfmJwsTTz10ksJ8M0InMCcQgBX09wRIV/gi9xLm/b+51qTQ2xYx7oZ8jZRZkBvyxV8G3A35qjYDbha/vO5V54qzDZ8aJcy6uCCzxS0vNzrWndf1vg4hXvCJGz99eh0iA1KksOJGzhOkvqq3iVBpKamBJOoZnloxO9ZVwGD+EAGo0L/MJTBPE8jSWVw5eo30LOlMscx6CiwjVwTOItETN2hEfbvgS41uExb51D9Jovb+B9Kn3nUVA663gHWVLZJVca1PRAXi1kHmWl/m5oEwBJlrfeKtv4huxLW+Xr3q2hfAilngXh/zObBeX9I+Zvg/wCyy1rlnpBcAAAAASUVORK5CYII="/></svg>조선일보</div><div class="name">유재석, '200억 논현동 땅'에 건물 신축…지상 4층 규모</div><div class="sub">한때 주택 사업을 정리한다는 소문이 돌 정도라나 뭐나라 어쩌고 저쩌고</div></div></a></li>
+					<li><a href="#"><div class="news-img"><img src="images/n4.jpg" alt="썸네일"></div><div class="news-info"><div class="label"><svg width="15" height="15" viewBox="0 0 15 15"><image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,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"/></svg>조선일보</div><div class="name">시공사 부도에 300억원 허공?…정부, 임대보증사고 아파트 </div><div class="sub">한때 주택 사업을 정리한다는 소문이 돌 정도라나 뭐나라 어쩌고 저쩌고</div></div></a></li>
+					<li><a href="#"><div class="news-img"><img src="images/n5.jpg" alt="썸네일"></div><div class="news-info"><div class="label"><svg width="15" height="15" viewBox="0 0 15 15"><image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,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"/></svg>조선일보</div><div class="name">5년 만에 빗장 푼 오세훈…" 시기 적절했나" 논란 [거래허가 한달]</div><div class="sub">한때 주택 사업을 정리한다는 소문이 돌 정도라나 뭐나라 어쩌고 저쩌고</div></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+				<ul class="news-list recentNews" style="display:none;">
+					<li><a href="#">
+						<div class="news-img"><img src="images/n4.jpg" alt="썸네일"></div>
+						<div class="news-info">
+							<div class="label">
+								<svg width="15" height="15" viewBox="0 0 15 15">
+									<image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAABHNCSVQICAgIfAhkiAAACcFJREFUaEPtWnmMVdUZ/93tLfPmvXnMxjaslQFbiThQpEVrS9KCUAekkS5S+aOlDRhFaokmtcbWYC3jQhEENMFqixSwsiRgCCU00VqW0kobEYphZMnAMMwwM7zt3neX/g7hkXF4y71vZjAlnuTLW+4533d+55xvvUdqbm7Gjdikz4H9n21rX+xYNdfgG6RJpDGkEaQqUujK2sT52UJqJB0l7SPtJZ3vzbXrLWAVnNQDpB+QxpMkj5N02P8Q6U3SG6RWj+Ov6d5TYAPJ8eekn3bZkZ7OKUEG60i/ITUVy6xYYCoFLiY9SSotVniBcTE+/zVpOSntVUYxwEZRyEbSbV6FFdn/A467n3TEy3ivwGZe0YGIFyG90Ffs3g9JW93y8gLsJ2T6Mklxy7yX+1nkt5D0ihu+boEtuALKDc++7iPArS4kxA2wejJ5+zPcqe4YxM7NJm3PB64QsJs5+ACp1yyfbNtw0mk4fn+hRc/3XOjcRNJHuTrlA6Zx0EHSrT2ZgeQ4kM+cRPL4x2jc+Re0tLShasZUjJ7znZ6wFWMPk75MyuoK8gFbwkHLipWudcbh/G0/jq99FYELFxCSVSTTFtoiIdS+9FsotbXFsu467rFcc8wFbBAHHCvmCKq6js7N29G8YQsiHTGE0wYipgXLspDy+3B6YCW+sPk1WJo4ED1u4kiOJl0ToeQCtpKdH/QqVjt4EKefX47gyXMI2jKg+mCmUghR3TWCaoUDafYMlD72kFfW+foLF3TNXLMBq2THU6SgW+mKaeLkq+vg37ETFc0tCMMH3XTQJiuQIhEkzBTSmgr5ppEYtmQR0qNGumXtpl+SnYaSLnTtnA3YI+zwohuOoo+vvQPNDath7n0flUhAjsdgm9ytYBiJSD+cDsqonnsPBtw9FeloP7Fnbll76SfiVhFTXm3ZgP2DT0XqUbBpsTian2qAsucAKiwTmpqGodgwAiG0lpQiMHkyKhbPRzpcUpBXDzuIOQsLmROYSBLPkQouq2KkcWz+Iyg/+gn6Ww58PI6GncRFuqeWYTUYuXgRnMki17wuTeRzNaSrRqT7jn2PDzcUmopA/cnS56DtehfV8SQijoS0nUY64seJoIQxL70Io1YYq+va5lLa+ozE7sCEbgkdy9v0P+9E0+9eQZUw5Y4NybBwUU7jfHkAoxuegXVrXSEWffFc6JjQtcutO7B3+N+0fFK1SzEcvm8++rd1QLFTkLlTiuJHW0CDdN/dqHn44b6YtBueYu7TcwE7zgc35ePy4YqVCL69G2U0HAk5AVNR4JdCaAr6MGnHRpgB117CzWS99PmYnUUSnHXHOvlvOBc3ORHH7gUPYcCRRpSmdeg0drqiwqLLi9bPwPAln9luiSlfIl1NgLsfRWFdcrbmvXux75dPYyhDJJ+Roq9S0UnPFNciuHN5A/zjxnpZ4bx9RfDcvTmSBPG/+MzRrj7wBOy9x59A4t33UUFf5aSS1C0FccjopM+q37wBZnm/HgOTL7Rh/6O/QOAcS+8K3TnzdRkqLqWY6oSjcLh4X3ny0WxyDP55NRfqDizvUdw4bRYGJGKsDaQh8SgGLEr1BXBRkTF921swomU9AibbDo4uehyhQ/9BBa2tQeNk8dN2FOj+AC7Q8Y/42UKEp0/JJkfUIkU4mFXHchoPiQni+m/eg+GwoXJdVP5WeBoVCmyHiTvXrIIzYniPgLWvWANz6zuoTBmQLrUj4BP6yyOpBXFeVXCqfyXq3lwHkwF1lpbXeOQ09wLYG9/6NoZRzsCaKgQoyE7aRKjgkmZiyAPzUHZX1pV0BVZ/axNal63GQEdGMtWOimgYVidrp5LMCFRBUziIsiUPoqz+3lz88pr7nA5aKO3vZ81BPyaNdWNvRjgcgkWhliZDV21Yt4zDiPrZsD2m/OL4taxdg/Y/bcKX0hrkWCcMzYYpOdBshe7Ex6OuIjFpAoY8T+fP7zlaXgedN6RaP28+Ao2nUB3wY+KkOihDytFu6Ax+S9DB7LhyRj1CQ4fAoVFx0wKnTuOj55Yj8O8PUc7QrMw0oDHmTEEHKEOXVHT4gjjrK8Vtm16HXpnXOIm64x9z6Vh/PjhLympPj23ZjgMvvIwok8dIWQATZk5BpGYQbBqRlDhCzIpDk++AFqERybFzEnVGazqLs9u2oW3LDoRjSUQZkoWYHfgcCxp3SlYltFBGql85zpVX4IvPLoU5ZpTQtlytYBAsBuZMW2RGGyunzkSt5oeUjMP0ORh7x+2onVgHtYKmOBhA3LJpMxXIY8dTPZiX8bfCI4tkEvqJRjTt3oPWXXtQQV9YTTMuJRPwiySU07b01OUVlUzAKC1F8/BBqF7wI6hfv6vQARBvaiZ07eQ50Ty0ai0aN25FWdqETJMfMxOwy6nYNCiDhw1HRdUAlIQYvNgSUlwIg3WP1lNNiJ9vhtKRoA+UEWU24E8k4dfT8MkSM2wDPgIxqccmF0GiWW80dYxdsQzpOldFMuHYXigELG9pQJQBNsz7MeTGMxgg+eGTLOpCjP6Gvo1Gkr4bGndCpZ6pYqfoHhwuQgmPZpD7oejUI9YVg4wegnyuqjQG9IUJ3YTJStZ5DtHH34JxTz8Fo8zVKwLXpQEBfBVJlJKzNjkex+aFi2AeOUGFt+CnQyuhvQgLQKx1+HisVNY7aCthUHf8DJDFbwEQTFBLWOTx85hKPKYGraLh05Dy+REPRzD4/u8iMofW1aUB4gRdF3MEmILlN9kwsOtXz6Bj3wFE9ASinGTAtOE3WCIQPlXlxDWJLoE7wGOl0bDQivOZghBNuExjY3NRTFq/toBK/zQNA+d+HwaNhYfmufwmeLsqmHZ+cBh/bWiAdPocI34bYR6vEmECCMbkMZXpwBXqlagrytStgL/kMqhYSkdpzWD0n/I1ROfcS1PuCVAGu+eCqRgoKpr7Sa5e8FlNTTiyfQdOvvd3yKxc+WjhZNui3vGoqhpsRi5qNIrSIcMw6KsTUTVpIhwCs4XlLK79i8NuJ3kucQtxInET5t+VFmfmJwsTTz10ksJ8M0InMCcQgBX09wRIV/gi9xLm/b+51qTQ2xYx7oZ8jZRZkBvyxV8G3A35qjYDbha/vO5V54qzDZ8aJcy6uCCzxS0vNzrWndf1vg4hXvCJGz99eh0iA1KksOJGzhOkvqq3iVBpKamBJOoZnloxO9ZVwGD+EAGo0L/MJTBPE8jSWVw5eo30LOlMscx6CiwjVwTOItETN2hEfbvgS41uExb51D9Jovb+B9Kn3nUVA663gHWVLZJVca1PRAXi1kHmWl/m5oEwBJlrfeKtv4huxLW+Xr3q2hfAilngXh/zObBeX9I+Zvg/wCyy1rlnpBcAAAAASUVORK5CYII="/>
+								</svg>
+								조선일보
+							</div>
+							<div class="name">이것은 최신 뉴스 목록입니다.</div>
+							<div class="sub">최신 뉴스 목록에 대한 뉴스 기사 초록입니다. 어쩌고 저쩌고</div>
+						</div>
+					</a></li>
+					<!-- 예시를 위한 가라데이터 START -->
+					<li><a href="#"><div class="news-img"><img src="images/n3.jpg" alt="썸네일"></div><div class="news-info"><div class="label"><svg width="15" height="15" viewBox="0 0 15 15"><image id="search.pstatic" width="15" height="15" xlink:href="data:image/png;base64,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"/></svg>조선일보</div><div class="name">최신 뉴스 기사글들을 여기로 불러옵니다. 행복하고 긍정적인 뉴스들만 많았으면 좋겠네요.</div><div class="sub">한때 주택 사업을 정리한다는 소문이 돌 정도라나 뭐나라 어쩌고 저쩌고</div></div></a></li>
+					<!-- 예시를 위한 가라데이터 END -->
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="notice-area">
+				<div class="footer-label notice">공지사항</div>
+				<div class="notice-title new"><a href="#">
+					<span>[공지] 분양의신 서비스 이용약관 변동 동의 안내</span>
+				</a></div>
+			</div>
+			<ul class="footer-info">
+				<li>
+					<div class="footer-label">네이버(주) 대표이사</div>
+					<div class="footer-value">홍길동</div>
+				</li>
+				<li>
+					<div class="footer-label">사업자등록번호</div>
+					<div class="footer-value">123-45-68790</div>
+				</li>
+				<li>
+					<div class="footer-label">통신판매업신고번호</div>
+					<div class="footer-value">제0000-서울강남-0000호</div>
+				</li>
+				<li>
+					<div class="footer-label">주소</div>
+					<div class="footer-value">서울시 강남구 테헤란로 123, 분양의신 1234, 12345</div>
+				</li>
+				<li>
+					<div class="footer-label">대표번호</div>
+					<div class="footer-value">1588-1234</div>
+				</li>
+				<li>
+					<div class="footer-label">이메일</div>
+					<div class="footer-value">cscenter@gmail.com</div>
+				</li>
+			</ul>
+			<ul class="footer-link">
+				<li><a href="#"><b>개인정보처리방침</b></a></li>
+				<li><a href="#">분양의신 이용약관</a></li>
+				<li><a href="#">커뮤니티 운영정책</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">사업자정보 확인</a></li>
+				<li>© 분양의신 Corp.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 하단 네비게이션 -->
+	<footer>
+		<ul class="main-navigation">
+			<li class="navi community"><a href="community.html">
+				<div class="icon">
+					<svg width="22" height="22" viewBox="0 0 22 22">
+						<g id="그룹_13" data-name="그룹 13" transform="translate(0)">
+						<rect id="사각형_23" data-name="사각형 23" width="22" height="22" transform="translate(0)" fill="none"/>
+						<path id="합치기_7" data-name="합치기 7" d="M7.832,20.547a9.055,9.055,0,0,1-2.118-1.1,3.8,3.8,0,0,1-3.826-6.573c-.027-.286-.041-.575-.041-.861A9.084,9.084,0,0,1,7.124,3.763a3.8,3.8,0,0,1,7.607,0A9.085,9.085,0,0,1,20,12.01c0,.282-.012.572-.038.859a3.8,3.8,0,0,1-3.826,6.574,9.079,9.079,0,0,1-8.309,1.1ZM7.6,16.158a3.778,3.778,0,0,1-.625,2.089,7.387,7.387,0,0,0,7.9,0,3.8,3.8,0,0,1,3.179-5.89c.081,0,.163,0,.244.008,0-.117.008-.235.008-.352a7.455,7.455,0,0,0-3.961-6.543A3.847,3.847,0,0,1,13.391,6.7,3.8,3.8,0,0,1,7.507,5.467,7.455,7.455,0,0,0,3.543,12.01c0,.117,0,.235.008.352.084,0,.167-.008.249-.008A3.808,3.808,0,0,1,7.6,16.158ZM3.1,14.174a2.1,2.1,0,1,0,.7-.122A2.025,2.025,0,0,0,3.1,14.174Zm12.852,1.984a2.1,2.1,0,1,0,2.812-1.986,2.148,2.148,0,0,0-.707-.12A2.107,2.107,0,0,0,15.949,16.158ZM8.822,3.8a2,2,0,0,0,.03.358,2.106,2.106,0,0,0,4.149,0,2.024,2.024,0,0,0,.031-.359,2.105,2.105,0,1,0-4.211,0Z" transform="translate(0 0.42)" fill="#8b95a1"/>
+						</g>
+					</svg>					  
+				</div>
+				<div class="text">커뮤니티</div>
+			</a></li>
+			<li class="navi jobPosting"><a href="jobPosting.html">
+				<div class="icon">
+					<svg width="22" height="20.56" viewBox="0 0 22 20.56">
+						<path id="합치기_3" data-name="합치기 3" d="M4.933,20.56A5.569,5.569,0,0,1,.91,18.65a2.683,2.683,0,0,1-.9-2.2,3.028,3.028,0,0,1,.935-1.792A11.066,11.066,0,0,1,3.2,13.042c.122-.072.242-.143.357-.214a9.822,9.822,0,0,1,10.37,0c.1.059.216.13.353.211a11.262,11.262,0,0,1,2.257,1.62,3.027,3.027,0,0,1,.935,1.792,2.687,2.687,0,0,1-.9,2.2,5.569,5.569,0,0,1-4.023,1.908Zm-.374-6.027c-.151.094-.314.192-.483.291A8.808,8.808,0,0,0,2.313,16.07a1.115,1.115,0,0,0-.376.594c-.016.14.1.337.318.557a3.752,3.752,0,0,0,2.677,1.347h7.619a3.752,3.752,0,0,0,2.677-1.347c.22-.22.334-.417.318-.555a1.113,1.113,0,0,0-.376-.6,8.827,8.827,0,0,0-1.763-1.248c-.16-.094-.323-.192-.482-.29a7.929,7.929,0,0,0-8.368,0Zm14.466-4.289a1,1,0,0,1,0-1.991h2.007a1,1,0,0,1,0,1.991ZM3.511,5.122A5.058,5.058,0,0,1,8.492,0a5.058,5.058,0,0,1,4.98,5.122,5.058,5.058,0,0,1-4.98,5.122A5.058,5.058,0,0,1,3.511,5.122Zm1.936,0A3.092,3.092,0,0,0,8.492,8.253a3.092,3.092,0,0,0,3.045-3.131A3.092,3.092,0,0,0,8.492,1.991,3.092,3.092,0,0,0,5.447,5.122ZM16.016,7.149a1,1,0,0,1,0-1.991h5.016a1,1,0,0,1,0,1.991Zm0-3.095a1,1,0,0,1,0-1.991h5.016a1,1,0,0,1,0,1.991Z" transform="translate(0)" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">구인공고</div>
+			</a></li>
+			<li class="navi home on"><a href="_index.html">
+				<div class="icon">
+					<svg width="24.01" height="24" viewBox="0 0 24.01 24">
+						<path id="합치기_2" data-name="합치기 2" d="M4.243,24A4.319,4.319,0,0,1,0,19.6L.01,9.573a4.431,4.431,0,0,1,1.935-3.68L9.677.706A4.136,4.136,0,0,1,11.985,0h0V2.206a1.932,1.932,0,0,0-1.079.332L3.174,7.726a2.213,2.213,0,0,0-.958,1.85l-.01,10.031a2.24,2.24,0,0,0,.648,1.6,1.957,1.957,0,0,0,1.389.587H19.757a2.117,2.117,0,0,0,2.037-2.182L21.8,9.584a2.212,2.212,0,0,0-.962-1.858L13.059,2.536a1.932,1.932,0,0,0-1.074-.329V0a4.136,4.136,0,0,1,2.3.7l7.782,5.191a4.431,4.431,0,0,1,1.944,3.7L24,19.614A4.318,4.318,0,0,1,19.757,24Zm4.114-4.547a1.1,1.1,0,0,1,0-2.206h7.278a1.1,1.1,0,0,1,0,2.206ZM11.985,0Z" fill="#8B95A1"/>
+					</svg>
+				</div>
+				<div class="text">홈</div>
+			</a></li>
+			<li class="navi saleTalk"><a href="saleTalk.html">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.169" viewBox="0 0 24 22.169">
+						<path id="합치기_8" data-name="합치기 8" d="M11.236,21.838,8.8,19.2H6.514A6.357,6.357,0,0,1,0,13.025V6.17A6.356,6.356,0,0,1,6.514,0H17.478A6.36,6.36,0,0,1,24,6.17v6.855A6.361,6.361,0,0,1,17.478,19.2H15.19l-2.436,2.64a1.034,1.034,0,0,1-1.517,0ZM3.345,3.273a3.935,3.935,0,0,0-1.28,2.9v6.855a3.932,3.932,0,0,0,1.28,2.9,4.609,4.609,0,0,0,3.169,1.208H9.253a1.035,1.035,0,0,1,.762.335l1.977,2.153,1.985-2.153a1.035,1.035,0,0,1,.761-.335h2.74a4.626,4.626,0,0,0,3.174-1.208,3.934,3.934,0,0,0,1.282-2.9V6.17a3.93,3.93,0,0,0-1.282-2.9,4.626,4.626,0,0,0-3.174-1.208H6.514A4.613,4.613,0,0,0,3.345,3.273Zm5,7.929a1.033,1.033,0,0,1,0-2.066h7.314a1.033,1.033,0,0,1,0,2.066Z" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">분양톡</div>
+			</a></li>
+			<li class="navi mypage"><a href="mypage.html">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19.239" height="22" viewBox="0 0 19.239 22">
+						<path id="합치기_10" data-name="합치기 10" d="M5.429,22A6.2,6.2,0,0,1,1,19.958,2.832,2.832,0,0,1,.014,17.6a3.209,3.209,0,0,1,1.03-1.918,12.161,12.161,0,0,1,2.478-1.731c.135-.077.265-.152.393-.229a11.065,11.065,0,0,1,11.41,0c.106.063.238.14.389.226A12.356,12.356,0,0,1,18.2,15.687a3.212,3.212,0,0,1,1.029,1.919,2.835,2.835,0,0,1-.987,2.353A6.2,6.2,0,0,1,13.811,22Zm-.412-6.449c-.166.1-.346.2-.533.311A9.713,9.713,0,0,0,2.546,17.2a1.194,1.194,0,0,0-.414.635c-.017.15.108.361.35.6a4.177,4.177,0,0,0,2.946,1.441h8.382a4.175,4.175,0,0,0,2.946-1.441c.243-.236.367-.446.35-.594a1.189,1.189,0,0,0-.414-.638,9.692,9.692,0,0,0-1.939-1.335c-.176-.1-.355-.206-.531-.311a8.936,8.936,0,0,0-9.207,0ZM3.863,5.481a5.481,5.481,0,1,1,5.481,5.481A5.487,5.487,0,0,1,3.863,5.481Zm2.13,0a3.35,3.35,0,1,0,3.35-3.35A3.354,3.354,0,0,0,5.994,5.481Z" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">마이페이지</div>
+			</a></li>
+		</ul>
+	</footer>
+</body>
+
+<script>
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 10) {
+        $('header').addClass('scroll');
+		$('.main-menu-tab').addClass('scroll');
+    } else {
+        $('header').removeClass('scroll');
+		$('.main-menu-tab').removeClass('scroll');
+    }
+});
+
+// 메인 스플래시
+document.addEventListener("DOMContentLoaded", function () {
+    // localStorage에서 'introShown' 값을 확인
+    if (!localStorage.getItem("introShown")) {
+        // 처음 방문 시: 인트로 화면을 3초간 표시 후 페이드아웃
+        setTimeout(() => {
+            document.getElementById("intro").classList.add("fade-out");
+        }, 2000);
+
+        // 인트로를 봤다는 표시를 저장
+        localStorage.setItem("introShown", "true");
+    } else {
+        // 이미 방문한 경우, 인트로 화면 숨기기
+        document.getElementById("intro").style.display = "none";
+    }
+});
+
+// 메인 배너
+const totalSlides = document.querySelectorAll('.swiper-wrapper .swiper-slide').length; // 전체 슬라이드 개수
+document.getElementById('total-slide').textContent = formatNumber(totalSlides); // 두 자리 숫자로 변환
+const swiper = new Swiper('.swiper', {
+	loop: true, // 무한 루프
+	autoplay: {
+		delay: 3000, // 3초마다 자동 슬라이드
+		disableOnInteraction: false, // 사용자 인터랙션 후에도 자동 재생 유지
+	},
+	pagination: {
+		el: '.swiper-pagination', // 페이지네이션 요소
+		clickable: true, // 페이지네이션을 클릭할 수 있게 설정
+		type: 'bullets', // 페이지네이션 타입을 bullets로 설정
+	},
+	on: {
+		init: function () {
+			updateSlideCounter(this);
+		},
+		slideChange: function () {
+			updateSlideCounter(this);
+		}
+	}
+});
+function updateSlideCounter(swiper) {
+	document.getElementById('current-slide').textContent = formatNumber(swiper.realIndex + 1);
+}
+// 숫자를 두 자리(01, 02, 03...)로 변환하는 함수
+function formatNumber(num) {
+	return num < 10 ? `0${num}` : `${num}`;
+}
+
+$(document).ready(function(){
+	// 첫 번째 방문 여부 확인
+	if (!localStorage.getItem('visited')) {
+		// 처음 방문한 경우
+		// Slick START
+		var $slider = $('.slider').slick({
+			autoplay: false,
+			dots: true,
+			arrows: false,
+			infinite: false,
+			speed: 1000,
+			fade: true,
+			cssEase: 'linear',
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			adaptiveHeight: false
+		});
+
+		// ▶ 다음 버튼 클릭 시 슬라이드 이동 또는 마지막 슬라이드에서 페이드아웃
+		$('.custom-next').click(function() {
+			var currentSlide = $slider.slick('slickCurrentSlide');
+			var lastSlideIndex = $slider.slick('getSlick').slideCount - 1;
+
+			if (currentSlide === lastSlideIndex) {
+				$('.slider-container').addClass('fade-out'); // 마지막 슬라이드에서 페이드아웃
+			} else {
+				$slider.slick('slickNext');
+			}
+		});
+
+		// Slick END
+
+		// 첫 방문 후 localStorage에 'visited' 값을 설정
+		localStorage.setItem('visited', 'true');
+	} else {
+		// 두 번째 방문 이후에는 슬라이더를 숨김
+		$('.slider-container').hide();
+	}
+
+	// 처음 로드될 때 첫 번째 버튼 활성화
+	$('.custom-pagination button').first().addClass('active');
+
+	// 네비게이션
+	$('ul.main-navigation li').click(function(){
+		$('ul.main-navigation li').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	// 메인페이지 > 상단 탭
+	$('.alert-link1').click(function(event) {
+        event.preventDefault();
+        alert('분양TV는 현재 준비중인 채널입니다!');
+    });
+	$('.alert-link2').click(function(event) {
+        event.preventDefault();
+        alert('스토어는 현재 준비중인 페이지입니다!');
+    });
+	$('.alert-link3').click(function(event) {
+        event.preventDefault();
+        alert('분양TV는 현재 준비중인 채널입니다!');
+    });
+	$('.alert-link4').click(function(event) {
+        event.preventDefault();
+        alert('스토어는 현재 준비중인 페이지입니다!');
+    });
+
+	// 메인페이지 > 지금 뜨는 현장, 오픈 예정 현장
+	$('.site-list .title ul.tab li').click(function(){
+		$('.site-list .title ul.tab li').removeClass('on');
+		$(this).addClass('on');
+		$('.site-list ul.site-list-wrap').css('display', 'none');
+		let targetClass = $(this).attr('class').split(' ');
+		targetClass.forEach(function(cls) {
+			if (cls !== 'on') {
+				$('.site-list ul.site-list-wrap.' + cls).css('display', 'block');
+			}
+		});
+	});
+
+	// 메인페이지 > 실시간 인기글
+	$('.realTime-post ul.content-menu li').click(function(){
+		$('.realTime-post ul.content-menu li').removeClass('on');
+		$(this).addClass('on');
+		$('.realTime-post ul.content-list').css('display', 'none');
+		let targetClass = $(this).attr('class').split(' ');
+		targetClass.forEach(function(cls) {
+			if (cls !== 'on') {
+				$('.realTime-post ul.content-list.' + cls).css('display', 'block');
+			}
+		});
+	});
+
+	// 메인페이지 > 분양 뉴스
+	$('.news ul.content-menu li').click(function(){
+		$('.news ul.content-menu li').removeClass('on');
+		$(this).addClass('on');
+		$('.news ul.news-list').css('display', 'none');
+		let targetClass = $(this).attr('class').split(' ');
+		targetClass.forEach(function(cls) {
+			if (cls !== 'on') {
+				$('.news ul.news-list.' + cls).css('display', 'block');
+			}
+		});
+	});
+});
+</script>
+
+</html>

@@ -1,0 +1,892 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="fp-enabled">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Alvaro Trigo Lopez">
+	<meta name="Resource-type" content="Document">
+	<link rel="icon" href="favicon.ico">
+	<title>분양의신</title>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/_fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/_common.css">
+	<link rel="stylesheet" type="text/css" href="css/_layout.css">
+	<link rel="stylesheet" type="text/css" href="css/_jobPosting.css">
+</head>
+
+<body>
+	<header>
+		<a class="btn-home jobPosting" href="jobPosting.html">구인 공고</a>
+		<form class="form-search">
+			<div class="search-wrap">
+				<div class="ic-search">
+					<svg width="20" height="20" viewBox="0 0 20 20">
+						<path id="패스_14" data-name="패스 14" d="M19.755,18.606l-3.437-3.361h0l-.081-.123a.809.809,0,0,0-1.137,0h0a8.113,8.113,0,0,1-10.519.34A7.679,7.679,0,0,1,2.876,5.31,8.075,8.075,0,0,1,12.953,2.342a7.741,7.741,0,0,1,4.314,9.385.779.779,0,0,0,.182.772.822.822,0,0,0,.774.232.8.8,0,0,0,.593-.54h0a9.334,9.334,0,0,0-5-11.25A9.754,9.754,0,0,0,1.689,4.085a9.256,9.256,0,0,0,1.36,12.194,9.789,9.789,0,0,0,12.535.515l3.044,2.976a.819.819,0,0,0,1.137,0,.784.784,0,0,0,0-1.12h0Z" transform="translate(0.205 0.216)" fill="#0000ed" stroke="#0000ed" stroke-width="0.4"/>
+					</svg>				  
+				</div>
+				<input type="text" placeholder="찾으시는 정보를 입력하세요">
+			</div>
+		</form>
+		<div class="header-menu">
+			<button type="button" class="btn-open-alarm">
+				<svg width="28" height="28" viewBox="0 0 28 28">
+					<g id="그룹_13" data-name="그룹 13" transform="translate(0 1.6)">
+					  <rect id="사각형_23" data-name="사각형 23" width="28" height="28" transform="translate(0)" fill="none"/>
+					  <path id="합치기_1" data-name="합치기 1" d="M10.471,23.751a4.628,4.628,0,0,1-1.206-.605,5.015,5.015,0,0,1-1.1-1.074,4.1,4.1,0,0,1-.7-1.529H2.83q-.05,0-.1,0H1.019a.973.973,0,1,1,0-1.945h.794v-8.8a10.337,10.337,0,0,1,.14-1.633A9.308,9.308,0,0,1,2.693,5.8a8.77,8.77,0,0,1,1.168-1.9A9.953,9.953,0,0,1,5.593,2.186,10.16,10.16,0,0,1,7.718.91,10.441,10.441,0,0,1,10.166.161a10.568,10.568,0,0,1,2.8-.114,11.428,11.428,0,0,1,1.6.265,10.831,10.831,0,0,1,1.5.5,10.171,10.171,0,0,1,4.425,3.527,9.372,9.372,0,0,1,1.728,5.389s0,.005,0,.008v.017c.008.4,0,.795,0,1.191v7.647h.766a.973.973,0,1,1,0,1.945H21.3q-.049,0-.1,0h-.03c-.239,0-.476,0-.715,0H16.538a3.622,3.622,0,0,1-.154.5,4.837,4.837,0,0,1-.865,1.417,4.629,4.629,0,0,1-2.254,1.376,4.916,4.916,0,0,1-1.28.168A4.586,4.586,0,0,1,10.471,23.751Zm1.305-1.694Zm.562-.018A3.973,3.973,0,0,0,13,21.868a3.863,3.863,0,0,0,.606-.337,3.707,3.707,0,0,0,.459-.437,3.6,3.6,0,0,0,.342-.552H9.587a3.542,3.542,0,0,0,.338.547,3.713,3.713,0,0,0,.464.442A3.762,3.762,0,0,0,11,21.87a3.735,3.735,0,0,0,.652.168A3.937,3.937,0,0,0,12.338,22.039Zm.074-.007.079-.009ZM11.1,21.914Zm-.188-.075-.057-.022Zm2.205-.012.026-.01ZM10.5,21.617Zm-.5-.428Zm4.364-.535.024-.055Zm-4.735,0L9.608,20.6Zm10.548-2.064q0-.118,0-.236V9.731a8.342,8.342,0,0,0-.063-1.014,8.4,8.4,0,0,0-.548-1.941,8.941,8.941,0,0,0-1.115-1.821,9.213,9.213,0,0,0-1.448-1.381A9.434,9.434,0,0,0,15.13,2.528,9.644,9.644,0,0,0,13.066,2a9.748,9.748,0,0,0-2.127,0,9.524,9.524,0,0,0-2.048.527A9.339,9.339,0,0,0,7.02,3.565,9.256,9.256,0,0,0,5.558,4.96,8.733,8.733,0,0,0,4.463,6.751a8.487,8.487,0,0,0-.554,1.965c-.016.126-.029.254-.038.381-.036.476-.023.955-.023,1.432v8.063Zm-.045-9.76c0-.031-.009-.062-.014-.092ZM20.116,8.7q-.008-.065-.017-.13C20.1,8.616,20.11,8.66,20.116,8.7ZM19.61,6.867ZM19.538,6.7l-.029-.068ZM4.491,6.684l.041-.094Zm.967-1.6.032-.039Zm13.093-.007-.016-.02ZM17.089,3.634ZM16.9,3.5l-.019-.014Zm-8.184-.9.109-.043Zm6.562,0-.072-.028Zm-2.071-.574Zm-2.409,0L10.918,2Zm.172-.021.1-.013Z" transform="translate(2 2)" fill="#333d4b"/>
+					  <g id="타원_2" data-name="타원 2" transform="translate(20 2)" fill="#0000ed" stroke="#fff" stroke-width="3.6">
+						<circle cx="3" cy="3" r="3" stroke="none"/>
+						<circle cx="3" cy="3" r="4.8" fill="none"/>
+					  </g>
+					</g>
+				  </svg>				  
+			</button>
+		</div>
+	</header>
+	
+	<div class="sub-menu">
+		<ul class="jobPosting-depth1">
+			<li class="nationwide on">전국</li>
+			<li class="seoul">서울</li>
+			<li class="gyeonggi">경기도</li>
+			<li class="chungcheong">충청도</li>
+			<li class="gyeongsang">경상도</li>
+			<li class="jeonna">전라도</li>
+			<li class="gangwon">강원도</li>
+			<li class="jeju">제주</li>
+		</ul>
+		<div class="jobPosting-depth2">
+			<ul class="nationwide">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern1" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern1)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern2" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern2)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap on">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="seoul" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern3" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern3)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern4" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern4)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="gyeonggi" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern5" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern5)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern6" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAA5CAYAAADEB15AAAAACXBIWXMAAAsSAAALEgHS3X78AAAHWklEQVR4nO2cfWwTZRzHv89z7UaZy2o0yES3XhuZEbH1FYwvLW/iH8j6ByKIukOjRqNxQxBCTBwhQZZgwD8gRtS1KKCJiWX8AfK2KwRhirDi2zbty4CxEQ3ZeFmGgPWPuytdt/bu1rtuze6TLGu73/M8t3z63HO/3z0ticfjMMieYKfDBcDlLg37tOiPatHJaIcXpPAA6oOdjg1a9EmMGZMd/FmHCwQ8AUqSXva7S8NcNv0aMyYL+LOJmVKS8qeqYKfDl03fhpghkkGKRFZyDDFDoFFeisSQ5RhiVKJCikRVsEu9HEOMCho7VEuRqDqoUo5xVaaQhBQiSCHJfyQAAUIAfABqkSqOJOJDADxPjg93y41nzBgFKJgpIQAed2l4AwAPgJ40cU4A/MEuh1VuTGPGyHCgw+EiyVLEt37SjNkBAs5TemMWBDtTRJL+M+zqpeJff1q9edv1q9YpTAG1UjNtpmbCL91kC0gxhpgMHDgzSPLYX4zfc/vgiWQ/OUliLrazOL5uLRAvBi2gYAooqJmCmgkIQ4KEwrvk4/JuQ0waDpy5saakrifir7RSJBJyxD4uRFkcW7MG8XgxTGPoYGJAKEKEEo+xxgzC/jOya4qsFABwl4abkbTm/P75y7jWO1aumRNAtSEmBSVSpimQIiHJ6T1328Xzv01S2sxriEli/2ltpUi4x4eb27YtWKKiidMQI6JIyoShV4w7gu6/1MQbYgDs01mKSLOK2OCoF5MjKag76uwG4FcY7jNlO2C2rH62zcYUUhs1E1Az7X7vU1bNOysr9p1ycCCozxDin66BlCRqAXiRudYWrFlf5hu2GfP+zN+stc/84QMQBdAo/pxY92Ys9tHb7V69x997ysEBMlLu0FQK1h5xxiBcPofShHwMQdzwZP4rHjtpNVmYmMlCS5gxDJhCIcGiZgpqEhMthixesqHMp8f4e0/ZOYDUE2BgiUV44J+hsZRUVs9rddEC6hUTzG5qJoGlm2yxxGEMkxjeZGHcJgtFBjEgBGzN+rKYbIcq2NNu5whBPUCQRozuUpSQ81PZ8qkhGwC3wvBqLcfe027nIHP6GglSgOG5XPaoiHVpNagiKXeODCnAMIhhLL13K401Ff09Xosxv4/llxQgx2K+Ocm6HG+sfUtpvKnkbMWOVntWG+iUSJk5wqQAORTzdYh1AeDHloWLGEuvojbFFbsA4J2GNruvoc0ue9cvld3R/JQC5EiMJAVACTP2MkrnbJdtU3BLGMUVu6WnVQD4nSrkKJJSNjKlADkQs72Z5ZBS8hg3owG3uhvStim4NYxx0z5MfdkJgN/5p132gkCJlFkjWAqgcx6z7QTLEYJ6IuUK0i1WIjy+1PpwuOPbD1opUziJmkk5NdNgccWhs+NmrFvIjLmE5HZiM4CghwCeOXdFBi3d7IpIeUpK2xu3If1PlUc4bf9T7dFNzNYTLEcgSEkjJkgA77x7owO28nz3h91DCAJE2irUXwwIgAttDyyL+NdcYwqpVbw12z3xtap/C24+szFJQqqYvJAC6CRm63G2FgQfEIgyBorxz58c5TL1EWixuwhBAEB5qphzjZXo2v8CEC8WqwZC5cBU1IvS6RthnZRYm5LHzhspgA5ivjrO+ghQJb2zBxHjn39fZikSO1rtVgA8IXACQn+d++bidOBVmCxCKSdZjFTOmTC7DiX37E6MCcA/25Y/UgCNF/8vf2Z9EK6g0qFYCgBUVkS6IVQK/ADQ9884RLe/Ituu6+DbuH7lpsSY+SYF0FDMlmOyUhY/p0KKRGVFpHvuxAgHwH/+5ymK2vx3pQiXIo8DeSoF0ECM/yfWuuUY2wwZKQucUV8248ydGOHOHZp+WGn85dMPNj3N5qcUIEsxvh9ZK4QcxZkhLGspEpdP2f5RGtvTMmu3fNTIZchi6ptkpfQAmLbQpY0UEV5FrOyO+pHMkMTUN7EuCLs+MknxPH9/lB/icaUjIB+SGN+n8dg5RbWYL47apLpXeZqQHgCeRfdHNd9UUXfUGQOwSkFodc36stEzYz4/YpPb6hMC4Fn0gPZSJD48NLkWmeXU1Oi0VyCXKE4wPzti8xLARwhKiJi1Scmj+DRECDwvPjiwxKIHqypbbEwh9TKF1CUmmM3URALvbryxoSGfUSRm8w82oRgJScQAMSEAnpceyo2U0YDsqWzzYRuHzCV0Q4oO9NuJucrb4mEKKSfsjKQoZI/0WR4ZP5ve1JWuvb/qYfXZvIE8JB6PY6X7F6vJwviYMbRysMKg5dE6FNh3IeVU5l88xZCiF9KpLACgMl1QX9MKXOt4IvklQ4rO0OVTQxwUbMDra1opPawxpOgPhbiJWY741SJcaVlU9/LUmCbfx2WQGQpA8c6TKydf79PxWAySUFuSMS6JcwQFEFMRz+tzGAapUCivwoZq1pfl7NNeox1ad9TJQ/gkUyZ6AHC6H41BAgoAa4KTqyFUbAf71qB2AJ6aDcZsySX9ipirvC1WsWJrEzN/ftknLD98hzd6+R8yu2c3FRc91QAAAABJRU5ErkJggg=="/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern6)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="chungcheong" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern7" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern7)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern8" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern8)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="gyeongsang" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern9" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern9)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern10" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAA5CAYAAADEB15AAAAACXBIWXMAAAsSAAALEgHS3X78AAAHWklEQVR4nO2cfWwTZRzHv89z7UaZy2o0yES3XhuZEbH1FYwvLW/iH8j6ByKIukOjRqNxQxBCTBwhQZZgwD8gRtS1KKCJiWX8AfK2KwRhirDi2zbty4CxEQ3ZeFmGgPWPuytdt/bu1rtuze6TLGu73/M8t3z63HO/3z0ticfjMMieYKfDBcDlLg37tOiPatHJaIcXpPAA6oOdjg1a9EmMGZMd/FmHCwQ8AUqSXva7S8NcNv0aMyYL+LOJmVKS8qeqYKfDl03fhpghkkGKRFZyDDFDoFFeisSQ5RhiVKJCikRVsEu9HEOMCho7VEuRqDqoUo5xVaaQhBQiSCHJfyQAAUIAfABqkSqOJOJDADxPjg93y41nzBgFKJgpIQAed2l4AwAPgJ40cU4A/MEuh1VuTGPGyHCgw+EiyVLEt37SjNkBAs5TemMWBDtTRJL+M+zqpeJff1q9edv1q9YpTAG1UjNtpmbCL91kC0gxhpgMHDgzSPLYX4zfc/vgiWQ/OUliLrazOL5uLRAvBi2gYAooqJmCmgkIQ4KEwrvk4/JuQ0waDpy5saakrifir7RSJBJyxD4uRFkcW7MG8XgxTGPoYGJAKEKEEo+xxgzC/jOya4qsFABwl4abkbTm/P75y7jWO1aumRNAtSEmBSVSpimQIiHJ6T1328Xzv01S2sxriEli/2ltpUi4x4eb27YtWKKiidMQI6JIyoShV4w7gu6/1MQbYgDs01mKSLOK2OCoF5MjKag76uwG4FcY7jNlO2C2rH62zcYUUhs1E1Az7X7vU1bNOysr9p1ycCCozxDin66BlCRqAXiRudYWrFlf5hu2GfP+zN+stc/84QMQBdAo/pxY92Ys9tHb7V69x997ysEBMlLu0FQK1h5xxiBcPofShHwMQdzwZP4rHjtpNVmYmMlCS5gxDJhCIcGiZgpqEhMthixesqHMp8f4e0/ZOYDUE2BgiUV44J+hsZRUVs9rddEC6hUTzG5qJoGlm2yxxGEMkxjeZGHcJgtFBjEgBGzN+rKYbIcq2NNu5whBPUCQRozuUpSQ81PZ8qkhGwC3wvBqLcfe027nIHP6GglSgOG5XPaoiHVpNagiKXeODCnAMIhhLL13K401Ff09Xosxv4/llxQgx2K+Ocm6HG+sfUtpvKnkbMWOVntWG+iUSJk5wqQAORTzdYh1AeDHloWLGEuvojbFFbsA4J2GNruvoc0ue9cvld3R/JQC5EiMJAVACTP2MkrnbJdtU3BLGMUVu6WnVQD4nSrkKJJSNjKlADkQs72Z5ZBS8hg3owG3uhvStim4NYxx0z5MfdkJgN/5p132gkCJlFkjWAqgcx6z7QTLEYJ6IuUK0i1WIjy+1PpwuOPbD1opUziJmkk5NdNgccWhs+NmrFvIjLmE5HZiM4CghwCeOXdFBi3d7IpIeUpK2xu3If1PlUc4bf9T7dFNzNYTLEcgSEkjJkgA77x7owO28nz3h91DCAJE2irUXwwIgAttDyyL+NdcYwqpVbw12z3xtap/C24+szFJQqqYvJAC6CRm63G2FgQfEIgyBorxz58c5TL1EWixuwhBAEB5qphzjZXo2v8CEC8WqwZC5cBU1IvS6RthnZRYm5LHzhspgA5ivjrO+ghQJb2zBxHjn39fZikSO1rtVgA8IXACQn+d++bidOBVmCxCKSdZjFTOmTC7DiX37E6MCcA/25Y/UgCNF/8vf2Z9EK6g0qFYCgBUVkS6IVQK/ADQ9884RLe/Ituu6+DbuH7lpsSY+SYF0FDMlmOyUhY/p0KKRGVFpHvuxAgHwH/+5ymK2vx3pQiXIo8DeSoF0ECM/yfWuuUY2wwZKQucUV8248ydGOHOHZp+WGn85dMPNj3N5qcUIEsxvh9ZK4QcxZkhLGspEpdP2f5RGtvTMmu3fNTIZchi6ptkpfQAmLbQpY0UEV5FrOyO+pHMkMTUN7EuCLs+MknxPH9/lB/icaUjIB+SGN+n8dg5RbWYL47apLpXeZqQHgCeRfdHNd9UUXfUGQOwSkFodc36stEzYz4/YpPb6hMC4Fn0gPZSJD48NLkWmeXU1Oi0VyCXKE4wPzti8xLARwhKiJi1Scmj+DRECDwvPjiwxKIHqypbbEwh9TKF1CUmmM3URALvbryxoSGfUSRm8w82oRgJScQAMSEAnpceyo2U0YDsqWzzYRuHzCV0Q4oO9NuJucrb4mEKKSfsjKQoZI/0WR4ZP5ve1JWuvb/qYfXZvIE8JB6PY6X7F6vJwviYMbRysMKg5dE6FNh3IeVU5l88xZCiF9KpLACgMl1QX9MKXOt4IvklQ4rO0OVTQxwUbMDra1opPawxpOgPhbiJWY741SJcaVlU9/LUmCbfx2WQGQpA8c6TKydf79PxWAySUFuSMS6JcwQFEFMRz+tzGAapUCivwoZq1pfl7NNeox1ad9TJQ/gkUyZ6AHC6H41BAgoAa4KTqyFUbAf71qB2AJ6aDcZsySX9ipirvC1WsWJrEzN/ftknLD98hzd6+R8yu2c3FRc91QAAAABJRU5ErkJggg=="/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern10)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="jeonna" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern11" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern11)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern12" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern12)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="gangwon" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern13" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern13)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern14" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern14)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+			<ul class="jeju" style="display:none;">
+				<li class="refresh">
+					<svg width="16" height="16" viewBox="0 0 16 16">
+						<path id="패스_235" data-name="패스 235" d="M8.388,291.036a8,8,0,1,0,8,8,.759.759,0,0,0-1.519,0,6.5,6.5,0,1,1-1.857-4.53l-1.543-.2a.759.759,0,1,0-.2,1.5l3.192.421a.759.759,0,0,0,.846-.656l.419-3.192a.759.759,0,1,0-1.505-.2l-.162,1.234a7.965,7.965,0,0,0-5.674-2.377Z" transform="translate(-0.385 -291.035)" fill="#333d4b"/>
+					</svg>					  
+				</li>
+				<li class="dwelling on">
+					<svg width="21" height="14" viewBox="0 0 21 14">
+						<defs>
+						  <pattern id="pattern15" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 99 63">
+							<image width="99" height="63" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="21" height="14" fill="url(#pattern15)"/>
+					</svg>
+					주거형
+				</li>
+				<li class="revenue">
+					<svg width="28" height="16" viewBox="0 0 28 16">
+						<defs>
+						  <pattern id="pattern16" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 102 57">
+							<image width="102" height="57" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="자산_1" data-name="자산 1" width="28" height="16" fill="url(#pattern16)"/>
+					</svg>
+					수익형
+				</li>
+				<li class="Recently">
+					<svg width="14.248" height="17.006" viewBox="0 0 14.248 17.006">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_390" data-name="사각형 390" width="14.248" height="17.006" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1809" data-name="그룹 1809" clip-path="url(#clip-path)">
+						  <path id="패스_292" data-name="패스 292" d="M32.061,35.466H20.646A.646.646,0,0,1,20,34.821V20.646A.646.646,0,0,1,20.646,20H32.061a.646.646,0,0,1,.646.646V34.821a.646.646,0,0,1-.646.646" transform="translate(-18.46 -18.46)" fill="#1a8dff"/>
+						  <path id="패스_293" data-name="패스 293" d="M10.474,0H.646A.646.646,0,0,0,0,.646V14.821a.646.646,0,0,0,.646.646H12.061a.646.646,0,0,0,.646-.646V2.208Z" fill="#eaeaf4"/>
+						  <path id="패스_294" data-name="패스 294" d="M138.233,2.209h-1.587A.646.646,0,0,1,136,1.563V0Z" transform="translate(-125.526 -0.001)" fill="#c1c3cf"/>
+						  <path id="패스_295" data-name="패스 295" d="M31.554,49.7H23.492a.335.335,0,0,1-.335-.335V48.075a.335.335,0,0,1,.335-.335h8.062a.335.335,0,0,1,.335.335v1.294a.335.335,0,0,1-.335.335" transform="translate(-21.374 -44.064)" fill="#c1c3cf"/>
+						  <path id="패스_296" data-name="패스 296" d="M31.556,85.268H23.49a.333.333,0,1,1,0-.666h8.066a.333.333,0,1,1,0,.666" transform="translate(-21.374 -78.088)" fill="#c1c3cf"/>
+						  <path id="패스_297" data-name="패스 297" d="M31.562,105.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -96.549)" fill="#c1c3cf"/>
+						  <path id="패스_298" data-name="패스 298" d="M31.562,125.268H23.484a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h8.077a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -115.009)" fill="#c1c3cf"/>
+						  <path id="패스_299" data-name="패스 299" d="M26.355,145.161h-2.87a.327.327,0,0,1-.327-.327v-.011a.327.327,0,0,1,.327-.327h2.87a.327.327,0,0,1,.327.327v.011a.327.327,0,0,1-.327.327" transform="translate(-21.374 -133.37)" fill="#c1c3cf"/>
+						</g>
+					</svg>
+					최근 본 공고
+				</li>
+				<li class="scrap">
+					<svg id="그룹_1818" data-name="그룹 1818" width="13.817" height="19" viewBox="0 0 13.817 19">
+						<defs>
+						  <clipPath id="clip-path">
+							<rect id="사각형_394" data-name="사각형 394" width="13.817" height="19" fill="none"/>
+						  </clipPath>
+						</defs>
+						<g id="그룹_1817" data-name="그룹 1817" clip-path="url(#clip-path)">
+						  <path id="패스_312" data-name="패스 312" d="M1.919,11.537V2.044l1.878-.6,5.937.6v9.9L5.643,9.357Z" fill="#ffca00" stroke="#ffca00" stroke-width="1"/>
+						  <path id="패스_123" data-name="패스 123" d="M6.824,16.252a1.564,1.564,0,0,0,1.606-.073l2.5-1.663a.521.521,0,0,1,.574,0L14,16.179a1.564,1.564,0,0,0,2.43-1.3V6.607A2.607,2.607,0,0,0,13.821,4H8.607A2.607,2.607,0,0,0,6,6.607v8.269a1.564,1.564,0,0,0,.824,1.376Zm.219-9.646A1.564,1.564,0,0,1,8.607,5.043h5.214a1.564,1.564,0,0,1,1.564,1.564v8.269a.537.537,0,0,1-.8.459l-2.508-1.689a1.564,1.564,0,0,0-1.731,0l-2.5,1.663a.55.55,0,0,1-.808-.433Z" transform="translate(-5.453 -3.559)" fill="#ffca00"/>
+						  <path id="패스_311" data-name="패스 311" d="M310.729,580.454v-.759a.807.807,0,0,0-.807-.807h-.12a.807.807,0,0,1-1.376,0h-.12a.807.807,0,0,1-1.376,0h-.12a.8.8,0,0,0-.569.235v-1.248a.8.8,0,0,0-.8-.8h-.142a.8.8,0,0,0-.8.8v2.515h0v1.117l-.367-.367a.866.866,0,1,0-1.225,1.225l2.183,2.183a.88.88,0,0,0,.085.074,1.966,1.966,0,0,0,1.3.487h2.27a1.974,1.974,0,0,0,1.974-1.974v-2.682h0" transform="translate(-296.912 -568.111)" fill="#ffe6d3"/>
+						</g>
+					</svg>
+					스크립 많은 순
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="sub-contents">
+		<div class="adperson-push">
+			<div class="title">
+				<div class="title-text">
+					분양의신 추천 현장
+					<div class="title-icon">
+						<svg id="그룹_359" data-name="그룹 359" xmlns="http://www.w3.org/2000/svg" width="21.021" height="17.145" viewBox="0 0 21.021 17.145">
+							<path id="패스_86" data-name="패스 86" d="M22.13,11.515l-.456-.643V9.715A1.773,1.773,0,0,0,19.851,8H15.856a.455.455,0,0,1-.387-.2.4.4,0,0,1-.02-.417l1.463-2.752a1.724,1.724,0,0,0-.086-1.766A1.963,1.963,0,0,0,15.184,2h-.545L9.593,7.083A5.38,5.38,0,0,0,8,10.885v3.973a4.433,4.433,0,0,0,4.558,4.286h4.95a2.316,2.316,0,0,0,1.9-.954l2.726-3.847a2.425,2.425,0,0,0,0-2.831Z" transform="translate(-1.564 -2)" fill="#f6c8b6"/>
+							<path id="패스_87" data-name="패스 87" d="M14.639,2.214h.546a1.891,1.891,0,0,1,1.928,1.7,1.756,1.756,0,0,0-.526-1.347A1.993,1.993,0,0,0,15.185,2h-.547L9.594,7.084A5.38,5.38,0,0,0,8,10.885V11.1A5.38,5.38,0,0,1,9.593,7.3l5.046-5.084Zm.83,5.583a.462.462,0,0,1-.053-.113.41.41,0,0,0,.053.327.455.455,0,0,0,.387.2h3.995A1.773,1.773,0,0,1,21.674,9.93V9.715A1.773,1.773,0,0,0,19.851,8H15.856a.455.455,0,0,1-.387-.2Z" transform="translate(-1.564 2.286)" fill="#fff" opacity="0.2"/>
+							<path id="패스_88" data-name="패스 88" d="M22.13,15.933,19.4,19.779a2.316,2.316,0,0,1-1.9.954h-4.95A4.433,4.433,0,0,1,8,16.447v.214a4.433,4.433,0,0,0,4.558,4.286h4.95a2.316,2.316,0,0,0,1.9-.954l2.726-3.847a2.43,2.43,0,0,0,.453-1.522,2.44,2.44,0,0,1-.453,1.308Z" transform="translate(-1.564 -9.481)" opacity="0.05"/>
+							<path id="패스_89" data-name="패스 89" d="M0,9.857v9.43a.886.886,0,0,0,.912.857H5.47a.886.886,0,0,0,.912-.857V9.857A.886.886,0,0,0,5.47,9H.912A.886.886,0,0,0,0,9.857Z" transform="translate(0 -3.857)" fill="#3e62f6"/>
+							<path id="패스_90" data-name="패스 90" d="M5.47,21.607H.912A.886.886,0,0,1,0,20.75v.214a.886.886,0,0,0,.912.857H5.47a.886.886,0,0,0,.912-.857V20.75A.886.886,0,0,1,5.47,21.607Z" transform="translate(0 -10.464)" opacity="0.1"/>
+							<path id="패스_91" data-name="패스 91" d="M5.47,9H.912A.886.886,0,0,0,0,9.857v.214a.886.886,0,0,1,.912-.857H5.47a.886.886,0,0,1,.912.857V9.857A.886.886,0,0,0,5.47,9Z" transform="translate(0 1.286)" fill="#fff" opacity="0.2"/>
+						</svg>						  
+					</div>
+					<div class="top-count">6</div>
+				</div>
+				<button type="button" class="btn-goods-info">
+					<svg width="15.6" height="15.6" viewBox="0 0 15.6 15.6">
+						<g id="그룹_544" data-name="그룹 544" transform="translate(0.8 0.8)">
+						  <line id="선_1" data-name="선 1" y1="0.255" transform="translate(7 3.764)" fill="none" stroke="#0000ed" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+						  <line id="선_2" data-name="선 2" y1="4.328" transform="translate(7 6.361)" fill="none" stroke="#0000ed" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+						  <circle id="타원_20" data-name="타원 20" cx="7" cy="7" r="7" fill="none" stroke="#0000ed" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+						</g>
+					</svg>					  
+					상품 안내
+				</button>
+			</div>
+			<ul class="sub-content-list pushSite-list">
+				<li><a href="jobPosting-view.html">
+					<div class="pushSite-img">
+						<div class="label">오피스텔</div>
+						<img src="images/ex-site2.jpg" alt="현장이미지">
+					</div>
+					<div class="pushSite-name">마포 주상복합 빌리브 디에이블</div>
+					<div class="pushSite-info-value">
+						<div class="item-list">
+							<div class="item">
+								<div class="category leader">팀장</div>
+								<div class="value-wrap">
+									<div class="label">RT</div>
+									<div class="value">9,000,000</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="category member">팀원</div>
+								<div class="value-wrap">
+									<div class="label">RT</div>
+									<div class="value">9,000,000</div>
+								</div>
+							</div>
+						</div>
+						<ul class="category-list">
+							<li>
+								<div class="text">일비</div>
+								<div class="value">1</div>
+							</li>
+							<li>
+								<div class="text">숙소</div>
+								<div class="value">20</div>
+							</li>
+						</ul>
+					</div>
+				</a></li>
+				<!-- 예시를 위한 가라데이터 START -->
+				<li><a href="jobPosting-view.html"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site4.jpg" alt="현장이미지"></div><div class="pushSite-name">마포 빌리브 에이센트</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category leader">팀장</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div><div class="item"><div class="category member">팀원</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">일비</div><div class="value">1</div></li><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">숙소</div><div class="value">20</div></li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site5.jpg" alt="현장이미지"></div><div class="pushSite-name">마포 빌리브 에이센트</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category team">팀</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div><div class="item"><div class="category manager">본부장</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">교통</div><div class="value">1</div></li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site7.jpg" alt="현장이미지"></div><div class="pushSite-name">천안 직산 프라임 마크써밋</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category team">팀</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">일비</div><div class="value">1</div></li><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">숙소</div><div class="value">20</div></li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site5.jpg" alt="현장이미지"></div><div class="pushSite-name">마포 빌리브 에이센트</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category team">팀</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div><div class="item"><div class="category manager">본부장</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">교통</div><div class="value">1</div></li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="pushSite-img"><div class="label">오피스텔</div><img src="images/ex-site7.jpg" alt="현장이미지"></div><div class="pushSite-name">천안 직산 프라임 마크써밋</div><div class="pushSite-info-value"><div class="item-list"><div class="item"><div class="category team">팀</div><div class="value-wrap"><div class="label">RT</div><div class="value">9,000,000</div></div></div></div><ul class="category-list"><li><div class="text">일비</div><div class="value">1</div></li><li><div class="text">영업</div><div class="value">20</div></li><li><div class="text">숙소</div><div class="value">20</div></li></ul></div></a></li>
+				<!-- 예시를 위한 가라데이터 END -->
+			</ul>
+		</div>
+		<div class="sub-visual-zone">
+			<img src="images/sub-visual-img1.png" alt="급하게 채용 인원이 필요하신가요?">
+		</div>
+		<div class="employment-wrap">
+			<div class="title">
+				<div class="title-text">
+					현장 채용 공고
+					<div class="title-icon">
+						<svg id="그룹_359" data-name="그룹 359" width="21.021" height="17.145" viewBox="0 0 21.021 17.145">
+							<path id="패스_86" data-name="패스 86" d="M22.13,11.515l-.456-.643V9.715A1.773,1.773,0,0,0,19.851,8H15.856a.455.455,0,0,1-.387-.2.4.4,0,0,1-.02-.417l1.463-2.752a1.724,1.724,0,0,0-.086-1.766A1.963,1.963,0,0,0,15.184,2h-.545L9.593,7.083A5.38,5.38,0,0,0,8,10.885v3.973a4.433,4.433,0,0,0,4.558,4.286h4.95a2.316,2.316,0,0,0,1.9-.954l2.726-3.847a2.425,2.425,0,0,0,0-2.831Z" transform="translate(-1.564 -2)" fill="#f6c8b6"/>
+							<path id="패스_87" data-name="패스 87" d="M14.639,2.214h.546a1.891,1.891,0,0,1,1.928,1.7,1.756,1.756,0,0,0-.526-1.347A1.993,1.993,0,0,0,15.185,2h-.547L9.594,7.084A5.38,5.38,0,0,0,8,10.885V11.1A5.38,5.38,0,0,1,9.593,7.3l5.046-5.084Zm.83,5.583a.462.462,0,0,1-.053-.113.41.41,0,0,0,.053.327.455.455,0,0,0,.387.2h3.995A1.773,1.773,0,0,1,21.674,9.93V9.715A1.773,1.773,0,0,0,19.851,8H15.856a.455.455,0,0,1-.387-.2Z" transform="translate(-1.564 2.286)" fill="#fff" opacity="0.2"/>
+							<path id="패스_88" data-name="패스 88" d="M22.13,15.933,19.4,19.779a2.316,2.316,0,0,1-1.9.954h-4.95A4.433,4.433,0,0,1,8,16.447v.214a4.433,4.433,0,0,0,4.558,4.286h4.95a2.316,2.316,0,0,0,1.9-.954l2.726-3.847a2.43,2.43,0,0,0,.453-1.522,2.44,2.44,0,0,1-.453,1.308Z" transform="translate(-1.564 -9.481)" opacity="0.05"/>
+							<path id="패스_89" data-name="패스 89" d="M0,9.857v9.43a.886.886,0,0,0,.912.857H5.47a.886.886,0,0,0,.912-.857V9.857A.886.886,0,0,0,5.47,9H.912A.886.886,0,0,0,0,9.857Z" transform="translate(0 -3.857)" fill="#3e62f6"/>
+							<path id="패스_90" data-name="패스 90" d="M5.47,21.607H.912A.886.886,0,0,1,0,20.75v.214a.886.886,0,0,0,.912.857H5.47a.886.886,0,0,0,.912-.857V20.75A.886.886,0,0,1,5.47,21.607Z" transform="translate(0 -10.464)" opacity="0.1"/>
+							<path id="패스_91" data-name="패스 91" d="M5.47,9H.912A.886.886,0,0,0,0,9.857v.214a.886.886,0,0,1,.912-.857H5.47a.886.886,0,0,1,.912.857V9.857A.886.886,0,0,0,5.47,9Z" transform="translate(0 1.286)" fill="#fff" opacity="0.2"/>
+						</svg>
+					</div>
+					<div class="top-count">52</div>
+				</div>
+				<button type="button" class="btn-write-employee">
+					공고 등록
+					<svg width="13.6" height="13.6" viewBox="0 0 13.6 13.6">
+						<g id="그룹_557" data-name="그룹 557" transform="translate(0.081 -3.664)">
+						  <path id="패스_108" data-name="패스 108" d="M7.208,4.464v12" transform="translate(-0.49)" fill="none" stroke="#0000ed" stroke-linecap="round" stroke-width="1.6"/>
+						  <path id="패스_109" data-name="패스 109" d="M0,0V12" transform="translate(12.719 10.464) rotate(90)" fill="none" stroke="#0000ed" stroke-linecap="round" stroke-width="1.6"/>
+						</g>
+					</svg>
+				</button>
+			</div>
+			<ul class="sub-content-list employment-list">
+				<li><a href="jobPosting-view.html">
+					<div class="site-img"><img src="images/ex-site1.jpg" alt="현장사진"></div>
+					<div class="site-info">
+						<div class="category">
+							<label class="site">아파트</label>
+							<label class="location">
+								<svg width="16" height="16" viewBox="0 0 16 16">
+									<g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)">
+									  <g id="그룹_13" data-name="그룹 13" transform="translate(11.737)">
+										<rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/>
+										<g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)">
+										  <path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/>
+										  <circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/>
+										</g>
+									  </g>
+									</g>
+								</svg>
+								서울 마포구
+							</label>
+						</div>
+						<div class="name">힐스테이트 일반 아파트</div>
+						<div class="revenue">
+							<div class="item">
+								<label class="leader"></label>
+								<div class="value">2,000,000</div>
+							</div>
+							<div class="item">
+								<label class="member"></label>
+								<div class="value">2,000,000</div>
+							</div>
+						</div>
+						<ul class="label-list">
+							<li class="worth">
+								<svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12">
+									<g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1">
+									  <circle cx="6" cy="6" r="6" stroke="none"/>
+									  <circle cx="6" cy="6" r="5.5" fill="none"/>
+									</g>
+									<path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/>
+								</svg>								  
+								MGM
+							</li>
+							<li>일비</li>
+							<li>교통비</li>
+							<li>영업</li>
+							<li>숙소</li>
+						</ul>
+					</div>
+				</a></li>
+				<!-- 예시를 위한 가라데이터 START -->
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site2.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site">아파트</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>전남 목포시</label></div><div class="name">천안 직산 프라임마크써밋</div><div class="revenue"><div class="item"><label class="manager"></label><div class="value">상담시 안내</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>MGM</li><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>영업비</li><li>숙소</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site3.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site officetel">오피스텔</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>광주 서구</label></div><div class="name">마포 주상복합 빌리브 디에이블</div><div class="revenue"><div class="item"><label class="team"></label><div class="value">12,000,000</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>영업비</li><li>일비</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site4.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site">아파트</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>서울 마포구</label></div><div class="name">힐스테이트 일반 아파트</div><div class="revenue"><div class="item"><label class="leader"></label><div class="value">2,000,000</div></div><div class="item"><label class="member"></label><div class="value">2,000,000</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>MGM</li><li>일비</li><li>교통비</li><li>영업</li><li>숙소</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site5.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site">아파트</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>전남 목포시</label></div><div class="name">천안 직산 프라임마크써밋</div><div class="revenue"><div class="item"><label class="manager"></label><div class="value">상담시 안내</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>MGM</li><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>영업비</li><li>숙소</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site6.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site officetel">오피스텔</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>광주 서구</label></div><div class="name">마포 주상복합 빌리브 디에이블</div><div class="revenue"><div class="item"><label class="team"></label><div class="value">12,000,000</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>영업비</li><li>일비</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site7.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site">아파트</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>서울 마포구</label></div><div class="name">힐스테이트 일반 아파트</div><div class="revenue"><div class="item"><label class="leader"></label><div class="value">2,000,000</div></div><div class="item"><label class="member"></label><div class="value">2,000,000</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>MGM</li><li>일비</li><li>교통비</li><li>영업</li><li>숙소</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site1.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site">아파트</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>전남 목포시</label></div><div class="name">천안 직산 프라임마크써밋</div><div class="revenue"><div class="item"><label class="manager"></label><div class="value">상담시 안내</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>MGM</li><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>영업비</li><li>숙소</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site2.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site officetel">오피스텔</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>광주 서구</label></div><div class="name">마포 주상복합 빌리브 디에이블</div><div class="revenue"><div class="item"><label class="team"></label><div class="value">12,000,000</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>영업비</li><li>일비</li></ul></div></a></li>
+				<li><a href="jobPosting-view.html"><div class="site-img"><img src="images/ex-site3.jpg" alt="현장사진"></div><div class="site-info"><div class="category"><label class="site">아파트</label><label class="location"><svg width="16" height="16" viewBox="0 0 16 16"><g id="그룹_571" data-name="그룹 571" transform="translate(-11.737)"><g id="그룹_13" data-name="그룹 13" transform="translate(11.737)"><rect id="사각형_23" data-name="사각형 23" width="16" height="16" fill="none"/><g id="그룹_422" data-name="그룹 422" transform="translate(2.822 1.334)"><path id="패스_102" data-name="패스 102" d="M13.891,6.42A5.44,5.44,0,0,0,3.01,6.391,8.441,8.441,0,0,0,8.2,14.244a.605.605,0,0,0,.252.054.612.612,0,0,0,.254-.054A8.44,8.44,0,0,0,13.891,6.42ZM8.45,13.028a7.088,7.088,0,0,1-4.231-6.6,4.231,4.231,0,0,1,8.462,0v.039A7.08,7.08,0,0,1,8.45,13.028Z" transform="translate(-3.01 -0.965)" fill="#6b7684"/><circle id="타원_19" data-name="타원 19" cx="1.21" cy="1.21" r="1.21" transform="translate(4.23 4.257)" fill="#6b7684"/></g></g></g></svg>서울 마포구</label></div><div class="name">힐스테이트 일반 아파트</div><div class="revenue"><div class="item"><label class="leader"></label><div class="value">2,000,000</div></div><div class="item"><label class="member"></label><div class="value">2,000,000</div></div></div><ul class="label-list"><li class="worth"><svg id="그룹_550" data-name="그룹 550" width="12" height="12" viewBox="0 0 12 12"><g id="타원_21" data-name="타원 21" fill="none" stroke="#191f28" stroke-width="1"><circle cx="6" cy="6" r="6" stroke="none"/><circle cx="6" cy="6" r="5.5" fill="none"/></g><path id="패스_107" data-name="패스 107" d="M3.894-8.652a.534.534,0,0,1,.322.1.6.6,0,0,1,.206.361l.435,1.849h.816l.443-1.981A.379.379,0,0,1,6.322-8.6a.5.5,0,0,1,.33-.035.438.438,0,0,1,.284.179.423.423,0,0,1,.043.357L6.535-6.337h.622a.191.191,0,0,1,.171.082.349.349,0,0,1,.054.2.335.335,0,0,1-.054.19.191.191,0,0,1-.171.082H6.4L5.836-3.5a.586.586,0,0,1-.214.361.545.545,0,0,1-.315.1.545.545,0,0,1-.315-.1.6.6,0,0,1-.214-.377L4.251-5.785H3.505L2.93-3.5a.578.578,0,0,1-.218.361.563.563,0,0,1-.319.1.545.545,0,0,1-.315-.1.592.592,0,0,1-.214-.369L1.3-5.785H.537a.191.191,0,0,1-.171-.082.335.335,0,0,1-.054-.19.349.349,0,0,1,.054-.2.191.191,0,0,1,.171-.082h.629L.732-8.1a.423.423,0,0,1,.043-.357.443.443,0,0,1,.291-.179.541.541,0,0,1,.334.027.387.387,0,0,1,.21.291l.443,1.981H2.9l.466-1.849a.626.626,0,0,1,.2-.361A.524.524,0,0,1,3.894-8.652ZM2.449-4.557l.311-1.228H2.177Zm2.828-.008.272-1.22H4.989ZM3.645-6.337h.474l-.225-.979Z" transform="translate(1.827 11.844)" fill="#191f28"/></svg>MGM</li><li>일비</li><li>교통비</li><li>영업</li><li>숙소</li></ul></div></a></li>
+				<!-- 예시를 위한 가라데이터 END -->
+			</ul>
+			<ul class="paging-ctrl">
+				<li class="btn-prev">
+					<a href="#">
+						<svg id="그룹_35" data-name="그룹 35" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+							<rect id="사각형_24" data-name="사각형 24" width="16" height="16" fill="none"/>
+							<path id="패스_13" data-name="패스 13" d="M0,5,5,0l5,5" transform="translate(3 5)" fill="none" stroke="#b0b8c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+						</svg>					  
+					</a>
+				</li>
+				<li><a href="#">1</a></li>
+				<li class="on"><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li class="btn-next"><a href="#">
+					<svg id="그룹_35" data-name="그룹 35" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+						<rect id="사각형_24" data-name="사각형 24" width="16" height="16" fill="none"/>
+						<path id="패스_13" data-name="패스 13" d="M0,0,5,5l5-5" transform="translate(3 6)" fill="none" stroke="#6b7684" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+					</svg>					  
+				</a></li>
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="notice-area">
+				<div class="footer-label notice">공지사항</div>
+				<div class="notice-title new"><a href="#">
+					<span>[공지] 분양의신 서비스 이용약관 변동 동의 안내</span>
+				</a></div>
+			</div>
+			<ul class="footer-info">
+				<li>
+					<div class="footer-label">네이버(주) 대표이사</div>
+					<div class="footer-value">홍길동</div>
+				</li>
+				<li>
+					<div class="footer-label">사업자등록번호</div>
+					<div class="footer-value">123-45-68790</div>
+				</li>
+				<li>
+					<div class="footer-label">통신판매업신고번호</div>
+					<div class="footer-value">제0000-서울강남-0000호</div>
+				</li>
+				<li>
+					<div class="footer-label">주소</div>
+					<div class="footer-value">서울시 강남구 테헤란로 123, 분양의신 1234, 12345</div>
+				</li>
+				<li>
+					<div class="footer-label">대표번호</div>
+					<div class="footer-value">1588-1234</div>
+				</li>
+				<li>
+					<div class="footer-label">이메일</div>
+					<div class="footer-value">cscenter@gmail.com</div>
+				</li>
+			</ul>
+			<ul class="footer-link">
+				<li><a href="#"><b>개인정보처리방침</b></a></li>
+				<li><a href="#">분양의신 이용약관</a></li>
+				<li><a href="#">커뮤니티 운영정책</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">사업자정보 확인</a></li>
+				<li>© 분양의신 Corp.</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<ul class="main-navigation">
+			<li class="navi community"><a href="community.html">
+				<div class="icon">
+					<svg width="22" height="22" viewBox="0 0 22 22">
+						<g id="그룹_13" data-name="그룹 13" transform="translate(0)">
+						<rect id="사각형_23" data-name="사각형 23" width="22" height="22" transform="translate(0)" fill="none"/>
+						<path id="합치기_7" data-name="합치기 7" d="M7.832,20.547a9.055,9.055,0,0,1-2.118-1.1,3.8,3.8,0,0,1-3.826-6.573c-.027-.286-.041-.575-.041-.861A9.084,9.084,0,0,1,7.124,3.763a3.8,3.8,0,0,1,7.607,0A9.085,9.085,0,0,1,20,12.01c0,.282-.012.572-.038.859a3.8,3.8,0,0,1-3.826,6.574,9.079,9.079,0,0,1-8.309,1.1ZM7.6,16.158a3.778,3.778,0,0,1-.625,2.089,7.387,7.387,0,0,0,7.9,0,3.8,3.8,0,0,1,3.179-5.89c.081,0,.163,0,.244.008,0-.117.008-.235.008-.352a7.455,7.455,0,0,0-3.961-6.543A3.847,3.847,0,0,1,13.391,6.7,3.8,3.8,0,0,1,7.507,5.467,7.455,7.455,0,0,0,3.543,12.01c0,.117,0,.235.008.352.084,0,.167-.008.249-.008A3.808,3.808,0,0,1,7.6,16.158ZM3.1,14.174a2.1,2.1,0,1,0,.7-.122A2.025,2.025,0,0,0,3.1,14.174Zm12.852,1.984a2.1,2.1,0,1,0,2.812-1.986,2.148,2.148,0,0,0-.707-.12A2.107,2.107,0,0,0,15.949,16.158ZM8.822,3.8a2,2,0,0,0,.03.358,2.106,2.106,0,0,0,4.149,0,2.024,2.024,0,0,0,.031-.359,2.105,2.105,0,1,0-4.211,0Z" transform="translate(0 0.42)" fill="#8b95a1"/>
+						</g>
+					</svg>					  
+				</div>
+				<div class="text">커뮤니티</div>
+			</a></li>
+			<li class="navi jobPosting on"><a href="jobPosting.html">
+				<div class="icon">
+					<svg width="22" height="20.56" viewBox="0 0 22 20.56">
+						<path id="합치기_3" data-name="합치기 3" d="M4.933,20.56A5.569,5.569,0,0,1,.91,18.65a2.683,2.683,0,0,1-.9-2.2,3.028,3.028,0,0,1,.935-1.792A11.066,11.066,0,0,1,3.2,13.042c.122-.072.242-.143.357-.214a9.822,9.822,0,0,1,10.37,0c.1.059.216.13.353.211a11.262,11.262,0,0,1,2.257,1.62,3.027,3.027,0,0,1,.935,1.792,2.687,2.687,0,0,1-.9,2.2,5.569,5.569,0,0,1-4.023,1.908Zm-.374-6.027c-.151.094-.314.192-.483.291A8.808,8.808,0,0,0,2.313,16.07a1.115,1.115,0,0,0-.376.594c-.016.14.1.337.318.557a3.752,3.752,0,0,0,2.677,1.347h7.619a3.752,3.752,0,0,0,2.677-1.347c.22-.22.334-.417.318-.555a1.113,1.113,0,0,0-.376-.6,8.827,8.827,0,0,0-1.763-1.248c-.16-.094-.323-.192-.482-.29a7.929,7.929,0,0,0-8.368,0Zm14.466-4.289a1,1,0,0,1,0-1.991h2.007a1,1,0,0,1,0,1.991ZM3.511,5.122A5.058,5.058,0,0,1,8.492,0a5.058,5.058,0,0,1,4.98,5.122,5.058,5.058,0,0,1-4.98,5.122A5.058,5.058,0,0,1,3.511,5.122Zm1.936,0A3.092,3.092,0,0,0,8.492,8.253a3.092,3.092,0,0,0,3.045-3.131A3.092,3.092,0,0,0,8.492,1.991,3.092,3.092,0,0,0,5.447,5.122ZM16.016,7.149a1,1,0,0,1,0-1.991h5.016a1,1,0,0,1,0,1.991Zm0-3.095a1,1,0,0,1,0-1.991h5.016a1,1,0,0,1,0,1.991Z" transform="translate(0)" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">구인공고</div>
+			</a></li>
+			<li class="navi home"><a href="_index.html">
+				<div class="icon">
+					<svg width="24.01" height="24" viewBox="0 0 24.01 24">
+						<path id="합치기_2" data-name="합치기 2" d="M4.243,24A4.319,4.319,0,0,1,0,19.6L.01,9.573a4.431,4.431,0,0,1,1.935-3.68L9.677.706A4.136,4.136,0,0,1,11.985,0h0V2.206a1.932,1.932,0,0,0-1.079.332L3.174,7.726a2.213,2.213,0,0,0-.958,1.85l-.01,10.031a2.24,2.24,0,0,0,.648,1.6,1.957,1.957,0,0,0,1.389.587H19.757a2.117,2.117,0,0,0,2.037-2.182L21.8,9.584a2.212,2.212,0,0,0-.962-1.858L13.059,2.536a1.932,1.932,0,0,0-1.074-.329V0a4.136,4.136,0,0,1,2.3.7l7.782,5.191a4.431,4.431,0,0,1,1.944,3.7L24,19.614A4.318,4.318,0,0,1,19.757,24Zm4.114-4.547a1.1,1.1,0,0,1,0-2.206h7.278a1.1,1.1,0,0,1,0,2.206ZM11.985,0Z" fill="#8B95A1"/>
+					</svg>
+				</div>
+				<div class="text">홈</div>
+			</a></li>
+			<li class="navi saleTalk"><a href="saleTalk.html">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.169" viewBox="0 0 24 22.169">
+						<path id="합치기_8" data-name="합치기 8" d="M11.236,21.838,8.8,19.2H6.514A6.357,6.357,0,0,1,0,13.025V6.17A6.356,6.356,0,0,1,6.514,0H17.478A6.36,6.36,0,0,1,24,6.17v6.855A6.361,6.361,0,0,1,17.478,19.2H15.19l-2.436,2.64a1.034,1.034,0,0,1-1.517,0ZM3.345,3.273a3.935,3.935,0,0,0-1.28,2.9v6.855a3.932,3.932,0,0,0,1.28,2.9,4.609,4.609,0,0,0,3.169,1.208H9.253a1.035,1.035,0,0,1,.762.335l1.977,2.153,1.985-2.153a1.035,1.035,0,0,1,.761-.335h2.74a4.626,4.626,0,0,0,3.174-1.208,3.934,3.934,0,0,0,1.282-2.9V6.17a3.93,3.93,0,0,0-1.282-2.9,4.626,4.626,0,0,0-3.174-1.208H6.514A4.613,4.613,0,0,0,3.345,3.273Zm5,7.929a1.033,1.033,0,0,1,0-2.066h7.314a1.033,1.033,0,0,1,0,2.066Z" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">분양톡</div>
+			</a></li>
+			<li class="navi mypage"><a href="mypage.html">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19.239" height="22" viewBox="0 0 19.239 22">
+						<path id="합치기_10" data-name="합치기 10" d="M5.429,22A6.2,6.2,0,0,1,1,19.958,2.832,2.832,0,0,1,.014,17.6a3.209,3.209,0,0,1,1.03-1.918,12.161,12.161,0,0,1,2.478-1.731c.135-.077.265-.152.393-.229a11.065,11.065,0,0,1,11.41,0c.106.063.238.14.389.226A12.356,12.356,0,0,1,18.2,15.687a3.212,3.212,0,0,1,1.029,1.919,2.835,2.835,0,0,1-.987,2.353A6.2,6.2,0,0,1,13.811,22Zm-.412-6.449c-.166.1-.346.2-.533.311A9.713,9.713,0,0,0,2.546,17.2a1.194,1.194,0,0,0-.414.635c-.017.15.108.361.35.6a4.177,4.177,0,0,0,2.946,1.441h8.382a4.175,4.175,0,0,0,2.946-1.441c.243-.236.367-.446.35-.594a1.189,1.189,0,0,0-.414-.638,9.692,9.692,0,0,0-1.939-1.335c-.176-.1-.355-.206-.531-.311a8.936,8.936,0,0,0-9.207,0ZM3.863,5.481a5.481,5.481,0,1,1,5.481,5.481A5.487,5.487,0,0,1,3.863,5.481Zm2.13,0a3.35,3.35,0,1,0,3.35-3.35A3.354,3.354,0,0,0,5.994,5.481Z" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">마이페이지</div>
+			</a></li>
+		</ul>
+	</footer>
+</body>
+
+<script>
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 10) {
+        $('header').addClass('scroll');
+		$('.sub-menu').addClass('scroll');
+    } else {
+        $('header').removeClass('scroll');
+		$('.sub-menu').removeClass('scroll');
+    }
+});
+
+$(document).ready(function(){
+	// 네비게이션
+	$('ul.main-navigation li').click(function(){
+		$('ul.main-navigation li').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	// 지역 선택
+	$('ul.jobPosting-depth1 li').click(function(){
+		$('ul.jobPosting-depth1 li').removeClass('on');
+		$(this).addClass('on');
+		$('.jobPosting-depth2 ul').css('display', 'none');
+		let targetClass = $(this).attr('class').split(' ');
+		targetClass.forEach(function(cls) {
+			if (cls !== 'on') {
+				$('.jobPosting-depth2 ul.' + cls).css('display', 'flex');
+			}
+		});
+	});
+
+	// 지역 선택
+	$('.jobPosting-depth2 ul li').click(function(){
+		$(this).siblings('li').removeClass('on');
+		$(this).addClass('on');
+	});
+});
+</script>
+
+</html>

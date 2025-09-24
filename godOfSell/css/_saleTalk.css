@@ -1,0 +1,57 @@
+html, body {height:100%;}
+
+header {height:60px; padding:6px 16px;}
+header .header-menu {height:100%;}
+header .header-menu button {width:32px; height:32px; margin:0 6px;}
+
+.talk-contents {width:100%; height:calc(100% - 132px); background:#fff; position:relative; overflow:hidden;}
+
+ul.talk-depth1-menu {width:100%; height:48px; padding:0 16px; display:flex; justify-content:flex-start; border-top:1px solid #E5E8EB; border-bottom:1px solid #E5E8EB;}
+ul.talk-depth1-menu li {width:fit-content; height:100%; margin-right:24px; display:flex; align-items:center; position:relative; font-size:16px; font-weight:400; color:#8B95A1; line-height:1em; transition:.3s;}
+ul.talk-depth1-menu li.on {font-weight:600; color:#0000ED;}
+ul.talk-depth1-menu li::after {content:''; position:absolute; bottom:0; left:0; width:0%; height:2px; background:#0000ED; border-radius:3px; transition:.3s;}
+ul.talk-depth1-menu li.on::after {width:100%;}
+
+div.talk-message-list {display:flex; flex-wrap:wrap; align-content:flex-start; width:100%; height:calc(100% - 48px);}
+div.talk-message-list .sub-visual-zone {background:#E5E8EB; display:flex; align-items:center; justify-content:center;}
+div.talk-message-list .sub-visual-zone > img {width:100%; height:auto;}
+
+ul.talk-message-category {display:flex; align-items:center; width:100%; height:64px; padding:0 16px;}
+ul.talk-message-category li {width:auto; padding:8px; height:40px; border-radius:12px; border:1px solid #E5E8EB; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:400; color:#191F28; line-height:1em; background:#fff; transition:.3s; display:flex; align-items:center; justify-content:center; margin-right:8px;}
+ul.talk-message-category li:last-child {margin-right:0;}
+ul.talk-message-category li svg {margin-left:4px;}
+ul.talk-message-category li.on {border:1px solid #333D4B; background:#333D4B; font-weight:700; color:#fff;}
+
+ul.talk-message-list {display:flex; flex-wrap:wrap; align-content:flex-start; width:100%; height:calc(100% - 48px); overflow-y:scroll;}
+ul.talk-message-list.openChat {height:calc(100% - 164px);}
+ul.talk-message-list::-webkit-scrollbar {display:none;}
+ul.talk-message-list > li {width:100%; height:88px;}
+ul.talk-message-list > li a {display:flex; align-items:center; width:100%; height:100%; padding:16px;}
+ul.talk-message-list > li .thumb-img {width:52px; height:52px; border-radius:16px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:url(../images/thumb-default.svg) center center no-repeat #E5E8EB;}
+ul.talk-message-list > li .thumb-img img {width:auto; height:100%;}
+ul.talk-message-list > li .talk-info {display:flex; flex-wrap:wrap; align-content:center; width:calc(100% - 68px); margin-left:16px; height:100%;}
+ul.talk-message-list > li .talk-info .talk-room {display:flex; justify-content:space-between; align-items:center; width:100%; height:16px;}
+div.talk-message-list ul.talk-message-list > li .talk-info .talk-room {margin-bottom:4px;}
+ul.talk-message-list > li .talk-info .talk-room .name {font-size:13px; font-weight:600; color:#333D4B; line-height:1em; display:flex; align-items:center;}
+ul.talk-message-list > li .talk-info .talk-room .name .count {font-size:12px; font-weight:400; color:#8B95A1; line-height:1em; margin:0 3px;}
+ul.talk-message-list > li .talk-info .talk-room .last-time {font-size:11px; font-weight:400; color:#4E5968; line-height:1em;}
+ul.talk-message-list > li .talk-info .site-name {width:auto; padding:0 4px; border-radius:4px; height:18px; background:#E6E6FD; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:500; color:#0000ED; line-height:1em; margin:4px 0;}
+ul.talk-message-list > li .talk-info .message-record {display:flex; justify-content:space-between; align-items:center; width:100%; height:16px;}
+ul.talk-message-list > li .talk-info .message-record .message {width:calc(100% - 34px); display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:12px; font-weight:400; color:#4E5968; line-height:1em;}
+ul.talk-message-list > li .talk-info .message-record .part {width:26px; height:100%; margin-left:8px; padding:0 6px; border-radius:50px; background:#0000A8; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:500; color:#fff; line-height:1em;}
+
+ul.talk-message-list.hotTalk > li .group-name {width:100%; height:16px; font-size:13px; font-weight:600; color:#333D4B; line-height:1em; display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+ul.talk-message-list.hotTalk > li ul.tag {width:100%; height:18px; display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:6px;}
+ul.talk-message-list.hotTalk > li ul.tag > li {display:inline-block; font-size:12px; font-weight:400; color:#6B7684; line-height:1em; margin-right:3px;}
+ul.talk-message-list.hotTalk > li ul.tag > li::before {content:'#';}
+ul.talk-message-list.hotTalk > li ul.tag > li:last-child {margin-right:0;}
+ul.talk-message-list.hotTalk > li .other {display:flex; align-items:center; width:100%;}
+ul.talk-message-list.hotTalk > li .other .count {font-size:12px; font-weight:500; color:#0000ED; line-height:1em; position:relative; padding-right:2px;}
+ul.talk-message-list.hotTalk > li .other .count::after {content:'·'; font-size:16px; font-weight:700; color:#8B95A1; line-height:1em; margin-left:6px;}
+ul.talk-message-list.hotTalk > li .other .time {padding-left:4px; font-size:12px; font-weight:400; color:#6B7684; line-height:1em;}
+
+.toast-message {position:absolute; bottom:-32px; left:16px; z-index:2; width:calc(100% - 32px); height:32px; border-radius:50px; border:1px solid #0000ED; background:#E6E6FD; display:flex; align-items:center; padding:4px 6px 4px 12px; transition:.3s;}
+.toast-message.open {bottom:16px;}
+.toast-message > svg {width:14px; height:14px; margin-right:10px;}
+.toast-message .message-object {width:calc(100% - 32px); font-size:12px; font-weight:500; color:#0000ED; line-height:1em; display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.toast-message .btn-close-message {width:14px; height:14px; margin-left:4px; background:none; display:flex; align-items:center; justify-content:center;}

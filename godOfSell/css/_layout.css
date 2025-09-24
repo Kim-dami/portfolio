@@ -1,0 +1,96 @@
+/* html */
+html {background:#F2F4F6; overflow-x:hidden;}
+html::-webkit-scrollbar{display:none;}
+
+/* header : 헤더 */
+header {width:100%; height:112px; padding:6px 16px 0 16px; background:#fff; display:flex; align-items:flex-start; justify-content:space-between; }
+header.scroll {position:fixed; z-index:99; box-shadow:0px 2px 10px 2px rgba(0,0,0,.1); height:60px; padding:0 16px; align-items:center;}
+header a.btn-home {width:75px; height:24px; background:url(../images/ci.png) 100% 100% no-repeat; background-size:contain; margin-top:13px; transition:.3s;}
+header a.btn-home.jobPosting,
+header a.btn-home.community,
+header a.btn-home.saleTalk,
+header a.btn-home.mypage {font-size:20px; font-weight:700; color:#191F28; line-height:1em; background:none;}
+header a.btn-home.saleTalk,
+header a.btn-home.mypage {width:89px;}
+header.scroll a.btn-home.saleTalk,
+header.scroll a.btn-home.mypage {width:75px; font-size:16px; line-height:1.5em;}
+header.scroll a.btn-home {margin-top:0;}
+header .header-menu {display:flex; align-items:center;}
+header .header-menu button {width:44px; height:44px; display:flex; align-items:center; justify-content:center; background:none;}
+header .header-menu button svg {width:28px; height:28px;}
+form.form-search {position:absolute; top:60px; left:0; width:100%; height:52px; padding:0 16px; overflow:hidden; background:#fff; transition:.3s;}
+header.scroll form.form-search {position:unset; height:40px; padding:0 6px 0 16px; width:calc(100% - 119px);}
+form.form-search .search-wrap {width:100%; height:100%; padding:0 0 0 16px; border:2px solid #0000ED; border-radius:12px; display:flex; align-items:center; justify-content:space-evenly; transition:.3s;}
+header.scroll form.form-search .search-wrap {padding:0 0 0 10px;}
+form.form-search .search-wrap .ic-search {width:20px; height:20px; margin-right:16px; transition:.3s;}
+form.form-search .search-wrap input {width:calc(100% - 36px); height:100%; padding:0 10px; border:0; background:none; border-radius:12px; font-size:16px; font-weight:700; color:#000; line-height:1em; transition:.3s;}
+header.scroll form.form-search .search-wrap input {padding:0 10px 0 0;}
+form.form-search .search-wrap input::placeholder {color:#8B95A1}
+
+/* sub : 서브페이지 공통 */
+.sub-menu {display:flex; flex-wrap:wrap; width:100%; height:102px; background:#fff; transition:.3s; top:0;}
+.sub-menu.scroll {position:fixed; top:60px; z-index:99; box-shadow:0px 12px 10px 0px rgba(0,0,0,.1);}
+.sub-menu ul.jobPosting-depth1 {width:calc(100% - 12px); height:51px; padding:8px 12px 8px 0; margin-left:12px; text-align:center; overflow-x:scroll; overflow-y:hidden; white-space:nowrap;}
+.sub-menu ul.jobPosting-depth1::-webkit-scrollbar{display:none;}
+.sub-menu ul.jobPosting-depth1 li {display:inline-block; width:auto; height:35px; padding:9px 10px; border:1px solid #E5E8EB; border-radius:6px; font-size:16px; font-weight:400; color:#333D4B; line-height:1em; margin-right:4px; background:#fff; transition:.3s; cursor:pointer;}
+.sub-menu ul.jobPosting-depth1 li:last-child {margin-right:0;}
+.sub-menu ul.jobPosting-depth1 li.on {border:1px solid #0000ED; background:#E6E6FD; font-weight:600; color:#0000ED;}
+.sub-menu .jobPosting-depth2 {width:100%; background:#F9FAFB;}
+.sub-menu .jobPosting-depth2 ul {width:calc(100% - 12px); height:51px; padding:8px 12px 8px 0; margin-left:12px; text-align:center; overflow-x:scroll; overflow-y:hidden; white-space:nowrap; display:flex; align-items:center;}
+.sub-menu .jobPosting-depth2 ul::-webkit-scrollbar{display:none;}
+.sub-menu .jobPosting-depth2 ul li {display:flex; align-items:center; justify-content:center; width:auto; height:35px; padding:9px 10px; border:1px solid #E5E8EB; border-radius:6px; font-size:16px; font-weight:400; color:#333D4B; line-height:1em; margin-right:4px; background:#fff; transition:.3s; cursor:pointer;}
+.sub-menu .jobPosting-depth2 ul li.on {border:1px solid #0000ED; font-weight:600;}
+.sub-menu .jobPosting-depth2 ul li svg {display:inline-block; margin-right:6px;}
+.sub-menu .jobPosting-depth2 ul li.refresh {border:0; background:none;}
+.sub-menu .jobPosting-depth2 ul li.refresh svg {margin-right:0;}
+.sub-contents {width:100%; background:#fff; margin-bottom:72px;}
+.sub-contents .title {display:flex; align-items:center; justify-content:space-between; width:100%; height:64px; padding:20px 16px;}
+.sub-contents .title .title-text {display:flex; align-items:center; font-size:20px; font-weight:700; color:#191F28; line-height:1em; transition:.3s;}
+.sub-contents .title ul.tab li {border-right:1px solid #D1D6DB; padding:0 10px; cursor:pointer;}
+.sub-contents .title ul.tab li:first-child {padding:0 10px 0 0;}
+.sub-contents .title ul.tab li:last-child {border-right:0;}
+.sub-contents .title ul.tab li .title-text {font-weight:400; color:#8B95A1;}
+.sub-contents .title ul.tab li.on .title-text {font-weight:700; color:#191F28;}
+.sub-contents .title .title-icon {width:24px; height:24px; display:flex; align-items:center; justify-content:center; margin-left:4px;}
+.sub-contents .title ul.tab {display:flex; align-items:center;}
+.sub-contents .title ul.tab li {display:flex; align-items:center;}
+.sub-contents .title a.btn-link-move {display:flex; align-items:center; justify-content:center; transform:rotate(-90deg);}
+.sub-contents .title .top-count {font-size:16px; font-weight:700; color:#0000ED; line-height:1em; min-width:22px; width:auto; height:22px; padding:0 8px; border-radius:50px; background:#E6E6FD; display:flex; align-items:center; justify-content:center; margin-left:10px;}
+.sub-contents .title button.btn-goods-info {background:#fff; border:1px solid #0000ED; border-radius:6px; display:flex; align-items:center; justify-content:center; width:92px; height:32px; font-size:13px; font-weight:700; color:#0000ED; line-height:1em;}
+.sub-contents .title button.btn-goods-info svg {margin-right:6px;}
+.sub-contents .title button.btn-write-employee {background:#fff; border:1px solid #0000ED; border-radius:6px; display:flex; align-items:center; justify-content:center; width:92px; height:32px; font-size:13px; font-weight:700; color:#0000ED; line-height:1em;}
+.sub-contents .title button.btn-write-employee svg {margin-left:6px;}
+.sub-visual-zone {width:100%; height:100px;}
+.sub-visual-zone > img {width:100%; height:100%;}
+ul.paging-ctrl {display:flex; align-items:center; justify-content:center; width:100%; padding:14px 0 30px 0;}
+ul.paging-ctrl li {width:32px; height:32px; margin:0 2px; border:1px solid #fff; border-radius:4px; transition:.3s;}
+ul.paging-ctrl li.on {border:1px solid #333D4B;}
+ul.paging-ctrl li.btn-prev {margin-right:24px; transform:rotate(-90deg);}
+ul.paging-ctrl li.btn-next {margin-left:24px; transform:rotate(270deg);}
+ul.paging-ctrl li a {width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:400; color:#333D4B; line-height:1em;}
+
+/* footer : 푸터 정보 */
+.footer {width:100%; padding:24px 16px; background:#F9FAFB;}
+.footer .notice-area {display:flex; align-items:center; width:100%; padding-bottom:24px; border-bottom:1px solid #E5E8EB;}
+.footer .footer-label {font-size:13px; font-weight:400; color:#8B95A1; line-height:1em; margin-right:16px; white-space:nowrap;}
+.footer .footer-label.notice {width:45px;}
+.footer .footer-value {font-size:13px; font-weight:400; color:#4E5968; line-height:1em;}
+.footer .notice-title {width:calc(100% - 61px);}
+.footer .notice-title a {font-size:13px; font-weight:400; color:#4E5968; line-height:1em; display:flex; align-items:center; width:100%;}
+.footer .notice-title.new a::after {content:'NEW'; width:36px; height:16px; display:flex; align-items:center; justify-content:center; background:#0000ED; border-radius:50px; font-size:11px; font-weight:700; color:#fff; line-height:1em; margin-left:6px;}
+.footer .notice-title a span {display:inline-block; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.footer ul.footer-info {display:flex; flex-wrap:wrap; flex-direction:row; width:100%; padding:16px 0; border-bottom:1px solid #E5E8EB;}
+.footer ul.footer-info li {display:flex; align-items:center; margin:4px 24px 4px 0;}
+.footer ul.footer-link {display:flex; flex-wrap:wrap; flex-direction:row; width:100%; padding:16px 0;}
+.footer ul.footer-link li {display:flex; align-items:center; margin:4px 24px 4px 0; font-size:13px; font-weight:400; color:#4E5968; line-height:1em;}
+.footer ul.footer-link li a {font-size:13px; font-weight:400; color:#4E5968; line-height:1em; display:flex; align-items:center; width:100%;}
+
+/* footer : 네비게이션 */
+footer {position:fixed; left:0; bottom:0; z-index:99; width:100%; height:72px; padding:0 16px; background:#fff; box-shadow:0px 2px 10px 2px rgba(0,0,0,.3);}
+footer ul.main-navigation {width:100%; height:100%; display:flex; align-items:center;}
+footer ul.main-navigation li.navi {width:calc(100%/5); height:100%;}
+footer ul.main-navigation li.navi a {display:flex; flex-wrap:wrap; align-content:center; width:100%; height:100%;}
+footer ul.main-navigation li.navi .icon {width:100%; height:32px; display:flex; align-items:center; justify-content:center; transition:.3s;}
+footer ul.main-navigation li.navi.on .icon svg path {fill:#0000ED;}
+footer ul.main-navigation li.navi .text {width:100%; height:14px; text-align:center; font-size:12px; font-weight:400; color:#6B7684; line-height:1em; margin-top:2px; transition:.3s;}
+footer ul.main-navigation li.navi.on .text {font-weight:700; color:#0000ED;}

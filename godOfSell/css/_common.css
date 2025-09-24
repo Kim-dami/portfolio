@@ -1,0 +1,76 @@
+::selection {background:#42B4EC; color:#222}
+
+html {width:100%;}
+
+/* common */
+html,body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,blockquote,p,address,pre,cite,form,fieldset,table,th,td,legend,label,button {margin:0;padding:0;border:0;font-size:15px; letter-spacing:-.065em; font-family:'Pretendard',sans-serif;}
+input,textarea,select {margin:0;padding:0;  font-family:'Pretendard',sans-serif; line-height:1em;}
+a, button {cursor:pointer;}
+* {box-sizing:border-box;}
+
+a {text-decoration:none}
+
+body {line-height:120%;color:#776f67;letter-spacing:0;-webkit-text-size-adjust:none; width:100%;overflow:hidden;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+fieldset,img,abbr,acronym,label {border:0 none}
+blockquote:before,blockquote:after,q:before,q:after {content:''}
+ol,ul,dl {list-style:none}
+hr {display:none}
+fieldset {border:0}
+label,select,input,textarea {vertical-align:middle}
+img {vertical-align:top}
+
+/* 공통스크롤 START */
+.overlay {overflow-y:overlay; overflow-x:overlay; z-index:2;}
+
+.overlay.custom:hover::-webkit-scrollbar {display: initial;}
+.overlay.custom::-webkit-scrollbar {display: none;}
+.overlay.custom-ver2:hover::-webkit-scrollbar {display: initial;}
+.overlay.custom-ver2::-webkit-scrollbar {display: none;}
+
+/* custom webkit scrollbars */
+.custom::-webkit-scrollbar {width: 15px;}
+  
+.custom::-webkit-scrollbar-track {
+	border-width: 0;
+}
+
+.custom::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: rgba(152, 167, 169, 0.5);
+	border-style: solid;
+	border-color: transparent;
+	border-width: 5px;
+	background-clip: padding-box;
+}
+
+.custom-ver2::-webkit-scrollbar {width: 10px;}
+
+.custom-ver2::-webkit-scrollbar-track {
+	background-color: rgba(3, 22, 29, 0.5);
+	border-width: 0;
+}
+
+.custom-ver2::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: rgba(162, 178, 179, 0.5);
+	border-style: solid;
+	border-color: transparent;
+	border-width: 3px;
+	background-clip: padding-box;
+}
+
+/* hidden elements */
+.custom::-webkit-scrollbar-button,
+.custom::-webkit-scrollbar-track-piece,
+.custom::-webkit-scrollbar-corner,
+.custom::-webkit-resizer,
+.custom-ver2::-webkit-scrollbar-button,
+.custom-ver2::-webkit-scrollbar-track-piece,
+.custom-ver2::-webkit-scrollbar-corner,
+.custom-ver2::-webkit-resizer {
+	display: none;
+}
+/* 공통스크롤 END */
+
+.HIDDEN {display:none !important;}

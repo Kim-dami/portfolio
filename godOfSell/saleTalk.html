@@ -1,0 +1,255 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="fp-enabled">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Alvaro Trigo Lopez">
+	<meta name="Resource-type" content="Document">
+	<link rel="icon" href="favicon.ico">
+	<title>분양의신</title>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/_fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/_common.css">
+	<link rel="stylesheet" type="text/css" href="css/_layout.css">
+	<link rel="stylesheet" type="text/css" href="css/_saleTalk.css">
+</head>
+
+<body>
+	<header>
+		<a class="btn-home saleTalk" href="saleTalk.html">분양 TALK</a>
+		<div class="header-menu">
+			<button type="button" class="btn-open-search">
+				<svg width="20.405" height="20.475" viewBox="0 0 20.405 20.475">
+					<path id="패스_14" data-name="패스 14" d="M19.756,18.607l-3.437-3.361h0l-.081-.123a.809.809,0,0,0-1.137,0h0a8.113,8.113,0,0,1-10.519.34A7.679,7.679,0,0,1,2.876,5.31,8.075,8.075,0,0,1,12.953,2.342a7.741,7.741,0,0,1,4.314,9.385.779.779,0,0,0,.182.772.822.822,0,0,0,.774.232.8.8,0,0,0,.593-.54h0a9.334,9.334,0,0,0-5-11.25A9.754,9.754,0,0,0,1.689,4.085,9.256,9.256,0,0,0,3.049,16.28a9.789,9.789,0,0,0,12.535.515l3.044,2.976a.819.819,0,0,0,1.137,0,.784.784,0,0,0,0-1.12h0Z" transform="translate(0.205 0.216)" fill="#333d4b" stroke="#333d4b" stroke-width="0.4"/>
+				</svg>				  
+			</button>
+			<button type="button" class="btn-new-talk">
+				<svg width="22" height="20.322" viewBox="0 0 22 20.322">
+					<path id="합치기_19" data-name="합치기 19" d="M10.3,20.018,8.069,17.6h-2.1A5.827,5.827,0,0,1,0,11.94V5.656A5.826,5.826,0,0,1,5.971,0H16.022A5.83,5.83,0,0,1,22,5.656V11.94A5.831,5.831,0,0,1,16.022,17.6h-2.1l-2.233,2.42a.948.948,0,0,1-1.391,0ZM3.066,3A3.608,3.608,0,0,0,1.892,5.656V11.94A3.606,3.606,0,0,0,3.066,14.6,4.225,4.225,0,0,0,5.971,15.7H8.482a.951.951,0,0,1,.7.307l1.812,1.973,1.82-1.973a.948.948,0,0,1,.7-.307h2.511A4.24,4.24,0,0,0,18.931,14.6a3.6,3.6,0,0,0,1.176-2.655V5.656A3.6,3.6,0,0,0,18.931,3a4.239,4.239,0,0,0-2.909-1.107H5.971A4.228,4.228,0,0,0,3.066,3Zm7.119,9.1V9.645H7.733a.817.817,0,1,1,0-1.634h2.451V5.562a.816.816,0,1,1,1.632,0v2.45h2.452a.817.817,0,0,1,0,1.634H11.816V12.1a.816.816,0,0,1-1.632,0Z" fill="#333d4b"/>
+				</svg>				  
+			</button>
+			<button type="button" class="btn-open-option">
+				<svg width="20.133" height="20.944" viewBox="0 0 20.133 20.944">
+					<path id="패스_100" data-name="패스 100" d="M9.675,0a1.91,1.91,0,0,1,1.383.54,1.834,1.834,0,0,1,.568,1.345,1.907,1.907,0,0,0,1.933,1.886,2.015,2.015,0,0,0,.957-.257,1.94,1.94,0,0,1,2.585.7h0l.645,1.108A1.907,1.907,0,0,1,18,6.261a1.867,1.867,0,0,1-.965,1.629,1.9,1.9,0,0,0-.71.692,1.856,1.856,0,0,0,.71,2.529,1.873,1.873,0,0,1,.71,2.556h0L17.1,14.739a1.918,1.918,0,0,1-1.658.947,1.885,1.885,0,0,1-.965-.257,2.077,2.077,0,0,0-.967-.256,1.928,1.928,0,0,0-1.363.559,1.832,1.832,0,0,0-.569,1.335,1.9,1.9,0,0,1-1.932,1.875H8.35A1.907,1.907,0,0,1,7,18.385a1.863,1.863,0,0,1-.548-1.326,1.9,1.9,0,0,0-1.923-1.885,1.877,1.877,0,0,0-.986.276,2.036,2.036,0,0,1-1.468.188A1.976,1.976,0,0,1,.9,14.757h0L.3,13.687a1.846,1.846,0,0,1-.237-1.478A1.918,1.918,0,0,1,1,11.025a1.838,1.838,0,0,0,.71-.691A1.875,1.875,0,0,0,1,7.805,1.844,1.844,0,0,1,.3,5.276h0L.9,4.215a1.931,1.931,0,0,1,1.184-.9,1.957,1.957,0,0,1,1.478.2,2.063,2.063,0,0,0,.967.246A1.957,1.957,0,0,0,5.9,3.211a1.858,1.858,0,0,0,.56-1.326A1.906,1.906,0,0,1,8.386,0H9.675Zm.38,7.086a2.7,2.7,0,0,0-2.909.558,2.553,2.553,0,0,0-.578,2.833,2.647,2.647,0,0,0,2.453,1.609h.01a2.6,2.6,0,0,0,1.874-.758,2.552,2.552,0,0,0,.786-1.837A2.581,2.581,0,0,0,10.054,7.086Z" transform="translate(1.008 1)" fill="none" stroke="#333d4b" stroke-width="2"/>
+				</svg>				  
+			</button>
+		</div>
+	</header>
+
+	<div class="talk-contents">
+		<ul class="talk-depth1-menu">
+			<li class="manToman on">1:1 채팅</li>
+			<li class="openChat">오픈 채팅</li>
+			<li class="notice">공지사항</li>
+		</ul>
+		<div class="toast-message open">
+			<svg width="14" height="14" viewBox="0 0 14 14">
+				<path id="합치기_1" data-name="합치기 1" d="M6.108,13.855a2.721,2.721,0,0,1-.7-.353,2.948,2.948,0,0,1-.643-.627,2.39,2.39,0,0,1-.411-.892h-2.7l-.055,0h-1a.568.568,0,1,1,0-1.135h.463V5.713a6.043,6.043,0,0,1,.081-.953,5.427,5.427,0,0,1,.432-1.375,5.1,5.1,0,0,1,.681-1.106,5.788,5.788,0,0,1,1.011-1A5.913,5.913,0,0,1,4.5.531,6.058,6.058,0,0,1,5.93.094,6.152,6.152,0,0,1,7.561.027a6.644,6.644,0,0,1,.933.154A6.4,6.4,0,0,1,9.37.475a5.933,5.933,0,0,1,2.581,2.057,5.467,5.467,0,0,1,1.008,3.144s0,0,0,0V5.69c0,.231,0,.464,0,.695v4.461h.447a.568.568,0,1,1,0,1.135h-.985l-.055,0h-.018c-.14,0-.277,0-.417,0H9.647a2.107,2.107,0,0,1-.09.289,2.814,2.814,0,0,1-.5.827,2.7,2.7,0,0,1-1.315.8,2.864,2.864,0,0,1-.746.1A2.687,2.687,0,0,1,6.108,13.855Zm.762-.989Zm.328-.01a2.341,2.341,0,0,0,.388-.1,2.273,2.273,0,0,0,.354-.2,2.156,2.156,0,0,0,.268-.255,2.122,2.122,0,0,0,.2-.321H5.593a2.085,2.085,0,0,0,.2.318,2.171,2.171,0,0,0,.271.259,2.208,2.208,0,0,0,.356.2,2.19,2.19,0,0,0,.378.1A2.28,2.28,0,0,0,7.2,12.856Zm.045,0,.044-.005Zm-.767-.069Zm-.1-.042-.039-.015Zm-.247-.132Zm-.289-.249Zm2.545-.312.01-.022Zm-2.762,0L5.6,12.013Z" fill="#0000ed"/>
+			</svg>
+			<div class="message-object">공지사항이 새로 올라올 경우 확인하거나 닫을 때까지 나옵니다.</div>
+			<button type="button" class="btn-close-message">
+				<svg width="10.012" height="10.014" viewBox="0 0 10.012 10.014">
+					<path id="합치기_21" data-name="합치기 21" d="M8.589,9.768,5.006,6.186,1.423,9.768A.834.834,0,0,1,.244,8.588L3.826,5.006.244,1.425A.834.834,0,0,1,1.423.244L5.006,3.827,8.589.244A.834.834,0,0,1,9.768,1.425L6.186,5.006,9.768,8.588a.836.836,0,0,1-.59,1.425A.823.823,0,0,1,8.589,9.768Z" transform="translate(0 0)" fill="#3333f1"/>
+				</svg>				  
+			</button>
+		</div>
+		<div class="talk-message-list manToman">
+			<ul class="talk-message-list">
+				<li><a href="#">
+					<div class="thumb-img">
+					</div>
+					<div class="talk-info">
+						<div class="talk-room">
+							<div class="name">분양의신</div>
+							<div class="last-time">오후 16:48</div>
+						</div>
+						<div class="site-name">마포 주상복합 빌리브 디에스빌</div>
+						<div class="message-record">
+							<div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div>
+							<div class="part">00</div>
+						</div>
+					</div>
+				</a></li>
+				<!-- 예시를 위한 가라데이터 START -->
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb3.jpg"></div><div class="talk-info"><div class="talk-room"><div class="name">분양의신</div><div class="last-time">오후 16:48</div></div><div class="site-name">마포 주상복합 빌리브 디에스빌</div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb4.jpg"></div><div class="talk-info"><div class="talk-room"><div class="name">분양의신</div><div class="last-time">오후 16:48</div></div><div class="site-name">마포 주상복합 빌리브 디에스빌</div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"></div><div class="talk-info"><div class="talk-room"><div class="name">분양의신</div><div class="last-time">오후 16:48</div></div><div class="site-name">마포 주상복합 빌리브 디에스빌</div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<!-- 예시를 위한 가라데이터 END -->
+			</ul>
+		</div>
+		<div class="talk-message-list openChat" style="display:none;">
+			<div class="sub-visual-zone">
+				<img src="images/sub-visual-img2.png" alt="급하게 채용 인원이 필요하신가요?">
+			</div>
+			<ul class="talk-message-category">
+				<li class="myChat on">
+					내 채팅
+					<svg width="13" height="12" viewBox="0 0 13 12">
+						<defs>
+						  <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 217 201">
+							<image width="217" height="201" xlink:href="data:image/png;base64,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"/>
+						  </pattern>
+						</defs>
+						<rect id="레이어_1" data-name="레이어 1" width="13" height="12" fill="url(#pattern)"/>
+					</svg>					  
+				</li>
+				<li class="hotTalk">
+					HOT 톡
+					<svg width="11.262" height="15" viewBox="0 0 11.262 15">
+						<path id="패스_85" data-name="패스 85" d="M14.262,8.831a8.822,8.822,0,0,0-2.127-4.88C11.2,2.7,10.508,1.761,10.508.322c0-.125-.063-.25-.188-.25a.279.279,0,0,0-.313,0A8.117,8.117,0,0,0,7.067,4.326a17.106,17.106,0,0,0-.313,3.128C5.5,7.2,5.19,5.265,5.19,5.265c0-.125-.188-.25-.375-.25H4.752C4.689,5.077,3.125,5.89,3,9.081v.313a5.631,5.631,0,1,0,11.262,0ZM6.754,12.4v-.125a2.594,2.594,0,0,1,.188-1,1.151,1.151,0,0,0,1.064.751.3.3,0,0,0,.313-.313,5.6,5.6,0,0,1,.125-1.439,2.722,2.722,0,0,1,.626-1.189,4.327,4.327,0,0,0,.626,1.189,3.81,3.81,0,0,1,.813,1.94V12.4a1.993,1.993,0,0,1-1.877,2A1.949,1.949,0,0,1,6.754,12.4Z" transform="translate(-3 -0.025)" fill="#d54e4e"/>
+					</svg>					  
+				</li>
+			</ul>
+			<ul class="talk-message-list openChat myChat">
+				<li><a href="#">
+					<div class="thumb-img">
+					</div>
+					<div class="talk-info">
+						<div class="talk-room">
+							<div class="name">
+								분양의신들 모임
+								<div class="count">0000</div>
+								<svg width="14" height="14" viewBox="0 0 14 14">
+									<g id="그룹_1011" data-name="그룹 1011" transform="translate(-11.57 0)" style="isolation: isolate">
+									  <rect id="사각형_287" data-name="사각형 287" width="14" height="14" transform="translate(11.57 0)" fill="none"/>
+									  <path id="패스_216" data-name="패스 216" d="M8.04,2a.56.56,0,0,1,.56.56v.6a3.906,3.906,0,0,1,2.093.995l1.431-1.431a.56.56,0,0,1,.792.792l-8.96,8.96a.56.56,0,0,1-.792-.792L4.448,10.4H3.56a.56.56,0,0,1,0-1.12h.56V7.04A3.921,3.921,0,0,1,7.48,3.16v-.6A.56.56,0,0,1,8.04,2Zm.79,8.4h3.69a.56.56,0,1,0,0-1.12h-.56V7a.461.461,0,0,0-.818-.274L8.433,9.444C7,10.522,8.331,10.4,8.83,10.4Zm.8,1.232a1.681,1.681,0,0,1-3.176,0,.44.44,0,0,1,.468-.55H9.16A.44.44,0,0,1,9.628,11.632Z" transform="translate(10.96 -0.599)" fill="#8b95a1"/>
+									</g>
+								</svg>								  
+							</div>
+							<div class="last-time">오후 16:48</div>
+						</div>
+						<div class="message-record">
+							<div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div>
+							<div class="part">00</div>
+						</div>
+					</div>
+				</a></li>
+				<!-- 예시를 위한 가라데이터 START -->
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb5.jpg" alt="썸네일"></div><div class="talk-info"><div class="talk-room"><div class="name">채팅방이름<div class="count">0000</div></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb6.jpg" alt="썸네일"></div><div class="talk-info"><div class="talk-room"><div class="name">채팅방이름<div class="count">0000</div></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"></div><div class="talk-info"><div class="talk-room"><div class="name">분양의신들 모임<div class="count">0000</div><svg width="14" height="14" viewBox="0 0 14 14"><g id="그룹_1011" data-name="그룹 1011" transform="translate(-11.57 0)" style="isolation: isolate"><rect id="사각형_287" data-name="사각형 287" width="14" height="14" transform="translate(11.57 0)" fill="none"/><path id="패스_216" data-name="패스 216" d="M8.04,2a.56.56,0,0,1,.56.56v.6a3.906,3.906,0,0,1,2.093.995l1.431-1.431a.56.56,0,0,1,.792.792l-8.96,8.96a.56.56,0,0,1-.792-.792L4.448,10.4H3.56a.56.56,0,0,1,0-1.12h.56V7.04A3.921,3.921,0,0,1,7.48,3.16v-.6A.56.56,0,0,1,8.04,2Zm.79,8.4h3.69a.56.56,0,1,0,0-1.12h-.56V7a.461.461,0,0,0-.818-.274L8.433,9.444C7,10.522,8.331,10.4,8.83,10.4Zm.8,1.232a1.681,1.681,0,0,1-3.176,0,.44.44,0,0,1,.468-.55H9.16A.44.44,0,0,1,9.628,11.632Z" transform="translate(10.96 -0.599)" fill="#8b95a1"/></g></svg></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb5.jpg" alt="썸네일"></div><div class="talk-info"><div class="talk-room"><div class="name">채팅방이름<div class="count">0000</div></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb6.jpg" alt="썸네일"></div><div class="talk-info"><div class="talk-room"><div class="name">채팅방이름<div class="count">0000</div></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"></div><div class="talk-info"><div class="talk-room"><div class="name">분양의신들 모임<div class="count">0000</div><svg width="14" height="14" viewBox="0 0 14 14"><g id="그룹_1011" data-name="그룹 1011" transform="translate(-11.57 0)" style="isolation: isolate"><rect id="사각형_287" data-name="사각형 287" width="14" height="14" transform="translate(11.57 0)" fill="none"/><path id="패스_216" data-name="패스 216" d="M8.04,2a.56.56,0,0,1,.56.56v.6a3.906,3.906,0,0,1,2.093.995l1.431-1.431a.56.56,0,0,1,.792.792l-8.96,8.96a.56.56,0,0,1-.792-.792L4.448,10.4H3.56a.56.56,0,0,1,0-1.12h.56V7.04A3.921,3.921,0,0,1,7.48,3.16v-.6A.56.56,0,0,1,8.04,2Zm.79,8.4h3.69a.56.56,0,1,0,0-1.12h-.56V7a.461.461,0,0,0-.818-.274L8.433,9.444C7,10.522,8.331,10.4,8.83,10.4Zm.8,1.232a1.681,1.681,0,0,1-3.176,0,.44.44,0,0,1,.468-.55H9.16A.44.44,0,0,1,9.628,11.632Z" transform="translate(10.96 -0.599)" fill="#8b95a1"/></g></svg></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb5.jpg" alt="썸네일"></div><div class="talk-info"><div class="talk-room"><div class="name">채팅방이름<div class="count">0000</div></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb6.jpg" alt="썸네일"></div><div class="talk-info"><div class="talk-room"><div class="name">채팅방이름<div class="count">0000</div></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"></div><div class="talk-info"><div class="talk-room"><div class="name">분양의신들 모임<div class="count">0000</div><svg width="14" height="14" viewBox="0 0 14 14"><g id="그룹_1011" data-name="그룹 1011" transform="translate(-11.57 0)" style="isolation: isolate"><rect id="사각형_287" data-name="사각형 287" width="14" height="14" transform="translate(11.57 0)" fill="none"/><path id="패스_216" data-name="패스 216" d="M8.04,2a.56.56,0,0,1,.56.56v.6a3.906,3.906,0,0,1,2.093.995l1.431-1.431a.56.56,0,0,1,.792.792l-8.96,8.96a.56.56,0,0,1-.792-.792L4.448,10.4H3.56a.56.56,0,0,1,0-1.12h.56V7.04A3.921,3.921,0,0,1,7.48,3.16v-.6A.56.56,0,0,1,8.04,2Zm.79,8.4h3.69a.56.56,0,1,0,0-1.12h-.56V7a.461.461,0,0,0-.818-.274L8.433,9.444C7,10.522,8.331,10.4,8.83,10.4Zm.8,1.232a1.681,1.681,0,0,1-3.176,0,.44.44,0,0,1,.468-.55H9.16A.44.44,0,0,1,9.628,11.632Z" transform="translate(10.96 -0.599)" fill="#8b95a1"/></g></svg></div><div class="last-time">오후 16:48</div></div><div class="message-record"><div class="message">마지막 채팅 내용이 들어가는 부분입니다. 한줄까지 출력됩니다.</div><div class="part">00</div></div></div></a></li>
+				<!-- 예시를 위한 가라데이터 END -->
+			</ul>
+			<ul class="talk-message-list hotTalk" style="display:none;">
+				<li><a href="#">
+					<div class="thumb-img">
+					</div>
+					<div class="talk-info">
+						<div class="group-name">모임 이름이 들어가는 부분입니다 최대 27자까지 가능합니다. 우와 길다앙</div>
+						<ul class="tag">
+							<li>관련 설명이 들어가는</li>
+							<li>부분</li>
+							<li>입니다</li>
+							<li>한줄까지</li>
+						</ul>
+						<div class="other">
+							<div class="count">0000</div>
+							<div class="time">00분전</div>
+						</div>
+					</div>
+				</a></li>
+				<!-- 예시를 위한 가라데이터 START -->
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb6.jpg" alt="썸네일"></div><div class="talk-info"><div class="group-name">모임 이름이 들어가는 부분입니다 최대 27자까지 가능합니다. 우와 길다앙</div><ul class="tag"><li>관련 설명이 들어가는</li><li>부분</li><li>입니다</li><li>한줄까지</li></ul><div class="other"><div class="count">0000</div><div class="time">00분전</div></div></div></a></li>
+				<li><a href="#"><div class="thumb-img"><img src="images/ex-thumb7.jpg" alt="썸네일"></div><div class="talk-info"><div class="group-name">모임 이름이 들어가는 부분입니다 최대 27자까지 가능합니다. 우와 길다앙</div><ul class="tag"><li>관련 설명이 들어가는</li><li>부분</li><li>입니다</li><li>한줄까지</li></ul><div class="other"><div class="count">0000</div><div class="time">00분전</div></div></div></a></li>
+				<!-- 예시를 위한 가라데이터 END -->
+			</ul>
+		</div>
+		<div class="talk-message-list notice" style="display:none;">
+			<div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center; font-size:30px; font-weight:700; color:#cdcdcd; line-height:1.3em;">
+				개발 준비중입니다
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<ul class="main-navigation">
+			<li class="navi community"><a href="community.html">
+				<div class="icon">
+					<svg width="22" height="22" viewBox="0 0 22 22">
+						<g id="그룹_13" data-name="그룹 13" transform="translate(0)">
+						<rect id="사각형_23" data-name="사각형 23" width="22" height="22" transform="translate(0)" fill="none"/>
+						<path id="합치기_7" data-name="합치기 7" d="M7.832,20.547a9.055,9.055,0,0,1-2.118-1.1,3.8,3.8,0,0,1-3.826-6.573c-.027-.286-.041-.575-.041-.861A9.084,9.084,0,0,1,7.124,3.763a3.8,3.8,0,0,1,7.607,0A9.085,9.085,0,0,1,20,12.01c0,.282-.012.572-.038.859a3.8,3.8,0,0,1-3.826,6.574,9.079,9.079,0,0,1-8.309,1.1ZM7.6,16.158a3.778,3.778,0,0,1-.625,2.089,7.387,7.387,0,0,0,7.9,0,3.8,3.8,0,0,1,3.179-5.89c.081,0,.163,0,.244.008,0-.117.008-.235.008-.352a7.455,7.455,0,0,0-3.961-6.543A3.847,3.847,0,0,1,13.391,6.7,3.8,3.8,0,0,1,7.507,5.467,7.455,7.455,0,0,0,3.543,12.01c0,.117,0,.235.008.352.084,0,.167-.008.249-.008A3.808,3.808,0,0,1,7.6,16.158ZM3.1,14.174a2.1,2.1,0,1,0,.7-.122A2.025,2.025,0,0,0,3.1,14.174Zm12.852,1.984a2.1,2.1,0,1,0,2.812-1.986,2.148,2.148,0,0,0-.707-.12A2.107,2.107,0,0,0,15.949,16.158ZM8.822,3.8a2,2,0,0,0,.03.358,2.106,2.106,0,0,0,4.149,0,2.024,2.024,0,0,0,.031-.359,2.105,2.105,0,1,0-4.211,0Z" transform="translate(0 0.42)" fill="#8b95a1"/>
+						</g>
+					</svg>					  
+				</div>
+				<div class="text">커뮤니티</div>
+			</a></li>
+			<li class="navi jobPosting"><a href="jobPosting.html">
+				<div class="icon">
+					<svg width="22" height="20.56" viewBox="0 0 22 20.56">
+						<path id="합치기_3" data-name="합치기 3" d="M4.933,20.56A5.569,5.569,0,0,1,.91,18.65a2.683,2.683,0,0,1-.9-2.2,3.028,3.028,0,0,1,.935-1.792A11.066,11.066,0,0,1,3.2,13.042c.122-.072.242-.143.357-.214a9.822,9.822,0,0,1,10.37,0c.1.059.216.13.353.211a11.262,11.262,0,0,1,2.257,1.62,3.027,3.027,0,0,1,.935,1.792,2.687,2.687,0,0,1-.9,2.2,5.569,5.569,0,0,1-4.023,1.908Zm-.374-6.027c-.151.094-.314.192-.483.291A8.808,8.808,0,0,0,2.313,16.07a1.115,1.115,0,0,0-.376.594c-.016.14.1.337.318.557a3.752,3.752,0,0,0,2.677,1.347h7.619a3.752,3.752,0,0,0,2.677-1.347c.22-.22.334-.417.318-.555a1.113,1.113,0,0,0-.376-.6,8.827,8.827,0,0,0-1.763-1.248c-.16-.094-.323-.192-.482-.29a7.929,7.929,0,0,0-8.368,0Zm14.466-4.289a1,1,0,0,1,0-1.991h2.007a1,1,0,0,1,0,1.991ZM3.511,5.122A5.058,5.058,0,0,1,8.492,0a5.058,5.058,0,0,1,4.98,5.122,5.058,5.058,0,0,1-4.98,5.122A5.058,5.058,0,0,1,3.511,5.122Zm1.936,0A3.092,3.092,0,0,0,8.492,8.253a3.092,3.092,0,0,0,3.045-3.131A3.092,3.092,0,0,0,8.492,1.991,3.092,3.092,0,0,0,5.447,5.122ZM16.016,7.149a1,1,0,0,1,0-1.991h5.016a1,1,0,0,1,0,1.991Zm0-3.095a1,1,0,0,1,0-1.991h5.016a1,1,0,0,1,0,1.991Z" transform="translate(0)" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">구인공고</div>
+			</a></li>
+			<li class="navi home"><a href="_index.html">
+				<div class="icon">
+					<svg width="24.01" height="24" viewBox="0 0 24.01 24">
+						<path id="합치기_2" data-name="합치기 2" d="M4.243,24A4.319,4.319,0,0,1,0,19.6L.01,9.573a4.431,4.431,0,0,1,1.935-3.68L9.677.706A4.136,4.136,0,0,1,11.985,0h0V2.206a1.932,1.932,0,0,0-1.079.332L3.174,7.726a2.213,2.213,0,0,0-.958,1.85l-.01,10.031a2.24,2.24,0,0,0,.648,1.6,1.957,1.957,0,0,0,1.389.587H19.757a2.117,2.117,0,0,0,2.037-2.182L21.8,9.584a2.212,2.212,0,0,0-.962-1.858L13.059,2.536a1.932,1.932,0,0,0-1.074-.329V0a4.136,4.136,0,0,1,2.3.7l7.782,5.191a4.431,4.431,0,0,1,1.944,3.7L24,19.614A4.318,4.318,0,0,1,19.757,24Zm4.114-4.547a1.1,1.1,0,0,1,0-2.206h7.278a1.1,1.1,0,0,1,0,2.206ZM11.985,0Z" fill="#8B95A1"/>
+					</svg>
+				</div>
+				<div class="text">홈</div>
+			</a></li>
+			<li class="navi saleTalk on"><a href="saleTalk.html">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.169" viewBox="0 0 24 22.169">
+						<path id="합치기_8" data-name="합치기 8" d="M11.236,21.838,8.8,19.2H6.514A6.357,6.357,0,0,1,0,13.025V6.17A6.356,6.356,0,0,1,6.514,0H17.478A6.36,6.36,0,0,1,24,6.17v6.855A6.361,6.361,0,0,1,17.478,19.2H15.19l-2.436,2.64a1.034,1.034,0,0,1-1.517,0ZM3.345,3.273a3.935,3.935,0,0,0-1.28,2.9v6.855a3.932,3.932,0,0,0,1.28,2.9,4.609,4.609,0,0,0,3.169,1.208H9.253a1.035,1.035,0,0,1,.762.335l1.977,2.153,1.985-2.153a1.035,1.035,0,0,1,.761-.335h2.74a4.626,4.626,0,0,0,3.174-1.208,3.934,3.934,0,0,0,1.282-2.9V6.17a3.93,3.93,0,0,0-1.282-2.9,4.626,4.626,0,0,0-3.174-1.208H6.514A4.613,4.613,0,0,0,3.345,3.273Zm5,7.929a1.033,1.033,0,0,1,0-2.066h7.314a1.033,1.033,0,0,1,0,2.066Z" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">분양톡</div>
+			</a></li>
+			<li class="navi mypage"><a href="mypage.html">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19.239" height="22" viewBox="0 0 19.239 22">
+						<path id="합치기_10" data-name="합치기 10" d="M5.429,22A6.2,6.2,0,0,1,1,19.958,2.832,2.832,0,0,1,.014,17.6a3.209,3.209,0,0,1,1.03-1.918,12.161,12.161,0,0,1,2.478-1.731c.135-.077.265-.152.393-.229a11.065,11.065,0,0,1,11.41,0c.106.063.238.14.389.226A12.356,12.356,0,0,1,18.2,15.687a3.212,3.212,0,0,1,1.029,1.919,2.835,2.835,0,0,1-.987,2.353A6.2,6.2,0,0,1,13.811,22Zm-.412-6.449c-.166.1-.346.2-.533.311A9.713,9.713,0,0,0,2.546,17.2a1.194,1.194,0,0,0-.414.635c-.017.15.108.361.35.6a4.177,4.177,0,0,0,2.946,1.441h8.382a4.175,4.175,0,0,0,2.946-1.441c.243-.236.367-.446.35-.594a1.189,1.189,0,0,0-.414-.638,9.692,9.692,0,0,0-1.939-1.335c-.176-.1-.355-.206-.531-.311a8.936,8.936,0,0,0-9.207,0ZM3.863,5.481a5.481,5.481,0,1,1,5.481,5.481A5.487,5.487,0,0,1,3.863,5.481Zm2.13,0a3.35,3.35,0,1,0,3.35-3.35A3.354,3.354,0,0,0,5.994,5.481Z" fill="#8b95a1"/>
+					</svg>					  
+				</div>
+				<div class="text">마이페이지</div>
+			</a></li>
+		</ul>
+	</footer>
+</body>
+
+<script>
+$(document).ready(function(){
+	// 상단탭
+	$('ul.talk-depth1-menu li').click(function(){
+		$('ul.talk-depth1-menu li').removeClass('on');
+		$(this).addClass('on');
+		$('div.talk-message-list').css('display', 'none');
+		let targetClass = $(this).attr('class').split(' ');
+		targetClass.forEach(function(cls) {
+			if (cls !== 'on') {
+				$('div.talk-message-list.' + cls).css('display', 'flex');
+			}
+		});
+	});
+
+	// 2depth 탭
+	$('.openChat ul.talk-message-category li').click(function(){
+		$('.openChat ul.talk-message-category li').removeClass('on');
+		$(this).addClass('on');
+		$('.openChat ul.talk-message-list').css('display', 'none');
+		let targetClass = $(this).attr('class').split(' ');
+		targetClass.forEach(function(cls) {
+			if (cls !== 'on') {
+				$('.openChat ul.talk-message-list.' + cls).css('display', 'flex');
+			}
+		});
+	});
+
+	// 토스트 메시지 닫기
+	$('.toast-message .btn-close-message').click(function(){
+		$('.toast-message').removeClass('open');
+	});
+});
+</script>
+
+</html>

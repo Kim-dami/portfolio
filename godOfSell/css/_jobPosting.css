@@ -1,0 +1,166 @@
+/* 분양의신 추천 현장 */
+ul.sub-content-list {display:flex; flex-wrap:wrap; align-content:flex-start; flex-direction:row; width:100%;}
+ul.sub-content-list.pushSite-list {padding:8px; margin-top:-16px;}
+ul.sub-content-list.pushSite-list > li {display:inline-block; width:calc(100%/2 - 16px); height:236px; margin:8px;}
+ul.sub-content-list.pushSite-list > li .pushSite-img {position:relative; width:100%; height:108px; border-radius:12px; overflow:hidden; padding:10px;}
+ul.sub-content-list.pushSite-list > li .pushSite-img .label {position:relative; z-index:2; width:fit-content; height:20px; padding:0 10px; border-radius:6px; background:rgba(51,61,75,.48); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:#fff; line-height:1em;}
+ul.sub-content-list.pushSite-list > li .pushSite-img > img {position:absolute; top:0; left:0; z-index:1; width:100%; height:100%;}
+ul.sub-content-list.pushSite-list > li .pushSite-name {width:100%; height:38px; display:-webkit-box; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:2; -webkit-box-orient:vertical; white-space:normal; font-size:16px; font-weight:600; color:#191F28; line-height:1.2em; margin:10px 0; letter-spacing:0.05em; word-break:keep-all;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value {display:flex; flex-wrap:wrap; width:100%;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item-list {width:100%; height:44px;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item {display:flex; align-items:center; width:100%; height:18px; margin-bottom:4px;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item:last-child {margin-bottom:0;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .category {width:40px; height:100%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:#fff; line-height:1em; border-radius:4px; margin-right:4px;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .category.leader {background:#5642F0;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .category.member {background:#01BC30;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .category.team {background:#003482;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .category.manager {background:#EA4949;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .value-wrap {display:flex; justify-content:space-between; width:calc(100% - 44px);}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .label {font-size:13px; font-weight:400; color:#191F28;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .value {font-size:16px; font-weight:700; color:#0000ED; line-height:1em;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value .item .value::after {content:'원'; color:#191F28; margin-left:3px;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value ul.category-list {display:flex; align-items:center; width:100%; height:16px; margin-top:10px;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value ul.category-list > li {width:auto; height:100%; padding:0 6px; border-radius:4px; background:#E5E8EB; margin-right:6px; display:flex; justify-content:space-between; align-items:center;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value ul.category-list > li:last-child {margin-right:0;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value ul.category-list > li div {font-size:11px; font-weight:600; color:#6B7684; line-height:1em;}
+ul.sub-content-list.pushSite-list > li .pushSite-info-value ul.category-list > li .value {margin-left:4px;}
+
+/* 현장 채용 공고 */
+.employment-wrap .title {border-bottom:2px solid #333D4B;}
+ul.employment-list > li {width:100%; height:130px; padding:16px; border-bottom:1px solid #E5E8EB;}
+ul.employment-list > li:last-child {border-bottom:0;}
+ul.employment-list > li a {width:100%; height:100%; display:flex;}
+ul.employment-list > li .site-img {width:130px; height:100%; border-radius:10px; display:flex; align-items:center; justify-content:center;}
+ul.employment-list > li .site-img > img {width:100%; height:100%;}
+ul.employment-list > li .site-info {width:calc(100% - 146px); height:100%; margin-left:16px;}
+ul.employment-list > li .site-info .category {width:100%; height:20px; display:flex; align-items:center; justify-content:space-between;}
+ul.employment-list > li .site-info .category label.site {width:auto; height:100%; border-radius:4px; display:flex; align-items:center; justify-content:center; background:#4E5968; font-size:12px; font-weight:600; color:#fff; line-height:1em; padding:0 6px;}
+ul.employment-list > li .site-info .category label.site.officetel {background:#8B95A1;}
+ul.employment-list > li .site-info .category label.location {display:flex; align-items:center; font-size:14px; font-weight:400; color:#191F28; line-height:1em;}
+ul.employment-list > li .site-info .category label.location svg {margin-right:4px;}
+ul.employment-list > li .site-info .name {display:inline-block; width:100%; height:20px; font-size:16px; font-weight:600; color:#191F28; line-height:1em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:6px;}
+ul.employment-list > li .site-info .revenue {display:flex; width:100%; height:18px;}
+ul.employment-list > li .site-info .revenue .item {display:flex; align-items:center; justify-content:flex-start; width:50%; height:100%;}
+ul.employment-list > li .site-info .revenue .item label {width:36px; height:100%; border-radius:4px; display:flex; align-items:center; justify-content:center; background:#4E5968; font-size:12px; font-weight:600; color:#fff; line-height:1em; padding:0 6px; margin-right:4px;}
+ul.employment-list > li .site-info .revenue .item label::before {white-space:nowrap;}
+ul.employment-list > li .site-info .revenue .item label.leader {background:#5642F0;}
+ul.employment-list > li .site-info .revenue .item label.leader::before {content:'팀장';}
+ul.employment-list > li .site-info .revenue .item label.member {background:#01BC30;}
+ul.employment-list > li .site-info .revenue .item label.member::before {content:'팀원';}
+ul.employment-list > li .site-info .revenue .item label.team {background:#003482;}
+ul.employment-list > li .site-info .revenue .item label.team::before {content:'팀';}
+ul.employment-list > li .site-info .revenue .item label.manager {background:#EA4949;}
+ul.employment-list > li .site-info .revenue .item label.manager::before {content:'본부장';}
+ul.employment-list > li .site-info .revenue .item .value {width:calc(100% - 40px); font-size:13px; font-weight:600; color:#191F28; line-height:1em; white-space:nowrap;}
+ul.employment-list > li .site-info ul.label-list {display:flex; width:100%; height:22px; margin-top:6px;}
+ul.employment-list > li .site-info ul.label-list li {width:auto; height:100%; border-radius:4px; display:flex; align-items:center; justify-content:center; background:#F2F4F6; font-size:12px; font-weight:600; color:#6B7684; line-height:1em; padding:0 6px; margin-right:4px; white-space:nowrap;}
+ul.employment-list > li .site-info ul.label-list li svg {margin-right:4px;}
+ul.employment-list > li .site-info ul.label-list li.worth {background:#FFCA00; color:#000;}
+
+/* 구인공고 > 상세페이지 */
+header.view {height:60px; padding:0 16px; display:flex; justify-content:space-between; align-items:center;}
+header.view h1 {display:flex; align-items:center; height:28px; font-size:20px; font-weight:700; color:#191F28; line-height:1em;}
+header.view h1 a {margin-right:16px;}
+header.view button.btn-share {width:28px; height:28px; background:#fff;}
+    /* 현장 이미지 슬라이드 : site-img-list */
+    .slide-counter {display:flex; align-items:center; background:rgba(0,0,0,.5); border-radius:8px; height:24px; padding:0 10px; position:absolute; z-index:2; right:16px; bottom:16px; font-weight:400; color:#fff; line-height:1em; backdrop-filter:blur(10px);}
+    .slide-counter span {display:inline-block; margin:0 2px; font-size:11px; font-weight:400; color:#fff; line-height:1em;}
+    .slide-counter span#current-slide {font-weight:700;}
+    .site-img-list {width:100%; height:240px; position:relative;}
+    .site-img-list .swiper-wrapper {width:100%; height:100%;}
+    .site-img-list .swiper-wrapper li {width:100%; height:100%;}
+    .site-img-list .swiper-wrapper li img {width:100%; height:100%;}
+    /* 현장 메인 정보 : site-main-info */
+    .site-main-info {display:flex; flex-wrap:wrap; width:100%; height:auto; padding:16px; background:#fff;}
+    .main-info-wrap.scroll {position:fixed; left:0; top:60px; z-index:99; background:#fff; transition:.3s; width:100%; padding:0 16px; box-shadow:0px 12px 10px 0px rgba(0, 0, 0, .1);}
+    .site-main-info .name {display:flex; width:100%; align-items:flex-start;}
+    .site-main-info .name .text {font-size:24px; font-weight:700; color:#191F28; line-height:1.2em; width:calc(100% - 38px); word-break:keep-all;}
+    .site-main-info .name label.category {width:auto; height:30px; padding:0 12px 0 8px; border-radius:6px; display:flex; align-items:center; background:#E5E8EB; font-size:14px; font-weight:600; color:#6270F4; line-height:1em; margin-right:8px; white-space:nowrap;}
+    .site-main-info .name label.category svg {margin-right:3px;}
+    .site-main-info ul.revenue-data {width:calc(100% + 16px); margin:8px -8px; display:flex; flex-wrap:wrap; flex-direction:row;}
+    .site-main-info ul.revenue-data li {display:flex; align-items:center; height:22px; min-width:calc(50% - 16px); margin:4px 8px;}
+    .site-main-info ul.revenue-data li label {width:42px; height:100%; border-radius:4px; display:flex; align-items:center; justify-content:center; background:#4E5968; font-size:12px; font-weight:600; color:#fff; line-height:1em; padding:0 6px; margin-right:4px;}
+    .site-main-info ul.revenue-data li label::before {white-space:nowrap;}
+    .site-main-info ul.revenue-data li label.leader {background:#5642F0;}
+    .site-main-info ul.revenue-data li label.leader::before {content:'팀장';}
+    .site-main-info ul.revenue-data li label.member {background:#01BC30;}
+    .site-main-info ul.revenue-data li label.member::before {content:'팀원';}
+    .site-main-info ul.revenue-data li label.team {background:#003482;}
+    .site-main-info ul.revenue-data li label.team::before {content:'팀';}
+    .site-main-info ul.revenue-data li label.manager {background:#EA4949;}
+    .site-main-info ul.revenue-data li label.manager::before {content:'본부장';}
+    .site-main-info ul.revenue-data li .value {display:flex; align-items:center; justify-content:space-between; width:calc(100% - 42px);}
+    .site-main-info ul.revenue-data li .value span {display:inline-block; font-size:14px; font-weight:400; color:#191F28; line-height:1em;}
+    .site-main-info ul.revenue-data li .value span:nth-child(1) {width:16px; margin-right:8px;}
+    .site-main-info ul.revenue-data li .value span.number {font-size:18px; font-weight:700; color:#0000ED; line-height:1em;}
+    .site-main-info ul.revenue-data li .value span.number::after {content:'원'; color:#191F28; margin-left:3px;}
+    .site-main-info .manager-info {width:100%; display:flex; flex-wrap:wrap; height:auto; padding:8px; border-radius:8px; background:#F9FAFB; transition:.3s; position:relative; bottom:0;}
+    .site-main-info .manager-info.scroll {position:fixed; bottom:16px; left:16px; z-index:99; width:calc(100% - 32px); background:#fff; box-shadow:0px 0px 14px 0px rgba(0,0,0,.2);}
+    .site-main-info .manager-info .info-content {display:flex; width:100%; margin-bottom:8px;}
+    .site-main-info .manager-info .info-content .manager-img {width:64px; height:64px; margin-right:16px; border-radius:8px; overflow:hidden;}
+    .site-main-info .manager-info .info-content .manager-img img {width:100%; height:100%;}
+    .site-main-info .manager-info .info-content .manager-text {display:flex; flex-wrap:wrap; align-content:center; width:calc(100% - 80px);}
+    .site-main-info .manager-info .info-content .manager-text .data {display:flex; width:100%; align-items:flex-start; margin:4px 0;}
+    .site-main-info .manager-info .info-content .manager-text .data label {font-size:16px; font-weight:400; color:#6B7684; line-height:1em; width:42px; margin-right:20px;}
+    .site-main-info .manager-info .info-content .manager-text .data .value {font-size:16px; font-weight:400; color:#191F28; line-height:1em; width:calc(100% - 62px); word-break:keep-all;}
+    .site-main-info .manager-info .info-btn {display:flex; width:100%; height:48px;}
+    .site-main-info .manager-info .info-btn button {border-radius:8px; border:1px solid #E5E8EB; background:#fff; width:48px; height:100%; margin:0 2px;}
+    .site-main-info .manager-info.scroll .info-btn button.btn-email,
+    .site-main-info .manager-info.scroll .info-btn button.btn-call {display:none;}
+    .site-main-info .manager-info .info-btn button.btn-talk {width:calc(100% - 108px); height:100%; border:0; background:#0000ED; font-size:16px; font-weight:600; color:#fff; line-height:1em; display:flex; align-items:center; justify-content:center;}
+    .site-main-info .manager-info.scroll .info-btn button.btn-talk {width:100%;}
+    .site-main-info .manager-info .info-btn button.btn-talk svg {margin-right:10px;}
+    /* 영업지원 정보 : support-promotion */
+    .info-text {position:relative; width:100%; height:24px; padding:0 16px;}
+    .info-text span {position:relative; display:inline-block; z-index:2; font-size:20px; font-weight:700; color:#191F28; line-height:1em; min-width:76px; text-align:center;}
+    .info-text::before {content:''; position:absolute; left:16px; bottom:0; z-index:1; width:76px; height:8px; background:#ECEFFE;}
+    .support-promotion {background:#fff;}
+    .support-promotion ul.support-list {display:flex; flex-wrap:wrap; width:calc(100% + 8px); height:auto; margin:6px -4px 0 -4px; padding:0 16px 16px 16px;}
+    .support-promotion ul.support-list li {width:auto; height:22px; border-radius:4px; display:flex; align-items:center; justify-content:center; background:#F2F4F6; font-size:14px; font-weight:600; color:#6B7684; line-height:1em; padding:0 6px; white-space:nowrap; margin:4px;}
+    .support-promotion ul.support-list li:last-child {margin-right:0;}
+    .support-promotion ul.support-list li svg {margin-right:4px;}
+    .support-promotion ul.support-list li.worth {background:#FFCA00; color:#000;}
+    .support-promotion ul.support-list li div {font-size:14px; font-weight:600; color:#6B7684; line-height:1em;}
+    .support-promotion ul.support-list li .value {margin-left:4px;}
+    /* 시행정보 : enforcement-info */
+    .enforcement-info {background:#fff; margin-top:8px; padding:24px 0;}
+    .enforcement-info ul {display:flex; flex-wrap:wrap; flex-direction:row; width:calc(100% + 20px); padding:16px 16px 0 16px; margin:0 -10px;}
+    .enforcement-info ul li {display:flex; align-items:flex-start; width:calc(100%/2 - 20px); margin:8px 10px;}
+    .enforcement-info ul li label {display:flex; align-items:center; font-size:14px; font-weight:400; color:#6B7684; line-height:1em; width:80px; margin-right:10px; word-break:keep-all;}
+    .enforcement-info ul li label svg {margin-right:6px;}
+    .enforcement-info ul li div {width:calc(100% - 90px); font-size:14px; font-weight:400; color:#191F28; line-height:1em;}
+    /* 현장 세부 내용 : site-details */
+    .site-details {background:#fff; padding-bottom:6px;}
+    .site-details .info-text::before {display:none;}
+    .site-details .textarea-output-wrap {position:relative; width:100%; max-height:360px; height:auto; padding:0 16px; margin:16px 0; overflow:hidden; transition:.3s;}
+    .site-details .textarea-output-wrap.open {max-height:1000px; padding:0 16px 72px 16px;}
+    .site-details .textarea-output-wrap.open::before {height:0;}
+    .site-details .textarea-output-wrap::before {content:''; width:calc(100% - 32px); height:80px; position:absolute; left:16px; bottom:48px; z-index:2; background:linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,1)); transition:.3s;}
+    .site-details .textarea-output-wrap .btn-details-view {position:absolute; left:16px; bottom:0; z-index:3; width:calc(100% - 32px); height:48px; background:#fff; border:1px solid #E5E8EB; border-radius:8px; font-size:14px; font-weight:600; color:#191F28; line-height:1em; transition:.3s;}
+    .site-details .textarea-output-wrap .btn-details-view::before {content:'상세 정보 보기';}
+    .site-details .textarea-output-wrap .btn-details-view.open::before {content:'상세 정보 닫기';}
+    .site-details .textarea-output {font-size:14px; font-weight:400; color:#191F28; line-height:1.5em;}
+    .site-details .textarea-output b {display:inline-block; width:100%; margin-bottom:10px;}
+    /* 현장 지도 : site-map */
+    .site-map {background:#fff; padding:4px 16px 16px 16px;}
+    ul.map-category {display:flex; align-items:center; width:calc(100% + 8px); height:36px; margin:0 -4px 16px -4px;}
+    ul.map-category li {width:auto; height:100%; border:1px solid #E5E8EB; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:400; color:#333D4B; line-height:1em; padding:0 10px; margin:0 4px; cursor:pointer; transition:.3s;}
+    ul.map-category li.on {color:#fff; border:1px solid #0000ED; background:#0000ED;}
+    .map-wrap {width:100%; height:248px; overflow:hidden; border-radius:8px; background:url(../images/map-default.jpg) center center no-repeat; background-size:auto;}
+    .map-wrap #map {width:100%; height:100%;}
+    .address-wrap {width:100%; display:flex; align-items:center; justify-content:space-between; height:28px; margin-top:16px;}
+    .address-wrap .street-number,
+    .address-wrap .road-name {display:none; font-size:14px; font-weight:400; color:#191F28; line-height:1em;}
+    .address-wrap .street-number.on,
+    .address-wrap .road-name.on {display:block;}
+    .address-wrap .btn-address-change {display:flex; align-items:center; justify-content:center; width:98px; height:28px; border:1px solid #E5E8EB; border-radius:8px; background:#fff;}
+    .address-wrap .btn-address-change svg {margin-right:6px;}
+    .address-wrap .btn-address-change::after {content:'도로명 주소'; font-size:12px; font-weight:600; color:#6B7684; line-height:1em;}
+    .address-wrap .btn-address-change.change::after {content:'지번 주소'; font-size:12px; font-weight:600; color:#6B7684; line-height:1em;}
+
+
+@media (max-width:360px) {
+    .enforcement-info ul li {
+        width:calc(100% - 20px);
+    }
+}
