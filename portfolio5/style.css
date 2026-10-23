@@ -3520,3 +3520,14 @@ html{scroll-padding-top:126px}
 body > header{height:72px}
 html{scroll-padding-top:88px}
 @media(max-width:800px){body > header{height:60px}html{scroll-padding-top:76px}}
+
+/* Shared entrance scale; Projects retains its scroll-driven shrink. */
+:root { --section-title-size:clamp(64px,7.4vw,132px); }
+.story-english,.about-heading h2,.project-heading { font-size:var(--section-title-size); }
+.profile-skills>div { align-items:center; }
+.profile-skills dt { display:flex; align-items:center; gap:12px; line-height:1.5; }
+.profile-skills dt>span { margin-right:0; }
+.profile-skills dd { line-height:1.5; }
+@media(max-width:800px) {
+ :root { --section-title-size:clamp(42px,8vw,64px); }
+}

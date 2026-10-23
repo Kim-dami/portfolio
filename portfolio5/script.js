@@ -66,12 +66,32 @@ if (!reduced && window.Lenis) {
   section.style.setProperty('--project-stage-height',`${(1.65+cards.length*.85)*100}vh`);
   if(!enabled){title.style.transform='';title.style.opacity='';cards.forEach(c=>{c.inert=false;c.removeAttribute('aria-hidden');});active=-2;return;}
   const h=innerHeight,progress=Math.max(0,-section.getBoundingClientRect().top/h),intro=Math.min(1,progress/.65),ease=1-Math.pow(1-intro,3);
-  title.style.transform=`translateY(${(1-ease)*h*.2}px) scale(${1+(1-ease)*2.5})`;
+  const entranceSize=parseFloat(getComputedStyle(document.querySelector('.story-english')).fontSize);
+  const titleSize=parseFloat(getComputedStyle(title).fontSize);
+  title.style.transform=`translateY(${(1-ease)*h*.2}px) scale(${1+(1-ease)*(entranceSize/titleSize-1)})`;
   const next=progress<.45?-1:Math.min(cards.length-1,Math.floor(Math.max(0,progress-.65)/.85));
   if(next!==active){active=next;cards.forEach((c,i)=>{c.classList.toggle('is-active',i===active);c.classList.toggle('is-past',i<active);c.inert=i!==active;c.setAttribute('aria-hidden',i===active?'false':'true');});dots.forEach((d,i)=>d.setAttribute('aria-current',i===active?'true':'false'));}
  }
  const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(render);}};
  dots.forEach((d,i)=>d.addEventListener('click',()=>{const top=window.scrollY+section.getBoundingClientRect().top+innerHeight*(.72+i*.85);if(portfolioScroller)portfolioScroller.scrollTo(top,{duration:.8});else window.scrollTo({top,behavior:'smooth'});}));
  addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);mq.addEventListener('change',schedule);render();
+ const returnId=new URLSearchParams(location.search).get('project');
+ const returnIndex=cards.findIndex(card=>card.querySelector('[data-project-detail]')?.dataset.projectDetail===returnId);
+ if(returnIndex>=0){
+  const restore=()=>{
+   render();
+   const enhanced=mq.matches&&!reduced;
+   const target=enhanced?scrollY+section.getBoundingClientRect().top+innerHeight*(.72+returnIndex*.85):scrollY+cards[returnIndex].getBoundingClientRect().top-(document.querySelector('header')?.offsetHeight||72)-16;
+   if(portfolioScroller){portfolioScroller.resize();portfolioScroller.scrollTo(target,{immediate:true,force:true});}
+   else window.scrollTo({top:target,behavior:'instant'});
+   render();
+   cards[returnIndex].querySelector('.project-enlarge')?.focus({preventScroll:true});
+  };
+  // Wait for page layout and fonts; no #work anchor may override this position.
+  const layoutReady=document.readyState==='complete'?Promise.resolve():new Promise(resolve=>addEventListener('load',resolve,{once:true}));
+  Promise.all([document.fonts.ready,layoutReady]).then(()=>requestAnimationFrame(()=>requestAnimationFrame(restore)));
+  addEventListener('pageshow',event=>{if(event.persisted)requestAnimationFrame(restore);});
+ }
+
 })();
 
