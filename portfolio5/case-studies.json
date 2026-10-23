@@ -1,0 +1,187 @@
+{
+  "bunyangsin": {
+    "title": "분양의신",
+    "sections": [
+      {
+        "title": "문제 정의와 서비스 전략",
+        "images": [
+          {
+            "src": "assets/case-studies/bunyangsin/section-01-01.webp",
+            "width": 2800,
+            "height": 2400,
+            "alt": "분양의신 — 문제 정의와 서비스 전략 1"
+          },
+          {
+            "src": "assets/case-studies/bunyangsin/section-01-02.webp",
+            "width": 2800,
+            "height": 664,
+            "alt": "분양의신 — 문제 정의와 서비스 전략 2"
+          }
+        ]
+      },
+      {
+        "title": "디자인 시스템",
+        "images": [
+          {
+            "src": "assets/case-studies/bunyangsin/section-02-01.webp",
+            "width": 2800,
+            "height": 2400,
+            "alt": "분양의신 — 디자인 시스템 1"
+          },
+          {
+            "src": "assets/case-studies/bunyangsin/section-02-02.webp",
+            "width": 2800,
+            "height": 780,
+            "alt": "분양의신 — 디자인 시스템 2"
+          }
+        ]
+      },
+      {
+        "title": "구인구직 서비스",
+        "images": [
+          {
+            "src": "assets/case-studies/bunyangsin/section-03-01.webp",
+            "width": 2800,
+            "height": 2400,
+            "alt": "분양의신 — 구인구직 서비스 1"
+          },
+          {
+            "src": "assets/case-studies/bunyangsin/section-03-02.webp",
+            "width": 2800,
+            "height": 1417,
+            "alt": "분양의신 — 구인구직 서비스 2"
+          }
+        ]
+      },
+      {
+        "title": "SMS 서비스",
+        "images": [
+          {
+            "src": "assets/case-studies/bunyangsin/section-04-01.webp",
+            "width": 2800,
+            "height": 2400,
+            "alt": "분양의신 — SMS 서비스 1"
+          },
+          {
+            "src": "assets/case-studies/bunyangsin/section-04-02.webp",
+            "width": 2800,
+            "height": 716,
+            "alt": "분양의신 — SMS 서비스 2"
+          }
+        ]
+      },
+      {
+        "title": "매거진 서비스",
+        "images": [
+          {
+            "src": "assets/case-studies/bunyangsin/section-05-01.webp",
+            "width": 2800,
+            "height": 2092,
+            "alt": "분양의신 — 매거진 서비스 1"
+          }
+        ]
+      }
+    ]
+  },
+  "baedalgeek": {
+    "title": "배달긱",
+    "sections": [
+      {
+        "title": "리서치와 사용자 이해",
+        "images": [
+          {
+            "src": "assets/case-studies/baedalgeek/section-01-01.webp",
+            "width": 2800,
+            "height": 2400,
+            "alt": "배달긱 — 리서치와 사용자 이해 1"
+          },
+          {
+            "src": "assets/case-studies/baedalgeek/section-01-02.webp",
+            "width": 2800,
+            "height": 2249,
+            "alt": "배달긱 — 리서치와 사용자 이해 2"
+          }
+        ]
+      },
+      {
+        "title": "경쟁 서비스와 프로젝트 목표",
+        "images": [
+          {
+            "src": "assets/case-studies/baedalgeek/section-02-01.webp",
+            "width": 2800,
+            "height": 1951,
+            "alt": "배달긱 — 경쟁 서비스와 프로젝트 목표 1"
+          }
+        ]
+      },
+      {
+        "title": "서비스 흐름",
+        "images": [
+          {
+            "src": "assets/case-studies/baedalgeek/section-03-01.webp",
+            "width": 2800,
+            "height": 2400,
+            "alt": "배달긱 — 서비스 흐름 1"
+          },
+          {
+            "src": "assets/case-studies/baedalgeek/section-03-02.webp",
+            "width": 2800,
+            "height": 1347,
+            "alt": "배달긱 — 서비스 흐름 2"
+          }
+        ]
+      },
+      {
+        "title": "로봇배달",
+        "images": [
+          {
+            "src": "assets/case-studies/baedalgeek/section-04-01.webp",
+            "width": 2800,
+            "height": 1706,
+            "alt": "배달긱 — 로봇배달 1"
+          }
+        ]
+      },
+      {
+        "title": "UIUX 개선",
+        "rendering": "native-html",
+        "figmaNode": "7752:8895"
+      },
+      {
+        "title": "주문과 수령 경험",
+        "rendering": "native-html",
+        "figmaNode": "7752:9020"
+      }
+    ]
+  },
+  "food-concierge": {
+    "title": "푸드컨시어지",
+    "sections": [
+      {
+        "title": "리서치와 MVP 설계",
+        "rendering": "native-html",
+        "figmaNode": "7752:9396"
+      },
+      {
+        "title": "식단구독과 주문 경험",
+        "rendering": "native-html",
+        "figmaNode": "7752:9487"
+      }
+    ]
+  },
+  "partner-center": {
+    "title": "파트너센터",
+    "sections": [
+      {
+        "title": "문제 정의와 해결 방향",
+        "rendering": "native-html",
+        "figmaNode": "7752:9643"
+      },
+      {
+        "title": "반응형 웹 디자인",
+        "rendering": "native-html",
+        "figmaNode": "7752:9697"
+      }
+    ]
+  }
+}

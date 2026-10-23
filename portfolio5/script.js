@@ -1,31 +1,6 @@
 let portfolioScroller;
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-// Read the original project pages in a native, keyboard-accessible modal.
-(()=>{
- const dialog=document.querySelector('.portfolio-dialog');if(!dialog)return;
- const title=dialog.querySelector('h2'),body=dialog.querySelector('.portfolio-dialog-body'),pages=dialog.querySelector('.portfolio-pages'),status=dialog.querySelector('.portfolio-status');
- let opener,request=0;
- const projectData=JSON.parse(document.getElementById('portfolio-project-data').textContent);
- function openProject(button){
-  opener=button;const current=++request;
-  title.textContent=button.closest('article').querySelector('.eyebrow').textContent.replace(/^0\d \/ /,'');
-  pages.replaceChildren();status.hidden=false;status.textContent='포트폴리오를 불러오는 중입니다.';
-  portfolioScroller?.stop();document.documentElement.classList.add('portfolio-open');dialog.showModal();body.scrollTop=0;
-  try{
-   if(current!==request||!dialog.open)return;
-   const project=projectData[button.dataset.projectDetail];title.textContent=project.title;
-   for(const [i,page] of project.images.entries()){
-    const image=document.createElement('img');image.src=page.src;image.alt=page.alt;image.width=page.width;image.height=page.height;image.loading=i===0?'eager':'lazy';image.decoding='async';pages.append(image);
-   }
-   status.hidden=true;body.scrollTop=0;
-  }catch(error){status.textContent='포트폴리오를 불러오지 못했습니다. 닫은 뒤 다시 열어주세요.';}
- }
- document.querySelectorAll('[data-project-detail]').forEach(button=>button.addEventListener('click',()=>openProject(button)));
- dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
- dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
- dialog.addEventListener('close',()=>{request++;document.documentElement.classList.remove('portfolio-open');portfolioScroller?.start();opener?.focus({preventScroll:true});});
-})();
-
+// Project covers and detail links navigate to standalone case study pages.
 const targets = document.querySelectorAll('.intro, .strengths article, .project-copy, .learning, .steps article, .display, .process-title');
 if ('IntersectionObserver' in window && !reduced) {
  const observer = new IntersectionObserver(entries => entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
@@ -45,7 +20,7 @@ if (!reduced) {
 
 if (!reduced && window.Lenis) {
  document.documentElement.style.scrollBehavior='auto';
- const lenis = new Lenis({lerp:.09,smoothWheel:true,anchors:{offset:-60}});portfolioScroller=lenis;
+ const lenis = new Lenis({lerp:.09,smoothWheel:true,anchors:{offset:-(document.querySelector('body > header')?.offsetHeight || 110)-12}});portfolioScroller=lenis;
  function frame(time){lenis.raf(time);requestAnimationFrame(frame);}requestAnimationFrame(frame);
 }
 // The chapter and title tracks use the reference's measured progress windows.

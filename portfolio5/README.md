@@ -1,49 +1,60 @@
 # 김다미 포트폴리오
 
-HTML · CSS · JavaScript로 구성한 정적 웹사이트입니다. 설치나 빌드 없이 GitHub Pages에서 사용할 수 있습니다.
+설치나 빌드 없이 열 수 있는 HTML·CSS·JavaScript 웹사이트입니다.
 
-## 폴더 구성
+## 2026-10-23 변경
 
-- `index.html`: 메인, 소개, 프로젝트 화면과 팝업 구조
-- `style.css`: 전체 디자인, 반응형 레이아웃, 모션 스타일
-- `script.js`: 메뉴 이동, 스크롤 전환, 커서, 상세 팝업
-- `sphere.js`: 메인 그라데이션 구체와 색상 전환
-- `projects.json`: 프로젝트별 상세 포트폴리오 이미지 목록 원본
-- `update-projects.py`: JSON 변경 내용을 HTML 내부 데이터에 반영하는 관리 스크립트
-- `assets/`: 현재 사용하는 이미지, 폰트, Lenis 스크롤 라이브러리
-- `.nojekyll`: 정적 파일을 그대로 제공하도록 설정
+- 첨부한 네 프로젝트의 썸네일과 배경색 적용
+- 썸네일·자세히보기에서 독립된 상세 페이지로 이동
+- 메인과 상세 페이지의 dami 로고 및 상단 메뉴·닫기 버튼 고정
+- 상세 본문을 화면 너비에 맞춰 확장: PC 좌우 32–64px, 모바일 16px 여백
+- Overview와 프로젝트 정보는 반응형 HTML로 구현
+- 수정된 배달긱·푸드컨시어지·파트너센터 구간은 피그마 원본 에셋과 HTML·CSS로 구현
+- 나머지 상세 디자인은 원본 섹션 경계에서 무손실 WebP로 분할, 원본 가로 2,800px 유지
+- 섹션별 스크롤 등장, 고정 SCROLL 표시, 목업 뒤 워터마크 적용
+- 확대 보기, Esc 닫기, 포커스 복귀 및 동작 줄이기 설정 지원
 
-## GitHub Pages에 올리기
+## 파일 구성
 
-1. GitHub에서 저장소를 만들거나 기존 포트폴리오 저장소를 엽니다.
-2. 이 폴더 **안의 내용 전체**를 저장소 루트에 업로드하고 커밋합니다. `index.html`이 저장소 첫 화면에 보이는 위치여야 합니다.
-3. 저장소의 **Settings → Pages**로 이동합니다.
-4. **Build and deployment → Source**에서 **Deploy from a branch**를 선택합니다.
-5. **Branch**를 업로드한 브랜치(예: `main`), 폴더를 **/ (root)**로 선택하고 저장합니다.
-6. 배포가 끝나면 Pages에 표시되는 주소를 엽니다.
+- `index.html`, `style.css`, `script.js`: 메인·소개·프로젝트 목록
+- `sphere.js`: 그라데이션 구체 모션
+- `project-bunyangsin.html`: 분양의신
+- `project-baedalgeek.html`: 배달긱
+- `project-food-concierge.html`: 푸드컨시어지
+- `project-partner-center.html`: 파트너센터
+- `project.css`, `project.js`: 상세 페이지 공통 디자인과 동작
+- `figma-latest.css`: 수정된 피그마 본문 스타일
+- `case-studies.json`: 상세 디자인 섹션별 구성 목록
+- `assets/thumbnails/`: 사용자 첨부 썸네일
+- `assets/mockups/`: 투명 배경 목업 원본
+- `assets/case-studies/`: 상세 디자인 원본 섹션 이미지
+- `assets/fonts/`, `licenses/`: 로컬 폰트 및 라이선스
 
-`https://사용자명.github.io/저장소명/` 형태에서도 동작하도록 파일 경로는 상대 경로로 작성했습니다. 저장소 이름을 `사용자명.github.io`로 만들면 기본 주소에서도 사용할 수 있습니다.
+## 로컬에서 보기
 
-## 로컬에서 확인하기
-
-이 폴더에서 다음 명령을 실행하고 브라우저에서 `http://localhost:8080`을 엽니다.
+`index.html`을 브라우저에서 열거나, 이 폴더에서 다음을 실행합니다.
 
 ```sh
 python3 -m http.server 8080
 ```
 
-팝업 데이터가 `index.html`에 포함되어 있어 JSON 파일을 별도로 요청하지 않습니다. 위 HTTP 서버로 배포 환경과 동일하게 확인할 수 있습니다.
+그런 다음 `http://localhost:8080`에 접속합니다. API 키나 외부 서비스 연결은 필요하지 않습니다.
 
-## 수정할 때
+## 기존 GitHub Pages 업데이트
 
-- 본문과 프로젝트 소개: `index.html`
-- 색상, 크기, 여백: `style.css`
-- 상세 포트폴리오 페이지: `assets/projects/`와 `projects.json`을 수정한 뒤 `python3 update-projects.py` 실행
-- 구체 색상과 전환 시간: `sphere.js`의 `palettes`, `paletteDuration`
+이 폴더 **안의 파일과 assets 폴더 전체**를 `Kim-dami/portfolio` 저장소의 `portfolio5/` 안에 덮어써 주세요. 폴더 자체를 한 단계 더 중첩하지 않습니다.
 
-기존 대표 목업, 상세 포트폴리오, 로컬 폰트를 함께 포함했습니다. 로그인·API 키·외부 호스팅 서비스 연결은 필요하지 않습니다.
+기존 Pages 설정을 유지하면 주소는 다음과 같습니다.
 
-## 참고 및 라이선스
+https://kim-dami.github.io/portfolio/portfolio5/index.html
 
-- [GitHub Pages 공식 배포 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
-- [Lenis](https://github.com/darkroomengineering/lenis), [Pretendard](https://github.com/orioncactus/pretendard), [Cormorant Garamond](https://github.com/CatharsisFonts/Cormorant)의 라이선스는 `licenses/`에 포함했습니다.
+상세 페이지가 추가되어 `index.html`만 업로드하면 동작하지 않습니다. `project-*.html`, `project.css`, `project.js`, `assets/`를 함께 업로드해야 합니다.
+
+## 내용 수정
+
+- 소개와 프로젝트 제목: `index.html`
+- 상세 소개·기간·역할·다음 프로젝트 링크: 각 `project-*.html`
+- 공통 너비·고정 헤더·모션: `project.css`, `project.js`
+- 상세 이미지를 바꿀 때: 해당 HTML의 이미지 경로·width·height와 `case-studies.json`을 함께 갱신
+
+상세 이미지의 중간 조각에는 별도의 간격을 넣지 않습니다. `.case-section`이 하나의 완성된 디자인 섹션이며, 이 요소에 스크롤 등장 효과가 적용됩니다.

@@ -1,0 +1,1437 @@
+/* Native HTML/CSS for revised Figma case-study artwork. */
+.live-figma-panel{position:relative;width:100%;overflow:hidden}
+.live-figma{position:absolute;left:0;top:0;width:1400px;transform-origin:top left;--portfolio-canvas:#0b0b0c;--portfolio-ink:#161618;--portfolio-muted:#66666c;--portfolio-white:#fff;--color-gray-100:#f4f5f6}
+.live-figma *{margin:0;box-sizing:border-box;--tx:0px;--ty:0px;--rotate:0deg;--sy:1}
+.live-figma .figma-transform{transform:translate(var(--tx,0px),var(--ty,0px)) rotate(var(--rotate,0deg)) scaleY(var(--sy,1))}
+.live-figma .live-figma-root{width:1400px}
+
+.live-figma .f0{background-color:var(--portfolio-canvas,#0b0b0c)}
+.live-figma .f1{align-content:stretch}
+.live-figma .f2{display:flex}
+.live-figma .f3{flex-direction:column}
+.live-figma .f4{align-items:flex-start}
+.live-figma .f5{position:relative}
+.live-figma .f6{width:100%;height:100%}
+.live-figma .f7{height:810px}
+.live-figma .f8{flex-shrink:0}
+.live-figma .f9{width:1440px}
+.live-figma .f10{position:absolute}
+.live-figma .f11{background-color:#009ba9}
+.live-figma .f12{left:0}
+.live-figma .f13{overflow:clip}
+.live-figma .f14{top:0}
+.live-figma .f15{overflow-wrap:break-word}
+.live-figma .f16{font-family:"Pretendard",sans-serif;font-weight:700}
+.live-figma .f17{line-height:1.3}
+.live-figma .f18{left:-17px}
+.live-figma .f19{font-style:normal}
+.live-figma .f20{opacity:0.2}
+.live-figma .f21{font-size:100px}
+.live-figma .f22{color:white}
+.live-figma .f23{top:calc(50% - 65px)}
+.live-figma .f24{letter-spacing:-0.5px}
+.live-figma .f25{white-space:pre}
+.live-figma .f26{--tx:-50%}
+.live-figma .f27{--ty:-50%}
+.live-figma .f28{left:50%}
+.live-figma .f29{width:700px;height:700px}
+.live-figma .f30{top:calc(50% - 1px)}
+.live-figma .f31{inset:0}
+.live-figma .f32{overflow:hidden}
+.live-figma .f33{pointer-events:none}
+.live-figma .f34{height:80.68%}
+.live-figma .f35{left:-22.83%}
+.live-figma .f36{max-width:none}
+.live-figma .f37{top:9.59%}
+.live-figma .f38{width:122.91%}
+.live-figma .f39{--tx:-100%}
+.live-figma .f40{font-family:"Pretendard",sans-serif;font-weight:400}
+.live-figma .f41{left:1380px}
+.live-figma .f42{font-size:18px}
+.live-figma .f43{text-align:right}
+.live-figma .f44{top:727px}
+.live-figma .f45{white-space:nowrap}
+.live-figma .f46{left:60px}
+.live-figma .f47{font-size:28px}
+.live-figma .f48{top:714px}
+.live-figma .f49{height:110px}
+.live-figma .f50{align-items:center}
+.live-figma .f51{justify-content:center}
+.live-figma .f52{left:40px}
+.live-figma .f53{padding-top:10px;padding-bottom:10px}
+.live-figma .f54{font-family:"Pretendard",sans-serif;font-weight:500}
+.live-figma .f55{gap:4px}
+.live-figma .f56{align-items:flex-end}
+.live-figma .f57{color:var(--portfolio-white,white)}
+.live-figma .f58{text-align:center}
+.live-figma .f59{font-size:23px}
+.live-figma .f60{font-size:10px}
+.live-figma .f61{gap:20px}
+.live-figma .f62{padding:20px}
+.live-figma .f63{width:100%}
+.live-figma .f64{background-color:var(--color/gray/100,#f4f5f6)}
+.live-figma .f65{gap:40px}
+.live-figma .f66{padding:60px}
+.live-figma .f67{border-radius:32px}
+.live-figma .f68{font-size:16px}
+.live-figma .f69{color:var(--portfolio-muted,#66666c)}
+.live-figma .f70{gap:72px}
+.live-figma .f71{line-height:0}
+.live-figma .f72{font-size:40px}
+.live-figma .f73{color:var(--portfolio-ink,#161618)}
+.live-figma .f74{width:500px}
+.live-figma .f75{margin-bottom:0}
+.live-figma .f76{flex:1 0 0}
+.live-figma .f77{min-width:1px}
+.live-figma .f78{font-size:20px}
+.live-figma .f79{gap:24px}
+.live-figma .f80{gap:10px}
+.live-figma .f81{height:2317.292px}
+.live-figma .f82{width:1400px}
+.live-figma .f83{background-color:#fff}
+.live-figma .f84{font-family:"Gmarket Sans",sans-serif;font-weight:700}
+.live-figma .f85{line-height:normal}
+.live-figma .f86{left:109.38px}
+.live-figma .f87{color:#009dac}
+.live-figma .f88{font-size:17.5px}
+.live-figma .f89{top:1368.53px}
+.live-figma .f90{font-family:"Gmarket Sans",sans-serif;font-weight:500}
+.live-figma .f91{font-size:35px}
+.live-figma .f92{color:black}
+.live-figma .f93{top:1408.03px}
+.live-figma .f94{display:contents}
+.live-figma .f95{top:1510.11px}
+.live-figma .f96{height:109.375px}
+.live-figma .f97{border-bottom-right-radius:72.917px}
+.live-figma .f98{border-top-right-radius:72.917px}
+.live-figma .f99{box-shadow:0px 1px 4.375px 0px rgba(0,0,0,0.16)}
+.live-figma .f100{width:758.333px}
+.live-figma .f101{border-bottom-right-radius:58.333px}
+.live-figma .f102{border-top-right-radius:58.333px}
+.live-figma .f103{top:1641.36px}
+.live-figma .f104{width:831.25px}
+.live-figma .f105{top:1772.61px}
+.live-figma .f106{width:904.167px}
+.live-figma .f107{font-family:"SUIT",sans-serif;font-weight:600}
+.live-figma .f108{line-height:27.708px}
+.live-figma .f109{color:#009dad}
+.live-figma .f110{font-size:26.25px}
+.live-figma .f111{top:1551.54px}
+.live-figma .f112{letter-spacing:-0.2625px}
+.live-figma .f113{font-family:"SUIT",sans-serif;font-weight:500}
+.live-figma .f114{left:286.56px}
+.live-figma .f115{color:#505050}
+.live-figma .f116{top:1550.89px}
+.live-figma .f117{letter-spacing:-0.175px}
+.live-figma .f118{top:1682.14px}
+.live-figma .f119{top:1813.39px}
+.live-figma .f120{top:1682.79px}
+.live-figma .f121{top:1814.04px}
+.live-figma .f122{top:107.8px}
+.live-figma .f123{top:151.67px}
+.live-figma .f124{font-family:"SUIT",sans-serif;font-weight:400}
+.live-figma .f125{color:#303030}
+.live-figma .f126{font-size:0px}
+.live-figma .f127{top:245.73px}
+.live-figma .f128{line-height:29.167px}
+.live-figma .f129{top:438.96px}
+.live-figma .f130{height:933.333px}
+.live-figma .f131{mask-mode:alpha}
+.live-figma .f132{mask-composite:intersect}
+.live-figma .f133{mask-clip:no-clip}
+.live-figma .f134{mask-repeat:no-repeat}
+.live-figma .f135{mask-size:1400px 821.771px}
+.live-figma .f136{opacity:0.25}
+.live-figma .f137{object-fit:cover}
+.live-figma .f138{height:538.125px}
+.live-figma .f139{left:112.29px}
+.live-figma .f140{border-radius:14.583px}
+.live-figma .f141{box-shadow:0px 0px 7.292px 0px rgba(0,0,0,0.1)}
+.live-figma .f142{top:613.23px}
+.live-figma .f143{width:1178.333px}
+.live-figma .f144{left:613.96px}
+.live-figma .f145{top:550.4px}
+.live-figma .f146{line-height:32.083px}
+.live-figma .f147{left:215.1px}
+.live-figma .f148{top:657.58px}
+.live-figma .f149{left:578.23px}
+.live-figma .f150{left:954.48px}
+.live-figma .f151{left:233.17px}
+.live-figma .f152{color:#101010}
+.live-figma .f153{font-size:11.667px}
+.live-figma .f154{top:1049.21px}
+.live-figma .f155{left:393.59px}
+.live-figma .f156{background-color:#009dac}
+.live-figma .f157{height:291.667px}
+.live-figma .f158{left:346.35px}
+.live-figma .f159{top:751.04px}
+.live-figma .f160{width:94.792px}
+.live-figma .f161{background-color:#f5f5f5}
+.live-figma .f162{height:189.583px}
+.live-figma .f163{left:185.76px}
+.live-figma .f164{top:853.13px}
+.live-figma .f165{height:0}
+.live-figma .f166{left:178.28px}
+.live-figma .f167{top:1042.34px}
+.live-figma .f168{width:269.792px}
+.live-figma .f169{inset:-1.46px 0 0 0}
+.live-figma .f170{display:block}
+.live-figma .f171{font-family:"SUIT",sans-serif;font-weight:800}
+.live-figma .f172{left:235.93px}
+.live-figma .f173{top:933.18px}
+.live-figma .f174{left:283.54px}
+.live-figma .f175{top:798.14px}
+.live-figma .f176{left:396.07px}
+.live-figma .f177{top:882.14px}
+.live-figma .f178{left:312.9px}
+.live-figma .f179{color:#a0a0a0}
+.live-figma .f180{top:1085.73px}
+.live-figma .f181{left:700.88px}
+.live-figma .f182{left:1090.54px}
+.live-figma .f183{height:48.342px}
+.live-figma .f184{left:292.4px}
+.live-figma .f185{top:788.78px}
+.live-figma .f186{width:40.467px}
+.live-figma .f187{left:576.04px}
+.live-figma .f188{width:250.833px;height:250.833px}
+.live-figma .f189{top:764.17px}
+.live-figma .f190{left:562.92px}
+.live-figma .f191{width:277.083px;height:277.083px}
+.live-figma .f192{left:767.58px}
+.live-figma .f193{top:873.39px}
+.live-figma .f194{line-height:20.417px}
+.live-figma .f195{left:652.92px}
+.live-figma .f196{top:864.64px}
+.live-figma .f197{left:702.28px}
+.live-figma .f198{top:704.45px}
+.live-figma .f199{left:959.75px}
+.live-figma .f200{top:759.43px}
+.live-figma .f201{height:29.167px}
+.live-figma .f202{left:1051.46px}
+.live-figma .f203{top:766.35px}
+.live-figma .f204{width:120.313px}
+.live-figma .f205{top:807.92px}
+.live-figma .f206{width:51.042px}
+.live-figma .f207{top:849.48px}
+.live-figma .f208{width:42.292px}
+.live-figma .f209{top:891.77px}
+.live-figma .f210{width:40.104px}
+.live-figma .f211{top:933.33px}
+.live-figma .f212{width:13.125px}
+.live-figma .f213{top:974.9px}
+.live-figma .f214{width:8.75px}
+.live-figma .f215{height:251.563px}
+.live-figma .f216{width:0}
+.live-figma .f217{flex:none}
+.live-figma .f218{--rotate:90deg}
+.live-figma .f219{width:251.563px}
+.live-figma .f220{inset:-1.46px 0.29% 0 0}
+.live-figma .f221{left:1202.89px}
+.live-figma .f222{top:766.2px}
+.live-figma .f223{left:1133.95px}
+.live-figma .f224{top:807.77px}
+.live-figma .f225{left:1124.83px}
+.live-figma .f226{top:849.33px}
+.live-figma .f227{left:1123.6px}
+.live-figma .f228{top:891.62px}
+.live-figma .f229{left:1091.81px}
+.live-figma .f230{left:1091.67px}
+.live-figma .f231{top:974.74px}
+.live-figma .f232{line-height:14.583px}
+.live-figma .f233{left:1037.17px}
+.live-figma .f234{top:773.59px}
+.live-figma .f235{left:1037.51px}
+.live-figma .f236{top:815.15px}
+.live-figma .f237{left:1036.75px}
+.live-figma .f238{top:856.71px}
+.live-figma .f239{top:899px}
+.live-figma .f240{top:940.57px}
+.live-figma .f241{top:982.13px}
+.live-figma .f242{height:113.75px}
+.live-figma .f243{border-radius:7.292px}
+.live-figma .f244{top:1958.54px}
+.live-figma .f245{width:364.583px}
+.live-figma .f246{top:2094.17px}
+.live-figma .f247{left:291.14px}
+.live-figma .f248{top:1989.17px}
+.live-figma .f249{line-height:26.25px}
+.live-figma .f250{left:291.81px}
+.live-figma .f251{top:2124.79px}
+.live-figma .f252{height:46.667px}
+.live-figma .f253{left:528.65px}
+.live-figma .f254{top:2059.9px}
+.live-figma .f255{width:77.292px}
+.live-figma .f256{height:249.375px}
+.live-figma .f257{left:660.63px}
+.live-figma .f258{width:629.271px}
+.live-figma .f259{height:493.898px}
+.live-figma .f260{left:1024.48px}
+.live-figma .f261{box-shadow:0.729px 0.729px 7.292px 0px rgba(0,0,0,0.2)}
+.live-figma .f262{top:1714.02px}
+.live-figma .f263{width:265.417px}
+.live-figma .f264{left:855.73px}
+.live-figma .f265{top:1996.37px}
+.live-figma .f266{left:872.09px}
+.live-figma .f267{top:2117.41px}
+.live-figma .f268{left:717.5px}
+.live-figma .f269{top:2129.17px}
+.live-figma .f270{height:29.814px}
+.live-figma .f271{opacity:0.75}
+.live-figma .f272{width:29.167px}
+.live-figma .f273{left:715.31px}
+.live-figma .f274{top:2006.67px}
+.live-figma .f275{width:32.813px;height:32.813px}
+.live-figma .f276{left:715.68px}
+.live-figma .f277{top:2083.59px}
+.live-figma .f278{width:253.75px}
+.live-figma .f279{inset:-0.73px 0 0 0}
+.live-figma .f280{height:5193.125px}
+.live-figma .f281{left:309.9px}
+.live-figma .f282{mask-position:-309.896px -263.958px}
+.live-figma .f283{mask-size:1400px 5193.125px}
+.live-figma .f284{width:765.625px;height:765.625px}
+.live-figma .f285{top:263.96px}
+.live-figma .f286{left:364.58px}
+.live-figma .f287{mask-position:-364.583px -318.646px}
+.live-figma .f288{width:656.25px;height:656.25px}
+.live-figma .f289{top:318.65px}
+.live-figma .f290{left:632.92px}
+.live-figma .f291{mask-position:-632.917px -161.886px}
+.live-figma .f292{top:161.89px}
+.live-figma .f293{mask-position:-632.917px -1137.511px}
+.live-figma .f294{top:1137.51px}
+.live-figma .f295{mask-position:-660.625px -107.8px}
+.live-figma .f296{left:332.5px}
+.live-figma .f297{top:302.61px}
+.live-figma .f298{background-color:#818487}
+.live-figma .f299{height:688.333px}
+.live-figma .f300{mask-position:-332.5px -302.606px}
+.live-figma .f301{border-radius:30.625px}
+.live-figma .f302{width:345.625px}
+.live-figma .f303{background-color:#000}
+.live-figma .f304{height:681.042px}
+.live-figma .f305{left:336.15px}
+.live-figma .f306{mask-position:-336.146px -306.251px}
+.live-figma .f307{top:306.25px}
+.live-figma .f308{width:338.333px}
+.live-figma .f309{left:343.44px}
+.live-figma .f310{top:313.54px}
+.live-figma .f311{height:666.458px}
+.live-figma .f312{mask-position:-343.438px -313.543px, 0px 0px}
+.live-figma .f313{mask-size:1400px 5193.125px, 323.75px 666.458px}
+.live-figma .f314{border-radius:25.521px}
+.live-figma .f315{width:323.75px}
+.live-figma .f316{left:343.2px}
+.live-figma .f317{mask-position:-343.201px -313.327px, 0.236px 0.216px}
+.live-figma .f318{top:313.33px}
+.live-figma .f319{width:324.479px}
+.live-figma .f320{left:721.88px}
+.live-figma .f321{mask-position:-721.875px -302.606px}
+.live-figma .f322{left:725.52px}
+.live-figma .f323{mask-position:-725.521px -306.251px}
+.live-figma .f324{left:732.81px}
+.live-figma .f325{mask-position:-732.813px -313.543px, 0px 0px}
+.live-figma .f326{left:732.58px}
+.live-figma .f327{mask-position:-732.576px -313.327px, 0.236px 0.216px}
+.live-figma .f328{left:1109.06px}
+.live-figma .f329{mask-position:-1109.063px -591.354px}
+.live-figma .f330{top:591.35px}
+.live-figma .f331{line-height:23.333px}
+.live-figma .f332{color:#606060}
+.live-figma .f333{mask-position:-1109.063px -893.871px}
+.live-figma .f334{top:893.87px}
+.live-figma .f335{height:8.75px}
+.live-figma .f336{left:1067.5px}
+.live-figma .f337{mask-position:-1067.5px -597.916px}
+.live-figma .f338{top:597.92px}
+.live-figma .f339{width:30.261px}
+.live-figma .f340{mask-position:-1067.5px -900.521px}
+.live-figma .f341{top:900.52px}
+.live-figma .f342{height:749.421px}
+.live-figma .f343{left:87.69px}
+.live-figma .f344{mask-position:-87.693px -2028.637px}
+.live-figma .f345{box-shadow:0.729px 0.729px 7.292px 0px rgba(0,0,0,0.16)}
+.live-figma .f346{top:2028.64px}
+.live-figma .f347{height:769.676px}
+.live-figma .f348{left:947.72px}
+.live-figma .f349{mask-position:-947.723px -1711.353px}
+.live-figma .f350{top:1711.35px}
+.live-figma .f351{left:6834.85px}
+.live-figma .f352{top:31510.81px}
+.live-figma .f353{width:4.666px}
+.live-figma .f354{--rotate:-90deg}
+.live-figma .f355{height:4.666px}
+.live-figma .f356{mask-position:-6834.846px -31510.81px}
+.live-figma .f357{inset:-15.63% -8.33%}
+.live-figma .f358{border-color:#f0f0f0}
+.live-figma .f359{border-width:0.729px}
+.live-figma .f360{border-style:solid}
+.live-figma .f361{left:882.29px}
+.live-figma .f362{mask-position:-882.292px -1596.146px}
+.live-figma .f363{top:1596.15px}
+.live-figma .f364{width:374.063px}
+.live-figma .f365{background-color:#dd6d2f}
+.live-figma .f366{height:23.333px}
+.live-figma .f367{mask-position:-882.292px -1596.875px}
+.live-figma .f368{opacity:0.1}
+.live-figma .f369{top:1596.88px}
+.live-figma .f370{width:53.958px}
+.live-figma .f371{left:1149.17px}
+.live-figma .f372{mask-position:-1149.167px -1596.875px}
+.live-figma .f373{width:52.5px}
+.live-figma .f374{background-color:#46a35c}
+.live-figma .f375{height:22.604px}
+.live-figma .f376{left:990.21px}
+.live-figma .f377{mask-position:-990.208px -1620.208px}
+.live-figma .f378{top:1620.21px}
+.live-figma .f379{width:51.771px}
+.live-figma .f380{mask-position:-1149.167px -1620.208px}
+.live-figma .f381{font-family:"Pretendard",sans-serif;font-weight:500}
+.live-figma .f382{font-weight:500}
+.live-figma .f383{left:1015.74px}
+.live-figma .f384{mask-position:-1002.741px -1602.708px}
+.live-figma .f385{font-size:10.208px}
+.live-figma .f386{top:1602.71px}
+.live-figma .f387{letter-spacing:-0.2552px}
+.live-figma .f388{left:1068.97px}
+.live-figma .f389{mask-position:-1055.97px -1602.708px}
+.live-figma .f390{left:962.51px}
+.live-figma .f391{mask-position:-949.512px -1602.708px}
+.live-figma .f392{left:1121.47px}
+.live-figma .f393{mask-position:-1108.47px -1602.708px}
+.live-figma .f394{font-family:"Pretendard",sans-serif;font-weight:600}
+.live-figma .f395{font-weight:600}
+.live-figma .f396{left:1172.97px}
+.live-figma .f397{mask-position:-1153.471px -1601.979px}
+.live-figma .f398{color:#dd6d2f}
+.live-figma .f399{font-size:9.479px}
+.live-figma .f400{top:1601.98px}
+.live-figma .f401{letter-spacing:-0.237px}
+.live-figma .f402{left:1228.66px}
+.live-figma .f403{mask-position:-1215.657px -1602.708px}
+.live-figma .f404{left:1014.01px}
+.live-figma .f405{mask-position:-994.512px -1624.583px}
+.live-figma .f406{color:#46a35c}
+.live-figma .f407{top:1624.58px}
+.live-figma .f408{mask-position:-1055.97px -1625.313px}
+.live-figma .f409{top:1625.31px}
+.live-figma .f410{mask-position:-949.512px -1625.313px}
+.live-figma .f411{mask-position:-1108.47px -1625.313px}
+.live-figma .f412{mask-position:-1153.471px -1624.583px}
+.live-figma .f413{mask-position:-1215.657px -1625.313px}
+.live-figma .f414{left:908.05px}
+.live-figma .f415{mask-position:-888.054px -1601.979px}
+.live-figma .f416{left:909.28px}
+.live-figma .f417{mask-position:-896.282px -1625.313px}
+.live-figma .f418{background-color:#f0f0f0}
+.live-figma .f419{height:45.938px}
+.live-figma .f420{left:989.48px}
+.live-figma .f421{mask-position:-989.479px -1596.875px}
+.live-figma .f422{width:0.729px}
+.live-figma .f423{left:936.25px}
+.live-figma .f424{mask-position:-936.25px -1596.875px}
+.live-figma .f425{left:1041.98px}
+.live-figma .f426{mask-position:-1041.979px -1596.875px}
+.live-figma .f427{width:1.458px}
+.live-figma .f428{left:1095.21px}
+.live-figma .f429{mask-position:-1095.208px -1596.875px}
+.live-figma .f430{left:1148.44px}
+.live-figma .f431{mask-position:-1148.438px -1596.875px}
+.live-figma .f432{left:1201.67px}
+.live-figma .f433{mask-position:-1201.667px -1596.875px}
+.live-figma .f434{height:59.792px}
+.live-figma .f435{mask-position:-989.479px -1537.083px}
+.live-figma .f436{top:1537.08px}
+.live-figma .f437{mask-position:-1041.979px -1537.083px}
+.live-figma .f438{mask-position:-1095.208px -1537.083px}
+.live-figma .f439{mask-position:-1148.438px -1537.083px}
+.live-figma .f440{mask-position:-1201.667px -1537.083px}
+.live-figma .f441{width:54.688px}
+.live-figma .f442{left:1015.38px}
+.live-figma .f443{mask-position:-1008.378px -1565.521px}
+.live-figma .f444{color:#131313}
+.live-figma .f445{font-size:15.313px}
+.live-figma .f446{top:1565.52px}
+.live-figma .f447{left:1068.61px}
+.live-figma .f448{mask-position:-1061.606px -1565.521px}
+.live-figma .f449{left:1121.84px}
+.live-figma .f450{mask-position:-1114.836px -1565.521px}
+.live-figma .f451{left:1175.07px}
+.live-figma .f452{mask-position:-1168.065px -1565.521px}
+.live-figma .f453{left:1229.02px}
+.live-figma .f454{mask-position:-1222.023px -1565.521px}
+.live-figma .f455{mask-position:-882.292px -1537.083px}
+.live-figma .f456{mask-position:-936.25px -1537.083px}
+.live-figma .f457{left:909.65px}
+.live-figma .f458{mask-position:-902.648px -1565.521px}
+.live-figma .f459{left:911.4px}
+.live-figma .f460{mask-position:-895.402px -1549.479px}
+.live-figma .f461{top:1549.48px}
+.live-figma .f462{left:963.4px}
+.live-figma .f463{mask-position:-947.902px -1549.479px}
+.live-figma .f464{left:1016.4px}
+.live-figma .f465{mask-position:-1000.402px -1549.479px}
+.live-figma .f466{left:1070.36px}
+.live-figma .f467{mask-position:-1054.36px -1549.479px}
+.live-figma .f468{left:1121.36px}
+.live-figma .f469{mask-position:-1106.86px -1549.479px}
+.live-figma .f470{left:1173.29px}
+.live-figma .f471{mask-position:-1159.791px -1549.479px}
+.live-figma .f472{left:1227.82px}
+.live-figma .f473{mask-position:-1213.319px -1549.479px}
+.live-figma .f474{left:962.88px}
+.live-figma .f475{mask-position:-955.878px -1565.521px}
+.live-figma .f476{left:517.71px}
+.live-figma .f477{mask-position:-517.708px -1239.582px}
+.live-figma .f478{top:1239.58px}
+.live-figma .f479{left:476.92px}
+.live-figma .f480{mask-position:-370.918px -1495.521px}
+.live-figma .f481{top:1495.52px}
+.live-figma .f482{left:475.96px}
+.live-figma .f483{mask-position:-264.964px -1545.746px}
+.live-figma .f484{top:1545.75px}
+.live-figma .f485{left:487.45px}
+.live-figma .f486{mask-position:-487.446px -1502.084px}
+.live-figma .f487{top:1502.08px}
+.live-figma .f488{mask-position:-487.446px -1552.396px}
+.live-figma .f489{top:1552.4px}
+.live-figma .f490{left:866.16px}
+.live-figma .f491{mask-position:-866.156px -1736.451px}
+.live-figma .f492{top:1736.45px}
+.live-figma .f493{width:98.169px}
+.live-figma .f494{inset:-0.73px 0}
+.live-figma .f495{height:350.409px}
+.live-figma .f496{left:453.71px}
+.live-figma .f497{mask-position:-453.713px -2052.938px}
+.live-figma .f498{top:2052.94px}
+.live-figma .f499{width:490.502px}
+.live-figma .f500{inset:-0.21% 0}
+.live-figma .f501{left:454px}
+.live-figma .f502{top:2048.71px}
+.live-figma .f503{mask-position:-454px -2048.708px}
+.live-figma .f504{left:960px}
+.live-figma .f505{top:1731.71px}
+.live-figma .f506{--sy:-1}
+.live-figma .f507{mask-position:-960px -1731.708px}
+.live-figma .f508{left:902.88px}
+.live-figma .f509{mask-position:-756.884px -2196.385px}
+.live-figma .f510{top:2196.38px}
+.live-figma .f511{left:913.95px}
+.live-figma .f512{mask-position:-913.953px -2203.035px}
+.live-figma .f513{top:2203.03px}
+.live-figma .f514{left:495.1px}
+.live-figma .f515{mask-position:-495.104px -2402.614px}
+.live-figma .f516{top:2402.61px}
+.live-figma .f517{left:453.54px}
+.live-figma .f518{mask-position:-453.54px -2409.263px}
+.live-figma .f519{top:2409.26px}
+.live-figma .f520{height:2414.271px}
+.live-figma .f521{mask-position:0px -2778.854px}
+.live-figma .f522{top:2778.85px}
+.live-figma .f523{height:1688.532px}
+.live-figma .f524{left:-0.78px}
+.live-figma .f525{mask-position:0.78px -3146.031px}
+.live-figma .f526{top:3146.03px}
+.live-figma .f527{width:1400.891px}
+.live-figma .f528{mask-position:-632.917px -2886.53px}
+.live-figma .f529{top:2886.53px}
+.live-figma .f530{mask-position:-109.375px -3964.968px}
+.live-figma .f531{top:3964.97px}
+.live-figma .f532{left:329.39px}
+.live-figma .f533{mask-position:-329.39px -2988.602px}
+.live-figma .f534{top:2988.6px}
+.live-figma .f535{left:737.92px}
+.live-figma .f536{mask-position:-737.917px -3107.389px}
+.live-figma .f537{top:3107.39px}
+.live-figma .f538{left:1144.06px}
+.live-figma .f539{mask-position:-1144.063px -3126.26px}
+.live-figma .f540{top:3126.26px}
+.live-figma .f541{left:288.78px}
+.live-figma .f542{mask-position:-111.785px -3007.473px}
+.live-figma .f543{top:3007.47px}
+.live-figma .f544{left:1102.5px}
+.live-figma .f545{mask-position:-1102.5px -3132.91px}
+.live-figma .f546{top:3132.91px}
+.live-figma .f547{left:299.13px}
+.live-figma .f548{mask-position:-299.13px -3014.123px}
+.live-figma .f549{top:3014.12px}
+.live-figma .f550{left:65.63px}
+.live-figma .f551{top:4067.29px}
+.live-figma .f552{height:422.188px}
+.live-figma .f553{mask-position:-65.625px -4067.292px}
+.live-figma .f554{width:524.271px}
+.live-figma .f555{left:455.73px}
+.live-figma .f556{mask-position:-455.729px -4067.292px}
+.live-figma .f557{left:627.08px}
+.live-figma .f558{mask-position:-627.083px -4278.75px}
+.live-figma .f559{top:4278.75px}
+.live-figma .f560{width:523.542px}
+.live-figma .f561{left:103.54px}
+.live-figma .f562{mask-position:-103.542px -4420.938px}
+.live-figma .f563{top:4420.94px}
+.live-figma .f564{left:653.33px}
+.live-figma .f565{mask-position:-653.333px -4646.979px}
+.live-figma .f566{top:4646.98px}
+.live-figma .f567{left:1006.25px}
+.live-figma .f568{mask-position:-1006.25px -4292.604px}
+.live-figma .f569{top:4292.6px}
+.live-figma .f570{background-color:rgba(255,255,255,0.2)}
+.live-figma .f571{color:#aaaaae}
+.live-figma .f572{width:1320px}
+.live-figma .f573{cursor:pointer}
+.live-figma .f574{font-size:52px}
+.live-figma .f575{left:301px}
+.live-figma .f576{width:28px;height:28px}
+.live-figma .f577{top:120.58px}
+.live-figma .f578{background-color:#157e9f}
+.live-figma .f579{left:-20px}
+.live-figma .f580{top:50%}
+.live-figma .f581{height:83.2%}
+.live-figma .f582{top:8.47%}
+.live-figma .f583{height:1633.333px}
+.live-figma .f584{background-color:rgba(23,119,159,0.05)}
+.live-figma .f585{border-width:1.458px}
+.live-figma .f586{border-color:rgba(23,119,159,0.25)}
+.live-figma .f587{height:170.625px}
+.live-figma .f588{mask-position:-109.375px -1353.333px}
+.live-figma .f589{mask-size:1400px 1633.333px}
+.live-figma .f590{top:1353.33px}
+.live-figma .f591{width:1181.25px}
+.live-figma .f592{mask-position:-109.375px -107.8px}
+.live-figma .f593{color:#1e779f}
+.live-figma .f594{mask-position:-109.375px -437.383px}
+.live-figma .f595{top:437.38px}
+.live-figma .f596{left:639.48px}
+.live-figma .f597{mask-position:-639.479px -1402.071px}
+.live-figma .f598{color:#17779f}
+.live-figma .f599{top:1402.07px}
+.live-figma .f600{mask-position:-109.375px -147.303px}
+.live-figma .f601{top:147.3px}
+.live-figma .f602{mask-position:-109.375px -245.729px}
+.live-figma .f603{left:207.11px}
+.live-figma .f604{mask-position:-155.107px -1167.396px}
+.live-figma .f605{top:1167.39px}
+.live-figma .f606{left:152.4px}
+.live-figma .f607{mask-position:-152.396px -1218.438px}
+.live-figma .f608{top:1218.44px}
+.live-figma .f609{left:425.1px}
+.live-figma .f610{mask-position:-425.104px -1218.438px}
+.live-figma .f611{left:480.2px}
+.live-figma .f612{mask-position:-349.698px -1167.396px}
+.live-figma .f613{mask-position:-109.375px -939.896px}
+.live-figma .f614{width:196.875px;height:196.875px}
+.live-figma .f615{top:939.89px}
+.live-figma .f616{left:382.08px}
+.live-figma .f617{mask-position:-382.083px -939.896px}
+.live-figma .f618{left:159.69px}
+.live-figma .f619{mask-position:-159.688px -1006.104px}
+.live-figma .f620{font-size:58.333px}
+.live-figma .f621{top:1006.1px}
+.live-figma .f622{left:412.71px}
+.live-figma .f623{mask-position:-412.708px -1006.104px}
+.live-figma .f624{left:1027.68px}
+.live-figma .f625{mask-position:-794.182px -1001.015px}
+.live-figma .f626{top:1001.01px}
+.live-figma .f627{line-height:37.917px}
+.live-figma .f628{top:478.93px}
+.live-figma .f629{mask-position:-109.375px -519.895px}
+.live-figma .f630{top:519.89px}
+.live-figma .f631{left:167.71px}
+.live-figma .f632{mask-position:-167.708px -607.395px}
+.live-figma .f633{top:607.39px}
+.live-figma .f634{left:290.21px}
+.live-figma .f635{mask-position:-290.208px -607.395px}
+.live-figma .f636{left:596.46px}
+.live-figma .f637{mask-position:-596.458px -607.395px}
+.live-figma .f638{left:1208.96px}
+.live-figma .f639{mask-position:-1208.958px -607.395px}
+.live-figma .f640{left:450.63px}
+.live-figma .f641{mask-position:-450.625px -607.395px}
+.live-figma .f642{left:780.21px}
+.live-figma .f643{mask-position:-780.208px -607.395px}
+.live-figma .f644{left:1086.46px}
+.live-figma .f645{mask-position:-1086.458px -607.395px}
+.live-figma .f646{left:885.21px}
+.live-figma .f647{mask-position:-885.208px -607.395px}
+.live-figma .f648{height:233.333px}
+.live-figma .f649{left:875px}
+.live-figma .f650{mask-position:-875px -653.333px}
+.live-figma .f651{top:653.33px}
+.live-figma .f652{width:131.25px}
+.live-figma .f653{border-radius:inherit}
+.live-figma .f654{box-shadow:inset 0px 2.188px 4.375px 0px rgba(0,0,0,0.16)}
+.live-figma .f655{mask-position:-109.375px -653.333px}
+.live-figma .f656{mask-position:-721.875px -653.333px}
+.live-figma .f657{left:1028.13px}
+.live-figma .f658{mask-position:-1028.125px -653.333px}
+.live-figma .f659{left:262.5px}
+.live-figma .f660{mask-position:-262.5px -653.333px}
+.live-figma .f661{left:568.75px}
+.live-figma .f662{mask-position:-568.75px -653.333px}
+.live-figma .f663{left:1181.25px}
+.live-figma .f664{mask-position:-1181.25px -653.333px}
+.live-figma .f665{left:415.63px}
+.live-figma .f666{mask-position:-415.625px -653.333px}
+.live-figma .f667{left:1334.38px}
+.live-figma .f668{mask-position:-1334.375px -653.333px}
+.live-figma .f669{left:1369.38px}
+.live-figma .f670{mask-position:-1369.375px -607.395px}
+.live-figma .f671{height:7.292px}
+.live-figma .f672{left:6122.82px}
+.live-figma .f673{top:30396.41px}
+.live-figma .f674{width:3.644px}
+.live-figma .f675{height:3.644px}
+.live-figma .f676{mask-position:-6122.816px -30396.407px}
+.live-figma .f677{width:7.292px}
+.live-figma .f678{inset:-20.01% -10%}
+.live-figma .f679{left:6275.94px}
+.live-figma .f680{mask-position:-6275.941px -30396.407px}
+.live-figma .f681{left:6429.07px}
+.live-figma .f682{mask-position:-6429.066px -30396.407px}
+.live-figma .f683{left:6582.19px}
+.live-figma .f684{mask-position:-6582.191px -30396.407px}
+.live-figma .f685{left:6735.32px}
+.live-figma .f686{mask-position:-6735.316px -30396.407px}
+.live-figma .f687{left:6888.44px}
+.live-figma .f688{mask-position:-6888.438px -30396.407px}
+.live-figma .f689{left:7041.57px}
+.live-figma .f690{mask-position:-7041.566px -30396.407px}
+.live-figma .f691{left:7194.69px}
+.live-figma .f692{mask-position:-7194.691px -30396.407px}
+.live-figma .f693{background-image:linear-gradient(to bottom,var(--from),var(--via) var(--via-stop,50%),var(--to))}
+.live-figma .f694{--from:rgba(255,255,255,0)}
+.live-figma .f695{height:242.813px}
+.live-figma .f696{--to:white}
+.live-figma .f697{--via-stop:64.532%}
+.live-figma .f698{--via:white}
+.live-figma .f699{width:1290.625px}
+.live-figma .f700{left:698.56px}
+.live-figma .f701{mask-position:-436.059px -819.452px}
+.live-figma .f702{top:819.45px}
+.live-figma .f703{mask-position:-109.375px -478.931px}
+.live-figma .f704{left:744.48px}
+.live-figma .f705{mask-position:-272.48px -1440.6px}
+.live-figma .f706{font-size:29.167px}
+.live-figma .f707{top:1440.6px}
+.live-figma .f708{left:662.08px}
+.live-figma .f709{mask-position:-662.083px -1039.063px}
+.live-figma .f710{width:16.042px;height:16.042px}
+.live-figma .f711{top:1039.06px}
+.live-figma .f712{left:696.35px}
+.live-figma .f713{mask-position:-696.354px -1040.521px}
+.live-figma .f714{width:13.125px;height:13.125px}
+.live-figma .f715{top:1040.52px}
+.live-figma .f716{left:727.71px}
+.live-figma .f717{mask-position:-727.708px -1041.979px}
+.live-figma .f718{width:10.208px;height:10.208px}
+.live-figma .f719{top:1041.98px}
+.live-figma .f720{height:4578.438px}
+.live-figma .f721{background-color:#17779f}
+.live-figma .f722{height:837.083px}
+.live-figma .f723{top:1246.15px}
+.live-figma .f724{height:1001.875px}
+.live-figma .f725{left:-51.77px}
+.live-figma .f726{mask-position:51.771px 164.792px}
+.live-figma .f727{mask-size:1400px 837.083px}
+.live-figma .f728{top:1081.35px}
+.live-figma .f729{width:1503.542px}
+.live-figma .f730{top:1456.11px}
+.live-figma .f731{height:473.958px}
+.live-figma .f732{width:729.167px}
+.live-figma .f733{height:469.212px}
+.live-figma .f734{left:111.75px}
+.live-figma .f735{top:1458.48px}
+.live-figma .f736{width:724.42px}
+.live-figma .f737{left:117.29px}
+.live-figma .f738{top:1464.02px}
+.live-figma .f739{height:458.137px}
+.live-figma .f740{mask-size:712.554px 458.137px}
+.live-figma .f741{width:712.554px}
+.live-figma .f742{height:1487.079px}
+.live-figma .f743{left:117.39px}
+.live-figma .f744{mask-position:-0.108px -0.169px}
+.live-figma .f745{top:1464.19px}
+.live-figma .f746{width:712.373px}
+.live-figma .f747{left:754.69px}
+.live-figma .f748{top:1521.77px}
+.live-figma .f749{height:561.458px}
+.live-figma .f750{border-top-left-radius:14.583px}
+.live-figma .f751{border-top-right-radius:14.583px}
+.live-figma .f752{width:262.5px}
+.live-figma .f753{height:1779.167px}
+.live-figma .f754{mask-size:262.5px 561.458px}
+.live-figma .f755{height:683.958px}
+.live-figma .f756{border-bottom-left-radius:14.583px}
+.live-figma .f757{border-bottom-right-radius:14.583px}
+.live-figma .f758{mask-position:0px 712.396px}
+.live-figma .f759{mask-size:262.5px 683.958px}
+.live-figma .f760{top:533.75px}
+.live-figma .f761{left:169.17px}
+.live-figma .f762{top:1351.16px}
+.live-figma .f763{height:1246.146px}
+.live-figma .f764{height:2495.208px}
+.live-figma .f765{top:2083.23px}
+.live-figma .f766{mask-size:1400px 1246.146px}
+.live-figma .f767{top:249.34px}
+.live-figma .f768{height:410.521px}
+.live-figma .f769{mask-position:-109.375px -249.339px}
+.live-figma .f770{width:729.896px}
+.live-figma .f771{height:405.774px}
+.live-figma .f772{mask-position:-111.748px -251.713px}
+.live-figma .f773{top:251.71px}
+.live-figma .f774{width:725.149px}
+.live-figma .f775{top:257.25px}
+.live-figma .f776{height:394.699px}
+.live-figma .f777{mask-position:-117.285px -257.249px, 0px 0px}
+.live-figma .f778{mask-size:1400px 1246.146px, 713.283px 394.699px}
+.live-figma .f779{width:713.283px}
+.live-figma .f780{height:879.375px}
+.live-figma .f781{left:117.74px}
+.live-figma .f782{mask-position:-117.743px -257.396px}
+.live-figma .f783{top:257.4px}
+.live-figma .f784{width:712.396px}
+.live-figma .f785{height:156.771px}
+.live-figma .f786{left:844.38px}
+.live-figma .f787{mask-position:-844.375px -298.229px}
+.live-figma .f788{top:298.23px}
+.live-figma .f789{width:389.478px}
+.live-figma .f790{left:1239.34px}
+.live-figma .f791{mask-position:-1239.338px -297.829px}
+.live-figma .f792{top:297.83px}
+.live-figma .f793{left:891.04px}
+.live-figma .f794{mask-position:-891.042px -516.892px}
+.live-figma .f795{top:516.89px}
+.live-figma .f796{mask-position:-891.042px -705.017px}
+.live-figma .f797{top:705.02px}
+.live-figma .f798{mask-position:-891.042px -895.658px}
+.live-figma .f799{top:895.66px}
+.live-figma .f800{height:168.437px}
+.live-figma .f801{left:867.34px}
+.live-figma .f802{top:466.3px}
+.live-figma .f803{--rotate:89.5deg}
+.live-figma .f804{mask-position:-867.344px -466.302px}
+.live-figma .f805{width:168.444px}
+.live-figma .f806{inset:-1.82px 0 0 0}
+.live-figma .f807{height:165.921px}
+.live-figma .f808{top:656.61px}
+.live-figma .f809{--rotate:89.75deg}
+.live-figma .f810{mask-position:-867.344px -656.615px}
+.live-figma .f811{width:165.923px}
+.live-figma .f812{height:158.629px}
+.live-figma .f813{top:847.26px}
+.live-figma .f814{mask-position:-867.344px -847.256px}
+.live-figma .f815{width:158.629px}
+.live-figma .f816{left:860.78px}
+.live-figma .f817{mask-position:-860.781px -634.74px}
+.live-figma .f818{top:634.74px}
+.live-figma .f819{width:14.583px}
+.live-figma .f820{left:861.51px}
+.live-figma .f821{mask-position:-861.511px -823.194px}
+.live-figma .f822{top:823.19px}
+.live-figma .f823{mask-position:-860.781px -845.397px}
+.live-figma .f824{top:845.4px}
+.live-figma .f825{mask-position:-860.781px -1009.131px}
+.live-figma .f826{top:1009.13px}
+.live-figma .f827{mask-position:-860.781px -466.302px}
+.live-figma .f828{mask-position:-860.781px -656.944px}
+.live-figma .f829{top:656.94px}
+.live-figma .f830{height:349.271px}
+.live-figma .f831{left:1115.63px}
+.live-figma .f832{mask-position:-1115.625px -1195.104px}
+.live-figma .f833{mask-size:1400px 2495.208px}
+.live-figma .f834{top:3278.33px}
+.live-figma .f835{width:350px}
+.live-figma .f836{left:151.67px}
+.live-figma .f837{mask-position:-151.667px -2087.604px}
+.live-figma .f838{top:4170.83px}
+.live-figma .f839{left:210px}
+.live-figma .f840{mask-position:-210px 160.417px}
+.live-figma .f841{top:1922.81px}
+.live-figma .f842{mask-position:-632.917px -107.928px}
+.live-figma .f843{top:2191.16px}
+.live-figma .f844{mask-position:-632.917px -1350.428px}
+.live-figma .f845{top:3433.66px}
+.live-figma .f846{left:887.4px}
+.live-figma .f847{top:2308.54px}
+.live-figma .f848{height:619.792px}
+.live-figma .f849{mask-position:-887.396px -225.312px}
+.live-figma .f850{height:737.188px}
+.live-figma .f851{mask-position:-887.397px -225.312px, 0px 0px}
+.live-figma .f852{mask-size:1400px 2495.208px, 262.5px 619.792px}
+.live-figma .f853{top:2705.94px}
+.live-figma .f854{mask-position:-1028.125px -622.708px}
+.live-figma .f855{height:1026.667px}
+.live-figma .f856{mask-position:-1028.125px -622.708px, 0px 0px}
+.live-figma .f857{height:519.167px}
+.live-figma .f858{mask-position:-109.375px -225.313px}
+.live-figma .f859{height:519.455px}
+.live-figma .f860{left:250.1px}
+.live-figma .f861{mask-position:-250.104px -622.853px}
+.live-figma .f862{top:2706.08px}
+.live-figma .f863{top:3551.04px}
+.live-figma .f864{mask-position:-887.396px -1467.812px}
+.live-figma .f865{height:765.625px}
+.live-figma .f866{mask-position:-887.397px -1467.812px, 0px 0px}
+.live-figma .f867{mask-position:-109.375px -1467.812px}
+.live-figma .f868{mask-position:-109.375px -181.504px}
+.live-figma .f869{top:2264.73px}
+.live-figma .f870{mask-position:-109.375px -1424.004px}
+.live-figma .f871{top:3507.23px}
+.live-figma .f872{mask-position:-887.396px -180.775px}
+.live-figma .f873{top:2264px}
+.live-figma .f874{mask-position:-887.396px -1423.275px}
+.live-figma .f875{top:3506.5px}
+.live-figma .f876{top:3849.27px}
+.live-figma .f877{mask-position:-1028.125px -1766.042px}
+.live-figma .f878{mask-position:-1028.125px -1766.042px, 0px 0px}
+.live-figma .f879{mask-position:-250.104px -1766.042px}
+.live-figma .f880{height:1835.313px}
+.live-figma .f881{left:calc(50% - 66px)}
+.live-figma .f882{color:#101838}
+.live-figma .f883{top:129.67px}
+.live-figma .f884{top:275.51px}
+.live-figma .f885{top:957.28px}
+.live-figma .f886{top:309.84px}
+.live-figma .f887{top:990.88px}
+.live-figma .f888{left:587.71px}
+.live-figma .f889{top:309.11px}
+.live-figma .f890{background-color:#ffe281}
+.live-figma .f891{height:16.042px}
+.live-figma .f892{left:calc(50% + 0.25px)}
+.live-figma .f893{top:195.42px}
+.live-figma .f894{top:169.18px}
+.live-figma .f895{height:648.148px}
+.live-figma .f896{top:1034.69px}
+.live-figma .f897{width:233.333px}
+.live-figma .f898{height:414.815px}
+.live-figma .f899{top:353.65px}
+.live-figma .f900{top:352.92px}
+.live-figma .f901{height:496.625px}
+.live-figma .f902{width:240.625px}
+.live-figma .f903{height:492.021px}
+.live-figma .f904{left:590.01px}
+.live-figma .f905{top:355.22px}
+.live-figma .f906{width:236.021px}
+.live-figma .f907{left:595.38px}
+.live-figma .f908{top:360.59px}
+.live-figma .f909{height:481.277px}
+.live-figma .f910{mask-size:224.51px 481.277px}
+.live-figma .f911{width:224.509px}
+.live-figma .f912{height:473.745px}
+.live-figma .f913{width:224.406px}
+.live-figma .f914{left:850.21px}
+.live-figma .f915{left:852.51px}
+.live-figma .f916{left:857.88px}
+.live-figma .f917{height:472.985px}
+.live-figma .f918{left:858.3px}
+.live-figma .f919{mask-position:-0.413px -0.352px}
+.live-figma .f920{top:360.94px}
+.live-figma .f921{width:224.046px}
+.live-figma .f922{top:1036.99px}
+.live-figma .f923{top:1042.36px}
+.live-figma .f924{height:473.229px}
+.live-figma .f925{left:595.73px}
+.live-figma .f926{mask-position:-0.347px -0.347px}
+.live-figma .f927{top:1042.71px}
+.live-figma .f928{width:223.854px}
+.live-figma .f929{left:858.23px}
+.live-figma .f930{mask-position:-0.348px -0.347px}
+.live-figma .f931{left:547.78px}
+.live-figma .f932{top:455.64px}
+.live-figma .f933{left:547.91px}
+.live-figma .f934{top:568.75px}
+.live-figma .f935{left:1132.4px}
+.live-figma .f936{top:1199.39px}
+.live-figma .f937{top:1257.81px}
+.live-figma .f938{top:1046.27px}
+.live-figma .f939{left:546.91px}
+.live-figma .f940{top:1226.37px}
+.live-figma .f941{top:1345.31px}
+.live-figma .f942{left:547.05px}
+.live-figma .f943{top:1053.65px}
+.live-figma .f944{left:557.81px}
+.live-figma .f945{top:462.29px}
+.live-figma .f946{width:30.26px}
+.live-figma .f947{top:575.31px}
+.live-figma .f948{top:1233.02px}
+.live-figma .f949{top:1351.88px}
+.live-figma .f950{top:1060.44px}
+.live-figma .f951{left:1090.83px}
+.live-figma .f952{top:1206.77px}
+.live-figma .f953{top:1264.38px}
+.live-figma .f954{left:1124.38px}
+.live-figma .f955{top:1632.52px}
+.live-figma .f956{left:1082.81px}
+.live-figma .f957{top:1639.9px}
+.live-figma .f958{left:871.35px}
+.live-figma .f959{top:1553.13px}
+.live-figma .f960{border-color:#eaeaea}
+.live-figma .f961{height:154.583px}
+.live-figma .f962{border-radius:3.646px}
+.live-figma .f963{width:211.458px}
+.live-figma .f964{top:1564.06px}
+.live-figma .f965{height:42.231px}
+.live-figma .f966{left:879.82px}
+.live-figma .f967{mask-position:2.473px -0.739px}
+.live-figma .f968{mask-size:39.375px 39.375px}
+.live-figma .f969{top:1564.8px}
+.live-figma .f970{width:44.15px}
+.live-figma .f971{width:39.375px;height:39.375px}
+.live-figma .f972{top:1610.73px}
+.live-figma .f973{mask-position:2.473px -0.349px}
+.live-figma .f974{top:1611.08px}
+.live-figma .f975{top:1657.4px}
+.live-figma .f976{mask-position:2.473px -0.461px}
+.live-figma .f977{top:1657.86px}
+.live-figma .f978{left:930.67px}
+.live-figma .f979{top:1592.5px}
+.live-figma .f980{font-family:"Pretendard",sans-serif;font-weight:600}
+.live-figma .f981{line-height:10.938px}
+.live-figma .f982{left:939.17px}
+.live-figma .f983{font-size:6.563px}
+.live-figma .f984{letter-spacing:-0.1641px}
+.live-figma .f985{font-family:"Pretendard",sans-serif;font-weight:500}
+.live-figma .f986{line-height:12.396px}
+.live-figma .f987{left:951.56px}
+.live-figma .f988{font-size:7.292px}
+.live-figma .f989{letter-spacing:-0.1823px}
+.live-figma .f990{height:6.925px}
+.live-figma .f991{top:1594.74px}
+.live-figma .f992{width:7.271px}
+.live-figma .f993{top:1637.71px}
+.live-figma .f994{top:1639.56px}
+.live-figma .f995{top:1684.37px}
+.live-figma .f996{top:1686.34px}
+.live-figma .f997{left:977.08px}
+.live-figma .f998{top:1594.69px}
+.live-figma .f999{letter-spacing:-0.0656px}
+.live-figma .f1000{top:1639.17px}
+.live-figma .f1001{top:1685.83px}
+.live-figma .f1002{left:930.42px}
+.live-figma .f1003{color:#d50000}
+.live-figma .f1004{top:1581.56px}
+.live-figma .f1005{letter-spacing:-0.0729px}
+.live-figma .f1006{font-family:"Pretendard",sans-serif;font-weight:700}
+.live-figma .f1007{font-size:8.021px}
+.live-figma .f1008{top:1566.98px}
+.live-figma .f1009{letter-spacing:-0.0802px}
+.live-figma .f1010{top:1612.92px}
+.live-figma .f1011{top:1659.58px}
+.live-figma .f1012{background-color:rgba(0,0,0,0.6)}
+.live-figma .f1013{line-height:9.479px}
+.live-figma .f1014{left:901.99px}
+.live-figma .f1015{top:1626.04px}
+.live-figma .f1016{top:1672.71px}
+.live-figma .f1017{top:1627.5px}
+.live-figma .f1018{top:1674.17px}
+.live-figma .f1019{background-color:#e8eaec}
+.live-figma .f1020{height:5111.458px}
+.live-figma .f1021{left:1122px}
+.live-figma .f1022{top:3758.5px}
+.live-figma .f1023{mask-position:-1122px -3758.499px}
+.live-figma .f1024{mask-size:1400px 5111.458px}
+.live-figma .f1025{left:816px}
+.live-figma .f1026{mask-position:-816px -3758.499px}
+.live-figma .f1027{left:509px}
+.live-figma .f1028{mask-position:-509px -3758.499px}
+.live-figma .f1029{left:350.73px}
+.live-figma .f1030{mask-position:-350.729px -170.625px}
+.live-figma .f1031{top:170.63px}
+.live-figma .f1032{left:372.6px}
+.live-figma .f1033{mask-position:-372.604px -192.5px}
+.live-figma .f1034{top:192.5px}
+.live-figma .f1035{left:401.77px}
+.live-figma .f1036{mask-position:-401.771px -221.667px}
+.live-figma .f1037{width:597.917px;height:597.917px}
+.live-figma .f1038{top:221.67px}
+.live-figma .f1039{left:-266.15px}
+.live-figma .f1040{mask-position:266.146px -2013.23px}
+.live-figma .f1041{width:875px;height:875px}
+.live-figma .f1042{top:2013.23px}
+.live-figma .f1043{left:535.94px}
+.live-figma .f1044{mask-position:-535.938px -3942.605px}
+.live-figma .f1045{width:1020.833px;height:1020.833px}
+.live-figma .f1046{top:3942.61px}
+.live-figma .f1047{left:633.65px}
+.live-figma .f1048{mask-position:-633.646px -107.8px}
+.live-figma .f1049{left:441.15px}
+.live-figma .f1050{top:264.65px}
+.live-figma .f1051{height:511.946px}
+.live-figma .f1052{mask-position:-441.149px -264.652px}
+.live-figma .f1053{width:248.048px}
+.live-figma .f1054{height:507.199px}
+.live-figma .f1055{left:443.52px}
+.live-figma .f1056{mask-position:-443.521px -267.026px}
+.live-figma .f1057{top:267.03px}
+.live-figma .f1058{width:243.302px}
+.live-figma .f1059{left:449.06px}
+.live-figma .f1060{top:272.56px}
+.live-figma .f1061{height:496.124px}
+.live-figma .f1062{mask-position:-449.062px -272.562px, 0px 0px}
+.live-figma .f1063{mask-size:1400px 5111.458px, 231.436px 496.124px}
+.live-figma .f1064{width:231.435px}
+.live-figma .f1065{height:488.585px}
+.live-figma .f1066{mask-position:-449.062px -272.921px, 0px -0.359px}
+.live-figma .f1067{top:272.92px}
+.live-figma .f1068{left:710.81px}
+.live-figma .f1069{mask-position:-710.81px -264.652px}
+.live-figma .f1070{left:713.18px}
+.live-figma .f1071{mask-position:-713.183px -267.026px}
+.live-figma .f1072{left:718.72px}
+.live-figma .f1073{mask-position:-718.723px -272.562px, 0px 0px}
+.live-figma .f1074{mask-size:1400px 5111.458px, 231.435px 496.124px}
+.live-figma .f1075{height:485.744px}
+.live-figma .f1076{left:719.08px}
+.live-figma .f1077{mask-position:-719.082px -272.921px, -0.359px -0.359px}
+.live-figma .f1078{width:231.077px}
+.live-figma .f1079{left:1014.59px}
+.live-figma .f1080{top:196.12px}
+.live-figma .f1081{height:91.12px}
+.live-figma .f1082{mask-position:-1014.589px -196.119px}
+.live-figma .f1083{width:87.327px}
+.live-figma .f1084{left:253.79px}
+.live-figma .f1085{top:633.88px}
+.live-figma .f1086{mask-position:-253.793px -633.879px}
+.live-figma .f1087{height:96.516px}
+.live-figma .f1088{left:104.79px}
+.live-figma .f1089{top:450.21px}
+.live-figma .f1090{width:94.035px}
+.live-figma .f1091{--rotate:-36deg}
+.live-figma .f1092{height:73.816px}
+.live-figma .f1093{mask-position:-104.79px -450.213px}
+.live-figma .f1094{width:62.603px}
+.live-figma .f1095{left:1252.58px}
+.live-figma .f1096{top:294.55px}
+.live-figma .f1097{height:51.261px}
+.live-figma .f1098{mask-position:-1252.575px -294.551px}
+.live-figma .f1099{width:81.2px}
+.live-figma .f1100{left:1133.88px}
+.live-figma .f1101{top:565.34px}
+.live-figma .f1102{height:60.314px}
+.live-figma .f1103{mask-position:-1133.884px -565.338px}
+.live-figma .f1104{width:71.297px}
+.live-figma .f1105{left:52.84px}
+.live-figma .f1106{top:725px}
+.live-figma .f1107{mask-position:-52.838px -724.999px}
+.live-figma .f1108{left:1035.73px}
+.live-figma .f1109{top:740.42px}
+.live-figma .f1110{height:77.008px}
+.live-figma .f1111{mask-position:-1035.729px -740.424px}
+.live-figma .f1112{width:76.247px}
+.live-figma .f1113{left:324.79px}
+.live-figma .f1114{mask-position:-324.792px -196.119px}
+.live-figma .f1115{left:1314.81px}
+.live-figma .f1116{top:671.21px}
+.live-figma .f1117{height:63.144px}
+.live-figma .f1118{mask-position:-1314.814px -671.211px}
+.live-figma .f1119{width:58.82px}
+.live-figma .f1120{left:141.66px}
+.live-figma .f1121{top:287.24px}
+.live-figma .f1122{height:70.838px}
+.live-figma .f1123{mask-position:-141.661px -287.239px}
+.live-figma .f1124{width:68.141px}
+.live-figma .f1125{left:1000.42px}
+.live-figma .f1126{mask-position:-1000.417px -387.1px}
+.live-figma .f1127{top:387.1px}
+.live-figma .f1128{mask-position:-1000.417px -468.854px}
+.live-figma .f1129{top:468.85px}
+.live-figma .f1130{color:#666}
+.live-figma .f1131{mask-position:-1000.417px -693.437px}
+.live-figma .f1132{top:693.44px}
+.live-figma .f1133{left:958.85px}
+.live-figma .f1134{mask-position:-958.853px -393.75px}
+.live-figma .f1135{top:393.75px}
+.live-figma .f1136{mask-position:-958.853px -475.417px}
+.live-figma .f1137{top:475.42px}
+.live-figma .f1138{mask-position:-958.853px -700.729px}
+.live-figma .f1139{top:700.73px}
+.live-figma .f1140{left:398.99px}
+.live-figma .f1141{mask-position:-213.988px -530.929px}
+.live-figma .f1142{top:530.93px}
+.live-figma .f1143{left:401.3px}
+.live-figma .f1144{mask-position:-178.298px -392.292px}
+.live-figma .f1145{top:392.29px}
+.live-figma .f1146{left:410.88px}
+.live-figma .f1147{mask-position:-410.884px -537.491px}
+.live-figma .f1148{top:537.49px}
+.live-figma .f1149{mask-position:-410.884px -398.854px}
+.live-figma .f1150{top:398.85px}
+.live-figma .f1151{left:657.71px}
+.live-figma .f1152{mask-position:-657.708px -978.425px}
+.live-figma .f1153{top:978.43px}
+.live-figma .f1154{height:431.424px}
+.live-figma .f1155{left:139.27px}
+.live-figma .f1156{mask-position:-139.271px -1311.042px}
+.live-figma .f1157{opacity:0.5}
+.live-figma .f1158{top:1311.04px}
+.live-figma .f1159{width:218.75px}
+.live-figma .f1160{height:924.421px}
+.live-figma .f1161{left:751.04px}
+.live-figma .f1162{mask-position:-751.042px -1311.042px}
+.live-figma .f1163{height:748.571px}
+.live-figma .f1164{left:248.65px}
+.live-figma .f1165{mask-position:-248.646px -1494.427px}
+.live-figma .f1166{top:1494.43px}
+.live-figma .f1167{width:247.917px}
+.live-figma .f1168{height:884.925px}
+.live-figma .f1169{left:860.42px}
+.live-figma .f1170{mask-position:-860.417px -1494.427px}
+.live-figma .f1171{left:208.04px}
+.live-figma .f1172{mask-position:-142.037px -1841.883px}
+.live-figma .f1173{top:1841.88px}
+.live-figma .f1174{left:218.38px}
+.live-figma .f1175{mask-position:-218.384px -1848.533px}
+.live-figma .f1176{top:1848.53px}
+.live-figma .f1177{left:538.13px}
+.live-figma .f1178{mask-position:-538.125px -2176.475px}
+.live-figma .f1179{top:2176.48px}
+.live-figma .f1180{left:496.56px}
+.live-figma .f1181{mask-position:-496.563px -2183.855px}
+.live-figma .f1182{top:2183.86px}
+.live-figma .f1183{left:1164px}
+.live-figma .f1184{mask-position:-1164px -1736.875px}
+.live-figma .f1185{top:1736.88px}
+.live-figma .f1186{left:569.05px}
+.live-figma .f1187{mask-position:-536.046px -3784.288px}
+.live-figma .f1188{top:3784.29px}
+.live-figma .f1189{left:875.59px}
+.live-figma .f1190{mask-position:-819.589px -3784.288px}
+.live-figma .f1191{left:1181.41px}
+.live-figma .f1192{mask-position:-1133.407px -3784.288px}
+.live-figma .f1193{mask-position:-538.125px -1713.542px}
+.live-figma .f1194{top:1713.54px}
+.live-figma .f1195{left:1149.9px}
+.live-figma .f1196{mask-position:-1149.896px -2205px}
+.live-figma .f1197{top:2205px}
+.live-figma .f1198{left:1230.83px}
+.live-figma .f1199{mask-position:-1230.833px -2517.813px}
+.live-figma .f1200{top:2517.81px}
+.live-figma .f1201{left:1223.54px}
+.live-figma .f1202{mask-position:-1223.542px -3295.746px}
+.live-figma .f1203{top:3295.75px}
+.live-figma .f1204{mask-position:-1223.542px -3494.809px}
+.live-figma .f1205{top:3494.81px}
+.live-figma .f1206{height:30.26px}
+.live-figma .f1207{left:1213.25px}
+.live-figma .f1208{top:1697.12px}
+.live-figma .f1209{mask-position:-1213.25px -1697.124px}
+.live-figma .f1210{mask-position:-496.563px -1720.105px}
+.live-figma .f1211{top:1720.11px}
+.live-figma .f1212{left:1108.33px}
+.live-figma .f1213{mask-position:-1108.335px -2211.563px}
+.live-figma .f1214{top:2211.56px}
+.live-figma .f1215{left:1189.27px}
+.live-figma .f1216{mask-position:-1189.272px -2524.375px}
+.live-figma .f1217{top:2524.38px}
+.live-figma .f1218{left:1181.98px}
+.live-figma .f1219{mask-position:-1181.978px -3302.397px}
+.live-figma .f1220{top:3302.4px}
+.live-figma .f1221{mask-position:-1181.978px -3501.459px}
+.live-figma .f1222{top:3501.46px}
+.live-figma .f1223{mask-position:-139.271px -1267.234px}
+.live-figma .f1224{top:1267.23px}
+.live-figma .f1225{mask-position:-751.042px -1267.234px}
+.live-figma .f1226{left:466.67px}
+.live-figma .f1227{mask-position:-466.667px -1450.984px}
+.live-figma .f1228{top:1450.98px}
+.live-figma .f1229{left:1078.44px}
+.live-figma .f1230{mask-position:-1078.438px -1450.984px}
+.live-figma .f1231{height:170.139px}
+.live-figma .f1232{left:1130px}
+.live-figma .f1233{mask-position:-1130px -1526.39px}
+.live-figma .f1234{top:1526.39px}
+.live-figma .f1235{width:175px}
+.live-figma .f1236{left:209.27px}
+.live-figma .f1237{mask-position:-209.271px -2460.151px}
+.live-figma .f1238{top:2460.15px}
+.live-figma .f1239{left:687.6px}
+.live-figma .f1240{mask-position:-687.604px -2459.421px}
+.live-figma .f1241{top:2459.42px}
+.live-figma .f1242{top:2503.23px}
+.live-figma .f1243{mask-position:-687.601px -2503.23px}
+.live-figma .f1244{left:689.9px}
+.live-figma .f1245{mask-position:-689.903px -2505.532px}
+.live-figma .f1246{top:2505.53px}
+.live-figma .f1247{left:695.27px}
+.live-figma .f1248{top:2510.9px}
+.live-figma .f1249{mask-position:-695.274px -2510.903px, 0px 0px}
+.live-figma .f1250{mask-size:1400px 5111.458px, 224.51px 481.277px}
+.live-figma .f1251{left:695.62px}
+.live-figma .f1252{mask-position:-695.622px -2511.251px, -0.348px -0.348px}
+.live-figma .f1253{top:2511.25px}
+.live-figma .f1254{left:950.1px}
+.live-figma .f1255{mask-position:-950.102px -2503.23px}
+.live-figma .f1256{left:952.4px}
+.live-figma .f1257{mask-position:-952.403px -2505.532px}
+.live-figma .f1258{left:957.77px}
+.live-figma .f1259{mask-position:-957.775px -2510.903px, 0px 0px}
+.live-figma .f1260{height:737.896px}
+.live-figma .f1261{mask-position:-209.271px -2503.959px}
+.live-figma .f1262{top:2503.96px}
+.live-figma .f1263{height:1071.138px}
+.live-figma .f1264{left:957.4px}
+.live-figma .f1265{mask-position:-957.396px -2510.521px}
+.live-figma .f1266{border-top-left-radius:25.521px}
+.live-figma .f1267{border-top-right-radius:25.521px}
+.live-figma .f1268{top:2510.52px}
+.live-figma .f1269{width:224.583px}
+.live-figma .f1270{left:503.13px}
+.live-figma .f1271{mask-position:-503.125px -2702.292px}
+.live-figma .f1272{top:2702.29px}
+.live-figma .f1273{width:154.583px}
+.live-figma .f1274{height:14.583px}
+.live-figma .f1275{left:607.4px}
+.live-figma .f1276{mask-position:-607.396px -2709.584px}
+.live-figma .f1277{top:2709.58px}
+.live-figma .f1278{width:39.375px}
+.live-figma .f1279{left:514.06px}
+.live-figma .f1280{mask-position:-514.063px -2709.584px}
+.live-figma .f1281{left:560.73px}
+.live-figma .f1282{mask-position:-560.729px -2709.584px}
+.live-figma .f1283{left:647.58px}
+.live-figma .f1284{mask-position:-535.582px -2518.637px}
+.live-figma .f1285{top:2518.64px}
+.live-figma .f1286{left:647.44px}
+.live-figma .f1287{mask-position:-520.443px -2645.425px}
+.live-figma .f1288{top:2645.43px}
+.live-figma .f1289{left:657.34px}
+.live-figma .f1290{mask-position:-657.344px -2525.2px}
+.live-figma .f1291{top:2525.2px}
+.live-figma .f1292{mask-position:-657.344px -2651.25px}
+.live-figma .f1293{top:2651.25px}
+.live-figma .f1294{mask-position:-109.375px -3689.467px}
+.live-figma .f1295{top:3689.47px}
+.live-figma .f1296{mask-position:-109.375px -4398.947px}
+.live-figma .f1297{top:4398.95px}
+.live-figma .f1298{border-color:#dadada}
+.live-figma .f1299{height:461.806px}
+.live-figma .f1300{left:1071.88px}
+.live-figma .f1301{mask-position:-1071.875px -3828.855px}
+.live-figma .f1302{top:3828.86px}
+.live-figma .f1303{left:459.38px}
+.live-figma .f1304{mask-position:-459.375px -3828.855px}
+.live-figma .f1305{left:765.63px}
+.live-figma .f1306{mask-position:-765.625px -3828.855px}
+.live-figma .f1307{top:3752.29px}
+.live-figma .f1308{mask-position:-109.375px -3752.292px}
+.live-figma .f1309{left:111.68px}
+.live-figma .f1310{mask-position:-111.676px -3754.595px}
+.live-figma .f1311{top:3754.6px}
+.live-figma .f1312{left:117.05px}
+.live-figma .f1313{top:3759.97px}
+.live-figma .f1314{mask-position:-117.05px -3759.966px, 0px 0px}
+.live-figma .f1315{mask-size:1400px 5111.458px, 224.509px 481.277px}
+.live-figma .f1316{height:473.964px}
+.live-figma .f1317{top:4461.77px}
+.live-figma .f1318{mask-position:-109.375px -4461.771px}
+.live-figma .f1319{mask-position:-111.676px -4464.073px}
+.live-figma .f1320{top:4464.07px}
+.live-figma .f1321{top:4469.45px}
+.live-figma .f1322{mask-position:-117.05px -4469.445px, 0px 0px}
+.live-figma .f1323{height:467.396px}
+.live-figma .f1324{left:117.4px}
+.live-figma .f1325{mask-position:-117.397px -4469.792px, -0.348px -0.348px}
+.live-figma .f1326{top:4469.79px}
+.live-figma .f1327{left:648.96px}
+.live-figma .f1328{mask-position:-648.96px -4461.771px}
+.live-figma .f1329{left:651.26px}
+.live-figma .f1330{mask-position:-651.261px -4464.073px}
+.live-figma .f1331{left:656.63px}
+.live-figma .f1332{top:4469.44px}
+.live-figma .f1333{mask-position:-656.632px -4469.444px, 0px 0px}
+.live-figma .f1334{left:656.98px}
+.live-figma .f1335{mask-position:-656.979px -4469.791px, -0.347px -0.348px}
+.live-figma .f1336{left:1188.54px}
+.live-figma .f1337{mask-position:-1188.54px -4461.771px}
+.live-figma .f1338{left:1190.84px}
+.live-figma .f1339{mask-position:-1190.842px -4464.073px}
+.live-figma .f1340{left:1196.21px}
+.live-figma .f1341{mask-position:-1196.214px -4469.444px, 0px 0px}
+.live-figma .f1342{left:1196.56px}
+.live-figma .f1343{mask-position:-1196.562px -4469.791px, -0.348px -0.348px}
+.live-figma .f1344{left:379.17px}
+.live-figma .f1345{top:4505.52px}
+.live-figma .f1346{mask-position:-379.165px -4505.521px}
+.live-figma .f1347{left:381.47px}
+.live-figma .f1348{mask-position:-381.467px -4507.823px}
+.live-figma .f1349{top:4507.82px}
+.live-figma .f1350{left:386.84px}
+.live-figma .f1351{top:4513.19px}
+.live-figma .f1352{mask-position:-386.838px -4513.194px, 0px 0px}
+.live-figma .f1353{left:387.19px}
+.live-figma .f1354{mask-position:-387.186px -4513.541px, -0.348px -0.348px}
+.live-figma .f1355{top:4513.54px}
+.live-figma .f1356{left:918.75px}
+.live-figma .f1357{mask-position:-918.75px -4505.521px}
+.live-figma .f1358{left:921.05px}
+.live-figma .f1359{mask-position:-921.052px -4507.823px}
+.live-figma .f1360{left:926.42px}
+.live-figma .f1361{top:4513.2px}
+.live-figma .f1362{mask-position:-926.425px -4513.195px, 0px 0px}
+.live-figma .f1363{left:926.77px}
+.live-figma .f1364{mask-position:-926.772px -4513.542px, -0.348px -0.348px}
+.live-figma .f1365{background-color:#101838}
+.live-figma .f1366{height:21.875px}
+.live-figma .f1367{mask-position:-535.938px -3752.292px}
+.live-figma .f1368{border-radius:10.938px}
+.live-figma .f1369{width:65.625px}
+.live-figma .f1370{left:842.19px}
+.live-figma .f1371{mask-position:-842.188px -3752.292px}
+.live-figma .f1372{mask-position:-1148.438px -3752.292px}
+.live-figma .f1373{left:585.71px}
+.live-figma .f1374{mask-position:-547.712px -3751.412px}
+.live-figma .f1375{top:3751.41px}
+.live-figma .f1376{left:895.42px}
+.live-figma .f1377{mask-position:-855.421px -3751.412px}
+.live-figma .f1378{mask-position:-1161.671px -3751.412px}
+.live-figma .f1379{left:623.44px}
+.live-figma .f1380{mask-position:-623.438px -3763.594px}
+.live-figma .f1381{top:3763.59px}
+.live-figma .f1382{width:196.875px}
+.live-figma .f1383{left:929.69px}
+.live-figma .f1384{mask-position:-929.688px -3763.594px}
+.live-figma .f1385{height:433.986px}
+.live-figma .f1386{left:253.54px}
+.live-figma .f1387{mask-position:-253.542px -3763.594px}
+.live-figma .f1388{width:259.605px}
+.live-figma .f1389{inset:-0.17% -0.28%}
+.live-figma .f1390{left:6384.39px}
+.live-figma .f1391{top:33537.95px}
+.live-figma .f1392{mask-position:-6384.391px -33537.948px}
+.live-figma .f1393{left:6690.54px}
+.live-figma .f1394{mask-position:-6690.541px -33537.948px}
+.live-figma .f1395{left:6996.79px}
+.live-figma .f1396{mask-position:-6996.791px -33537.948px}
+.live-figma .f1397{background-color:#dadce0}
+.live-figma .f1398{height:145.833px}
+.live-figma .f1399{left:138.54px}
+.live-figma .f1400{mask-position:-138.542px -1063.125px}
+.live-figma .f1401{top:1063.13px}
+.live-figma .f1402{width:561.458px}
+.live-figma .f1403{left:685.42px}
+.live-figma .f1404{mask-position:-685.417px -1063.125px}
+.live-figma .f1405{width:576.042px}
+.live-figma .f1406{left:419.74px}
+.live-figma .f1407{mask-position:-255.741px -1113.438px}
+.live-figma .f1408{top:1113.44px}
+.live-figma .f1409{left:973.41px}
+.live-figma .f1410{mask-position:-809.908px -1125.017px}
+.live-figma .f1411{top:1125.02px}
+.live-figma .f1412{left:404.69px}
+.live-figma .f1413{mask-position:-404.688px -1077.65px}
+.live-figma .f1414{top:1077.65px}
+.live-figma .f1415{left:955.21px}
+.live-figma .f1416{mask-position:-955.208px -1077.65px}
+.live-figma .f1417{height:168.394px}
+.live-figma .f1418{left:675px}
+.live-figma .f1419{top:1049.12px}
+.live-figma .f1420{width:38.889px}
+.live-figma .f1421{height:38.889px}
+.live-figma .f1422{mask-position:-675px -1049.124px}
+.live-figma .f1423{width:168.394px}
+.live-figma .f1424{bottom:25%}
+.live-figma .f1425{left:6.7%}
+.live-figma .f1426{right:6.7%}
+@font-face{font-family:SUIT;src:url('assets/fonts/suit-variable.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Gmarket Sans';src:url('assets/fonts/gmarket-medium.woff') format('woff');font-weight:500;font-display:swap}
+@font-face{font-family:'Gmarket Sans';src:url('assets/fonts/gmarket-bold.woff') format('woff');font-weight:700;font-display:swap}
