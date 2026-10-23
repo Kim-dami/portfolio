@@ -1438,7 +1438,7 @@ html.lenis,html.lenis body {
 
 /* Scroll-scrubbed editorial chapter and services-style project stream. */
 .story-chapter {
-  height:300vh;
+  height:220vh;
   position:relative;
   background:#fff
 }
@@ -1446,7 +1446,7 @@ html.lenis,html.lenis body {
 .story-pin {
   position:sticky;
   top:0;
-  height:100vh;
+  height:80vh;
   overflow:hidden
 }
 
@@ -1721,7 +1721,7 @@ html.lenis,html.lenis body {
 
 @media(max-width:800px) {
   .story-chapter {
-    height:260vh
+    height:210vh
   }
 
   .story-english {

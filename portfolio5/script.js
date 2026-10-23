@@ -23,7 +23,7 @@ if (!reduced && window.Lenis) {
  const lenis = new Lenis({lerp:.09,smoothWheel:true,anchors:{offset:-(document.querySelector('body > header')?.offsetHeight || 110)-12}});portfolioScroller=lenis;
  function frame(time){lenis.raf(time);requestAnimationFrame(frame);}requestAnimationFrame(frame);
 }
-// The chapter and title tracks use the reference's measured progress windows.
+// Reveal the English copy as the chapter enters, before the pinned transition.
 (()=>{
  const chapter=document.querySelector('.story-chapter'),section=document.querySelector('.services-work');
  if(!chapter||!section)return;
@@ -34,8 +34,10 @@ if (!reduced && window.Lenis) {
  const set=(el,v)=>{el.style.opacity=v;el.style.filter=`blur(${16*(1-v)}px)`;};
  let pending=false;
  function render(){
-  pending=false;const h=innerHeight,w=innerWidth,p=clamp(-chapter.getBoundingClientRect().top/(chapter.offsetHeight-h));
-  english.forEach((el,i)=>{const d=i*.06;set(el,clamp(p<.33?(p-d)/.20:1-(p-.45-d)/.15));});
+  pending=false;const h=innerHeight,top=chapter.getBoundingClientRect().top;
+  const p=clamp(-top/(chapter.offsetHeight-chapter.querySelector('.story-pin').offsetHeight));
+  const entrance=clamp((h*.8-top)/(h*.35));
+  english.forEach((el,i)=>{const d=i*.06;set(el,clamp((entrance-d)/(1-d))*clamp(1-(p-.32-d)/.15));});
   korean.forEach((el,i)=>set(el,clamp((p-.62-i*.06)/.18)));
 
  }
